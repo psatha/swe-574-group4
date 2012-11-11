@@ -1,0 +1,35 @@
+
+
+ADVANCED SEARCH PLUGIN FOR CLASSIPRESS
+See details, instructions, demo, screencasts at http://classipro.es/plugins-services/
+
+
+// INSTRUCTIONS //
+1. Upload the attached 'wp-custom-fields-search' directory to your plugins folder or install 'wp-custom-fields-search.zip' through your WordPress 'Plugins' menu
+2. Activate the plugin
+3. Go to 'Appearance>Editor' menu and select your ClassiPress theme on the dropdown 'Select theme to edit:'
+4. You'll see the theme files on the right column. Click on the 'search.php' file to edit.
+5. Open the patch file (included) 'search.php_patch.txt' and copy&paste the content just after <div class="content_left"> and before <?php if ( have_posts() ) : ?> similar to this:
+(...) <div class="content_left"> 
+	<?php if ($_GET['search-class']) { 
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
+	query_posts(array('caller_get_posts' => 1, 'paged'=>$paged)); 
+	} ?> 
+<?php if ( have_posts() ) : ?> (...)
+6. We're done! Now, you can configure your search plugin to include advanced search in your website.
+
+To read more and see screencasts for "how to", please visit http://classipro.es/plugins-services/
+
+// VERY IMPORTANT //
+Note we also provide custom work for AppThemes based websites so if you want to have a very unique website simply contact us.
+
+
+Thank you for buying our service!
+The ClassiPRO Team
+http://classipro.com
+
+For questions or comments contact us.
+
+Email: support@classipro.com
+Tel USA: +1.408.940.9600
+Tel SPAIN: +34.668.804.448

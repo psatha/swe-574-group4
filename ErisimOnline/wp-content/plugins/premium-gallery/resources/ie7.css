@@ -1,0 +1,13 @@
+#sp-gallery-nav a {
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+#sp-gallery-nav a.activeSlide {
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+#sp-gallery-nav a:hover {
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+}
+.sp-gallery li {
+    display: inline-block;
+    height: 100%;
+}

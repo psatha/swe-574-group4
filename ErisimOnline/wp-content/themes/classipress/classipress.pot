@@ -1,0 +1,5997 @@
+# Translation of ClassiPress
+# Copyright (C) 2012 ClassiPress
+# This file can be distributed under the ClassiPress terms
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ClassiPress 3.1.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-13 16:11+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: AppThemes\n"
+"Language-Team: AppThemes\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:23
+msgid "Whoops! Page Not Found."
+msgstr ""
+
+#: 404.php:25
+msgid "The page or ad listing you are trying to reach no longer exists or has expired."
+msgstr ""
+
+#: 404.php:45
+msgid "Sponsored Links"
+msgstr ""
+
+#: attachment.php:20
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: attachment.php:21
+#, php-format
+msgid "&larr; Return to %s"
+msgstr ""
+
+#: attachment.php:32
+#, php-format
+msgid "<span class=\"%1$s\">By</span> %2$s"
+msgstr ""
+
+#: attachment.php:45
+#, php-format
+msgid "<span class=\"%1$s\">Uploaded</span> %2$s"
+msgstr ""
+
+#: attachment.php:56
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: attachment.php:59
+msgid "Link to full-size image"
+msgstr ""
+
+#: attachment.php:67
+msgid "Edit"
+msgstr ""
+
+#: attachment.php:109
+msgid "&larr; prev"
+msgstr ""
+
+#: attachment.php:109
+msgid "next &rarr;"
+msgstr ""
+
+#: author.php:40
+msgid "About"
+msgstr ""
+
+#: author.php:49
+msgid "Member Since:"
+msgstr ""
+
+#: author.php:50
+msgid "Website:"
+msgstr ""
+
+#: author.php:51
+msgid "Twitter"
+msgstr ""
+
+#: author.php:52
+msgid "Facebook"
+msgstr ""
+
+#: author.php:58
+msgid "Description"
+msgstr ""
+
+#: author.php:63
+msgid "Latest items listed"
+msgstr ""
+
+#: author.php:83
+msgid "No ads by this poster yet."
+msgstr ""
+
+#: author.php:93
+msgid "Recent blog posts"
+msgstr ""
+
+#: author.php:113
+msgid "No blog posts written yet."
+msgstr ""
+
+#: comments-ad_listing.php:11
+#: comments-page.php:11
+#: comments.php:11
+msgid "Please do not load this page directly."
+msgstr ""
+
+#: comments-ad_listing.php:15
+#: comments-page.php:15
+#: comments.php:15
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments-ad_listing.php:33
+#: comments-page.php:33
+#: comments.php:33
+msgid "No Responses"
+msgstr ""
+
+#: comments-ad_listing.php:33
+#: comments-page.php:33
+#: comments.php:33
+msgid "One Response"
+msgstr ""
+
+#: comments-ad_listing.php:33
+#: comments-page.php:33
+#: comments.php:33
+msgid "% Responses"
+msgstr ""
+
+#: comments-ad_listing.php:33
+#: comments-page.php:33
+#: comments.php:33
+msgid "to"
+msgstr ""
+
+#: comments-ad_listing.php:47
+#: comments-page.php:47
+#: comments.php:47
+msgid "Older Comments"
+msgstr ""
+
+#: comments-ad_listing.php:49
+#: comments-page.php:49
+#: comments.php:49
+msgid "Newer Comments"
+msgstr ""
+
+#: comments-ad_listing.php:63
+#: comments-page.php:63
+#: comments.php:63
+msgid "Trackbacks/Pingbacks"
+msgstr ""
+
+#: featured.php:38
+msgid "Featured Listings"
+msgstr ""
+
+#: header.php:25
+msgid "Debug Mode On"
+msgstr ""
+
+#: index.php:26
+msgid "Ad Categories"
+msgstr ""
+
+#: index.php:48
+#: index.php:61
+msgid "Just Listed"
+msgstr ""
+
+#: index.php:49
+#: index.php:87
+msgid "Most Popular"
+msgstr ""
+
+#: index.php:50
+#: index.php:106
+msgid "Random"
+msgstr ""
+
+#: index.php:61
+#: index.php:87
+#: index.php:106
+msgid "Classified Ads"
+msgstr ""
+
+#: index.php:75
+#: index.php:93
+#: index.php:120
+msgid "View More Ads"
+msgstr ""
+
+#: loop.php:40
+msgid "Continue reading &raquo;"
+msgstr ""
+
+#: page.php:45
+msgid "Edit Page"
+msgstr ""
+
+#: page.php:67
+msgid "Sorry, no pages matched your criteria."
+msgstr ""
+
+#: search.php:32
+msgid "What are you looking for?"
+msgstr ""
+
+#: search.php:33
+#: search.php:52
+#, php-format
+msgid "Search for '%s' returned %s results"
+msgstr ""
+
+#: search.php:54
+msgid "Sorry, no listings were found."
+msgstr ""
+
+#: sidebar-ad.php:21
+msgid "Map"
+msgstr ""
+
+#: sidebar-ad.php:23
+msgid "Contact"
+msgstr ""
+
+#: sidebar-ad.php:24
+msgid "Poster"
+msgstr ""
+
+#: sidebar-ad.php:62
+msgid "You must be logged in to inquire about this ad."
+msgstr ""
+
+#: sidebar-ad.php:80
+msgid "Information about the ad poster"
+msgstr ""
+
+#: sidebar-ad.php:88
+msgid "Listed by:"
+msgstr ""
+
+#: sidebar-ad.php:119
+msgid "Other items listed by"
+msgstr ""
+
+#: sidebar-ad.php:139
+msgid "No other ads by this poster found."
+msgstr ""
+
+#: sidebar-ad.php:147
+msgid "Latest items listed by"
+msgstr ""
+
+#: sidebar-blog.php:10
+msgid "Popular"
+msgstr ""
+
+#: sidebar-blog.php:11
+msgid "Comments"
+msgstr ""
+
+#: sidebar-blog.php:12
+msgid "Tags"
+msgstr ""
+
+#: sidebar-page.php:14
+#: sidebar.php:103
+msgid "BlogRoll"
+msgstr ""
+
+#: sidebar-page.php:32
+#: sidebar.php:120
+msgid "Meta"
+msgstr ""
+
+#: sidebar-user.php:15
+msgid "User Options"
+msgstr ""
+
+#: sidebar-user.php:23
+msgid "My Dashboard"
+msgstr ""
+
+#: sidebar-user.php:24
+#: sidebar.php:30
+msgid "Edit Profile"
+msgstr ""
+
+#: sidebar-user.php:25
+msgid "WordPress Admin"
+msgstr ""
+
+#: sidebar-user.php:26
+msgid "Log Out"
+msgstr ""
+
+#: sidebar-user.php:43
+msgid "Account Information"
+msgstr ""
+
+#: sidebar-user.php:50
+msgid "Last Login:"
+msgstr ""
+
+#: sidebar-user.php:57
+msgid "Membership Pack"
+msgstr ""
+
+#: sidebar-user.php:58
+msgid "Membership Expires"
+msgstr ""
+
+#: sidebar-user.php:59
+msgid "Renew or Extend Your Membership Pack"
+msgstr ""
+
+#: sidebar-user.php:61
+msgid "Purchase a Membership Pack"
+msgstr ""
+
+#: sidebar-user.php:68
+#: sidebar-user.php:69
+#: sidebar-user.php:70
+msgid "N/A"
+msgstr ""
+
+#: sidebar-user.php:83
+msgid "Account Statistics"
+msgstr ""
+
+#: sidebar-user.php:107
+msgid "Live Listings:"
+msgstr ""
+
+#: sidebar-user.php:108
+msgid "Pending Listings:"
+msgstr ""
+
+#: sidebar-user.php:109
+msgid "Offline Listings:"
+msgstr ""
+
+#: sidebar-user.php:110
+msgid "Total Listings:"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Join Now!"
+msgstr ""
+
+#: sidebar.php:24
+msgid "Welcome back,"
+msgstr ""
+
+#: sidebar.php:25
+msgid "You last logged in at:"
+msgstr ""
+
+#: sidebar.php:26
+msgid "Manage your ads or edit your profile from your personalized dashboard."
+msgstr ""
+
+#: sidebar.php:30
+msgid "Manage Ads"
+msgstr ""
+
+#: sidebar.php:68
+msgid "Sub Categories"
+msgstr ""
+
+#: single-ad_listing.php:30
+msgid "Post Was Reported"
+msgstr ""
+
+#: single-ad_listing.php:32
+msgid "Report This Post"
+msgstr ""
+
+#: single-ad_listing.php:75
+msgid "Location:"
+msgstr ""
+
+#: single-ad_listing.php:76
+msgid "Phone:"
+msgstr ""
+
+#: single-ad_listing.php:79
+msgid "URL:"
+msgstr ""
+
+#: single-ad_listing.php:81
+#: single-ad_listing.php:95
+msgid "Listed:"
+msgstr ""
+
+#: single-ad_listing.php:82
+#: single-ad_listing.php:98
+msgid "Expires:"
+msgstr ""
+
+#: single-ad_listing.php:88
+msgid "This item has been sold"
+msgstr ""
+
+#: taxonomy-ad_cat.php:25
+#: taxonomy-ad_tag.php:25
+msgid "RSS Feed"
+msgstr ""
+
+#: taxonomy-ad_cat.php:26
+msgid "Listings for"
+msgstr ""
+
+#: taxonomy-ad_tag.php:26
+msgid "Listings tagged with"
+msgstr ""
+
+#: tpl-add-new-confirm.php:84
+#: tpl-add-new-confirm.php:115
+msgid "View your new ad"
+msgstr ""
+
+#: tpl-add-new-confirm.php:86
+#: tpl-add-new-confirm.php:117
+msgid "Visit your dashboard"
+msgstr ""
+
+#: tpl-add-new-confirm.php:91
+msgid "PayPal - payment pending"
+msgstr ""
+
+#: tpl-add-new-confirm.php:92
+msgid "ClassiPress Admin"
+msgstr ""
+
+#: tpl-add-new-confirm.php:95
+msgid "Dear Admin,"
+msgstr ""
+
+#: tpl-add-new-confirm.php:96
+#, php-format
+msgid "You are not using IPN on your %s website, and payment for following ad was not processed yet."
+msgstr ""
+
+#: tpl-add-new-confirm.php:97
+msgid "Please review Your payments and approve an ad."
+msgstr ""
+
+#: tpl-add-new-confirm.php:145
+msgid "Thank You!"
+msgstr ""
+
+#: tpl-add-new-confirm.php:149
+msgid "Your payment has been processed and your ad listing should now be live."
+msgstr ""
+
+#: tpl-add-new-confirm.php:151
+msgid "Visit your dashboard to make any changes to your ad listing or profile."
+msgstr ""
+
+#: tpl-add-new-confirm.php:161
+msgid "An Error Has Occurred"
+msgstr ""
+
+#: tpl-add-new-confirm.php:165
+msgid "This ad has already been published or you do not have permission to activate this ad. Please contact the site admin if you are experiencing any issues."
+msgstr ""
+
+#: tpl-dashboard.php:42
+msgid "Ad has been paused"
+msgstr ""
+
+#: tpl-dashboard.php:49
+msgid "Ad has been published"
+msgstr ""
+
+#: tpl-dashboard.php:53
+msgid "Ad has been deleted"
+msgstr ""
+
+#: tpl-dashboard.php:57
+msgid "Ad has been relisted"
+msgstr ""
+
+#: tpl-dashboard.php:61
+msgid "Ad has been marked as sold"
+msgstr ""
+
+#: tpl-dashboard.php:65
+msgid "Ad has been unmarked as sold"
+msgstr ""
+
+#: tpl-dashboard.php:92
+#, php-format
+msgid "%s's Dashboard"
+msgstr ""
+
+#: tpl-dashboard.php:96
+msgid "Below you will find a listing of all your classified ads. Click on one of the options to perform a specific task. If you have any questions, please contact the site administrator."
+msgstr ""
+
+#: tpl-dashboard.php:102
+msgid "Title"
+msgstr ""
+
+#: tpl-dashboard.php:103
+msgid "Views"
+msgstr ""
+
+#: tpl-dashboard.php:104
+msgid "Status"
+msgstr ""
+
+#: tpl-dashboard.php:105
+msgid "Options"
+msgstr ""
+
+#: tpl-dashboard.php:153
+msgid "Live"
+msgstr ""
+
+#: tpl-dashboard.php:154
+msgid "Until"
+msgstr ""
+
+#: tpl-dashboard.php:158
+msgid "pause ad"
+msgstr ""
+
+#: tpl-dashboard.php:167
+msgid "awaiting approval"
+msgstr ""
+
+#: tpl-dashboard.php:175
+msgid "awaiting payment"
+msgstr ""
+
+#: tpl-dashboard.php:194
+msgid "ended"
+msgstr ""
+
+#: tpl-dashboard.php:202
+msgid "offline"
+msgstr ""
+
+#: tpl-dashboard.php:205
+msgid "restart ad"
+msgstr ""
+
+#: tpl-dashboard.php:249
+#: tpl-dashboard.php:268
+#: tpl-dashboard.php:274
+msgid "Delete Ad"
+msgstr ""
+
+#: tpl-dashboard.php:260
+msgid "Contact us to relist ad"
+msgstr ""
+
+#: tpl-dashboard.php:262
+msgid "Relist Ad"
+msgstr ""
+
+#: tpl-dashboard.php:277
+msgid "Mark Sold"
+msgstr ""
+
+#: tpl-dashboard.php:279
+msgid "Unmark Sold"
+msgstr ""
+
+#: tpl-dashboard.php:299
+msgid "Are you sure you want to delete this ad?"
+msgstr ""
+
+#: tpl-dashboard.php:310
+msgid "You currently have no classified ads."
+msgstr ""
+
+#: tpl-edit-item.php:186
+msgid "Edit Your Ad"
+msgstr ""
+
+#: tpl-edit-item.php:191
+msgid "Edit the fields below and click save to update your ad. Your changes will be updated instantly on the site."
+msgstr ""
+
+#: tpl-edit-item.php:251
+msgid "Images"
+msgstr ""
+
+#: tpl-edit-item.php:251
+msgid "Sorry, image editing is not supported for this ad."
+msgstr ""
+
+#: tpl-edit-item.php:262
+msgid "Cancel"
+msgstr ""
+
+#: tpl-edit-item.php:263
+msgid "Update Ad &raquo;"
+msgstr ""
+
+#: tpl-edit-item.php:276
+msgid "You have entered an invalid ad id or do not have permission to edit that ad."
+msgstr ""
+
+#: tpl-full-width.php:57
+msgid "No content found."
+msgstr ""
+
+#: tpl-membership-confirm.php:80
+#: tpl-membership-confirm.php:101
+msgid "Your payment has been processed and your membership status should now be active."
+msgstr ""
+
+#: tpl-membership-confirm.php:82
+#, php-format
+msgid "Visit your <a href=\"%1$s\">dashboard</a> to review your membership status details."
+msgstr ""
+
+#: tpl-membership-confirm.php:103
+msgid "Visit your dashboard to review your membership status details."
+msgstr ""
+
+#: tpl-membership-confirm.php:122
+msgid "There was a problem processing your membership or payment was not successful. This error can also occur if you refresh the payment confirmation page. If you believe your order was not completed successfully, please contact the site administrator."
+msgstr ""
+
+#: tpl-membership-purchase.php:108
+msgid "Membership Not Enabled"
+msgstr ""
+
+#: tpl-membership-purchase.php:111
+msgid "Administrator currently has memberships disabled. Please try again later."
+msgstr ""
+
+#: tpl-profile.php:101
+#: tpl-profile.php:231
+msgid "Strength indicator"
+msgstr ""
+
+#: tpl-profile.php:102
+msgid "Very weak"
+msgstr ""
+
+#: tpl-profile.php:103
+msgid "Weak"
+msgstr ""
+
+#: tpl-profile.php:104
+msgid "Medium"
+msgstr ""
+
+#: tpl-profile.php:105
+msgid "Strong"
+msgstr ""
+
+#: tpl-profile.php:132
+#, php-format
+msgid "%s's Profile"
+msgstr ""
+
+#: tpl-profile.php:137
+msgid "Your profile has been updated."
+msgstr ""
+
+#: tpl-profile.php:154
+msgid "Username:"
+msgstr ""
+
+#: tpl-profile.php:158
+msgid "First Name:"
+msgstr ""
+
+#: tpl-profile.php:162
+msgid "Last Name:"
+msgstr ""
+
+#: tpl-profile.php:166
+msgid "Nickname:"
+msgstr ""
+
+#: tpl-profile.php:170
+msgid "Display Name:"
+msgstr ""
+
+#: tpl-profile.php:193
+msgid "Email:"
+msgstr ""
+
+#: tpl-profile.php:205
+msgid "About Me:"
+msgstr ""
+
+#: tpl-profile.php:215
+msgid "New Password:"
+msgstr ""
+
+#: tpl-profile.php:218
+msgid "Leave this field blank unless you would like to change your password."
+msgstr ""
+
+#: tpl-profile.php:222
+msgid "Password Again:"
+msgstr ""
+
+#: tpl-profile.php:225
+msgid "Type your new password again."
+msgstr ""
+
+#: tpl-profile.php:232
+msgid "Your password should be at least seven characters long."
+msgstr ""
+
+#: tpl-profile.php:250
+msgid "Thumbnail"
+msgstr ""
+
+#: tpl-profile.php:261
+msgid "Delete existing photo?"
+msgstr ""
+
+#: tpl-profile.php:282
+msgid "Update Profile &raquo;"
+msgstr ""
+
+#: framework/admin/class-dashboard.php:18
+msgid "Latest News"
+msgstr ""
+
+#: framework/admin/class-dashboard.php:19
+msgid "Latest Tweets"
+msgstr ""
+
+#: framework/admin/class-dashboard.php:20
+msgid "Support Forum"
+msgstr ""
+
+#: framework/admin/class-dashboard.php:53
+msgid "Dashboard"
+msgstr ""
+
+#: framework/admin/importer.php:63
+msgid "CSV Importer"
+msgstr ""
+
+#: framework/admin/importer.php:64
+msgid "Importer"
+msgstr ""
+
+#: framework/admin/importer.php:89
+msgid "Below you will find a tool which allows you to import content from other systems via a CSV (comma-separated values) file, which can be edited using a program like Excel. Note that the file must be in the correct format for the import tool to work. You will find an example .csv file in the \"examples\" theme folder."
+msgstr ""
+
+#: framework/admin/importer.php:90
+msgid "Choose a CSV file to upload, then click \"Upload file and import\"."
+msgstr ""
+
+#: framework/admin/importer.php:101
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: framework/admin/importer.php:109
+msgid "The file could not be processed."
+msgstr ""
+
+#: framework/admin/importer.php:111
+#, php-format
+msgid "Imported %s items."
+msgstr ""
+
+#: framework/admin/updater.php:67
+#, php-format
+msgid "<strong>IMPORTANT</strong>: If you have made any modifications to the AppThemes files, they will be overwritten if you proceed with the automatic update. Those with modified theme files should do a manual update instead. Visit your <a href=\"%1$s\" target=\"_blank\">customer dashboard</a> to download the latest version."
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:21
+#: framework/custom-forms/form-builder.php:31
+msgid "Custom Forms"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:22
+msgid "Custom Form"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:23
+msgid "Add New"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:24
+msgid "Add New Custom Form"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:25
+msgid "Edit Form"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:26
+msgid "New Form"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:27
+msgid "View Forms"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:28
+msgid "Search Forms"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:29
+msgid "No forms found"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:30
+msgid "No forms found in Trash"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:57
+msgid "Save"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:58
+msgid "Add New Field..."
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:59
+#: framework/custom-forms/form-builder.php:65
+msgid "Text Field"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:61
+msgid "Paragraph"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:62
+msgid "Checkboxes"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:63
+msgid "Radio"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:64
+msgid "Select List"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:66
+msgid "Label"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:67
+msgid "Paragraph Field"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:68
+msgid "Select Options"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:69
+msgid "Add"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:70
+msgid "Checkbox Group"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:71
+msgid "Are you sure you want to remove this element?"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:72
+msgid "Remove"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:73
+msgid "Radio Group"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:74
+msgid "Allow Multiple Selections"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:75
+msgid "Hide"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:76
+msgid "Required"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:77
+msgid "Show"
+msgstr ""
+
+#: framework/custom-forms/form-builder.php:84
+msgid "Form Builder"
+msgstr ""
+
+#: framework/includes/stats.php:17
+msgid "total views"
+msgstr ""
+
+#: framework/includes/stats.php:17
+msgid "today"
+msgstr ""
+
+#: framework/includes/stats.php:19
+msgid "No views yet"
+msgstr ""
+
+#: framework/kernel/functions.php:84
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: framework/kernel/functions.php:111
+msgid "Lost password?"
+msgstr ""
+
+#: framework/kernel/functions.php:118
+msgid "Register"
+msgstr ""
+
+#: framework/kernel/functions.php:281
+msgid "No categories"
+msgstr ""
+
+#: framework/p2p-core/extra.php:16
+msgid "Posts 2 Posts"
+msgstr ""
+
+#: framework/p2p-core/extra.php:17
+msgid "A list of posts connected to the current post"
+msgstr ""
+
+#: framework/p2p-core/extra.php:37
+msgid "Title:"
+msgstr ""
+
+#: framework/p2p-core/extra.php:44
+msgid "Connection type:"
+msgstr ""
+
+#: framework/p2p-core/extra.php:48
+msgid "Connection listing:"
+msgstr ""
+
+#: framework/p2p-core/extra.php:54
+msgid "connected"
+msgstr ""
+
+#: framework/p2p-core/extra.php:55
+msgid "related"
+msgstr ""
+
+#: framework/p2p-core/side.php:135
+msgid "Users"
+msgstr ""
+
+#: framework/p2p-core/side.php:144
+msgid "User"
+msgstr ""
+
+#: framework/p2p-core/side.php:145
+msgid "Search Users"
+msgstr ""
+
+#: framework/p2p-core/side.php:146
+msgid "No users found."
+msgstr ""
+
+#: framework/p2p-core/type.php:88
+#, php-format
+msgid "Connected %s"
+msgstr ""
+
+#: framework/payments/currencies.php:10
+msgid "US Dollars"
+msgstr ""
+
+#: framework/payments/currencies.php:15
+msgid "Euros"
+msgstr ""
+
+#: framework/payments/currencies.php:20
+msgid "Pounds Sterling"
+msgstr ""
+
+#: framework/payments/currencies.php:25
+msgid "Australian Dollars"
+msgstr ""
+
+#: framework/payments/currencies.php:30
+msgid "Brazilian Real"
+msgstr ""
+
+#: framework/payments/currencies.php:35
+msgid "Canadian Dollars"
+msgstr ""
+
+#: framework/payments/currencies.php:40
+msgid "Czech Koruna"
+msgstr ""
+
+#: framework/payments/currencies.php:45
+msgid "Danish Krone"
+msgstr ""
+
+#: framework/payments/currencies.php:50
+msgid "Hong Kong Dollar"
+msgstr ""
+
+#: framework/payments/currencies.php:55
+msgid "Hungarian Forint"
+msgstr ""
+
+#: framework/payments/currencies.php:60
+msgid "Israeli Shekel"
+msgstr ""
+
+#: framework/payments/currencies.php:65
+msgid "Japanese Yen"
+msgstr ""
+
+#: framework/payments/currencies.php:70
+msgid "Malaysian Ringgits"
+msgstr ""
+
+#: framework/payments/currencies.php:75
+msgid "Mexican Peso"
+msgstr ""
+
+#: framework/payments/currencies.php:80
+msgid "New Zealand Dollar"
+msgstr ""
+
+#: framework/payments/currencies.php:85
+msgid "Norwegian Krone"
+msgstr ""
+
+#: framework/payments/currencies.php:90
+msgid "Philippine Pesos"
+msgstr ""
+
+#: framework/payments/currencies.php:95
+msgid "Polish Zloty"
+msgstr ""
+
+#: framework/payments/currencies.php:100
+msgid "Singapore Dollar"
+msgstr ""
+
+#: framework/payments/currencies.php:105
+msgid "Swedish Krona"
+msgstr ""
+
+#: framework/payments/currencies.php:110
+msgid "Swiss Franc"
+msgstr ""
+
+#: framework/payments/currencies.php:115
+msgid "Taiwan New Dollar"
+msgstr ""
+
+#: framework/payments/currencies.php:120
+msgid "Thai Baht"
+msgstr ""
+
+#: framework/payments/currencies.php:125
+msgid "Turkish Lira"
+msgstr ""
+
+#: framework/payments/order-functions.php:18
+#: framework/payments/order-functions.php:29
+msgid "Orders"
+msgstr ""
+
+#: framework/payments/order-functions.php:19
+msgid "Order"
+msgstr ""
+
+#: framework/payments/order-functions.php:21
+msgid "Add New Order"
+msgstr ""
+
+#: framework/payments/order-functions.php:22
+msgid "Edit Order"
+msgstr ""
+
+#: framework/payments/order-functions.php:23
+msgid "New Order"
+msgstr ""
+
+#: framework/payments/order-functions.php:24
+msgid "View Order"
+msgstr ""
+
+#: framework/payments/order-functions.php:25
+msgid "Search Orders"
+msgstr ""
+
+#: framework/payments/order-functions.php:26
+msgid "No orders found"
+msgstr ""
+
+#: framework/payments/order-functions.php:27
+msgid "No orders found in Trash"
+msgstr ""
+
+#: framework/payments/order-functions.php:28
+msgid "Parent Order:"
+msgstr ""
+
+#: framework/payments/test.php:14
+msgid "Empty Field"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:11
+msgid "PayPal"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:39
+msgid "PayPal has responded to your transaction as invalid. Please contact site owner."
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:89
+#, php-format
+msgid "Continue to %s"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:124
+msgid "You are now being redirected to PayPal."
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:137
+msgid "General Information"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:140
+msgid "PayPal Email"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:141
+msgid "Enter your PayPal account email address. This is where your money gets sent."
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:147
+msgid "Sandbox Mode"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:148
+#, php-format
+msgid "You must have a <a target='_new' href='%s'>PayPal Sandbox</a> account setup before using this feature."
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:149
+msgid "By default PayPal is set to live mode. If you would like to test and see if payments are being processed correctly, check this box to switch to sandbox mode."
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:157
+msgid "Payment Data Transfer (PDT)"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:160
+msgid "Enable PDT"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:161
+#, php-format
+msgid "See our <a href=\"%s\">tutorial</a> on enabling Payment Data Transfer."
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:166
+msgid "Identity Token"
+msgstr ""
+
+#: framework/payments/paypal/paypal.php:186
+msgid "You are now being redirected to your listing."
+msgstr ""
+
+#: framework/scb/AdminPage.php:172
+msgid "Settings <strong>saved</strong>."
+msgstr ""
+
+#: framework/scb/AdminPage.php:185
+#: framework/scb/AdminPage.php:196
+msgid "Save Changes"
+msgstr ""
+
+#: framework/scb/AdminPage.php:360
+msgid "Settings"
+msgstr ""
+
+#: includes/appthemes-functions.php:95
+msgid "Type the two words:"
+msgstr ""
+
+#: includes/appthemes-functions.php:96
+msgid "Type what you hear:"
+msgstr ""
+
+#: includes/appthemes-functions.php:97
+msgid "Play sound again"
+msgstr ""
+
+#: includes/appthemes-functions.php:98
+msgid "Download sound as MP3"
+msgstr ""
+
+#: includes/appthemes-functions.php:99
+msgid "Visual challenge"
+msgstr ""
+
+#: includes/appthemes-functions.php:100
+msgid "Audio challenge"
+msgstr ""
+
+#: includes/appthemes-functions.php:101
+msgid "Get two new words"
+msgstr ""
+
+#: includes/appthemes-functions.php:102
+msgid "Help"
+msgstr ""
+
+#: includes/appthemes-functions.php:103
+msgid "Incorrect. Try again."
+msgstr ""
+
+#: includes/appthemes-functions.php:132
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/appthemes-functions.php:181
+msgid "no views yet"
+msgstr ""
+
+#: includes/appthemes-functions.php:557
+#: includes/appthemes-functions.php:559
+msgid "Perhaps you meant"
+msgstr ""
+
+#: includes/appthemes-functions.php:573
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr ""
+
+#: includes/appthemes-functions.php:576
+msgid "&lsaquo;&lsaquo; First"
+msgstr ""
+
+#: includes/appthemes-functions.php:577
+msgid "Last &rsaquo;&rsaquo;"
+msgstr ""
+
+#: includes/appthemes-functions.php:723
+#, php-format
+msgid "Table '%s' has been deleted."
+msgstr ""
+
+#: includes/appthemes-functions.php:739
+msgid "All theme options have been deleted."
+msgstr ""
+
+#: includes/sidebar-blog-posts.php:26
+#: includes/sidebar-popular.php:57
+msgid "by"
+msgstr ""
+
+#: includes/sidebar-blog-posts.php:26
+#: includes/sidebar-popular.php:57
+#: includes/theme-comments.php:32
+msgid "on"
+msgstr ""
+
+#: includes/sidebar-blog-posts.php:26
+msgid "0 Comments"
+msgstr ""
+
+#: includes/sidebar-blog-posts.php:26
+msgid "1 Comment"
+msgstr ""
+
+#: includes/sidebar-blog-posts.php:26
+msgid "% Comments"
+msgstr ""
+
+#: includes/sidebar-blog-posts.php:36
+msgid "There are no blog articles yet."
+msgstr ""
+
+#: includes/sidebar-comments.php:38
+msgid "Comment on article "
+msgstr ""
+
+#: includes/sidebar-contact.php:22
+msgid "Your message has been sent!"
+msgstr ""
+
+#: includes/sidebar-contact.php:24
+msgid "ERROR: Incorrect captcha answer"
+msgstr ""
+
+#: includes/sidebar-contact.php:36
+msgid "To inquire about this ad listing, complete the form below to send a message to the ad poster."
+msgstr ""
+
+#: includes/sidebar-contact.php:40
+msgid "Name:"
+msgstr ""
+
+#: includes/sidebar-contact.php:52
+msgid "Subject:"
+msgstr ""
+
+#: includes/sidebar-contact.php:53
+msgid "Re:"
+msgstr ""
+
+#: includes/sidebar-contact.php:58
+msgid "Message:"
+msgstr ""
+
+#: includes/sidebar-contact.php:74
+msgid "Sum of"
+msgstr ""
+
+#: includes/sidebar-contact.php:80
+msgid "Send Inquiry"
+msgstr ""
+
+#: includes/sidebar-gmap.php:104
+msgid "Sorry, the address could not be found."
+msgstr ""
+
+#: includes/sidebar-popular.php:67
+msgid "There are no popular posts yet."
+msgstr ""
+
+#: includes/theme-actions.php:70
+msgid "Ad Reference ID:"
+msgstr ""
+
+#: includes/theme-actions.php:147
+#: includes/theme-actions.php:149
+msgid "No Tags"
+msgstr ""
+
+#: includes/theme-actions.php:168
+msgid "Sorry, no posts could be found."
+msgstr ""
+
+#: includes/theme-comments.php:51
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/theme-comments.php:59
+msgid "Reply"
+msgstr ""
+
+#: includes/theme-comments.php:60
+msgid "Log in to reply."
+msgstr ""
+
+#: includes/theme-comments.php:127
+#: includes/theme-comments.php:191
+msgid "Leave a Reply"
+msgstr ""
+
+#: includes/theme-comments.php:127
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: includes/theme-comments.php:138
+#, php-format
+msgid "You must be <a href='%s'>logged in</a> to post a comment."
+msgstr ""
+
+#: includes/theme-comments.php:150
+msgid "Logged in as"
+msgstr ""
+
+#: includes/theme-comments.php:150
+msgid "Logout of this account"
+msgstr ""
+
+#: includes/theme-comments.php:150
+msgid "Logout"
+msgstr ""
+
+#: includes/theme-comments.php:160
+msgid "Name"
+msgstr ""
+
+#: includes/theme-comments.php:160
+#: includes/theme-comments.php:167
+msgid "(required)"
+msgstr ""
+
+#: includes/theme-comments.php:167
+msgid "Email (will not be visible)"
+msgstr ""
+
+#: includes/theme-comments.php:174
+msgid "Website"
+msgstr ""
+
+#: includes/theme-cron.php:60
+msgid "No expired ads were found."
+msgstr ""
+
+#: includes/theme-cron.php:62
+msgid "The following ads expired and have been taken down from your website: "
+msgstr ""
+
+#: includes/theme-cron.php:63
+msgid "Your cron job has run successfully. "
+msgstr ""
+
+#: includes/theme-cron.php:68
+msgid "Your cron job has run successfully. However, the pruning ads option is turned off so no expired ads were taken down from the website."
+msgstr ""
+
+#: includes/theme-cron.php:71
+msgid "ClassiPress Ads Expired"
+msgstr ""
+
+#: includes/theme-cron.php:71
+msgid "Regards"
+msgstr ""
+
+#: includes/theme-cron.php:71
+msgid "ClassiPress"
+msgstr ""
+
+#: includes/theme-cron.php:110
+#, php-format
+msgid "Membership Subscription Ending on %s"
+msgstr ""
+
+#: includes/theme-cron.php:111
+#, php-format
+msgid "%s Admin"
+msgstr ""
+
+#: includes/theme-cron.php:113
+#, php-format
+msgid "Hi %s,"
+msgstr ""
+
+#: includes/theme-cron.php:114
+#, php-format
+msgid "Your membership pack will expire in %d days! Please renew your membership to continue posting classified ads."
+msgstr ""
+
+#: includes/theme-cron.php:116
+msgid "Memebership Details"
+msgstr ""
+
+#: includes/theme-cron.php:117
+msgid "-----------------"
+msgstr ""
+
+#: includes/theme-cron.php:118
+msgid "Membership Pack: "
+msgstr ""
+
+#: includes/theme-cron.php:119
+msgid "Membership Expires: "
+msgstr ""
+
+#: includes/theme-cron.php:120
+msgid "Renew Your Membership Pack: "
+msgstr ""
+
+#: includes/theme-cron.php:122
+msgid "For questions or problems, please contact us directly at"
+msgstr ""
+
+#: includes/theme-cron.php:123
+msgid "Regards,"
+msgstr ""
+
+#: includes/theme-cron.php:124
+#, php-format
+msgid "Your %s Team"
+msgstr ""
+
+#: includes/theme-emails.php:30
+msgid "New Ad Submission"
+msgstr ""
+
+#: includes/theme-emails.php:38
+#, php-format
+msgid "The following ad listing has just been submitted on your %s website."
+msgstr ""
+
+#: includes/theme-emails.php:39
+#: includes/theme-emails.php:92
+#: includes/theme-emails.php:137
+#: includes/theme-emails.php:433
+msgid "Ad Details"
+msgstr ""
+
+#: includes/theme-emails.php:41
+#: includes/theme-emails.php:94
+#: includes/theme-emails.php:139
+#: includes/theme-emails.php:435
+msgid "Title: "
+msgstr ""
+
+#: includes/theme-emails.php:42
+#: includes/theme-emails.php:95
+#: includes/theme-emails.php:140
+#: includes/theme-emails.php:436
+msgid "Category: "
+msgstr ""
+
+#: includes/theme-emails.php:43
+#: includes/theme-emails.php:437
+msgid "Author: "
+msgstr ""
+
+#: includes/theme-emails.php:46
+msgid "Payment Type: "
+msgstr ""
+
+#: includes/theme-emails.php:46
+msgid "Bank Transfer"
+msgstr ""
+
+#: includes/theme-emails.php:47
+#: includes/theme-emails.php:148
+#: includes/theme-emails.php:542
+msgid "Transaction ID: "
+msgstr ""
+
+#: includes/theme-emails.php:48
+#: includes/theme-emails.php:149
+#: includes/theme-emails.php:543
+msgid "Reference #: "
+msgstr ""
+
+#: includes/theme-emails.php:49
+#: includes/theme-emails.php:150
+#: includes/theme-emails.php:544
+msgid "Total Amount: "
+msgstr ""
+
+#: includes/theme-emails.php:52
+#: includes/theme-emails.php:440
+msgid "Preview Ad: "
+msgstr ""
+
+#: includes/theme-emails.php:53
+#: includes/theme-emails.php:441
+#, php-format
+msgid "Edit Ad: %s"
+msgstr ""
+
+#: includes/theme-emails.php:87
+#: includes/theme-emails.php:132
+#, php-format
+msgid "Your Ad Submission on %s"
+msgstr ""
+
+#: includes/theme-emails.php:91
+#, php-format
+msgid "Thank you for your recent submission! Your ad listing has been submitted for review and will not appear live on our site until it has been approved. Below you will find a summary of your ad listing on the %s website."
+msgstr ""
+
+#: includes/theme-emails.php:96
+#: includes/theme-emails.php:141
+msgid "Status: "
+msgstr ""
+
+#: includes/theme-emails.php:99
+msgid "You may check the status of your ad(s) at anytime by logging into your dashboard."
+msgstr ""
+
+#: includes/theme-emails.php:136
+#, php-format
+msgid "Thank you for your recent submission! Your ad listing has been submitted and will not appear live on our site until you pay for it. Below you will find a summary of your ad listing on the %s website."
+msgstr ""
+
+#: includes/theme-emails.php:145
+msgid "Please include the following details when sending the bank transfer. Once your transfer has been verified, we will then approve your ad listing."
+msgstr ""
+
+#: includes/theme-emails.php:146
+#: includes/theme-emails.php:540
+msgid "Details for Payment"
+msgstr ""
+
+#: includes/theme-emails.php:153
+#: includes/theme-emails.php:547
+msgid "Bank Transfer Instructions"
+msgstr ""
+
+#: includes/theme-emails.php:209
+msgid "Your Ad Has Been Approved"
+msgstr ""
+
+#: includes/theme-emails.php:213
+#, php-format
+msgid "Your ad listing, \"%s\" has been approved and is now live on our site."
+msgstr ""
+
+#: includes/theme-emails.php:215
+msgid "You can view your ad by clicking on the following link:"
+msgstr ""
+
+#: includes/theme-emails.php:228
+msgid "Your Ad Has Expired"
+msgstr ""
+
+#: includes/theme-emails.php:232
+#, php-format
+msgid "Your ad listing, \"%s\" has expired."
+msgstr ""
+
+#: includes/theme-emails.php:235
+msgid "If you would like to relist your ad, please visit your dashboard and click the \"relist\" link."
+msgstr ""
+
+#: includes/theme-emails.php:281
+#, php-format
+msgid "Someone is interested in your ad listing: %s"
+msgstr ""
+
+#: includes/theme-emails.php:285
+#, php-format
+msgid "Name: %s"
+msgstr ""
+
+#: includes/theme-emails.php:286
+#: includes/theme-emails.php:356
+#, php-format
+msgid "E-mail: %s"
+msgstr ""
+
+#: includes/theme-emails.php:288
+#, php-format
+msgid "This message was sent from %s"
+msgstr ""
+
+#: includes/theme-emails.php:290
+msgid "Sent from IP Address: "
+msgstr ""
+
+#: includes/theme-emails.php:354
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr ""
+
+#: includes/theme-emails.php:355
+#: includes/theme-emails.php:398
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: includes/theme-emails.php:358
+#, php-format
+msgid "[%s] New User Registration"
+msgstr ""
+
+#: includes/theme-emails.php:399
+#, php-format
+msgid "Password: %s"
+msgstr ""
+
+#: includes/theme-emails.php:402
+#, php-format
+msgid "[%s] Your username and password"
+msgstr ""
+
+#: includes/theme-emails.php:424
+msgid "Post Reported"
+msgstr ""
+
+#: includes/theme-emails.php:432
+#, php-format
+msgid "The following ad listing has just been reported on your %s website."
+msgstr ""
+
+#: includes/theme-emails.php:476
+msgid "Membership Activation"
+msgstr ""
+
+#: includes/theme-emails.php:484
+#, php-format
+msgid "The following membership has just been purchased on your %s website."
+msgstr ""
+
+#: includes/theme-emails.php:485
+msgid "Membership Details"
+msgstr ""
+
+#: includes/theme-emails.php:487
+msgid "Order ID: "
+msgstr ""
+
+#: includes/theme-emails.php:488
+msgid "Pack ID: "
+msgstr ""
+
+#: includes/theme-emails.php:489
+msgid "Pack Name: "
+msgstr ""
+
+#: includes/theme-emails.php:490
+msgid "User ID: "
+msgstr ""
+
+#: includes/theme-emails.php:491
+msgid "User Login: "
+msgstr ""
+
+#: includes/theme-emails.php:492
+msgid "Total Cost: "
+msgstr ""
+
+#: includes/theme-emails.php:494
+msgid "Show transactions: "
+msgstr ""
+
+#: includes/theme-emails.php:495
+msgid "Activate membership: "
+msgstr ""
+
+#: includes/theme-emails.php:534
+#, php-format
+msgid "Your Membership Purchase on %s"
+msgstr ""
+
+#: includes/theme-emails.php:538
+msgid "Thank you for your membership order! Your membership has been submitted and will not be valid on our site until you pay for it."
+msgstr ""
+
+#: includes/theme-emails.php:539
+msgid "Please include the following details when sending the bank transfer. Once your transfer has been verified, we will then activate your membership."
+msgstr ""
+
+#: includes/theme-emails.php:579
+msgid "Your membership has been activated"
+msgstr ""
+
+#: includes/theme-emails.php:583
+#, php-format
+msgid "Your membership, \"%s\" has been activated on our site, and You are ready to post ad listings."
+msgstr ""
+
+#: includes/theme-emails.php:584
+msgid "You can post your ad by clicking on the following link:"
+msgstr ""
+
+#: includes/theme-footer.php:29
+#: includes/theme-functions.php:1447
+#: includes/theme-header.php:128
+msgid "Home"
+msgstr ""
+
+#: includes/theme-footer.php:51
+msgid "All Rights Reserved."
+msgstr ""
+
+#: includes/theme-footer.php:58
+msgid "Classified Ads Software"
+msgstr ""
+
+#: includes/theme-footer.php:58
+msgid "Powered by"
+msgstr ""
+
+#: includes/theme-functions.php:153
+#: includes/theme-functions.php:156
+msgid "Select one"
+msgstr ""
+
+#: includes/theme-functions.php:186
+#: includes/theme-functions.php:188
+msgid "Welcome,"
+msgstr ""
+
+#: includes/theme-functions.php:186
+#: includes/theme-functions.php:243
+msgid "Log out"
+msgstr ""
+
+#: includes/theme-functions.php:188
+msgid "visitor!"
+msgstr ""
+
+#: includes/theme-functions.php:188
+#: includes/theme-login.php:264
+msgid "Login"
+msgstr ""
+
+#: includes/theme-functions.php:526
+msgid "No ad details found."
+msgstr ""
+
+#: includes/theme-functions.php:673
+#: includes/theme-functions.php:677
+msgid "Image "
+msgstr ""
+
+#: includes/theme-functions.php:823
+#, php-format
+msgid "exceeds the %s KB limit by %s KB. Please go back and upload a smaller image."
+msgstr ""
+
+#: includes/theme-functions.php:826
+msgid "is not a valid image type (.gif, .jpg, .png). Please go back and upload a different image."
+msgstr ""
+
+#: includes/theme-functions.php:864
+msgid "Your ad images are now being processed..."
+msgstr ""
+
+#: includes/theme-functions.php:873
+#, php-format
+msgid "Image number %1$d of %2$s has been processed."
+msgstr ""
+
+#: includes/theme-functions.php:914
+#: includes/admin/admin-addons.php:88
+msgid "Image"
+msgstr ""
+
+#: includes/theme-functions.php:922
+msgid "Delete Image"
+msgstr ""
+
+#: includes/theme-functions.php:923
+msgid "Upload Date:"
+msgstr ""
+
+#: includes/theme-functions.php:924
+msgid "File Info:"
+msgstr ""
+
+#: includes/theme-functions.php:933
+msgid "Alt Text:"
+msgstr ""
+
+#: includes/theme-functions.php:961
+msgid "Missing Attachment"
+msgstr ""
+
+#: includes/theme-functions.php:1018
+msgid "Add Image"
+msgstr ""
+
+#: includes/theme-functions.php:1027
+#, php-format
+msgid "You are allowed %s image(s) per ad."
+msgstr ""
+
+#: includes/theme-functions.php:1027
+msgid "KB max file size per image."
+msgstr ""
+
+#: includes/theme-functions.php:1027
+msgid "Check the box next to each image you wish to delete."
+msgstr ""
+
+#: includes/theme-functions.php:1053
+msgid "Error in deleting the image."
+msgstr ""
+
+#: includes/theme-functions.php:1211
+msgid "Your ad has been successfully updated."
+msgstr ""
+
+#: includes/theme-functions.php:1211
+msgid "Return to my dashboard"
+msgstr ""
+
+#: includes/theme-functions.php:1215
+msgid "There was an error trying to update your ad."
+msgstr ""
+
+#: includes/theme-functions.php:1257
+#: includes/theme-functions.php:1270
+#: includes/theme-functions.php:1297
+msgid "This field is required."
+msgstr ""
+
+#: includes/theme-functions.php:1273
+msgid "Select"
+msgstr ""
+
+#: includes/theme-functions.php:1326
+#: includes/theme-widgets.php:444
+msgid "None"
+msgstr ""
+
+#: includes/theme-functions.php:1403
+msgid "days"
+msgstr ""
+
+#: includes/theme-functions.php:1404
+msgid "day"
+msgstr ""
+
+#: includes/theme-functions.php:1405
+msgid "hours"
+msgstr ""
+
+#: includes/theme-functions.php:1406
+msgid "hour"
+msgstr ""
+
+#: includes/theme-functions.php:1407
+msgid "mins"
+msgstr ""
+
+#: includes/theme-functions.php:1408
+msgid "min"
+msgstr ""
+
+#: includes/theme-functions.php:1409
+msgid "secs"
+msgstr ""
+
+#: includes/theme-functions.php:1410
+msgid "remaining"
+msgstr ""
+
+#: includes/theme-functions.php:1411
+msgid "This ad has expired"
+msgstr ""
+
+#: includes/theme-functions.php:1453
+msgid "Ads tagged with"
+msgstr ""
+
+#: includes/theme-functions.php:1549
+msgid "Search results for"
+msgstr ""
+
+#: includes/theme-functions.php:1553
+msgid "Posts tagged with"
+msgstr ""
+
+#: includes/theme-functions.php:1579
+msgid "Random Ads"
+msgstr ""
+
+#: includes/theme-functions.php:1581
+msgid "Popular Ads"
+msgstr ""
+
+#: includes/theme-functions.php:1583
+msgid "Latest Ads"
+msgstr ""
+
+#: includes/theme-functions.php:1587
+msgid "Page not found"
+msgstr ""
+
+#: includes/theme-functions.php:1594
+msgid "Page"
+msgstr ""
+
+#: includes/theme-functions.php:1690
+msgid "No matches found"
+msgstr ""
+
+#: includes/theme-functions.php:1871
+msgid "need at least two characters"
+msgstr ""
+
+#: includes/theme-functions.php:2290
+msgid "New Ad Listings"
+msgstr ""
+
+#: includes/theme-functions.php:2295
+msgid "Total Sales"
+msgstr ""
+
+#: includes/theme-functions.php:2399
+msgid "Primary Navigation"
+msgstr ""
+
+#: includes/theme-functions.php:2400
+msgid "Theme Dashboard"
+msgstr ""
+
+#: includes/theme-functions.php:2525
+#, php-format
+msgid "Classified ad listing on %s for %s days"
+msgstr ""
+
+#: includes/theme-functions.php:2530
+msgid "Click here to publish your ad on"
+msgstr ""
+
+#: includes/theme-functions.php:2553
+#, php-format
+msgid "Membership on %s for %s days"
+msgstr ""
+
+#: includes/theme-functions.php:2558
+msgid "Click here to complete your purchase on"
+msgstr ""
+
+#: includes/theme-functions.php:2562
+msgid "Sorry, but there's been an error."
+msgstr ""
+
+#: includes/theme-functions.php:2668
+#: includes/theme-functions.php:2687
+msgid "of price"
+msgstr ""
+
+#: includes/theme-functions.php:2672
+#: includes/theme-functions.php:2682
+msgid "'s less per ad"
+msgstr ""
+
+#: includes/theme-functions.php:2676
+#: includes/theme-functions.php:2692
+msgid "Free Posting"
+msgstr ""
+
+#: includes/theme-functions.php:2677
+#: includes/theme-functions.php:2693
+msgid " per ad"
+msgstr ""
+
+#: includes/theme-functions.php:2678
+#: includes/theme-functions.php:2683
+#: includes/theme-functions.php:2688
+msgid "required to post"
+msgstr ""
+
+#: includes/theme-functions.php:2914
+msgid "Edit Post"
+msgstr ""
+
+#: includes/theme-functions.php:2917
+msgid "Edit Ad"
+msgstr ""
+
+#: includes/theme-header.php:124
+msgid "Post an Ad"
+msgstr ""
+
+#: includes/theme-header.php:129
+msgid "Categories"
+msgstr ""
+
+#: includes/theme-login.php:85
+#, php-format
+msgid "Retrieve your lost password for %s"
+msgstr ""
+
+#: includes/theme-login.php:88
+#, php-format
+msgid "Login at %s"
+msgstr ""
+
+#: includes/theme-login.php:91
+#, php-format
+msgid "Register at %s"
+msgstr ""
+
+#: includes/theme-login.php:94
+#, php-format
+msgid "Login/Register at %s"
+msgstr ""
+
+#: includes/theme-login.php:99
+#, php-format
+msgid "Your Profile at %s"
+msgstr ""
+
+#: includes/theme-login.php:128
+#: includes/theme-login.php:233
+msgid "You are now logged out."
+msgstr ""
+
+#: includes/theme-login.php:131
+#: includes/theme-login.php:236
+msgid "User registration is currently not allowed."
+msgstr ""
+
+#: includes/theme-login.php:134
+#: includes/theme-login.php:239
+msgid "Check your email for the confirmation link."
+msgstr ""
+
+#: includes/theme-login.php:137
+#: includes/theme-login.php:242
+msgid "Check your email for your new password."
+msgstr ""
+
+#: includes/theme-login.php:140
+#: includes/theme-login.php:245
+msgid "Registration complete. Please check your e-mail."
+msgstr ""
+
+#: includes/theme-login.php:176
+msgid "Complete the fields below to create your free account. Your login details will be emailed to you for confirmation so make sure to use a valid email address. Once registration is complete, you will be able to submit your ads."
+msgstr ""
+
+#: includes/theme-login.php:281
+msgid "Please complete the fields below to login to your account."
+msgstr ""
+
+#: includes/theme-login.php:333
+msgid "Sorry, that key does not appear to be valid."
+msgstr ""
+
+#: includes/theme-login.php:355
+msgid "Password Recovery"
+msgstr ""
+
+#: includes/theme-login.php:373
+msgid "Please enter your username or email address. A new password will be emailed to you."
+msgstr ""
+
+#: includes/theme-profile.php:22
+msgid "Twitter:"
+msgstr ""
+
+#: includes/theme-profile.php:24
+msgid "Enter your Twitter username without the URL."
+msgstr ""
+
+#: includes/theme-profile.php:28
+msgid "Facebook:"
+msgstr ""
+
+#: includes/theme-profile.php:30
+#, php-format
+msgid "Enter your Facebook username without the URL. <br />Don't have one yet? <a target='_blank' href='%s'>Get a custom URL.</a>"
+msgstr ""
+
+#: includes/theme-profile.php:34
+msgid "PayPal Email:"
+msgstr ""
+
+#: includes/theme-profile.php:36
+msgid "Used for purchasing ads via PayPal (if enabled)."
+msgstr ""
+
+#: includes/theme-profile.php:41
+msgid "Active Membership Pack:"
+msgstr ""
+
+#: includes/theme-profile.php:44
+msgid "Custom Membership Pack active for the user. Can only be changed by admins."
+msgstr ""
+
+#: includes/theme-profile.php:45
+msgid "Enter Pack ID to activate membership for user."
+msgstr ""
+
+#: includes/theme-profile.php:48
+msgid "Membership Pack Expires Date:"
+msgstr ""
+
+#: includes/theme-profile.php:51
+msgid "Date for unlimited/dealer posting (if enabled). Can only be changed by admins."
+msgstr ""
+
+#: includes/theme-profile.php:52
+msgid "Enter date in format <code>Y-m-d H:i:s</code> Example date: <code>2012-01-26 13:25:00</code>"
+msgstr ""
+
+#: includes/theme-profile.php:64
+msgid "Extended Profile"
+msgstr ""
+
+#: includes/theme-refine.php:102
+msgid "Refine Results"
+msgstr ""
+
+#: includes/theme-refine.php:156
+#, php-format
+msgid "%s or %s"
+msgstr ""
+
+#: includes/theme-refine.php:192
+msgid "Radius"
+msgstr ""
+
+#: includes/theme-refine.php:307
+msgid "Refine Results &rsaquo;&rsaquo;"
+msgstr ""
+
+#: includes/theme-searchbar.php:30
+msgid "Search Ads"
+msgstr ""
+
+#: includes/theme-searchbar.php:32
+#: includes/theme-widgets.php:45
+msgid "All Categories"
+msgstr ""
+
+#: includes/theme-security.php:32
+msgid "Access Denied."
+msgstr ""
+
+#: includes/theme-security.php:38
+msgid "Access Denied. Your site administrator has blocked your access to the WordPress back-office."
+msgstr ""
+
+#: includes/theme-sidebars.php:10
+msgid "Main Sidebar"
+msgstr ""
+
+#: includes/theme-sidebars.php:12
+msgid "This is your main ClassiPress sidebar."
+msgstr ""
+
+#: includes/theme-sidebars.php:20
+msgid "Ad Sidebar"
+msgstr ""
+
+#: includes/theme-sidebars.php:22
+msgid "This is your ClassiPress single ad listing sidebar."
+msgstr ""
+
+#: includes/theme-sidebars.php:30
+msgid "Page Sidebar"
+msgstr ""
+
+#: includes/theme-sidebars.php:32
+msgid "This is your ClassiPress page sidebar."
+msgstr ""
+
+#: includes/theme-sidebars.php:40
+msgid "Blog Sidebar"
+msgstr ""
+
+#: includes/theme-sidebars.php:42
+msgid "This is your ClassiPress blog sidebar."
+msgstr ""
+
+#: includes/theme-sidebars.php:50
+msgid "User Sidebar"
+msgstr ""
+
+#: includes/theme-sidebars.php:52
+msgid "This is your ClassiPress user sidebar."
+msgstr ""
+
+#: includes/theme-sidebars.php:60
+msgid "Footer"
+msgstr ""
+
+#: includes/theme-sidebars.php:62
+msgid "This is your ClassiPress footer. You can have up to four items which will display in the footer from left to right."
+msgstr ""
+
+#: includes/theme-stats.php:32
+#: includes/theme-stats.php:63
+msgid "views"
+msgstr ""
+
+#: includes/theme-stats.php:36
+#: includes/theme-stats.php:67
+msgid "No ads viewed yet."
+msgstr ""
+
+#: includes/theme-widgets.php:47
+msgid "Search"
+msgstr ""
+
+#: includes/theme-widgets.php:66
+msgid "Filter by City"
+msgstr ""
+
+#: includes/theme-widgets.php:84
+msgid "All"
+msgstr ""
+
+#: includes/theme-widgets.php:96
+msgid "No cities found."
+msgstr ""
+
+#: includes/theme-widgets.php:123
+msgid "Places an ad space in the sidebar for 125x125 ads"
+msgstr ""
+
+#: includes/theme-widgets.php:125
+msgid "CP 125x125 Ads"
+msgstr ""
+
+#: includes/theme-widgets.php:187
+msgid "Sponsored Ads"
+msgstr ""
+
+#: includes/theme-widgets.php:196
+msgid "Ads:"
+msgstr ""
+
+#: includes/theme-widgets.php:198
+msgid "Enter one ad entry per line in the following format:<br /> <code>URL|Image URL|Image Alt Text|rel</code><br /><strong>Note:</strong> You must hit your &quot;enter/return&quot; key after each ad entry otherwise the ads will not display properly."
+msgstr ""
+
+#: includes/theme-widgets.php:203
+msgid "Open ads in a new window?"
+msgstr ""
+
+#: includes/theme-widgets.php:214
+msgid "This places a Facebook page Like Box in your sidebar to attract and gain Likes from visitors."
+msgstr ""
+
+#: includes/theme-widgets.php:215
+msgid "CP Facebook Like Box"
+msgstr ""
+
+#: includes/theme-widgets.php:256
+msgid "Facebook Friends"
+msgstr ""
+
+#: includes/theme-widgets.php:266
+msgid "Facebook ID:"
+msgstr ""
+
+#: includes/theme-widgets.php:272
+msgid "Connections"
+msgstr ""
+
+#: includes/theme-widgets.php:277
+msgid "Width"
+msgstr ""
+
+#: includes/theme-widgets.php:282
+msgid "Height"
+msgstr ""
+
+#: includes/theme-widgets.php:295
+msgid "This places a real-time Twitter feed in your sidebar."
+msgstr ""
+
+#: includes/theme-widgets.php:296
+msgid "CP Real-Time Twitter Feed"
+msgstr ""
+
+#: includes/theme-widgets.php:419
+msgid "Twitter Username:"
+msgstr ""
+
+#: includes/theme-widgets.php:424
+msgid "Twitter API Key:"
+msgstr ""
+
+#: includes/theme-widgets.php:429
+msgid "Keyword Tweets:"
+msgstr ""
+
+#: includes/theme-widgets.php:434
+msgid "Display Type:"
+msgstr ""
+
+#: includes/theme-widgets.php:436
+msgid "username"
+msgstr ""
+
+#: includes/theme-widgets.php:436
+msgid "Show Username Tweets"
+msgstr ""
+
+#: includes/theme-widgets.php:437
+msgid "keywords"
+msgstr ""
+
+#: includes/theme-widgets.php:437
+msgid "Show Keyword Tweets"
+msgstr ""
+
+#: includes/theme-widgets.php:442
+msgid "Refresh Mode:"
+msgstr ""
+
+#: includes/theme-widgets.php:445
+msgid "Real-Time Updates"
+msgstr ""
+
+#: includes/theme-widgets.php:446
+msgid "Click Button Updates"
+msgstr ""
+
+#: includes/theme-widgets.php:451
+msgid "Paging Style:"
+msgstr ""
+
+#: includes/theme-widgets.php:453
+msgid "More Button"
+msgstr ""
+
+#: includes/theme-widgets.php:454
+msgid "Next &amp; Previous Buttons"
+msgstr ""
+
+#: includes/theme-widgets.php:455
+msgid "Endless Scrolling"
+msgstr ""
+
+#: includes/theme-widgets.php:461
+msgid "Tweets Shown"
+msgstr ""
+
+#: includes/theme-widgets.php:466
+msgid "Default Language"
+msgstr ""
+
+#: includes/theme-widgets.php:471
+msgid "Show Follow Button"
+msgstr ""
+
+#: includes/theme-widgets.php:474
+msgid "Show Connect Button"
+msgstr ""
+
+#: includes/theme-widgets.php:489
+msgid "Your most recent blog posts"
+msgstr ""
+
+#: includes/theme-widgets.php:539
+msgid "Posts Shown"
+msgstr ""
+
+#: includes/theme-widgets.php:554
+msgid "Your sidebar ad search box"
+msgstr ""
+
+#: includes/theme-widgets.php:555
+msgid "Ad Search Box"
+msgstr ""
+
+#: includes/theme-widgets.php:561
+msgid "Search Classified Ads"
+msgstr ""
+
+#: includes/theme-widgets.php:591
+msgid "Your sidebar top ads today"
+msgstr ""
+
+#: includes/theme-widgets.php:592
+msgid "Top Ads Today"
+msgstr ""
+
+#: includes/theme-widgets.php:598
+msgid "Popular Ads Today"
+msgstr ""
+
+#: includes/theme-widgets.php:628
+msgid "Your sidebar top ads overall"
+msgstr ""
+
+#: includes/theme-widgets.php:629
+msgid "Top Ads Overall"
+msgstr ""
+
+#: includes/theme-widgets.php:635
+msgid "Popular Ads Overall"
+msgstr ""
+
+#: includes/theme-widgets.php:668
+msgid "Site Sponsors"
+msgstr ""
+
+#: includes/theme-widgets.php:689
+msgid "Your most used ad tags in cloud format"
+msgstr ""
+
+#: includes/theme-widgets.php:690
+msgid "CP Ads Tag Cloud"
+msgstr ""
+
+#: includes/theme-widgets.php:700
+msgid "Ad Tags"
+msgstr ""
+
+#: includes/theme-widgets.php:729
+msgid "Taxonomy:"
+msgstr ""
+
+#: includes/admin/admin-notices.php:26
+#, php-format
+msgid "ClassiPress is currently running in PayPal Sandbox mode. Remember to <a href=\"%1$s\">uncheck the box</a> when you are ready to start selling ads again."
+msgstr ""
+
+#: includes/admin/admin-notices.php:37
+#: includes/admin/admin-notices.php:54
+msgid "ClassiPress Help"
+msgstr ""
+
+#: includes/admin/admin-notices.php:38
+#: includes/admin/admin-notices.php:55
+msgid "Detailed help information coming soon."
+msgstr ""
+
+#: includes/admin/admin-notices.php:39
+#: includes/admin/admin-notices.php:59
+msgid "<a href=\"http://www.appthemes.com/support/docs/\" target=\"_blank\">Documentation</a>"
+msgstr ""
+
+#: includes/admin/admin-notices.php:40
+#: includes/admin/admin-notices.php:60
+msgid "<a href=\"http://forums.appthemes.com/\" target=\"_blank\">Support Forums</a>"
+msgstr ""
+
+#: includes/admin/admin-options.php:18
+#: includes/admin/admin-options.php:1013
+msgid "General Settings"
+msgstr ""
+
+#: includes/admin/admin-options.php:19
+msgid "Emails"
+msgstr ""
+
+#: includes/admin/admin-options.php:20
+msgid "Pricing Settings"
+msgstr ""
+
+#: includes/admin/admin-options.php:20
+msgid "Pricing"
+msgstr ""
+
+#: includes/admin/admin-options.php:21
+msgid "Packages"
+msgstr ""
+
+#: includes/admin/admin-options.php:22
+#: includes/admin/admin-options.php:1728
+msgid "Coupons"
+msgstr ""
+
+#: includes/admin/admin-options.php:23
+msgid "Payment Gateway Options"
+msgstr ""
+
+#: includes/admin/admin-options.php:23
+msgid "Gateways"
+msgstr ""
+
+#: includes/admin/admin-options.php:24
+#: includes/admin/admin-options.php:2269
+msgid "Form Layouts"
+msgstr ""
+
+#: includes/admin/admin-options.php:25
+#: includes/admin/admin-options.php:2587
+msgid "Custom Fields"
+msgstr ""
+
+#: includes/admin/admin-options.php:26
+msgid "Transactions"
+msgstr ""
+
+#: includes/admin/admin-options.php:27
+msgid "System Info"
+msgstr ""
+
+#: includes/admin/admin-options.php:72
+msgid "Ads Expired Check was executed."
+msgstr ""
+
+#: includes/admin/admin-options.php:78
+msgid "Your settings have been saved."
+msgstr ""
+
+#: includes/admin/admin-options.php:298
+msgid "Cannot remove from layout"
+msgstr ""
+
+#: includes/admin/admin-options.php:300
+msgid "Remove from layout"
+msgstr ""
+
+#: includes/admin/admin-options.php:663
+msgid "All your categories are currently being used. You must remove at least one category from another form layout before you can continue."
+msgstr ""
+
+#: includes/admin/admin-options.php:680
+msgid "Upload Image"
+msgstr ""
+
+#: includes/admin/admin-options.php:852
+msgid "ClassiPress Dashboard"
+msgstr ""
+
+#: includes/admin/admin-options.php:863
+msgid "ClassiPress Info"
+msgstr ""
+
+#: includes/admin/admin-options.php:873
+msgid "Total Live Ads"
+msgstr ""
+
+#: includes/admin/admin-options.php:874
+msgid "Total Pending Ads"
+msgstr ""
+
+#: includes/admin/admin-options.php:875
+msgid "Total Users"
+msgstr ""
+
+#: includes/admin/admin-options.php:876
+msgid "Total Revenue"
+msgstr ""
+
+#: includes/admin/admin-options.php:877
+msgid "Product Support"
+msgstr ""
+
+#: includes/admin/admin-options.php:877
+msgid "Forum"
+msgstr ""
+
+#: includes/admin/admin-options.php:877
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/admin-options.php:883
+msgid "New Registrations"
+msgstr ""
+
+#: includes/admin/admin-options.php:885
+msgid "Today"
+msgstr ""
+
+#: includes/admin/admin-options.php:887
+#: includes/admin/admin-options.php:893
+msgid "Customers"
+msgstr ""
+
+#: includes/admin/admin-options.php:891
+msgid "Yesterday"
+msgstr ""
+
+#: includes/admin/admin-options.php:932
+msgid "Stats - Last 30 Days"
+msgstr ""
+
+#: includes/admin/admin-options.php:1019
+#: includes/admin/admin-options.php:1023
+#: includes/admin/admin-options.php:1052
+#: includes/admin/admin-options.php:1056
+#: includes/admin/admin-options.php:1150
+#: includes/admin/admin-options.php:1154
+#: includes/admin/admin-options.php:1307
+#: includes/admin/admin-options.php:1694
+#: includes/admin/admin-options.php:1840
+#: includes/admin/admin-options.php:1844
+#: includes/admin/admin-options.php:1989
+#: includes/admin/admin-options.php:2534
+msgid "Save changes"
+msgstr ""
+
+#: includes/admin/admin-options.php:1046
+msgid "Email Settings"
+msgstr ""
+
+#: includes/admin/admin-options.php:1144
+#: includes/admin/admin-values.php:1773
+msgid "Pricing Options"
+msgstr ""
+
+#: includes/admin/admin-options.php:1200
+msgid "New Membership Pack"
+msgstr ""
+
+#: includes/admin/admin-options.php:1200
+msgid "New Ad Pack"
+msgstr ""
+
+#: includes/admin/admin-options.php:1231
+msgid "Creating your ad package....."
+msgstr ""
+
+#: includes/admin/admin-options.php:1244
+msgid "Create New Ad Package"
+msgstr ""
+
+#: includes/admin/admin-options.php:1265
+msgid "Edit Ad Package"
+msgstr ""
+
+#: includes/admin/admin-options.php:1292
+#: includes/admin/admin-options.php:1681
+#: includes/admin/admin-options.php:1978
+#: includes/admin/admin-options.php:2517
+msgid "Saving your changes....."
+msgstr ""
+
+#: includes/admin/admin-options.php:1327
+msgid "Deleting ad package....."
+msgstr ""
+
+#: includes/admin/admin-options.php:1341
+msgid "Ad Packs"
+msgstr ""
+
+#: includes/admin/admin-options.php:1346
+#, php-format
+msgid "Ad Packs are disabled. Change the <a href=\"%1$s\">pricing model</a> to enable Ad Packs."
+msgstr ""
+
+#: includes/admin/admin-options.php:1349
+msgid "Ad Packs allow you to create bundled listing options for your customers to choose from. For example, instead of only offering a set price for xx days (30 days for $5), you could also offer discounts for longer terms (60 days for $7). These only work if you are selling ads and using the \"Fixed Price Per Ad\" price model."
+msgstr ""
+
+#: includes/admin/admin-options.php:1358
+msgid "Price Per Ad"
+msgstr ""
+
+#: includes/admin/admin-options.php:1359
+msgid "Duration"
+msgstr ""
+
+#: includes/admin/admin-options.php:1360
+#: includes/admin/admin-options.php:1439
+#: includes/admin/admin-options.php:1746
+#: includes/admin/admin-options.php:2283
+#: includes/admin/admin-options.php:2601
+msgid "Modified"
+msgstr ""
+
+#: includes/admin/admin-options.php:1362
+#: includes/admin/admin-options.php:1441
+#: includes/admin/admin-options.php:1748
+#: includes/admin/admin-options.php:2285
+#: includes/admin/admin-options.php:2602
+#: includes/admin/admin-options.php:2851
+#: includes/admin/admin-options.php:2967
+msgid "Actions"
+msgstr ""
+
+#: includes/admin/admin-options.php:1389
+#: includes/admin/admin-options.php:1494
+msgid "Edit ad package"
+msgstr ""
+
+#: includes/admin/admin-options.php:1390
+#: includes/admin/admin-options.php:1495
+msgid "Delete ad package"
+msgstr ""
+
+#: includes/admin/admin-options.php:1410
+#: includes/admin/admin-options.php:1515
+msgid "No ad packs found."
+msgstr ""
+
+#: includes/admin/admin-options.php:1424
+msgid "Membership Packs"
+msgstr ""
+
+#: includes/admin/admin-options.php:1428
+#, php-format
+msgid "Membership Packs allow you to setup subscription-based pricing packages. This enables your customers to post unlimited ads for a set period of time or until the membership becomes inactive. These memberships affect pricing regardless of the ad packs or pricing model you have set as long as you have the <a href=\"%1$s\">enable membership packs</a> option set to yes."
+msgstr ""
+
+#: includes/admin/admin-options.php:1437
+msgid "Price Modifier"
+msgstr ""
+
+#: includes/admin/admin-options.php:1438
+msgid "Terms"
+msgstr ""
+
+#: includes/admin/admin-options.php:1472
+#: includes/admin/admin-options.php:1485
+#: includes/forms/step-functions.php:559
+#: includes/forms/step-functions.php:564
+msgid "Free"
+msgstr ""
+
+#: includes/admin/admin-options.php:1532
+msgid "Are you sure you want to delete this ad package?"
+msgstr ""
+
+#: includes/admin/admin-options.php:1578
+msgid "New Coupon"
+msgstr ""
+
+#: includes/admin/admin-options.php:1582
+msgid "Error: Your ClassiPress database is not updated to match your version of ClassiPress."
+msgstr ""
+
+#: includes/admin/admin-options.php:1583
+msgid "Product Version"
+msgstr ""
+
+#: includes/admin/admin-options.php:1585
+msgid "(You upgraded to version "
+msgstr ""
+
+#: includes/admin/admin-options.php:1622
+msgid "Creating your coupon....."
+msgstr ""
+
+#: includes/admin/admin-options.php:1636
+msgid "Create New Coupon"
+msgstr ""
+
+#: includes/admin/admin-options.php:1657
+msgid "Edit Coupon"
+msgstr ""
+
+#: includes/admin/admin-options.php:1714
+msgid "Deleting coupon....."
+msgstr ""
+
+#: includes/admin/admin-options.php:1733
+msgid "Create coupons to offer special discounts to your customers."
+msgstr ""
+
+#: includes/admin/admin-options.php:1740
+#: includes/admin/admin-values.php:2245
+msgid "Code"
+msgstr ""
+
+#: includes/admin/admin-options.php:1742
+#: includes/admin/admin-values.php:2266
+msgid "Discount"
+msgstr ""
+
+#: includes/admin/admin-options.php:1743
+msgid "Usage"
+msgstr ""
+
+#: includes/admin/admin-options.php:1744
+msgid "Valid"
+msgstr ""
+
+#: includes/admin/admin-options.php:1745
+#: includes/admin/admin-post-types.php:126
+msgid "Expires"
+msgstr ""
+
+#: includes/admin/admin-options.php:1777
+msgid "Edit coupon"
+msgstr ""
+
+#: includes/admin/admin-options.php:1778
+msgid "Delete coupon"
+msgstr ""
+
+#: includes/admin/admin-options.php:1798
+msgid "No coupons found."
+msgstr ""
+
+#: includes/admin/admin-options.php:1815
+msgid "Are you sure you want to delete this coupon?"
+msgstr ""
+
+#: includes/admin/admin-options.php:1834
+msgid "Payment Gateways"
+msgstr ""
+
+#: includes/admin/admin-options.php:1883
+msgid "New Form Layout"
+msgstr ""
+
+#: includes/admin/admin-options.php:1892
+#: includes/admin/admin-options.php:1954
+msgid "Error: Please select at least one category. <a href='#' onclick='history.go(-1);return false;'>Go back</a>"
+msgstr ""
+
+#: includes/admin/admin-options.php:1913
+msgid "Creating your form....."
+msgstr ""
+
+#: includes/admin/admin-options.php:1926
+msgid "Create New Form"
+msgstr ""
+
+#: includes/admin/admin-options.php:1948
+msgid "Edit Form Properties"
+msgstr ""
+
+#: includes/admin/admin-options.php:2016
+msgid "Edit Form Layout"
+msgstr ""
+
+#: includes/admin/admin-options.php:2067
+msgid "Your changes have been saved."
+msgstr ""
+
+#: includes/admin/admin-options.php:2098
+#: includes/admin/admin-values.php:1891
+msgid "Form Name"
+msgstr ""
+
+#: includes/admin/admin-options.php:2105
+msgid "Form Preview"
+msgstr ""
+
+#: includes/admin/admin-options.php:2106
+msgid "Show field in the category refine search sidebar"
+msgstr ""
+
+#: includes/admin/admin-options.php:2106
+msgid "Advanced Search"
+msgstr ""
+
+#: includes/admin/admin-options.php:2145
+msgid "No fields have been added to this form layout yet."
+msgstr ""
+
+#: includes/admin/admin-options.php:2167
+msgid "Available Fields"
+msgstr ""
+
+#: includes/admin/admin-options.php:2178
+#: includes/admin/admin-values.php:1948
+msgid "Field Name"
+msgstr ""
+
+#: includes/admin/admin-options.php:2179
+#: includes/admin/admin-options.php:2599
+msgid "Type"
+msgstr ""
+
+#: includes/admin/admin-options.php:2218
+msgid "No fields are available."
+msgstr ""
+
+#: includes/admin/admin-options.php:2231
+msgid "Add Fields to Form Layout"
+msgstr ""
+
+#: includes/admin/admin-options.php:2255
+msgid "Deleting form layout....."
+msgstr ""
+
+#: includes/admin/admin-options.php:2273
+msgid "Form layouts allow you to create your own custom ad submission forms. Each form is essentially a container for your fields and can be applied to one or all of your categories. If you do not create any form layouts, the default one will be used. To change the default form, create a new form layout and apply it to all categories."
+msgstr ""
+
+#: includes/admin/admin-options.php:2310
+msgid "Edit form layout"
+msgstr ""
+
+#: includes/admin/admin-options.php:2311
+msgid "Edit form properties"
+msgstr ""
+
+#: includes/admin/admin-options.php:2312
+msgid "Delete form layout"
+msgstr ""
+
+#: includes/admin/admin-options.php:2331
+msgid "No form layouts found."
+msgstr ""
+
+#: includes/admin/admin-options.php:2348
+msgid "Are you sure you want to delete this?"
+msgstr ""
+
+#: includes/admin/admin-options.php:2349
+msgid "Are you sure you want to remove this?"
+msgstr ""
+
+#: includes/admin/admin-options.php:2410
+msgid "New Custom Field"
+msgstr ""
+
+#: includes/admin/admin-options.php:2442
+msgid "Creating your field....."
+msgstr ""
+
+#: includes/admin/admin-options.php:2457
+msgid "Create New Field"
+msgstr ""
+
+#: includes/admin/admin-options.php:2479
+msgid "Edit Custom Field"
+msgstr ""
+
+#: includes/admin/admin-options.php:2567
+msgid "Deleting custom field....."
+msgstr ""
+
+#: includes/admin/admin-options.php:2591
+msgid "Custom fields allow you to customize your ad submission forms and collect more information. Each custom field needs to be added to a form layout in order to be visible on your website. You can create unlimited custom fields and each one can be used across multiple form layouts. It is highly recommended to NOT delete a custom field once it is being used on your ads because it could cause ad editing problems for your customers."
+msgstr ""
+
+#: includes/admin/admin-options.php:2676
+msgid "No custom fields found. This usually means your install script did not run correctly. Go back and try reactivating the theme again."
+msgstr ""
+
+#: includes/admin/admin-options.php:2695
+msgid "WARNING: Deleting this field will prevent any existing ads currently using this field from displaying the field value. Deleting fields is NOT recommended unless you do not have any existing ads using this field. Are you sure you want to delete this field?? (This cannot be undone)"
+msgstr ""
+
+#: includes/admin/admin-options.php:2727
+msgid "All ClassiPress options have been deleted from the WordPress options table."
+msgstr ""
+
+#: includes/admin/admin-options.php:2738
+#, php-format
+msgid "ClassiPress '%s' cache has been flushed."
+msgstr ""
+
+#: includes/admin/admin-options.php:2765
+#: includes/admin/admin-options.php:2779
+msgid "Updating transaction entry....."
+msgstr ""
+
+#: includes/admin/admin-options.php:2793
+msgid "Deleting transaction entry....."
+msgstr ""
+
+#: includes/admin/admin-options.php:2820
+msgid "Activating membership plan....."
+msgstr ""
+
+#: includes/admin/admin-options.php:2833
+msgid "Order Transactions"
+msgstr ""
+
+#: includes/admin/admin-options.php:2842
+#: includes/admin/admin-options.php:2959
+msgid "Payer Name"
+msgstr ""
+
+#: includes/admin/admin-options.php:2843
+#: includes/admin/admin-options.php:2960
+msgid "Payer Status"
+msgstr ""
+
+#: includes/admin/admin-options.php:2844
+msgid "Ad Title"
+msgstr ""
+
+#: includes/admin/admin-options.php:2845
+#: includes/admin/admin-options.php:2961
+msgid "Item Description"
+msgstr ""
+
+#: includes/admin/admin-options.php:2846
+#: includes/admin/admin-options.php:2962
+msgid "Transaction ID"
+msgstr ""
+
+#: includes/admin/admin-options.php:2847
+#: includes/admin/admin-options.php:2963
+msgid "Payment Type"
+msgstr ""
+
+#: includes/admin/admin-options.php:2848
+#: includes/admin/admin-options.php:2964
+msgid "Payment Status"
+msgstr ""
+
+#: includes/admin/admin-options.php:2849
+#: includes/admin/admin-options.php:2965
+msgid "Total Amount"
+msgstr ""
+
+#: includes/admin/admin-options.php:2850
+#: includes/admin/admin-options.php:2966
+msgid "Date Paid"
+msgstr ""
+
+#: includes/admin/admin-options.php:2897
+#: includes/admin/admin-options.php:3014
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/admin-options.php:2899
+#: includes/admin/admin-options.php:3016
+msgid "Mark as Unpaid"
+msgstr ""
+
+#: includes/admin/admin-options.php:2899
+#: includes/admin/admin-options.php:3016
+msgid "Unmark Paid"
+msgstr ""
+
+#: includes/admin/admin-options.php:2901
+#: includes/admin/admin-options.php:3018
+msgid "Mark as Paid"
+msgstr ""
+
+#: includes/admin/admin-options.php:2901
+#: includes/admin/admin-options.php:3018
+msgid "Mark Paid"
+msgstr ""
+
+#: includes/admin/admin-options.php:2922
+#: includes/admin/admin-options.php:3043
+msgid "No transactions found."
+msgstr ""
+
+#: includes/admin/admin-options.php:2938
+#: includes/admin/admin-options.php:3059
+msgid "&laquo; Previous"
+msgstr ""
+
+#: includes/admin/admin-options.php:2939
+#: includes/admin/admin-options.php:3060
+msgid "Next &raquo;"
+msgstr ""
+
+#: includes/admin/admin-options.php:2953
+msgid "Membership Orders"
+msgstr ""
+
+#: includes/admin/admin-options.php:3021
+msgid "Activate membership"
+msgstr ""
+
+#: includes/admin/admin-options.php:3083
+msgid "WARNING: Are you sure you want to delete this transaction entry?? (This cannot be undone)"
+msgstr ""
+
+#: includes/admin/admin-options.php:3099
+msgid "ClassiPress System Info"
+msgstr ""
+
+#: includes/admin/admin-options.php:3118
+msgid "ClassiPress was successfully reinstalled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3134
+msgid "Debug Info"
+msgstr ""
+
+#: includes/admin/admin-options.php:3135
+msgid "Cron Jobs"
+msgstr ""
+
+#: includes/admin/admin-options.php:3136
+#: includes/admin/admin-values.php:1056
+msgid "Advanced"
+msgstr ""
+
+#: includes/admin/admin-options.php:3146
+msgid "Theme Info"
+msgstr ""
+
+#: includes/admin/admin-options.php:3153
+msgid "ClassiPress Version"
+msgstr ""
+
+#: includes/admin/admin-options.php:3158
+msgid "ClassiPress DB Version"
+msgstr ""
+
+#: includes/admin/admin-options.php:3163
+msgid "WordPress Version"
+msgstr ""
+
+#: includes/admin/admin-options.php:3164
+msgid "Multisite"
+msgstr ""
+
+#: includes/admin/admin-options.php:3168
+msgid "Theme Path"
+msgstr ""
+
+#: includes/admin/admin-options.php:3174
+msgid "Server Info"
+msgstr ""
+
+#: includes/admin/admin-options.php:3180
+msgid "PHP Version"
+msgstr ""
+
+#: includes/admin/admin-options.php:3185
+msgid "Server Software"
+msgstr ""
+
+#: includes/admin/admin-options.php:3190
+msgid "UPLOAD_MAX_FILESIZE"
+msgstr ""
+
+#: includes/admin/admin-options.php:3195
+msgid "DISPLAY_ERRORS"
+msgstr ""
+
+#: includes/admin/admin-options.php:3202
+msgid "Image Support"
+msgstr ""
+
+#: includes/admin/admin-options.php:3208
+msgid "GD Library Check"
+msgstr ""
+
+#: includes/admin/admin-options.php:3209
+msgid "Your server supports the GD Library."
+msgstr ""
+
+#: includes/admin/admin-options.php:3209
+msgid "Your server does not have the GD Library enabled so the legacy image resizer script (TimThumb) will not work. Most servers with PHP 4.3+ includes this by default."
+msgstr ""
+
+#: includes/admin/admin-options.php:3213
+msgid "Image Upload Path"
+msgstr ""
+
+#: includes/admin/admin-options.php:3215
+msgid "(change this)"
+msgstr ""
+
+#: includes/admin/admin-options.php:3249
+msgid "PayPal IPN Check"
+msgstr ""
+
+#: includes/admin/admin-options.php:3255
+msgid "FSOCKOPEN Check"
+msgstr ""
+
+#: includes/admin/admin-options.php:3256
+msgid "Your server has fsockopen enabled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3256
+msgid "Your server does not have fsockopen enabled so PayPal IPN will not work. Contact your host provider to have it enabled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3260
+msgid "OPENSSL Check"
+msgstr ""
+
+#: includes/admin/admin-options.php:3261
+msgid "Your server has openssl_open enabled. Also make sure port 443 is open on the firewall."
+msgstr ""
+
+#: includes/admin/admin-options.php:3261
+msgid "Your server does not have openssl_open enabled so PayPal IPN will not work. Contact your host provider to have it enabled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3266
+msgid "WP Remote Post Check"
+msgstr ""
+
+#: includes/admin/admin-options.php:3280
+msgid "The wp_remote_post() test to PayPal was successful."
+msgstr ""
+
+#: includes/admin/admin-options.php:3280
+msgid "The wp_remote_post() test to PayPal failed. Sorry, PayPal IPN won't work with your server."
+msgstr ""
+
+#: includes/admin/admin-options.php:3287
+msgid "Other Checks"
+msgstr ""
+
+#: includes/admin/admin-options.php:3293
+msgid "CURL Check"
+msgstr ""
+
+#: includes/admin/admin-options.php:3294
+msgid "Your server has curl enabled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3294
+msgid "Your server does not have curl enabled so some functions will not work. Contact your host provider to have it enabled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3298
+msgid "JSON DECODE Check"
+msgstr ""
+
+#: includes/admin/admin-options.php:3299
+msgid "Your server has json_decode enabled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3299
+msgid "Your server does not have json_decode enabled so some functions will not work. Contact your host provider to have it enabled."
+msgstr ""
+
+#: includes/admin/admin-options.php:3314
+msgid "Next Run Date"
+msgstr ""
+
+#: includes/admin/admin-options.php:3315
+msgid "Frequency"
+msgstr ""
+
+#: includes/admin/admin-options.php:3316
+msgid "Hook Name"
+msgstr ""
+
+#: includes/admin/admin-options.php:3342
+msgid "One-off event"
+msgstr ""
+
+#: includes/admin/admin-options.php:3363
+msgid "Theme Cache"
+msgstr ""
+
+#: includes/admin/admin-options.php:3370
+msgid "Flush Theme Cache"
+msgstr ""
+
+#: includes/admin/admin-options.php:3372
+msgid "Flush Entire ClassiPress Cache"
+msgstr ""
+
+#: includes/admin/admin-options.php:3373
+msgid "Sometimes you may have changed something and it hasn't been updated on your site. Flushing the cache will empty anything that ClassiPress has stored in the cache (i.e. category drop-down menu, home page directory structure, etc)."
+msgstr ""
+
+#: includes/admin/admin-options.php:3382
+msgid "Uninstall Theme"
+msgstr ""
+
+#: includes/admin/admin-options.php:3389
+msgid "Delete Database Tables"
+msgstr ""
+
+#: includes/admin/admin-options.php:3391
+msgid "Delete ClassiPress Database Tables"
+msgstr ""
+
+#: includes/admin/admin-options.php:3392
+msgid "Do you wish to completely delete all ClassiPress database tables? Once you do this you will lose any custom fields, forms, ad packs, etc that you have created."
+msgstr ""
+
+#: includes/admin/admin-options.php:3401
+msgid "Delete Config Options"
+msgstr ""
+
+#: includes/admin/admin-options.php:3403
+msgid "Delete ClassiPress Config Options"
+msgstr ""
+
+#: includes/admin/admin-options.php:3404
+msgid "Do you wish to completely delete all ClassiPress configuration options? This will delete all values saved on the settings, pricing, gateways, etc admin pages from the wp_options database table."
+msgstr ""
+
+#: includes/admin/admin-options.php:3413
+msgid "Theme"
+msgstr ""
+
+#: includes/admin/admin-options.php:3419
+msgid "Rerun Install Script"
+msgstr ""
+
+#: includes/admin/admin-options.php:3423
+msgid "Reinstall ClassiPress"
+msgstr ""
+
+#: includes/admin/admin-options.php:3424
+msgid "Any website administrators that are developeres may have a desire to run the install script again. This is the same thing that occurs when you move between ClassiPress versions and click to update your database version."
+msgstr ""
+
+#: includes/admin/admin-options.php:3432
+msgid "Rerun Migration Script"
+msgstr ""
+
+#: includes/admin/admin-options.php:3436
+msgid "Rerun ClassiPress Migration Script"
+msgstr ""
+
+#: includes/admin/admin-options.php:3437
+msgid "If you're still using ClassiPress version 3.0.4 (or earlier) and were not prompted to upgrade to 3.0.5 or the script timed out, click this button. It will attempt to rerun the migration script again. Running this script won't do any harm if you aren't sure about it."
+msgstr ""
+
+#: includes/admin/admin-options.php:3458
+msgid "WARNING: You are about to completely delete all ClassiPress database tables. Are you sure you want to proceed? (This cannot be undone)"
+msgstr ""
+
+#: includes/admin/admin-options.php:3459
+msgid "WARNING: You are about to completely delete all ClassiPress configuration options from the wp_options database table. Are you sure you want to proceed? (This cannot be undone)"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:26
+#: includes/admin/admin-post-types.php:222
+#: includes/admin/admin-post-types.php:374
+msgid "Ads"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:27
+msgid "Ad"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:29
+msgid "Create New Ad"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:32
+msgid "New Ad"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:33
+msgid "View Ads"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:34
+msgid "View Ad"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:36
+msgid "No ads found"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:37
+msgid "No ads found in trash"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:38
+msgid "Parent Ad"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:40
+msgid "This is where you can create new classified ads on your site."
+msgstr ""
+
+#: includes/admin/admin-post-types.php:62
+msgid "Ad Category"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:63
+msgid "Search Ad Categories"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:64
+msgid "All Ad Categories"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:65
+msgid "Parent Ad Category"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:66
+msgid "Parent Ad Category:"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:67
+msgid "Edit Ad Category"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:68
+msgid "Update Ad Category"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:69
+msgid "Add New Ad Category"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:70
+msgid "New Ad Category Name"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:85
+msgid "Ad Tag"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:86
+msgid "Search Ad Tags"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:87
+msgid "All Ad Tags"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:88
+msgid "Parent Ad Tag"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:89
+msgid "Parent Ad Tag:"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:90
+msgid "Edit Ad Tag"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:91
+msgid "Update Ad Tag"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:92
+msgid "Add New Ad Tag"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:93
+msgid "New Ad Tag Name"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:120
+msgid "Author"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:121
+#: includes/forms/step-functions.php:160
+#: includes/forms/step1.php:113
+msgid "Category"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:123
+msgid "Price"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:124
+#: includes/admin/write-panel.php:87
+msgid "Views Today"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:125
+msgid "Views Total"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:128
+msgid "Date"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:221
+msgid "Slug"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:257
+msgid "Post Type:"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:280
+msgid "OK"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:287
+#: includes/admin/admin-post-types.php:308
+msgid "Featured Ad (sticky)"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:371
+msgid "Id"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:375
+msgid "Last Login"
+msgstr ""
+
+#: includes/admin/admin-post-types.php:376
+msgid "Registered"
+msgstr ""
+
+#: includes/admin/admin-updates.php:200
+msgid "Note: This message will not disappear until you have upgraded your database."
+msgstr ""
+
+#: includes/admin/admin-updates.php:396
+msgid "ClassiPress Update"
+msgstr ""
+
+#: includes/admin/admin-updates.php:397
+msgid "Geocoding ad listing addresses to make the advanced search radius feature work. This process queries Google Maps to get longitude and latitude coordinates based on each ad listings address. Please be patient as this may take a few minutes to complete."
+msgstr ""
+
+#: includes/admin/admin-updates.php:410
+#, php-format
+msgid "Ad #%d - %s "
+msgstr ""
+
+#: includes/admin/admin-updates.php:416
+msgid "Geocoding complete."
+msgstr ""
+
+#: includes/admin/admin-updates.php:418
+msgid "Geocoding failed - address not found."
+msgstr ""
+
+#: includes/admin/admin-updates.php:425
+msgid "Database update complete."
+msgstr ""
+
+#: includes/admin/admin-updates.php:426
+msgid "Please note: Ads that failed during this process will not show up during a radius search since the address was invalid. Ignore this message for new installs."
+msgstr ""
+
+#: includes/admin/admin-updates.php:427
+msgid "Continue to Your Dashboard"
+msgstr ""
+
+#: includes/admin/admin-values.php:32
+#: includes/admin/admin-values.php:1387
+#: includes/admin/admin-values.php:1613
+msgid "General"
+msgstr ""
+
+#: includes/admin/admin-values.php:34
+msgid "Site Configuration"
+msgstr ""
+
+#: includes/admin/admin-values.php:38
+msgid "Home Page Layout"
+msgstr ""
+
+#: includes/admin/admin-values.php:40
+msgid "Select the layout you prefer for your home page. The directory style is a more traditional classified ads layout. The standard style is more like a blog layout."
+msgstr ""
+
+#: includes/admin/admin-values.php:49
+msgid "Standard Style"
+msgstr ""
+
+#: includes/admin/admin-values.php:50
+msgid "Directory Style"
+msgstr ""
+
+#: includes/admin/admin-values.php:52
+msgid "Color Scheme"
+msgstr ""
+
+#: includes/admin/admin-values.php:54
+msgid "Select the color scheme you would like your classified ads site to use."
+msgstr ""
+
+#: includes/admin/admin-values.php:63
+msgid "Aqua Theme"
+msgstr ""
+
+#: includes/admin/admin-values.php:64
+msgid "Blue Theme"
+msgstr ""
+
+#: includes/admin/admin-values.php:65
+msgid "Green Theme"
+msgstr ""
+
+#: includes/admin/admin-values.php:66
+msgid "Red Theme"
+msgstr ""
+
+#: includes/admin/admin-values.php:67
+msgid "Teal Theme"
+msgstr ""
+
+#: includes/admin/admin-values.php:68
+msgid "Aqua Theme - Black Header"
+msgstr ""
+
+#: includes/admin/admin-values.php:69
+msgid "Blue Theme - Black Header"
+msgstr ""
+
+#: includes/admin/admin-values.php:70
+msgid "Green Theme - Black Header"
+msgstr ""
+
+#: includes/admin/admin-values.php:71
+msgid "Red Theme - Black Header"
+msgstr ""
+
+#: includes/admin/admin-values.php:72
+msgid "Teal Theme - Black Header"
+msgstr ""
+
+#: includes/admin/admin-values.php:74
+msgid "Enable Blog"
+msgstr ""
+
+#: includes/admin/admin-values.php:76
+msgid "Turns on the blog feature for your classified ads site so you can publish articles."
+msgstr ""
+
+#: includes/admin/admin-values.php:85
+#: includes/admin/admin-values.php:112
+#: includes/admin/admin-values.php:128
+#: includes/admin/admin-values.php:144
+#: includes/admin/admin-values.php:273
+#: includes/admin/admin-values.php:287
+#: includes/admin/admin-values.php:301
+#: includes/admin/admin-values.php:365
+#: includes/admin/admin-values.php:377
+#: includes/admin/admin-values.php:389
+#: includes/admin/admin-values.php:621
+#: includes/admin/admin-values.php:635
+#: includes/admin/admin-values.php:650
+#: includes/admin/admin-values.php:664
+#: includes/admin/admin-values.php:678
+#: includes/admin/admin-values.php:692
+#: includes/admin/admin-values.php:706
+#: includes/admin/admin-values.php:749
+#: includes/admin/admin-values.php:804
+#: includes/admin/admin-values.php:818
+#: includes/admin/admin-values.php:903
+#: includes/admin/admin-values.php:964
+#: includes/admin/admin-values.php:1016
+#: includes/admin/admin-values.php:1075
+#: includes/admin/admin-values.php:1089
+#: includes/admin/admin-values.php:1103
+#: includes/admin/admin-values.php:1117
+#: includes/admin/admin-values.php:1131
+#: includes/admin/admin-values.php:1145
+#: includes/admin/admin-values.php:1159
+#: includes/admin/admin-values.php:1361
+#: includes/admin/admin-values.php:1406
+#: includes/admin/admin-values.php:1421
+#: includes/admin/admin-values.php:1434
+#: includes/admin/admin-values.php:1448
+#: includes/admin/admin-values.php:1462
+#: includes/admin/admin-values.php:1476
+#: includes/admin/admin-values.php:1490
+#: includes/admin/admin-values.php:1543
+#: includes/admin/admin-values.php:1589
+#: includes/admin/admin-values.php:1629
+#: includes/admin/admin-values.php:1643
+#: includes/admin/admin-values.php:1680
+#: includes/admin/admin-values.php:1693
+#: includes/admin/admin-values.php:1836
+#: includes/admin/admin-values.php:2212
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/admin-values.php:86
+#: includes/admin/admin-values.php:113
+#: includes/admin/admin-values.php:129
+#: includes/admin/admin-values.php:145
+#: includes/admin/admin-values.php:274
+#: includes/admin/admin-values.php:288
+#: includes/admin/admin-values.php:302
+#: includes/admin/admin-values.php:366
+#: includes/admin/admin-values.php:378
+#: includes/admin/admin-values.php:390
+#: includes/admin/admin-values.php:622
+#: includes/admin/admin-values.php:637
+#: includes/admin/admin-values.php:651
+#: includes/admin/admin-values.php:665
+#: includes/admin/admin-values.php:679
+#: includes/admin/admin-values.php:693
+#: includes/admin/admin-values.php:707
+#: includes/admin/admin-values.php:750
+#: includes/admin/admin-values.php:805
+#: includes/admin/admin-values.php:819
+#: includes/admin/admin-values.php:904
+#: includes/admin/admin-values.php:965
+#: includes/admin/admin-values.php:1017
+#: includes/admin/admin-values.php:1074
+#: includes/admin/admin-values.php:1088
+#: includes/admin/admin-values.php:1102
+#: includes/admin/admin-values.php:1116
+#: includes/admin/admin-values.php:1130
+#: includes/admin/admin-values.php:1144
+#: includes/admin/admin-values.php:1158
+#: includes/admin/admin-values.php:1362
+#: includes/admin/admin-values.php:1407
+#: includes/admin/admin-values.php:1420
+#: includes/admin/admin-values.php:1435
+#: includes/admin/admin-values.php:1449
+#: includes/admin/admin-values.php:1463
+#: includes/admin/admin-values.php:1477
+#: includes/admin/admin-values.php:1491
+#: includes/admin/admin-values.php:1544
+#: includes/admin/admin-values.php:1590
+#: includes/admin/admin-values.php:1630
+#: includes/admin/admin-values.php:1644
+#: includes/admin/admin-values.php:1679
+#: includes/admin/admin-values.php:1692
+#: includes/admin/admin-values.php:1837
+#: includes/admin/admin-values.php:2213
+msgid "No"
+msgstr ""
+
+#: includes/admin/admin-values.php:101
+msgid "Enable Coupons"
+msgstr ""
+
+#: includes/admin/admin-values.php:103
+msgid "Turns on the coupon module so your ad forms include a coupon code field. You still need to create and setup coupons before coupons will work. You also must have &quot;Charge for Listing Ads&quot; option enabled."
+msgstr ""
+
+#: includes/admin/admin-values.php:116
+msgid "User Set Password"
+msgstr ""
+
+#: includes/admin/admin-values.php:118
+msgid "Turning this off will send the user a password instead of letting them set it on the new user registration page."
+msgstr ""
+
+#: includes/admin/admin-values.php:133
+msgid "Enable Logo"
+msgstr ""
+
+#: includes/admin/admin-values.php:135
+msgid "If you do not have a logo to use, select no and this will display the title and description of your web site instead."
+msgstr ""
+
+#: includes/admin/admin-values.php:147
+msgid "Web Site Logo"
+msgstr ""
+
+#: includes/admin/admin-values.php:148
+msgid "Upload a logo or paste an image URL directly."
+msgstr ""
+
+#: includes/admin/admin-values.php:149
+msgid "Paste the URL of your web site logo image here. It will replace the default header logo.(i.e. http://www.yoursite.com/logo.jpg)"
+msgstr ""
+
+#: includes/admin/admin-values.php:158
+msgid "Feedburner URL"
+msgstr ""
+
+#: includes/admin/admin-values.php:159
+#, php-format
+msgid "Sign up for a free <a target='_new' href='%s'>Feedburner account</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:160
+msgid "Paste your Feedburner address here. It will automatically redirect your default RSS feed to Feedburner. You must have a Google Feedburner account setup first."
+msgstr ""
+
+#: includes/admin/admin-values.php:169
+msgid "Twitter Username"
+msgstr ""
+
+#: includes/admin/admin-values.php:170
+#, php-format
+msgid "Sign up for a free <a target='_new' href='%s'>Twitter account</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:171
+msgid "Paste your Twitter username here. It will automatically redirect people who click on your Twitter link to your Twitter page. You must have a Twitter account setup first."
+msgstr ""
+
+#: includes/admin/admin-values.php:192
+msgid "Tracking Code"
+msgstr ""
+
+#: includes/admin/admin-values.php:193
+#, php-format
+msgid "Sign up for a free <a target='_new' href='%s'>Google Analytics account</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:194
+msgid "Paste your analytics tracking code here. Google Analytics is free and the most popular but you can use other providers as well."
+msgstr ""
+
+#: includes/admin/admin-values.php:203
+msgid "Blog Page ID"
+msgstr ""
+
+#: includes/admin/admin-values.php:204
+#, php-format
+msgid "Visit the <a href='%s'>pages</a> listing and mouse over the 'Blog' page to get the post= value."
+msgstr ""
+
+#: includes/admin/admin-values.php:205
+msgid "This field must contain the blog page ID otherwise the breadcrumb and other dependencies may not work correctly. This value should not be changed unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:215
+#: includes/admin/admin-values.php:262
+msgid "Exclude Pages"
+msgstr ""
+
+#: includes/admin/admin-values.php:217
+msgid "Enter a comma-separated list of any additional pages you want to exclude from the navigation. By default, your user dashboard, profile, edit-item, and submit ad page IDs are already included. Do not remove them unless you know what you are doing. To find a Page ID for a page to exclude, go to Pages->Edit and hover over the title of the page. The status bar of your browser will display a URL with a numeric ID at the end. This is the page ID."
+msgstr ""
+
+#: includes/admin/admin-values.php:227
+msgid "Google Maps Settings"
+msgstr ""
+
+#: includes/admin/admin-values.php:232
+msgid "Google Maps Language"
+msgstr ""
+
+#: includes/admin/admin-values.php:233
+#, php-format
+msgid "Find the list of supported language codes <a target='_new' href='%s'>here</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:234
+msgid "The Google Maps API uses the browsers language setting when displaying textual info on the map. In most cases, this is preferable and you should not need to override this setting. However, if you wish to change the Maps API to ignore the browsers language setting and force it to display info in a particular language, enter your two character region code here (i.e. Japanese is ja)."
+msgstr ""
+
+#: includes/admin/admin-values.php:244
+msgid "Google Maps Region"
+msgstr ""
+
+#: includes/admin/admin-values.php:245
+#, php-format
+msgid "Find your two-letter ISO 3166-1 region code <a target='_new' href='%s'>here</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:246
+msgid "Enter your country's two-letter region code here to properly display map locations. (i.e. Someone enters the location &quot;Toledo&quot;, it's based off the default region (US) and will display &quot;Toledo, Ohio&quot;. With the region code set to &quot;ES&quot; (Spain), the results will show &quot;Toledo, Spain.&quot;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:258
+msgid "Search Settings"
+msgstr ""
+
+#: includes/admin/admin-values.php:264
+msgid "Set this option to yes if you do not want your pages to show up in your website search results."
+msgstr ""
+
+#: includes/admin/admin-values.php:276
+msgid "Exclude Blog Posts"
+msgstr ""
+
+#: includes/admin/admin-values.php:278
+msgid "Set this option to yes if you do not want your blog posts to show up in your website search results."
+msgstr ""
+
+#: includes/admin/admin-values.php:290
+msgid "Search Custom Fields"
+msgstr ""
+
+#: includes/admin/admin-values.php:291
+msgid "This option may slow down search engine on your website due to complex database queries."
+msgstr ""
+
+#: includes/admin/admin-values.php:292
+msgid "Set this option to yes if you want to search a phrase in all custom fields."
+msgstr ""
+
+#: includes/admin/admin-values.php:304
+msgid "Search Field Width"
+msgstr ""
+
+#: includes/admin/admin-values.php:306
+msgid "Sometimes the search bar text field is too long and gets pushed down becuase of the categories drop-down. This option allows you to manually adjust it. Note: value must be numeric followed by either px or % (i.e. 600px or 50%). The default is 450px."
+msgstr ""
+
+#: includes/admin/admin-values.php:316
+msgid "Distance Unit"
+msgstr ""
+
+#: includes/admin/admin-values.php:318
+msgid "Defines the radius unit for search."
+msgstr ""
+
+#: includes/admin/admin-values.php:327
+msgid "Miles"
+msgstr ""
+
+#: includes/admin/admin-values.php:328
+msgid "Kilometers"
+msgstr ""
+
+#: includes/admin/admin-values.php:331
+msgid "Search Drop-down Options"
+msgstr ""
+
+#: includes/admin/admin-values.php:335
+#: includes/admin/admin-values.php:421
+#: includes/admin/admin-values.php:497
+msgid "Category Depth"
+msgstr ""
+
+#: includes/admin/admin-values.php:337
+msgid "This sets the depth of categories shown in the category drop-down. Use 'Show All' unless you have a lot of sub-categories and do not want them all listed."
+msgstr ""
+
+#: includes/admin/admin-values.php:344
+#: includes/admin/admin-values.php:432
+#: includes/admin/admin-values.php:456
+#: includes/admin/admin-values.php:508
+#: includes/admin/admin-values.php:532
+msgid "Show All"
+msgstr ""
+
+#: includes/admin/admin-values.php:356
+msgid "Category Hierarchy"
+msgstr ""
+
+#: includes/admin/admin-values.php:358
+msgid "This will indent sub-categories within the category drop-down vs showing them all flat."
+msgstr ""
+
+#: includes/admin/admin-values.php:368
+msgid "Show Ad Count"
+msgstr ""
+
+#: includes/admin/admin-values.php:370
+msgid "This will show an ad total next to each category name in the category drop-down."
+msgstr ""
+
+#: includes/admin/admin-values.php:380
+msgid "Hide Empty Categories"
+msgstr ""
+
+#: includes/admin/admin-values.php:382
+msgid "This will hide any empty categories within the category drop-down."
+msgstr ""
+
+#: includes/admin/admin-values.php:393
+msgid "Categories Menu Item Options"
+msgstr ""
+
+#: includes/admin/admin-values.php:397
+#: includes/admin/admin-values.php:473
+msgid "Show Category Count"
+msgstr ""
+
+#: includes/admin/admin-values.php:398
+#: includes/admin/admin-values.php:474
+msgid "Check this box to display category count."
+msgstr ""
+
+#: includes/admin/admin-values.php:399
+#: includes/admin/admin-values.php:475
+msgid "This will show an ad total next to category name."
+msgstr ""
+
+#: includes/admin/admin-values.php:409
+#: includes/admin/admin-values.php:485
+msgid "Hide Empty Sub-Categories"
+msgstr ""
+
+#: includes/admin/admin-values.php:410
+#: includes/admin/admin-values.php:486
+msgid "Check this box to hide empty sub-categories."
+msgstr ""
+
+#: includes/admin/admin-values.php:411
+#: includes/admin/admin-values.php:487
+msgid "This will hide empty sub-categories under parent category."
+msgstr ""
+
+#: includes/admin/admin-values.php:423
+#: includes/admin/admin-values.php:499
+msgid "This sets the depth limit of parent category."
+msgstr ""
+
+#: includes/admin/admin-values.php:445
+#: includes/admin/admin-values.php:521
+msgid "Number of Sub-Categories"
+msgstr ""
+
+#: includes/admin/admin-values.php:447
+#: includes/admin/admin-values.php:523
+msgid "This sets the number of sub-categories shown under each category item."
+msgstr ""
+
+#: includes/admin/admin-values.php:469
+msgid "Categories Page Options"
+msgstr ""
+
+#: includes/admin/admin-values.php:546
+msgid "Classified Ads Messages"
+msgstr ""
+
+#: includes/admin/admin-values.php:550
+msgid "Home Page Message"
+msgstr ""
+
+#: includes/admin/admin-values.php:552
+msgid "This welcome message will appear in the sidebar of your home page. (HTML is allowed)"
+msgstr ""
+
+#: includes/admin/admin-values.php:562
+msgid "New Ad Message"
+msgstr ""
+
+#: includes/admin/admin-values.php:564
+#: includes/admin/admin-values.php:576
+msgid "This message will appear at the top of the classified ads listing page. (HTML is allowed)"
+msgstr ""
+
+#: includes/admin/admin-values.php:574
+msgid "Membership Purchase Message"
+msgstr ""
+
+#: includes/admin/admin-values.php:586
+msgid "Terms of Use"
+msgstr ""
+
+#: includes/admin/admin-values.php:588
+msgid "This message will appear on the last step of your classified ad listing page. This is usually your legal disclaimer or rules for posting new ads on your site. (HTML is allowed)"
+msgstr ""
+
+#: includes/admin/admin-values.php:603
+msgid "Listings"
+msgstr ""
+
+#: includes/admin/admin-values.php:606
+msgid "Classified Ads Configuration"
+msgstr ""
+
+#: includes/admin/admin-values.php:610
+msgid "Allow Ad Editing"
+msgstr ""
+
+#: includes/admin/admin-values.php:612
+msgid "Allows the ad owner to edit and republish their existing ads from their dashboard."
+msgstr ""
+
+#: includes/admin/admin-values.php:624
+msgid "Allow Parent Category Posting"
+msgstr ""
+
+#: includes/admin/admin-values.php:626
+msgid "Allows ad poster to post to top-level categories. If set to &quot;When Empty&quot;, it allows posting to top-level categories only if they have no child categories."
+msgstr ""
+
+#: includes/admin/admin-values.php:636
+msgid "When Empty"
+msgstr ""
+
+#: includes/admin/admin-values.php:639
+msgid "Ad Inquiry Form Requires Login"
+msgstr ""
+
+#: includes/admin/admin-values.php:641
+msgid "Require visitors to be logged in before they can fill out the ad inquiry form. In most cases you should keep this set to no to encourage visitors to ask questions without having to create an account."
+msgstr ""
+
+#: includes/admin/admin-values.php:653
+msgid "Allow HTML"
+msgstr ""
+
+#: includes/admin/admin-values.php:654
+#, php-format
+msgid "The WordPress <a href='%s'>auto-embeds</a> option must be unchecked to completely disable HTML (YouTube, Flickr, etc)."
+msgstr ""
+
+#: includes/admin/admin-values.php:655
+msgid "Turns on the TinyMCE editor on text area fields and allows the ad owner to use html markup. Other fields do not allow html by default."
+msgstr ""
+
+#: includes/admin/admin-values.php:667
+msgid "Allow Ad Relisting"
+msgstr ""
+
+#: includes/admin/admin-values.php:669
+msgid "This will allow ad owners to pay and relist their expired ads under the original terms (price and duration). They will receive an ad expiration email with a link to their dashboard to relist. This option is not applicable for free or legacy ads (before CP v3.0)."
+msgstr ""
+
+#: includes/admin/admin-values.php:681
+msgid "Show Ad Views Counter"
+msgstr ""
+
+#: includes/admin/admin-values.php:683
+msgid "This will show a 'total views' and 'today's views' at the bottom of each ad listing and blog post."
+msgstr ""
+
+#: includes/admin/admin-values.php:695
+msgid "Show Gravatar Thumbnail"
+msgstr ""
+
+#: includes/admin/admin-values.php:696
+msgid "Note: Enabling this may slow down your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:697
+msgid "This will show a picture of the author next to their name on each ad listing block. A placeholder image will be used if they don't have one."
+msgstr ""
+
+#: includes/admin/admin-values.php:724
+msgid "New Ad Status"
+msgstr ""
+
+#: includes/admin/admin-values.php:725
+msgid "Note: If you have the 'Charge for Listing Ads' option set to 'Yes', then each ad will automatically be set to Pending Review until payment is made (regardless of this options value.)."
+msgstr ""
+
+#: includes/admin/admin-values.php:726
+msgid "<i>Pending Review</i> - You have to manually approve and publish each ad. <br /><i>Published</i> - Ad goes live immediately without any approvals unless it has not been paid for."
+msgstr ""
+
+#: includes/admin/admin-values.php:735
+msgid "Pending Review"
+msgstr ""
+
+#: includes/admin/admin-values.php:736
+msgid "Published"
+msgstr ""
+
+#: includes/admin/admin-values.php:738
+msgid "Prune Ads"
+msgstr ""
+
+#: includes/admin/admin-values.php:740
+msgid "Automatically removes all listings from your site as they expire and changes the post status to draft. The frequency is based on the Cron Job Schedule set below and after each ad listing is past the expiration date. If no is selected, the ad will remain live on your site but will be marked as expired."
+msgstr ""
+
+#: includes/admin/admin-values.php:752
+msgid "Cron Job Schedule"
+msgstr ""
+
+#: includes/admin/admin-values.php:753
+msgid "Note: This feature only works if you have the Prune Ads option above set to yes."
+msgstr ""
+
+#: includes/admin/admin-values.php:754
+msgid "Frequency you would like ClassiPress to check for and take offline any expired ads. Twice daily is recommended. Hourly may cause performance issues if you have a lot of ads."
+msgstr ""
+
+#: includes/admin/admin-values.php:763
+msgid "Hourly"
+msgstr ""
+
+#: includes/admin/admin-values.php:764
+msgid "Twice Daily"
+msgstr ""
+
+#: includes/admin/admin-values.php:765
+msgid "Daily"
+msgstr ""
+
+#: includes/admin/admin-values.php:767
+msgid "Ad Listing Period"
+msgstr ""
+
+#: includes/admin/admin-values.php:769
+msgid "Number of days each ad will be listed on your site. This option is overridden by ad packs if you are charging for ads and using the Fixed Price Per Ad option. "
+msgstr ""
+
+#: includes/admin/admin-values.php:778
+msgid "Form Validation Language"
+msgstr ""
+
+#: includes/admin/admin-values.php:780
+msgid "This option allows you to set the language your ad submission form error messages are displayed in. Enter your two-letter country code (i.e. for German enter de). Not all languages have been translated but you can always add your own. To see the available languages, look in your /classipress/includes/js/validate/localization folder."
+msgstr ""
+
+#: includes/admin/admin-values.php:789
+msgid "Ad Images Options"
+msgstr ""
+
+#: includes/admin/admin-values.php:793
+msgid "Allow Ad Images"
+msgstr ""
+
+#: includes/admin/admin-values.php:795
+msgid "Allows the ad owner to upload and use images on their ad. Note: This will disable display of most ad images across the entire site but some images may still display."
+msgstr ""
+
+#: includes/admin/admin-values.php:807
+msgid "Show Preview Image"
+msgstr ""
+
+#: includes/admin/admin-values.php:809
+msgid "Displays a larger image when you mouse over the smaller thumbnail image. This is on your home page, category, search results, etc. "
+msgstr ""
+
+#: includes/admin/admin-values.php:821
+msgid "Max Images Per Ad"
+msgstr ""
+
+#: includes/admin/admin-values.php:823
+msgid "The number of images the ad owner can upload with each of their ads."
+msgstr ""
+
+#: includes/admin/admin-values.php:841
+msgid "Max Size Per Image"
+msgstr ""
+
+#: includes/admin/admin-values.php:843
+msgid "The maximum image size (per image) the ad owner can upload with each of their ads."
+msgstr ""
+
+#: includes/admin/admin-values.php:852
+msgid "100 KB"
+msgstr ""
+
+#: includes/admin/admin-values.php:853
+msgid "250 KB"
+msgstr ""
+
+#: includes/admin/admin-values.php:854
+msgid "500KB"
+msgstr ""
+
+#: includes/admin/admin-values.php:855
+msgid "1MB"
+msgstr ""
+
+#: includes/admin/admin-values.php:856
+msgid "2MB"
+msgstr ""
+
+#: includes/admin/admin-values.php:857
+msgid "5MB"
+msgstr ""
+
+#: includes/admin/admin-values.php:864
+msgid "Security"
+msgstr ""
+
+#: includes/admin/admin-values.php:866
+msgid "Security Settings"
+msgstr ""
+
+#: includes/admin/admin-values.php:870
+msgid "Back Office Access"
+msgstr ""
+
+#: includes/admin/admin-values.php:871
+#, php-format
+msgid "View the WordPress <a target='_new' href='%s'>Roles and Capabilities</a> for more information."
+msgstr ""
+
+#: includes/admin/admin-values.php:872
+msgid "Allows you to restrict access to the WordPress Back Office (wp-admin) by specific role. Keeping this set to admins only is recommended. Select Disable if you have problems with this feature.  (This feature does not work with WPMU at this time)."
+msgstr ""
+
+#: includes/admin/admin-values.php:881
+msgid "Admins Only"
+msgstr ""
+
+#: includes/admin/admin-values.php:882
+msgid "Admins, Editors"
+msgstr ""
+
+#: includes/admin/admin-values.php:883
+msgid "Admins, Editors, Authors"
+msgstr ""
+
+#: includes/admin/admin-values.php:884
+msgid "Admins, Editors, Authors, Contributors"
+msgstr ""
+
+#: includes/admin/admin-values.php:885
+msgid "All Access"
+msgstr ""
+
+#: includes/admin/admin-values.php:886
+msgid "Disable"
+msgstr ""
+
+#: includes/admin/admin-values.php:888
+msgid "reCaptcha Settings"
+msgstr ""
+
+#: includes/admin/admin-values.php:892
+msgid "Enable reCaptcha"
+msgstr ""
+
+#: includes/admin/admin-values.php:893
+#, php-format
+msgid "reCaptcha is a free anti-spam service provided by Google. Learn more about <a target='_new' href='%s'>reCaptcha</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:894
+msgid "Set this option to yes to enable the reCaptcha service that will protect your site against spam registrations. It will show a verification box on your registration page that requires a human to read and enter the words."
+msgstr ""
+
+#: includes/admin/admin-values.php:906
+msgid "reCaptcha Public Key"
+msgstr ""
+
+#: includes/admin/admin-values.php:907
+#: includes/admin/admin-values.php:918
+#, php-format
+msgid "Sign up for a free <a target='_new' href='%s'>Google reCaptcha</a> account."
+msgstr ""
+
+#: includes/admin/admin-values.php:908
+msgid "Enter your public key here to enable an anti-spam service on your new user registration page (requires a free Google reCaptcha account). Leave it blank if you do not wish to use this anti-spam feature."
+msgstr ""
+
+#: includes/admin/admin-values.php:917
+msgid "reCaptcha Private Key"
+msgstr ""
+
+#: includes/admin/admin-values.php:919
+msgid "Enter your private key here to enable an anti-spam service on your new user registration page (requires a free Google reCaptcha account). Leave it blank if you do not wish to use this anti-spam feature."
+msgstr ""
+
+#: includes/admin/admin-values.php:928
+msgid "Choose Theme"
+msgstr ""
+
+#: includes/admin/admin-values.php:930
+msgid "Select the color scheme you wish to use for reCaptcha."
+msgstr ""
+
+#: includes/admin/admin-values.php:939
+msgid "Red"
+msgstr ""
+
+#: includes/admin/admin-values.php:940
+msgid "White"
+msgstr ""
+
+#: includes/admin/admin-values.php:941
+msgid "Black"
+msgstr ""
+
+#: includes/admin/admin-values.php:942
+msgid "Clean"
+msgstr ""
+
+#: includes/admin/admin-values.php:947
+msgid "Advertising"
+msgstr ""
+
+#: includes/admin/admin-values.php:949
+msgid "Header Ad (468x60)"
+msgstr ""
+
+#: includes/admin/admin-values.php:953
+#: includes/admin/admin-values.php:1005
+msgid "Enable Ad"
+msgstr ""
+
+#: includes/admin/admin-values.php:955
+msgid "Set this option to no if you do not wish to have a 468x60 ad banner displayed."
+msgstr ""
+
+#: includes/admin/admin-values.php:967
+#: includes/admin/admin-values.php:1019
+msgid "Ad Code"
+msgstr ""
+
+#: includes/admin/admin-values.php:968
+#: includes/admin/admin-values.php:1020
+#, php-format
+msgid "Paste your ad code here. Supports many popular providers such as <a target='_new' href='%s'>Google AdSense</a> and <a target='_new' href='%s'>BuySellAds</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:969
+msgid "You may use html and/or javascript code provided by Google AdSense."
+msgstr ""
+
+#: includes/admin/admin-values.php:979
+#: includes/admin/admin-values.php:1031
+msgid "Ad Image URL"
+msgstr ""
+
+#: includes/admin/admin-values.php:980
+#: includes/admin/admin-values.php:1032
+msgid "Upload your ad creative or paste the ad creative URL directly."
+msgstr ""
+
+#: includes/admin/admin-values.php:981
+#: includes/admin/admin-values.php:1033
+msgid "If you would rather use an image ad instead of code provided by your advertiser, use this field instead."
+msgstr ""
+
+#: includes/admin/admin-values.php:990
+#: includes/admin/admin-values.php:1042
+msgid "Ad Destination"
+msgstr ""
+
+#: includes/admin/admin-values.php:991
+#: includes/admin/admin-values.php:1043
+msgid "Paste the destination URL of your custom ad creative here (i.e. http://www.yoursite.com/landing-page.html)."
+msgstr ""
+
+#: includes/admin/admin-values.php:992
+#: includes/admin/admin-values.php:1044
+msgid "When a visitor clicks on your ad image, this is the destination they will be sent to."
+msgstr ""
+
+#: includes/admin/admin-values.php:1001
+msgid "Single Ad (336x280)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1007
+msgid "Set this option to no if you do not wish to have a 336x280 ads displayed on single ad, category, or search result pages."
+msgstr ""
+
+#: includes/admin/admin-values.php:1021
+msgid "You may use html and/or javascript code provided by your advertising provider."
+msgstr ""
+
+#: includes/admin/admin-values.php:1059
+msgid "Advanced Options"
+msgstr ""
+
+#: includes/admin/admin-values.php:1063
+msgid "Run Ads Expired Check Now"
+msgstr ""
+
+#: includes/admin/admin-values.php:1065
+msgid "Set this option to yes in order to manually run the function that checks all ads expiration and prunes any ads that are expired. This event will run only one time and then set itself back to no."
+msgstr ""
+
+#: includes/admin/admin-values.php:1077
+msgid "Disable Core Stylesheets"
+msgstr ""
+
+#: includes/admin/admin-values.php:1079
+msgid "If you are interested in creating a child theme or just want to completely disable the core ClassiPress styles, change this option to yes. (Note: this option is for advanced users. Do not change unless you know what you are doing.)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1091
+msgid "Enable General.js"
+msgstr ""
+
+#: includes/admin/admin-values.php:1093
+msgid "This option enables the included general.js located in the /includes/js/ directory. This is where you can add your own javascript without losing your changes on product upgrades."
+msgstr ""
+
+#: includes/admin/admin-values.php:1105
+msgid "Enable Debug Mode"
+msgstr ""
+
+#: includes/admin/admin-values.php:1107
+msgid "This will print out the $wp_query->query_vars array at the top of your website. This should only be used for debugging."
+msgstr ""
+
+#: includes/admin/admin-values.php:1119
+msgid "Use Google CDN jQuery"
+msgstr ""
+
+#: includes/admin/admin-values.php:1121
+msgid "This will use Google's hosted jQuery files which are served from their global content delivery network. This will help your site load faster and save bandwidth."
+msgstr ""
+
+#: includes/admin/admin-values.php:1133
+msgid "Disable WordPress Version Meta Tag"
+msgstr ""
+
+#: includes/admin/admin-values.php:1135
+msgid "This will remove the WordPress generator meta tag in the source code of your site <code>< meta name='generator' content='WordPress 3.1' ></code>. It's an added security measure which prevents anyone from seeing what version of WordPress you are using. It also helps to deter hackers from taking advantage of vulnerabilities sometimes present in WordPress. (Yes is recommended)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1147
+msgid "Disable WordPress User Toolbar"
+msgstr ""
+
+#: includes/admin/admin-values.php:1149
+msgid "This will remove the WordPress user toolbar at the top of your web site which is displayed for all logged in users. This feature was added in WordPress 3.1."
+msgstr ""
+
+#: includes/admin/admin-values.php:1161
+msgid "Cache Expires"
+msgstr ""
+
+#: includes/admin/admin-values.php:1162
+msgid "This number is in seconds so one day equals 86400 seconds (60 seconds * 60 minutes * 24 hours). Do not enter any commas."
+msgstr ""
+
+#: includes/admin/admin-values.php:1163
+msgid "To speed up page loading on your site, ClassiPress uses a caching mechanism on certain features (i.e. category drop-down, home page). The cache automatically gets flushed whenever a category has been added/modified, however this value sets the frequency your cache is regularly emptied. We recommend keeping this at the default (every hour = 3600 seconds)."
+msgstr ""
+
+#: includes/admin/admin-values.php:1174
+msgid "Admin Table Width"
+msgstr ""
+
+#: includes/admin/admin-values.php:1176
+msgid "Sometimes the admin option pages are set too narrow or too wide. This option allows you to override it. Note: value must be numeric followed by either px or % (i.e. 700px or 100%). The default is 850px."
+msgstr ""
+
+#: includes/admin/admin-values.php:1186
+msgid "Ad Box Right Side"
+msgstr ""
+
+#: includes/admin/admin-values.php:1188
+msgid "Sometimes the main ad listings box is too narrow or it wraps due to legacy ad sizes. This option allows you to change it manually."
+msgstr ""
+
+#: includes/admin/admin-values.php:1197
+msgid "Normal Full Width"
+msgstr ""
+
+#: includes/admin/admin-values.php:1198
+msgid "Legacy Ads Width"
+msgstr ""
+
+#: includes/admin/admin-values.php:1200
+msgid "Global Path Variables"
+msgstr ""
+
+#: includes/admin/admin-values.php:1204
+msgid "Dashboard Path"
+msgstr ""
+
+#: includes/admin/admin-values.php:1205
+#: includes/admin/admin-values.php:1217
+#: includes/admin/admin-values.php:1229
+#: includes/admin/admin-values.php:1241
+#: includes/admin/admin-values.php:1253
+#: includes/admin/admin-values.php:1265
+#: includes/admin/admin-values.php:1277
+#, php-format
+msgid "IMPORTANT: You must also change the corresponding <a target='_blank' href='%s'>page template slug</a> for this to work."
+msgstr ""
+
+#: includes/admin/admin-values.php:1206
+msgid "This is the URL path to your customers dashboard page. Do not change unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:1216
+msgid "User Profile Path"
+msgstr ""
+
+#: includes/admin/admin-values.php:1218
+msgid "This is the URL path to your customers user profile page. Do not change unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:1228
+msgid "Edit Ad Path"
+msgstr ""
+
+#: includes/admin/admin-values.php:1230
+msgid "This is the URL path to your customers edit ad page. Do not change unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:1240
+msgid "Add New Path"
+msgstr ""
+
+#: includes/admin/admin-values.php:1242
+msgid "This is the URL path to your add new ad listing page. Do not change unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:1252
+msgid "Add New Confirm Path"
+msgstr ""
+
+#: includes/admin/admin-values.php:1254
+msgid "This is the URL path to your add new ad listing confirmation page. Do not change unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:1264
+msgid "Add New Membership Path"
+msgstr ""
+
+#: includes/admin/admin-values.php:1266
+msgid "This is the URL path to your add new membership page. Do not change unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:1276
+msgid "Add New Membership Confirm Path"
+msgstr ""
+
+#: includes/admin/admin-values.php:1278
+msgid "This is the URL path to your add new membership confirmation page. Do not change unless you know what you are doing."
+msgstr ""
+
+#: includes/admin/admin-values.php:1302
+msgid "Custom Post Type & Taxonomy URLs"
+msgstr ""
+
+#: includes/admin/admin-values.php:1306
+msgid "Ad Listing Base URL"
+msgstr ""
+
+#: includes/admin/admin-values.php:1307
+#: includes/admin/admin-values.php:1319
+#: includes/admin/admin-values.php:1331
+#, php-format
+msgid "IMPORTANT: You must <a target='_blank' href='%s'>re-save your permalinks</a> for this change to take effect."
+msgstr ""
+
+#: includes/admin/admin-values.php:1308
+msgid "This controls the base name of your ad listing urls. The default is ads and will look like this: http://www.yoursite.com/ads/ad-title-here/. Do not include any slashes. This should only be alpha and/or numeric values. You should not change this value once you have launched your site otherwise you risk breaking urls of other sites pointing to yours, etc."
+msgstr ""
+
+#: includes/admin/admin-values.php:1318
+msgid "Ad Category Base URL"
+msgstr ""
+
+#: includes/admin/admin-values.php:1320
+msgid "This controls the base name of your ad category urls. The default is ad-category and will look like this: http://www.yoursite.com/ad-category/category-name/. Do not include any slashes. This should only be alpha and/or numeric values. You should not change this value once you have launched your site otherwise you risk breaking urls of other sites pointing to yours, etc."
+msgstr ""
+
+#: includes/admin/admin-values.php:1330
+msgid "Ad Tag Base URL"
+msgstr ""
+
+#: includes/admin/admin-values.php:1332
+msgid "This controls the base name of your ad tag urls. The default is ad-tag and will look like this: http://www.yoursite.com/ad-tag/tag-name/. Do not include any slashes. This should only be alpha and/or numeric values. You should not change this value once you have launched your site otherwise you risk breaking urls of other sites pointing to yours, etc."
+msgstr ""
+
+#: includes/admin/admin-values.php:1345
+msgid "Cuf&oacute;n Font Replacement"
+msgstr ""
+
+#: includes/admin/admin-values.php:1349
+msgid "Enable Cuf&oacute;n"
+msgstr ""
+
+#: includes/admin/admin-values.php:1351
+#, php-format
+msgid "Turns on the Cuf&oacute;n replacement text feature on your site. Learn more about <a target='_new' href='%s'>Cuf&oacute;n</a> here."
+msgstr ""
+
+#: includes/admin/admin-values.php:1352
+msgid "Set this option to no if you are having conflicts or problems with certain text displaying on your site"
+msgstr ""
+
+#: includes/admin/admin-values.php:1364
+msgid "Cuf&oacute;n Replacement Code"
+msgstr ""
+
+#: includes/admin/admin-values.php:1365
+msgid "Say you want to replace all <code>&lt;h1 class='dotted'&gt;</code> elements on your site with Cuf&oacute;n. You would enter, <code>Cufon.replace('h1.dotted', { fontFamily: 'Liberation Serif', textShadow:'0 1px 0 #FFFFFF' });</code> The Cuf&oacute;n system will automatically style all elements for you. <br />Note: You must have the font installed before it will work. To install a new font you must first generate it and then place the .js font file in your ClassiPress /includes/fonts/ theme directory."
+msgstr ""
+
+#: includes/admin/admin-values.php:1366
+msgid "Cuf&oacute;n allows you to easily replace text with stylish fonts that appear to be images. It is fast and and does not require Flash."
+msgstr ""
+
+#: includes/admin/admin-values.php:1390
+msgid "Email Notifications"
+msgstr ""
+
+#: includes/admin/admin-values.php:1391
+#, php-format
+msgid "Emails will be sent to: %s (<a href='%s'>change</a>)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1395
+msgid "New Ad Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1397
+msgid "Send me an email once a new ad has been submitted."
+msgstr ""
+
+#: includes/admin/admin-values.php:1409
+msgid "Prune Ads Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1411
+msgid "Send me an email every time the system prunes expired ads."
+msgstr ""
+
+#: includes/admin/admin-values.php:1423
+msgid "Ad Approved Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1425
+msgid "Send the ad owner an email once their ad has been approved either by you manually or after payment has been made (post status changes from pending to published)."
+msgstr ""
+
+#: includes/admin/admin-values.php:1437
+msgid "Ad Expired Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1439
+msgid "Send the ad owner an email once their ad has expired (post status changes from published to draft)."
+msgstr ""
+
+#: includes/admin/admin-values.php:1451
+msgid "Admin New User Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1453
+msgid "Sends the default WordPress new user notification email to the site admin. It is recommended to keep this turned on so you are alerted whenever a new user registers on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:1465
+msgid "Membership Activated Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1467
+msgid "Send the user an email once their membership has been activated."
+msgstr ""
+
+#: includes/admin/admin-values.php:1479
+msgid "Send Membership Subscription Reminder Emails"
+msgstr ""
+
+#: includes/admin/admin-values.php:1481
+msgid "Enabling this option will automatically send emails prior to a customers membership pack subscription end date."
+msgstr ""
+
+#: includes/admin/admin-values.php:1526
+msgid "New User Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1528
+msgid "New User Registration Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1532
+msgid "Enable Custom Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1534
+msgid "Sends a custom new user notification email to your customers by using the fields you complete below. If this is set to &quot;No&quot;, the default WordPress new user notification email will be sent. This is useful for debugging if your custom emails are not being sent."
+msgstr ""
+
+#: includes/admin/admin-values.php:1546
+msgid "From Name"
+msgstr ""
+
+#: includes/admin/admin-values.php:1548
+msgid "This is what your customers will see as the &quot;from&quot; when they receive the new user registration email. Use plain text only"
+msgstr ""
+
+#: includes/admin/admin-values.php:1557
+msgid "From Email"
+msgstr ""
+
+#: includes/admin/admin-values.php:1559
+msgid "This is what your customers will see as the &quot;from&quot; email address (also the reply to) when they receive the new user registration email. Use only a valid and existing email address with no html or variables."
+msgstr ""
+
+#: includes/admin/admin-values.php:1568
+msgid "Email Subject"
+msgstr ""
+
+#: includes/admin/admin-values.php:1570
+msgid "This is the subject line your customers will see when they receive the new user registration email. Use text and variables only."
+msgstr ""
+
+#: includes/admin/admin-values.php:1579
+msgid "Allow HTML in Body"
+msgstr ""
+
+#: includes/admin/admin-values.php:1581
+msgid "This option allows you to use html markup in the email body below. It is recommended to keep it set to &quot;No&quot; to avoid problems with delivery. If you turn it on, make sure to test it and make sure the formatting looks ok and gets delivered properly."
+msgstr ""
+
+#: includes/admin/admin-values.php:1592
+msgid "Email Body"
+msgstr ""
+
+#: includes/admin/admin-values.php:1593
+msgid "You may use the following variables within the email body and/or subject line.<br/><br/><strong>%username%</strong> - prints out the username<br/><strong>%useremail%</strong> - prints out the users email address<br/><strong>%password%</strong> - prints out the users text password<br/><strong>%siteurl%</strong> - prints out your website url<br/><strong>%blogname%</strong> - prints out your site name<br/><strong>%loginurl%</strong> - prints out your sites login url<br/><br/>Each variable MUST have the percentage signs wrapped around it with no spaces.<br/>Always test your new email after making any changes (register) to make sure it is working and formatted correctly. If you do not receive an email, chances are something is wrong with your email body."
+msgstr ""
+
+#: includes/admin/admin-values.php:1594
+msgid "Enter the text you would like your customers to see in the new user registration email. Make sure to always at least include the %username% and %password% variables otherwise they might forget later."
+msgstr ""
+
+#: includes/admin/admin-values.php:1615
+msgid "Pricing Configuration"
+msgstr ""
+
+#: includes/admin/admin-values.php:1619
+msgid "Charge for Listing Ads"
+msgstr ""
+
+#: includes/admin/admin-values.php:1621
+msgid "This option activates the payment system so you can start charging for ad listings on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:1632
+msgid "Show Featured Ads Slider"
+msgstr ""
+
+#: includes/admin/admin-values.php:1634
+msgid "This option turns on the home page featured ads slider. Usually you charge extra for this space but it is not required. To manually make an ad appear here, check the &quot;stick this post to the front page&quot; box on the WordPress edit post page under &quot;Visibility&quot;."
+msgstr ""
+
+#: includes/admin/admin-values.php:1646
+msgid "Featured Ads Title Length"
+msgstr ""
+
+#: includes/admin/admin-values.php:1648
+msgid "This number controls the length of your featured ad titles to this many characters (i.e. if you changed this value to 5, &quot;My Title&quot; would turn into &quot;My Ti...&quot;. Spaces are included in the count.)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1658
+msgid "Featured Ad Price"
+msgstr ""
+
+#: includes/admin/admin-values.php:1659
+msgid "Only enter numeric values or decimal points. Do not include a currency symbol or commas."
+msgstr ""
+
+#: includes/admin/admin-values.php:1660
+msgid "This is the additional amount you will charge visitors to post a featured ad on your site. A featured ad appears at the top of the category. Leave this blank if you do not want to offer featured ads."
+msgstr ""
+
+#: includes/admin/admin-values.php:1669
+msgid "Clean Price Field"
+msgstr ""
+
+#: includes/admin/admin-values.php:1671
+msgid "This will remove any letters and special characters from the price field leaving only numbers, commas, and periods. Leave this set to no if you prefer to allow visitors to enter text such as TBD, OBO or other contextual phrases."
+msgstr ""
+
+#: includes/admin/admin-values.php:1682
+msgid "Display Zero for Empty Prices"
+msgstr ""
+
+#: includes/admin/admin-values.php:1684
+msgid "This will force any ad without a price to display a currency of zero for the price."
+msgstr ""
+
+#: includes/admin/admin-values.php:1695
+msgid "Currency Symbol"
+msgstr ""
+
+#: includes/admin/admin-values.php:1697
+msgid "Enter the currency symbol you want to appear next to prices on your classified ads (i.e. $, &euro;, &pound;, &yen;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1706
+msgid "Symbol Position"
+msgstr ""
+
+#: includes/admin/admin-values.php:1708
+msgid "Some currencies place the symbol on the right side vs the left. Select how you would like your currency symbol to be displayed."
+msgstr ""
+
+#: includes/admin/admin-values.php:1716
+msgid "Left of Currency ($100)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1717
+msgid "Left of Currency with Space ($ 100)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1718
+msgid "Right of Currency (100$)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1719
+msgid "Right of Currency with Space (100 $)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1721
+msgid "Collect Payments in"
+msgstr ""
+
+#: includes/admin/admin-values.php:1722
+#, php-format
+msgid "See the list of supported <a target='_new' href='%s'>PayPal currencies</a>."
+msgstr ""
+
+#: includes/admin/admin-values.php:1723
+msgid "This is the currency you want to collect payments in. It applies mainly to PayPal payments since other payment gateways accept more currencies. If your currency is not listed then PayPal currently does not support it."
+msgstr ""
+
+#: includes/admin/admin-values.php:1731
+msgid "US Dollars (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1732
+msgid "Euros (&euro;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1733
+msgid "Pounds Sterling (&pound;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1734
+msgid "Australian Dollars (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1735
+msgid "Brazilian Real (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1736
+msgid "Canadian Dollars (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1737
+msgid "Czech Koruna (K&#269;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1738
+msgid "Danish Krone (kr)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1739
+msgid "Hong Kong Dollar (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1740
+msgid "Hungarian Forint (Ft)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1741
+msgid "Israeli Shekel (&#8362;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1742
+msgid "Japanese Yen (&yen;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1743
+msgid "Malaysian Ringgits (RM)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1744
+msgid "Mexican Peso (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1745
+msgid "New Zealand Dollar (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1746
+msgid "Norwegian Krone (kr)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1747
+msgid "Philippine Pesos (P)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1748
+msgid "Polish Zloty (z&#322;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1749
+msgid "Singapore Dollar (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1750
+msgid "Swedish Krona (kr)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1751
+msgid "Swiss Franc (Fr)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1752
+msgid "Taiwan New Dollar (&#36;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1753
+msgid "Thai Baht (&#3647;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1754
+msgid "Turkish Lira (&#8356;)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1757
+msgid "Collect Payments Currency Symbol"
+msgstr ""
+
+#: includes/admin/admin-values.php:1759
+msgid "Change this value to customize the currency symbol as you want it to appear when refering to customer payment gateway payments."
+msgstr ""
+
+#: includes/admin/admin-values.php:1770
+msgid "Pricing Model"
+msgstr ""
+
+#: includes/admin/admin-values.php:1777
+msgid "Price Model"
+msgstr ""
+
+#: includes/admin/admin-values.php:1778
+#, php-format
+msgid "If you select the 'Fixed Price Per Ad' option, you must have at least one active <a href='%s'>ad pack</a> setup."
+msgstr ""
+
+#: includes/admin/admin-values.php:1779
+msgid "This option defines the pricing model for selling ads on your site. If you want to provide free and paid ads then select the &quot;Price Per Category&quot; option."
+msgstr ""
+
+#: includes/admin/admin-values.php:1788
+msgid "Fixed Price Per Ad"
+msgstr ""
+
+#: includes/admin/admin-values.php:1789
+#: includes/admin/admin-values.php:1805
+msgid "Price Per Category"
+msgstr ""
+
+#: includes/admin/admin-values.php:1790
+#: includes/admin/admin-values.php:1793
+#, php-format
+msgid "% of Sellers Ad Price"
+msgstr ""
+
+#: includes/admin/admin-values.php:1791
+msgid "Only Charge for Featured Ads"
+msgstr ""
+
+#: includes/admin/admin-values.php:1795
+#, php-format
+msgid "If you selected the &quot;% of Sellers Ad Price&quot; price model, enter your percentage here. Numbers only. No percentage symbol or commas"
+msgstr ""
+
+#: includes/admin/admin-values.php:1807
+msgid "If you selected the &quot;Price Per Category&quot; price model, enter a price for each category here. To make a specific category free, just enter a zero (0). Do not enter currency symbols or commas. You can use decimal points (i.e. 10.50, 5.95)"
+msgstr ""
+
+#: includes/admin/admin-values.php:1819
+#: includes/forms/step-functions.php:507
+#: includes/forms/step2-membership.php:55
+msgid "Membership"
+msgstr ""
+
+#: includes/admin/admin-values.php:1822
+msgid "Membership Options"
+msgstr ""
+
+#: includes/admin/admin-values.php:1826
+msgid "Enable Membership Packs"
+msgstr ""
+
+#: includes/admin/admin-values.php:1827
+#, php-format
+msgid "Manage your membership packages from the <a href=\"%1$s\">Ad Packs</a> option page."
+msgstr ""
+
+#: includes/admin/admin-values.php:1828
+msgid "This option activates Membership Packs and their respective discounts. Disabling this does not disable the membership system, but simply stops the discounts from activating during the posting process."
+msgstr ""
+
+#: includes/admin/admin-values.php:1839
+msgid "Days of Reminder Messages"
+msgstr ""
+
+#: includes/admin/admin-values.php:1840
+msgid "Effects both emails and website notifications."
+msgstr ""
+
+#: includes/admin/admin-values.php:1841
+msgid "Number of days you would like to send renewal reminders before their subscription expires. Numeric values only."
+msgstr ""
+
+#: includes/admin/admin-values.php:1851
+msgid "Are Membership Packs Required to Purchase Ads?"
+msgstr ""
+
+#: includes/admin/admin-values.php:1853
+msgid "Choose how you would like the membership system to work. <br /><strong>Not Required</strong> - a membership is not required in order to list an ad. <br /><strong>Required for All</strong> - a user can only list an ad if they have an active membership. <br /><strong>Required by Category</strong> - limits users with memberships to list ads in certain categories (must be set below)."
+msgstr ""
+
+#: includes/admin/admin-values.php:1862
+msgid "Not Required"
+msgstr ""
+
+#: includes/admin/admin-values.php:1863
+msgid "Required for All"
+msgstr ""
+
+#: includes/admin/admin-values.php:1864
+msgid "Required by Category"
+msgstr ""
+
+#: includes/admin/admin-values.php:1867
+msgid "Membership by Category"
+msgstr ""
+
+#: includes/admin/admin-values.php:1869
+msgid "If you selected &quot;Required by Category&quot; above, then you need to check categories here. Any categories checked will only allow ad listings from users with an active membership."
+msgstr ""
+
+#: includes/admin/admin-values.php:1893
+msgid "Create a form name that best describes what category or categories this form will be used for. (i.e. Auto Form, Clothes Form, General Form, etc). It will not be visible on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:1902
+msgid "Form Description"
+msgstr ""
+
+#: includes/admin/admin-values.php:1904
+#: includes/admin/admin-values.php:1973
+msgid "Enter a description of your new form layout. It will not be visible on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:1913
+msgid "Available Categories"
+msgstr ""
+
+#: includes/admin/admin-values.php:1915
+msgid "Select the categories you want this form to be displayed for. Categories not listed are being used on a different form layout. You can only have one category assigned to each form layout. Any unselected categories will use the default ad form."
+msgstr ""
+
+#: includes/admin/admin-values.php:1925
+msgid "If you do not want this new form live on your site yet, select inactive."
+msgstr ""
+
+#: includes/admin/admin-values.php:1933
+#: includes/admin/admin-values.php:2112
+#: includes/admin/admin-values.php:2225
+#: includes/admin/admin-values.php:2333
+msgid "Active"
+msgstr ""
+
+#: includes/admin/admin-values.php:1934
+#: includes/admin/admin-values.php:2113
+#: includes/admin/admin-values.php:2226
+#: includes/admin/admin-values.php:2334
+msgid "Inactive"
+msgstr ""
+
+#: includes/admin/admin-values.php:1945
+msgid "Field Information"
+msgstr ""
+
+#: includes/admin/admin-values.php:1950
+msgid "Create a field name that best describes what this field will be used for. (i.e. Color, Size, etc). It will be visible on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:1959
+msgid "Meta Name"
+msgstr ""
+
+#: includes/admin/admin-values.php:1961
+msgid "This field is used by WordPress so you cannot modify it. Doing so could cause problems displaying the field on your ads."
+msgstr ""
+
+#: includes/admin/admin-values.php:1971
+msgid "Field Description"
+msgstr ""
+
+#: includes/admin/admin-values.php:1982
+msgid "Field Tooltip"
+msgstr ""
+
+#: includes/admin/admin-values.php:1984
+msgid "This will create a ? tooltip icon next to this field on the submit ad page."
+msgstr ""
+
+#: includes/admin/admin-values.php:1993
+msgid "Field Type"
+msgstr ""
+
+#: includes/admin/admin-values.php:1995
+msgid "This is the type of field you want to create."
+msgstr ""
+
+#: includes/admin/admin-values.php:2004
+msgid "text box"
+msgstr ""
+
+#: includes/admin/admin-values.php:2005
+msgid "drop-down"
+msgstr ""
+
+#: includes/admin/admin-values.php:2006
+msgid "text area"
+msgstr ""
+
+#: includes/admin/admin-values.php:2007
+msgid "radio buttons"
+msgstr ""
+
+#: includes/admin/admin-values.php:2008
+msgid "checkboxes"
+msgstr ""
+
+#: includes/admin/admin-values.php:2012
+msgid "Minimum Length"
+msgstr ""
+
+#: includes/admin/admin-values.php:2014
+msgid "Defines the minimum number of characters required for this field. Enter a number like 2 or leave it empty to make the field optional."
+msgstr ""
+
+#: includes/admin/admin-values.php:2023
+msgid "Field Values"
+msgstr ""
+
+#: includes/admin/admin-values.php:2025
+msgid "Enter a comma separated list of values you want to appear in this drop-down box. (i.e. XXL,XL,L,M,S,XS). Do not separate values with the return key."
+msgstr ""
+
+#: includes/admin/admin-values.php:2055
+msgid "Ad Pack Details"
+msgstr ""
+
+#: includes/admin/admin-values.php:2062
+msgid "Create a name that best describes this ad package. (i.e. 30 days for only $5) This will be visible on your new ad listing submission page."
+msgstr ""
+
+#: includes/admin/admin-values.php:2073
+msgid "Enter a description of your new ad package. It will not be visible on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:2081
+msgid "Price Per Listing"
+msgstr ""
+
+#: includes/admin/admin-values.php:2083
+msgid "Enter a numeric value for this package (do not enter a currency symbol or commas). For ad packs, this will be the price to post an ad."
+msgstr ""
+
+#: includes/admin/admin-values.php:2092
+msgid "Ad Duration"
+msgstr ""
+
+#: includes/admin/admin-values.php:2094
+msgid "Enter a numeric value to specify the number of days for this ad package (i.e. 30, 60, 90, 120)."
+msgstr ""
+
+#: includes/admin/admin-values.php:2103
+#: includes/admin/admin-values.php:2216
+msgid "Package Status"
+msgstr ""
+
+#: includes/admin/admin-values.php:2105
+msgid "If you do not want this ad package live on your site, select inactive."
+msgstr ""
+
+#: includes/admin/admin-values.php:2126
+msgid "Membership Pack Details"
+msgstr ""
+
+#: includes/admin/admin-values.php:2133
+msgid "Create a name that best describes this membership package. (i.e. 30 days unlimited posting for only $25) This will be visible on your ad listing submission page."
+msgstr ""
+
+#: includes/admin/admin-values.php:2144
+msgid "Enter a description of your new membership package. It will not be visible on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:2152
+msgid "Package Type"
+msgstr ""
+
+#: includes/admin/admin-values.php:2154
+msgid "Select which package type to change how the pack affects the price of the ad during the posting process."
+msgstr ""
+
+#: includes/admin/admin-values.php:2161
+msgid "Static Price"
+msgstr ""
+
+#: includes/admin/admin-values.php:2162
+msgid "Discounted Price"
+msgstr ""
+
+#: includes/admin/admin-values.php:2163
+msgid "% Discounted Price"
+msgstr ""
+
+#: includes/admin/admin-values.php:2165
+msgid "Membership Price"
+msgstr ""
+
+#: includes/admin/admin-values.php:2167
+msgid "The price this membership will cost your customer to purchase. Enter a numeric value (do not enter a currency symbol or commas)."
+msgstr ""
+
+#: includes/admin/admin-values.php:2176
+msgid "Membership Duration"
+msgstr ""
+
+#: includes/admin/admin-values.php:2177
+msgid "Enter a numeric value for the number of days"
+msgstr ""
+
+#: includes/admin/admin-values.php:2178
+msgid "The length of time in days this membership lasts. Enter a numeric value (i.e. 30, 60, 90, 120)."
+msgstr ""
+
+#: includes/admin/admin-values.php:2187
+msgid "Price Modifier <br /> (How a membership <br /> affects the price of an ad)"
+msgstr ""
+
+#: includes/admin/admin-values.php:2188
+msgid "Enter #.## for currency (i.e. 2.25 for $2.25), ### for percentage (i.e. 50 for 50%)."
+msgstr ""
+
+#: includes/admin/admin-values.php:2189
+msgid "Enter a numeric value (do not enter a currency symbol or commas). This will modify the checkout price based on the selected package type."
+msgstr ""
+
+#: includes/admin/admin-values.php:2199
+msgid "Satisfies Membership Requirement"
+msgstr ""
+
+#: includes/admin/admin-values.php:2200
+#, php-format
+msgid "If the &quot;<a href='%s'>Are Membership Packs Required to Purchase Ads</a>&quot; option under the Membership tab is set to yes, you should select yes."
+msgstr ""
+
+#: includes/admin/admin-values.php:2203
+msgid "If the &quot;Are Membership Packs Required to Purchase Ads&quot; option is set to yes, you should select yes."
+msgstr ""
+
+#: includes/admin/admin-values.php:2205
+msgid "Selecting no means that this membership does not allow the customer to post to categories requiring membership. You would select no if you wanted to separate memberships that are required to post versus memberships that simply affect the final price."
+msgstr ""
+
+#: includes/admin/admin-values.php:2218
+msgid "Allows you to temporarily turn off this package instead of deleting it. Please note that existing active memberships will still be able to list ads at their discounted price unless memberships are turned off globally from the Pricing => Membership tab."
+msgstr ""
+
+#: includes/admin/admin-values.php:2240
+msgid "Coupon Details"
+msgstr ""
+
+#: includes/admin/admin-values.php:2247
+msgid "Create a coupon code that you wish to use. This will be the actual coupon that you pass out to your customers."
+msgstr ""
+
+#: includes/admin/admin-values.php:2258
+msgid "Enter a description of your new coupon. It will not be visible on your site."
+msgstr ""
+
+#: includes/admin/admin-values.php:2268
+msgid "Enter a numeric value for this coupon (do not enter a currency symbol or commas)."
+msgstr ""
+
+#: includes/admin/admin-values.php:2277
+msgid "Type of Discount"
+msgstr ""
+
+#: includes/admin/admin-values.php:2279
+msgid "Either a fixed price or percentage discount."
+msgstr ""
+
+#: includes/admin/admin-values.php:2289
+msgid "Max Usage"
+msgstr ""
+
+#: includes/admin/admin-values.php:2291
+msgid "Enter a numeric value for the times you wish this coupon to be usable. Enter 0 for unlimited usage."
+msgstr ""
+
+#: includes/admin/admin-values.php:2300
+msgid "Start Date"
+msgstr ""
+
+#: includes/admin/admin-values.php:2302
+msgid "Enter the start date for this coupon to begin working."
+msgstr ""
+
+#: includes/admin/admin-values.php:2312
+msgid "Expire Date"
+msgstr ""
+
+#: includes/admin/admin-values.php:2314
+msgid "Enter the expiration date for this coupon to stop working."
+msgstr ""
+
+#: includes/admin/admin-values.php:2324
+msgid "Coupon Status"
+msgstr ""
+
+#: includes/admin/admin-values.php:2326
+msgid "If you do not want this coupon available for use, select inactive."
+msgstr ""
+
+#: includes/admin/install-script.php:1015
+msgid "<p>This is your first ClassiPress ad listing. It is a placeholder ad just so you can see how it works. Delete this before launching your new classified ads site.</p>Duis arcu turpis, varius nec sagittis id, ultricies ac arcu. Etiam sagittis rutrum nunc nec viverra. Etiam egestas congue mi vel sollicitudin.</p><p>Vivamus ac libero massa. Cras pellentesque volutpat dictum. Ut blandit dapibus augue, lobortis cursus mi blandit sed. Fusce vulputate hendrerit sapien id aliquet.</p>"
+msgstr ""
+
+#: includes/admin/write-panel.php:9
+msgid "Ad Meta Fields"
+msgstr ""
+
+#: includes/admin/write-panel.php:10
+msgid "Ad Images"
+msgstr ""
+
+#: includes/admin/write-panel.php:84
+msgid "Ad Info"
+msgstr ""
+
+#: includes/admin/write-panel.php:86
+msgid "Ad ID"
+msgstr ""
+
+#: includes/admin/write-panel.php:87
+msgid "Views Total:"
+msgstr ""
+
+#: includes/admin/write-panel.php:92
+msgid "Submitted By"
+msgstr ""
+
+#: includes/admin/write-panel.php:115
+msgid "Ad Terms"
+msgstr ""
+
+#: includes/admin/write-panel.php:116
+msgid "for"
+msgstr ""
+
+#: includes/admin/write-panel.php:120
+msgid "Ad Expires"
+msgstr ""
+
+#: includes/admin/write-panel.php:132
+msgid "Submitted from IP"
+msgstr ""
+
+#: includes/admin/write-panel.php:397
+msgid "New Image"
+msgstr ""
+
+#: includes/forms/step-functions.php:214
+msgid "KB max file size per image"
+msgstr ""
+
+#: includes/forms/step-functions.php:236
+msgid "Featured Listing"
+msgstr ""
+
+#: includes/forms/step-functions.php:240
+msgid "Your listing will appear in the featured slider section at the top of the front page."
+msgstr ""
+
+#: includes/forms/step-functions.php:255
+msgid "Ad Package"
+msgstr ""
+
+#: includes/forms/step-functions.php:276
+#: includes/forms/step2.php:27
+msgid "Error: no ad pack has been defined. Please contact the site administrator."
+msgstr ""
+
+#: includes/forms/step-functions.php:289
+msgid "Coupon Code"
+msgstr ""
+
+#: includes/forms/step-functions.php:406
+msgid "ERROR: no results found for the default ad form."
+msgstr ""
+
+#: includes/forms/step-functions.php:451
+#, php-format
+msgid "ERROR: The form template for form ID %s does not exist or the session variable is empty."
+msgstr ""
+
+#: includes/forms/step-functions.php:463
+#: includes/forms/step2-membership.php:131
+#: includes/forms/step2.php:182
+msgid "Payment Method"
+msgstr ""
+
+#: includes/forms/step-functions.php:472
+msgid "Ad Listing Fee"
+msgstr ""
+
+#: includes/forms/step-functions.php:474
+#: includes/forms/step2-membership.php:93
+msgid "FREE"
+msgstr ""
+
+#: includes/forms/step-functions.php:481
+msgid "Featured Listing Fee"
+msgstr ""
+
+#: includes/forms/step-functions.php:491
+#: includes/forms/step2-membership.php:100
+msgid "Coupon"
+msgstr ""
+
+#: includes/forms/step-functions.php:518
+#: includes/forms/step2-membership.php:116
+msgid "Total Amount Due"
+msgstr ""
+
+#: includes/forms/step-functions.php:523
+#: includes/forms/step2-membership.php:121
+msgid "--"
+msgstr ""
+
+#: includes/forms/step-functions.php:542
+msgid "Price depends on category"
+msgstr ""
+
+#: includes/forms/step-functions.php:546
+msgid "Price depends on ad package selected"
+msgstr ""
+
+#: includes/forms/step-functions.php:550
+#, php-format
+msgid "% of your ad listing price"
+msgstr ""
+
+#: includes/forms/step-functions.php:554
+msgid "Free listing unless featured."
+msgstr ""
+
+#: includes/forms/step-functions.php:635
+#, php-format
+msgid "ERROR: no ad packs found for ID %s."
+msgstr ""
+
+#: includes/forms/step1-membership.php:31
+msgid "Membership is currently required"
+msgstr ""
+
+#: includes/forms/step1-membership.php:31
+msgid " in order to post to category "
+msgstr ""
+
+#: includes/forms/step1-membership.php:59
+msgid "Membership Benefit"
+msgstr ""
+
+#: includes/forms/step1-membership.php:60
+msgid "Subscription"
+msgstr ""
+
+#: includes/forms/step1-membership.php:90
+msgid "Buy Now &rsaquo;&rsaquo;"
+msgstr ""
+
+#: includes/forms/step1-membership.php:109
+msgid "No membership packs found."
+msgstr ""
+
+#: includes/forms/step1.php:31
+msgid "Submit Your Listing"
+msgstr ""
+
+#: includes/forms/step1.php:59
+msgid "Cost Per Listing"
+msgstr ""
+
+#: includes/forms/step1.php:66
+msgid "Select a Category:"
+msgstr ""
+
+#: includes/forms/step1.php:86
+msgid "Go"
+msgstr ""
+
+#: includes/forms/step1.php:115
+msgid "(change)"
+msgstr ""
+
+#: includes/forms/step1.php:121
+msgid "Continue &rsaquo;&rsaquo;"
+msgstr ""
+
+#: includes/forms/step2-membership.php:38
+msgid "Review Your Membership Purchase"
+msgstr ""
+
+#: includes/forms/step2-membership.php:43
+msgid "more"
+msgstr ""
+
+#: includes/forms/step2-membership.php:46
+#, php-format
+msgid "Your Current Membership (%1$s)  will be canceled upon purchase. This membership still has %2$s days remaining."
+msgstr ""
+
+#: includes/forms/step2-membership.php:55
+msgid "Renewal"
+msgstr ""
+
+#: includes/forms/step2-membership.php:60
+msgid "Membership Benefit:"
+msgstr ""
+
+#: includes/forms/step2-membership.php:65
+msgid "Membership Length:"
+msgstr ""
+
+#: includes/forms/step2-membership.php:72
+msgid "Previous Expiration:"
+msgstr ""
+
+#: includes/forms/step2-membership.php:77
+msgid "New Expiration:"
+msgstr ""
+
+#: includes/forms/step2-membership.php:91
+msgid "Membership Purchase Fee"
+msgstr ""
+
+#: includes/forms/step2-membership.php:155
+#: includes/forms/step2.php:208
+msgid "By clicking the proceed button below, you agree to our terms and conditions."
+msgstr ""
+
+#: includes/forms/step2-membership.php:157
+#: includes/forms/step2.php:210
+msgid "Your IP address has been logged for security purposes:"
+msgstr ""
+
+#: includes/forms/step2-membership.php:163
+#: includes/forms/step2.php:215
+msgid "Go back"
+msgstr ""
+
+#: includes/forms/step2-membership.php:164
+#: includes/forms/step2.php:216
+msgid "Proceed "
+msgstr ""
+
+#: includes/forms/step2.php:157
+msgid "Review Your Listing"
+msgstr ""
+
+#: includes/forms/step2.php:236
+msgid "Go Back"
+msgstr ""
+
+#: includes/forms/step3-membership.php:22
+#: includes/forms/step3.php:36
+msgid "Final Step"
+msgstr ""
+
+#: includes/forms/step3-membership.php:22
+msgid "Membership Updated"
+msgstr ""
+
+#: includes/forms/step3-membership.php:42
+msgid "Your order has been completed and your membership status should now be active."
+msgstr ""
+
+#: includes/forms/step3-membership.php:78
+msgid "Your session or order has expired or we cannot cannot find your order in our systems. Please start over to create a valid membership order."
+msgstr ""
+
+#: includes/forms/step3.php:38
+msgid "Ad Listing Received"
+msgstr ""
+
+#: includes/forms/step3.php:79
+msgid "Thank you! Your ad listing has been submitted for review."
+msgstr ""
+
+#: includes/forms/step3.php:80
+msgid "You can check the status by viewing your dashboard."
+msgstr ""
+
+#: includes/forms/step3.php:84
+msgid "Thank you! Your ad listing has been submitted and is now live."
+msgstr ""
+
+#: includes/forms/step3.php:86
+msgid "View your new ad listing."
+msgstr ""
+
+#: includes/forms/step3.php:113
+msgid "Your session has expired or you are trying to submit a duplicate ad. Please start over."
+msgstr ""
+
+#: includes/forms/forgot-password/forgot-password-form.php:18
+msgid "Username or Email:"
+msgstr ""
+
+#: includes/forms/forgot-password/forgot-password-form.php:24
+msgid "Get New Password"
+msgstr ""
+
+#: includes/forms/login/login-form.php:31
+#: includes/forms/register/register-form.php:34
+msgid "Password:"
+msgstr ""
+
+#: includes/forms/login/login-form.php:41
+msgid "Remember me"
+msgstr ""
+
+#: includes/forms/login/login-form.php:45
+msgid "Login &raquo;"
+msgstr ""
+
+#: includes/forms/login/login-form.php:51
+msgid "Password Lost and Found"
+msgstr ""
+
+#: includes/forms/login/login-form.php:51
+msgid "Lost your password?"
+msgstr ""
+
+#: includes/forms/register/register-form.php:52
+msgid "Create Account"
+msgstr ""
+
+#: includes/forms/register/register-form.php:65
+msgid "** User registration is currently disabled. Please contact the site administrator. **"
+msgstr ""
+
+#: includes/forms/register/register-process.php:64
+#: includes/forms/register/register-process.php:66
+#: includes/forms/register/register-process.php:69
+#: includes/forms/register/register-process.php:73
+#: includes/forms/register/register-process.php:75
+#: includes/forms/register/register-process.php:78
+#: includes/forms/register/register-process.php:84
+#: includes/forms/register/register-process.php:86
+#: includes/forms/register/register-process.php:88
+#: includes/forms/register/register-process.php:98
+msgid "ERROR"
+msgstr ""
+
+#: includes/forms/register/register-process.php:64
+msgid "Please enter a username."
+msgstr ""
+
+#: includes/forms/register/register-process.php:66
+msgid "Username is invalid. Please enter a valid username."
+msgstr ""
+
+#: includes/forms/register/register-process.php:69
+msgid "Username is already in use. Please choose another one."
+msgstr ""
+
+#: includes/forms/register/register-process.php:73
+msgid "Please enter an email address."
+msgstr ""
+
+#: includes/forms/register/register-process.php:75
+msgid "Email address format is invalid."
+msgstr ""
+
+#: includes/forms/register/register-process.php:78
+msgid "Email address is already in use. Please choose another one."
+msgstr ""
+
+#: includes/forms/register/register-process.php:84
+msgid "Please enter a password."
+msgstr ""
+
+#: includes/forms/register/register-process.php:86
+msgid "Please enter the password twice."
+msgstr ""
+
+#: includes/forms/register/register-process.php:88
+msgid "Passwords do not match."
+msgstr ""
+
+#: includes/forms/register/register-process.php:98
+msgid "The reCaptcha anti-spam response was incorrect."
+msgstr ""
+
+#: includes/forms/register/register-process.php:112
+#, php-format
+msgid "Registration failed. Please contact the <a href=\"mailto:%s\">webmaster</a> !"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:34
+msgid "PayPal Options"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:42
+msgid "Enable PayPal"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:43
+#, php-format
+msgid "You must have a <a target='_new' href='%s'>PayPal</a> account setup before using this feature."
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:44
+msgid "Set this to yes if you want to offer PayPal as a payment option on your site. This is the most popular option. Note: the &quot;Charge for Listing Ads&quot; option on the pricing page must be set to yes for this option to work."
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:76
+msgid "Enable PayPal IPN"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:77
+#, php-format
+msgid "Your web host must support <a target='_new' href='%s'>fsockopen</a> otherwise this feature will not work. You must also enable IPN within your PayPal account. See the theme <a target='_new' href='%s'>install docs</a> for setup instructions"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:78
+msgid "IPN stands for instant payment notification and is very powerful. Once a payment has been made via PayPal, it will then send your site a behind the scenes confirmation that the payment was made and instantly activate the ad. If your server does not support this option then your customer must click on a link and come back to your site before the ad will be activated."
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:88
+msgid "Enable IPN Debug"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:89
+#, php-format
+msgid "Debug PayPal IPN emails will be sent to %s."
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:90
+msgid "If you would like to receive the raw IPN post responses from PayPal to see if payments are being processed correctly, check this box."
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:114
+msgid "Bank Transfer Options"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:122
+msgid "Enable Bank Transfer"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:124
+msgid "Set this to yes if you want to offer cash payments via bank transfer as a payment option on your site. Note: the &quot;Charge for Listing Ads&quot; option on the pricing page must be set to yes for this option to work."
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:134
+msgid "Wire Instructions"
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:135
+msgid "Enter your specific bank wire instructions here. HTML can be used."
+msgstr ""
+
+#: includes/gateways/admin-gateway-values.php:136
+msgid "This will be shown on the payment page after a new ad has been submitted. You will then need to verify the money has been transfered and then manually approve the ad. Include your bank account name, number, routing number, IBAN, or whatever information is necessary to transfer money into your account. IMPORTANT: THE INFORMATION IN THIS TEXT BOX WILL BE SHOWN ON YOUR WEB SITE CONFIRMATION PAGE. APPTHEMES IS NOT LIABLE FOR ANY DAMAGES SO BE VERY CAREFUL WITH WHAT YOU INPUT HERE."
+msgstr ""
+
+#: includes/gateways/gateway.php:19
+msgid "Please wait while we redirect you to our payment page."
+msgstr ""
+
+#: includes/gateways/gateway.php:21
+msgid "(Click the button below if you are not automatically redirected within 5 seconds.)"
+msgstr ""
+
+#: includes/gateways/banktransfer/banktransfer.php:46
+msgid "Your Unique Ad Details"
+msgstr ""
+
+#: includes/gateways/banktransfer/banktransfer.php:51
+msgid "Transaction ID:"
+msgstr ""
+
+#: includes/gateways/banktransfer/banktransfer.php:52
+msgid "Reference #:"
+msgstr ""
+
+#: includes/gateways/banktransfer/banktransfer.php:53
+msgid "Total Amount:"
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:163
+msgid "A membership order has been completed. Check to make sure this is a valid order by comparing this messages Paypal Transaction ID to the respective ID in the Paypal payment receipt email."
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:171
+msgid "Paypal Transaction ID: "
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:222
+msgid "PayPal IPN - payment pending"
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:227
+#, php-format
+msgid "The following payment is pending on your %s website."
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:228
+#: includes/gateways/paypal/ipn.php:258
+#: includes/gateways/paypal/ipn.php:286
+msgid "Payment Details"
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:230
+#: includes/gateways/paypal/ipn.php:260
+#: includes/gateways/paypal/ipn.php:288
+msgid "Payer PayPal address: "
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:232
+#: includes/gateways/paypal/ipn.php:262
+#: includes/gateways/paypal/ipn.php:290
+msgid "Payer first name: "
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:233
+#: includes/gateways/paypal/ipn.php:263
+#: includes/gateways/paypal/ipn.php:291
+msgid "Payer last name: "
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:234
+#: includes/gateways/paypal/ipn.php:264
+#: includes/gateways/paypal/ipn.php:292
+msgid "Payment type: "
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:235
+#: includes/gateways/paypal/ipn.php:265
+#: includes/gateways/paypal/ipn.php:294
+msgid "Amount: "
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:236
+#: includes/gateways/paypal/ipn.php:266
+#: includes/gateways/paypal/ipn.php:295
+msgid "Full Details"
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:252
+msgid "PayPal IPN - payment failed"
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:257
+#, php-format
+msgid "The following payment has failed on your %s website."
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:280
+msgid "PayPal IPN - payment refunded/reversed"
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:285
+#, php-format
+msgid "The following payment has been marked as refunded on your %s website."
+msgstr ""
+
+#: includes/gateways/paypal/ipn.php:293
+msgid "Reason code: "
+msgstr ""
+
+#: includes/gateways/paypal/paypal.php:59
+msgid "Continue"
+msgstr ""
+

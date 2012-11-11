@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Wordpress Gallery - Getting Started</title>
+<link rel="shortcut icon" href="http://shapeshifter.makedesignnotwar.com/themes/wp/mu/wpmu/wp-content/themes/shapeshifter/library/img/favicon.gif" type="image/gif" />
+
+<style type="text/css">
+html, body{margin: 0; padding: 0;}
+#wrapper { margin: 112px auto; font-family: Lucida Grande, Arial, Helvetica, sans-serif; font-size: 12px; color: #202020; line-height: 20px; width: 570px; clear: both;}
+h1 { margin-top: 10px; }
+fieldset { margin: 30px 0; padding: 30px; }
+legend { font-size: 18px; padding: 0 10px; color: #202020; }
+pre, xmp {
+	border: solid 1px #ccc;
+	padding:15px; 
+	background: #efefef;
+	}
+a {color: #1386d7;}
+hr{
+	background: #FFF;
+	height: 1px;
+	border: 0px;
+	border-bottom: 1px dotted #c2c2c2;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+hr.navi{
+	background: #FFF;
+	height: 1px;
+	border: 0px;
+	border-bottom: 1px dotted #c2c2c2;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a img {padding: 3px; background: #eee; border: 1px solid #ccc; width: 95%; height: 95%; margin: 10px auto;}
+a img:hover {background: #afdeff;}
+p{margin-bottom: 30px;}
+ul.nobullets {
+	list-style: none;
+	}
+
+ul.nav{clear: both; background: #efefef; border: solid 1px #ddd; padding: 0 0 0 15px; height: 30px; }
+ul.nav li{color: #1c8cbd; font-size: 10px; float: left; margin-right: 20px; list-style: none; padding: 5px;}
+ul.nav li:hover{cursor: pointer; background: white;}
+
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+<script type="text/javascript">
+$("document").ready(function() {			
+				
+				$('.section1-link').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".section1").offset().top
+					}, 700);				   
+					 
+										   
+				 });				
+				
+				
+				$('.section2-link').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".section2").offset().top
+					}, 700);				   
+					 
+										   
+				 });
+				
+				
+				$('.section3-link').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".section3").offset().top
+					}, 700);				   
+					 
+										   
+				 });
+				 
+				 $('.section4-link').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".section4").offset().top
+					}, 700);				   
+					 
+										   
+				 });
+				 
+				 $('.section5-link').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".section5").offset().top
+					}, 700);				   
+					 
+										   
+				 });
+
+});
+</script>
+</head>
+
+<body>
+<div style="clear: both; width: 100%; background: black; margin: 0; padding: 0; position: absolute; top: 0px; height: 135px;"><h1 style="height: 135px; width: 100%; background: black; margin: 0; padding: 0px; position: absolute; top: 0px;"><center><img src="images/logo.png" style="margin-top: 36px;"/></center></h1></div>
+<div id="wrapper">
+<br /><br />
+
+
+
+
+<p>Welcome and thanks for picking up the premium license for the plugin! The Simple WordPress Gallery plugin overrides the standard WordPress gallery with a film-strip style one.</p>
+
+<p>Please take the time to read through the instructions listed here, as many support related questions can be answered simply by re-reading these instructions.</p>
+
+This plugin requires at least Wordpress 3.0 and PHP 5.2 to run properly.
+
+
+<hr />
+
+
+<p><img src="images/clock.png" style="float: left; margin: 5px 10px 10px 0;" /><b>Time Note:</b> In the case of most standard Wordpress themes, this plugin should be "plug and play" capable. However, some themes will require you to make customizations, and there's a good chance that you'll want to adjust the styling and structure of some things anyways; So please reserve a little extra time in accordance with your goals for this plugin!</p>
+
+<p><img src="images/file-edit.png" style="float: left; margin: 5px 10px 10px 0;" /><b>Code Note:</b> This is a premium WP plugin, so the code involved is naturally going to be pretty involved and you should only make edits if you are confident with the material. </p>
+
+<p><img src="images/star.png" style="float: left; margin: 5px 10px 10px 0;" /><b>Updates Note:</b> We fully intend to continue working on this theme for at least a few more versions until I'm satisfied that I've provided as many cool features as necessary. Keep an eye out on the product page for updates as we'll announce it there when they become available.
+</p>
+
+<p><img src="images/info.png" style="float: left; margin: 5px 10px 10px 0;" /><b>Support:</b> Spot a bug? Can't find something? If you've gone through this document and still can't find what you are looking for, please check out the included Support Guide. Keep in mind that I get LOTS of emails regarding my work at ThemeForest, so it might take me a bit to get back to you, but I'll do my best to respond in a timely manner for the first several months of this theme's lifespan (read: I can't promise that I'll be supporting this theme in a decade).
+	<span class="section1"></span>
+</p>
+
+
+
+<hr class="navi" />
+<ul class="nav">
+	<li class="section1-link">1. Pre-Installation</li>
+	<li class="section2-link">2. Installation</li>
+	<li class="section3-link">3. Using the Plugin</li>
+	<li class="section4-link">4. Documentation</li>
+	<li class="section5-link">5. Change Log</li>
+</ul>
+<hr class="navi" />
+
+
+
+
+<fieldset>
+<legend>1. Pre Installation and Setup Steps</legend>
+<p>Put on your Wordpress hats... we're about to start the installation. First things first. You need a working verion of Wordpress 3.0 and your server will need to be running PHP 5.1 or greater.</p>
+
+<p>Wordpress is free, so that part should be easy enough. If you aren't sure about what version of PHP you are running, contact your webhost and they should be happy to provide you with the information and tools to upgrade to 5.1+ if you need to. This plugin won't even install if you are running anything lower than PHP 5.1, so be sure to check into this before moving any further.</p>
+
+<p>We'll be making lots of references to the Worpdress admin panel in this documentation. If you're totally new to Wordpress, take a few minutes to familiarize yourself with how the admin panel is laid out so you won't be lost when I instruct you to open up "Appearance > Widgets" or something like that. :)</p>
+</fieldset>
+
+<span class="section2"></span>
+
+<hr class="navi" />
+<ul class="nav">
+	<li class="section1-link">1. Pre-Installation</li>
+	<li class="section2-link">2. Installation</li>
+	<li class="section3-link">3. Using the Plugin</li>
+	<li class="section4-link">4. Documentation</li>
+	<li class="section5-link">5. Change Log</li>
+</ul>
+<hr class="navi" />
+
+
+
+
+
+<fieldset>
+<legend>2. Installing the Plugin</legend>
+
+<ol>
+<li>Download the zip file, unzip it and upload to your wp-content/plugins folder</li>
+<li>Activate.</li>
+<li>Existing galleries will automatically be converted by this plugin.</li>
+</ol>
+
+</fieldset>
+
+<span class="section3"></span>
+
+<hr class="navi" />
+<ul class="nav">
+	<li class="section1-link">1. Pre-Installation</li>
+	<li class="section2-link">2. Installation</li>
+	<li class="section3-link">3. Using the Plugin</li>
+	<li class="section4-link">4. Documentation</li>
+	<li class="section5-link">5. Change Log</li>
+</ul>
+<hr class="navi" />
+
+
+<fieldset>
+<legend>3. Using the Plugin</legend>
+
+<b>Usage is simple:</b><br />
+
+<ol>
+<li>Upload images as you normally would to any WordPress post.</li>
+<li>Optionally, you may use the new "show in gallery" option to hide and display individual images.</li>
+<li>Add the [gallery] shortcode to your post. </li>
+</ol>
+
+<b>It's really that easy. S&P Gallery also has some options built-in to customize the way your gallery is displayed.</b><br />
+
+<ol>
+<li>On the SP Gallery admin page you may customize the image sizes.</li>
+<li>Use [gallery id="some-post-id"] to display a gallery from a different post.</li>
+<li>Use [gallery order="DESC"] to reverse the order images are displayed in.</li>
+<li>Or use orderby to change which fields the images are arranged by.</li>
+<li>You can set custom dimensions on a single gallery by using: [gallery width=100 height=200]</li>
+<li>Want the images to change autmotically? Use: [gallery timeout=1000] (Set the time in milliseconds. 1000 = 1 second.)</li>
+<li>Slow down the transition with [gallery speed=6000] (Set the time in milliseconds. 1000 = 1 second.)</li>
+<li>To hide the controls so the gallery acts as a "slider" use [gallery mode=slider]. (You'll need to set a timeout since there will be no way to change the images.)</li>
+<li>You can include or exclude images by passing IDs of attachments you want in the gallery: [gallery include=2,3,4,5] or [gallery exclude=12,13,14]</li>
+<li> Want to open full-sized images in a lightbox? Use [gallery lightbox=yes].</li>
+<li> Simple WordPress Gallery can be selectively enabled and disabled by using [gallery default=yes] (If you have "use default" selected in the admin panel, you can use "default=no" to enable Simple WordPress Gallery)</li>
+</ol>
+</fieldset>
+
+
+<span class="section4"></span>
+<hr class="navi" />
+<ul class="nav">
+	<li class="section1-link">1. Pre-Installation</li>
+	<li class="section2-link">2. Installation</li>
+	<li class="section3-link">3. Using the Plugin</li>
+	<li class="section4-link">4. Documentation</li>
+	<li class="section5-link">5. Change Log</li>
+</ul>
+<hr class="navi" />
+
+
+
+
+<fieldset>
+<legend>4. Documentation</legend>
+
+There's currently no formal documentation for this plugin, but if we ever add any, it'll be in this section.
+
+</fieldset>
+
+
+<span class="section5"></span>
+<hr class="navi" />
+<ul class="nav">
+	<li class="section1-link">1. Pre-Installation</li>
+	<li class="section2-link">2. Installation</li>
+	<li class="section3-link">3. Using the Plugin</li>
+	<li class="section4-link">4. Documentation</li>
+	<li class="section5-link">5. Change Log</li>
+</ul>
+<hr class="navi" />
+
+
+
+<fieldset>
+<legend>5. Change Log</legend>
+
+<h3>Version 1.0</h3>
+
+This is the first version, so there are no changes to report!
+
+</fieldset>
+
+
+<hr class="navi" />
+<ul class="nav">
+	<li class="section1-link">1. Pre-Installation</li>
+	<li class="section2-link">2. Installation</li>
+	<li class="section3-link">3. Using the Plugin</li>
+	<li class="section4-link">4. Documentation</li>
+	<li class="section5-link">5. Change Log</li>
+</ul>
+<hr class="navi" />
+
+
+
+
+</fieldset>
+</div>
+</body>
+</html>

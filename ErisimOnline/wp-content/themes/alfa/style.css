@@ -1,0 +1,238 @@
+/*
+Theme Name: alfa
+Description: Another childtheme by alucas & rubencio
+Author: alucas & rubencio
+Author URI: http://classipro.com/
+Template: classipress
+Version: 1.1
+*/
+ 
+@import url("../classipress/style.css");
+
+.listing-address {
+	margin:0;
+	clear:left;
+}
+
+.listing-address {
+	float: left;
+	clear: both;
+	margin-right: 16px;
+	color: #383838;
+}
+
+
+.form-field {
+	margin: 20px 0 20px 20px;
+	width: 75%;
+	position:relative;
+}
+
+#listing-map {
+	height: 198px;
+	margin-left:10px;
+	border: 1px solid #C2C1C2
+}
+
+#listing-find-on-map {
+	margin:5px 0 10px 0;
+}
+
+/* Sidebar Map Listing */
+
+#sidebar #listing-map {
+	border: 1px solid #bdbcbd;
+}
+
+/* HEADER LOGIN */
+.header_top_res {
+	height: 35px;
+	min-height: 35px;
+	max-height: 35px;
+}
+.rb_login_form {
+	color: #FFF;
+}
+
+p.rb_login_text, 
+form.rb_loginform, 
+.rb_user, 
+.rb_password, 
+.rb_btn_login, 
+.rb_rss {
+	float: right;
+}
+a.rb_register {
+	color: #F60;
+	text-decoration: none;
+}
+a.rb_register:hover {
+	text-decoration: underline;
+}
+p.rb_login_text {
+	padding: 0;
+	font-size: 12px;
+	line-height: 35px;
+	margin-right: 10px;
+}
+.rb_login_form .rb_user {
+	font-size: 12px;
+	width: 120px;
+	float: left;
+	padding: 0 5px;
+	margin-right: 5px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	line-height: 20px;
+	margin-top: 5px;
+	font-weight: normal;
+}
+.rb_login_form .rb_user label {
+	color: #C00;
+	float: left;
+	margin: 0;
+	padding: 1px 2px 1px 0;
+	vertical-align: middle !important;
+	min-height: 20px !important;
+	font-size: 12px;
+	line-height: 20px;
+}
+.rb_login_form .rb_user input.text {
+	padding: 1px 0;
+	margin: 0;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-style: none;
+	width: 80px;
+	float: left;
+	vertical-align: middle !important;
+	min-height: 20px !important;
+	font-size: 12px;
+	line-height: 20px !important;
+}
+.rb_login_form .rb_password {
+	font-size: 12px;
+	width: 120px;
+	float: left;
+	padding: 0 5px;
+	margin-right: 5px;
+	line-height: 20px;
+	margin-top: 5px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.rb_login_form .rb_password label {
+	color: #C00;
+	float: left;
+	margin: 0;
+	padding: 1px 2px 1px 0;
+	vertical-align: middle !important;
+	min-height: 20px !important;
+	font-size: 12px;
+	line-height: 20px;
+}
+.rb_login_form .rb_password input {
+	padding: 0 0 1px;
+	margin: 0;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-style: none;
+	width: 80px;
+	float: left;
+	vertical-align: middle !important;
+	min-height: 20px !important;
+	font-size: 12px;
+	line-height: 20px !important;
+}
+.rb_login_form input#login.rb_btn_login {
+	border-style: none !important;
+	height: 22px;
+	min-height: 22px;
+	max-height: 22px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	padding: 1px 10px 5px;
+	background-color: #FFF;
+	color: #222 !important;
+	font-weight: bold;
+}
+.rb_login_form input#login.rb_btn_login:hover {
+	background-color: #ff6600;
+	font-weight: bold;
+	color: #C00;
+}
+.rb_rss {
+	margin-top: 7px;
+	margin-left: 10px;
+}
+a.rb_dashboard, 
+a.rb_logout {
+	border-style: none !important;
+	height: 22px;
+	min-height: 22px;
+	max-height: 22px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	padding: 4px 10px;
+	background-color: #FFF;
+	color: #222 !important;
+	font-weight: bold;
+}
+a.rb_dashboard:hover, 
+a.rb_logout:hover {
+	background-color: #ff6600;
+	text-decoration: none !important;
+}
+/* HEADER LOGIN ENDS */
+
+/* SHARE MODULE */
+.rb_share_ad {
+	width: 100%;
+	height: 25px;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.rb_tweet {
+	width: 70px;
+	float: left;
+}
+.twitter-share-button {
+	width: 100px !important;
+}
+.rb_facebook {
+	width: 120px;
+	float: left;
+}
+.rb_google {
+	width: 78px;
+	float: left;
+}
+/* SHARE MODULE ENDS */
+body, html { margin:0; padding:0; background-color:#FFFFFF; }
+#wrapper {
+background: none repeat scroll 0 0 #efefef;
+margin: 0 auto;
+width: 1000px;
+}

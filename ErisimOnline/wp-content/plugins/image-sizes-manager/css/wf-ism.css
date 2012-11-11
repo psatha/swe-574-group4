@@ -1,0 +1,110 @@
+/*
+  Image Sizes Manager
+  (c) 2011. Web factory Ltd
+  www.webfactoryltd.com
+*/
+
+#ism-notes {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+th.regenerate {
+  width: 90px;
+}
+
+th.actions {
+  width: 90px;
+  text-align: center;
+}
+
+th.height, td.height-column {
+  width: 90px;
+  text-align: center;
+}
+
+th.width, td.width-column {
+  width: 90px;
+  text-align: center;
+}
+
+.wf-ism tbody tr:hover {
+  background-color: #58B9E2;
+}
+
+th.crop, td.crop-column {
+  width: 90px;
+  text-align: center;
+}
+
+td.actions .delete img {
+  margin-left: 15px;
+}
+
+td.actions {
+  text-align: center;
+}
+
+.wrap h3 {
+  display: inline;
+}
+
+.wp-list-table {
+  margin: 10px 0 25px 0;
+}
+
+span.desc {
+  font-style: italic;
+  line-height: 100%;
+  margin: 0 0 10px 15px;
+}
+
+.wf_dialog {
+  padding: 15px 20px 0px 20px !important;
+}
+
+.wf_dialog input {
+  width: 100%;
+}
+
+.wf_dialog .ism-note {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 11px;
+  color: #666;
+}
+
+.wf_dialog label {
+  display: block;
+  font-weight: bold;
+}
+
+#ism-err {
+  color: red;
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+#ism-err li {
+  margin-bottom: 2px;
+}
+
+.ism_submit {
+  margin: 20px 0;
+}
+
+#wf_progress_percentText {
+  position: relative;
+  top: -6px;
+  left: -165px;
+  font-weight: bold;
+}
+
+#wf_progress {
+  margin-left: 20px;
+  position: relative;
+  bottom: -5px;
+}
