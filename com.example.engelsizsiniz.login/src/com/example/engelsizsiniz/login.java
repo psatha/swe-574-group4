@@ -22,6 +22,7 @@ public class login extends Activity {
 	Button anonymous, login;
 	EditText username, password;
 	
+	
 	static int MINUSERNAME = 5;
 	static int PASSMIN = 4;
 
