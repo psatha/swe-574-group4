@@ -9,41 +9,6 @@ Version: 1.1
  
 @import url("../classipress/style.css");
 
-.listing-address {
-	margin:0;
-	clear:left;
-}
-
-.listing-address {
-	float: left;
-	clear: both;
-	margin-right: 16px;
-	color: #383838;
-}
-
-
-.form-field {
-	margin: 20px 0 20px 20px;
-	width: 75%;
-	position:relative;
-}
-
-#listing-map {
-	height: 198px;
-	margin-left:10px;
-	border: 1px solid #C2C1C2
-}
-
-#listing-find-on-map {
-	margin:5px 0 10px 0;
-}
-
-/* Sidebar Map Listing */
-
-#sidebar #listing-map {
-	border: 1px solid #bdbcbd;
-}
-
 /* HEADER LOGIN */
 .header_top_res {
 	height: 35px;

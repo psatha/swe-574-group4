@@ -111,7 +111,7 @@ jQuery(document).ready(function ($) {
                                             cp_get_ad_details( $post->ID, $cat_id );
                                         ?>
     					   	
-                                        <table><tr><td width="114px"><div style="font-weight: 700; margin-right: 5px;">&#304;lan Tarihi</div></td><td> <?php the_time( get_option( 'date_format' ) ) ?></td>
+                                        <table><tr><td width="114px"><div style="font-weight: 700; margin-right: 5px;">Kayit Tarihi</div></td><td> <?php the_time( get_option( 'date_format' ) ) ?></td>
 					</tr></table>
     
                                             <?php if ( get_post_meta($post->ID, 'cp_sys_expire_date', true) ) ?>
@@ -126,24 +126,30 @@ jQuery(document).ready(function ($) {
                                 </div><!-- /bigright -->
 
 				
-                                <?php if ( get_option( 'cp_ad_images' ) == 'yes' ) : 
-                                 
-                                    	global $post, $wpdb;
-
-										// go see if any images are associated with the ad
-										$images = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'numberposts' => 1, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'ID') );
-
-										if ($images) {
-											?><div style="width: 280px;height: 270px;">
-												<?php echo do_shortcode('[gallery]'); ?>
-											</div>
-										<?php
-											// no image so return the placeholder thumbnail
-										} else {
-											echo '<img class="attachment-medium" style="width: 250px;height: 200px;" alt="" title="" src="'. get_bloginfo('template_url') .'/images/no-thumb.jpg" />';
-										}
-                                    
-                                    endif; ?>
+                                <?php if ( get_option( 'cp_ad_images' ) == 'yes' ) : ?>
+            
+                                    <!-- <div class="bigleft"> -->
+				    <div class="bigleft" style="width: 300px;">	
+            
+                                        <div id="main-pic">
+            
+                                            <?php cp_get_image_url(); ?>
+            
+                                            <div class="clr"></div>
+                                            
+                                        </div>
+            
+                                        <div id="thumbs-pic">
+            
+                                            <?php cp_get_image_url_single( $post->ID, 'thumbnail', $post->post_title, -1 ); ?>
+            
+                                            <div class="clr"></div>
+                                            
+                                        </div>
+            
+                                    </div> <!-- /bigleft -->
+            
+                                <?php endif; ?>
 
 				                <div class="clr"></div>
 				                
@@ -152,18 +158,8 @@ jQuery(document).ready(function ($) {
                                 <div class="single-main">
 					<br/>
 					<div class="contFullWidth"> <!-- contFullWidth -->
-					    <div class="header">Açıklamalar</div>
-						<br/><br/><script type="text/javascript"><!--
-							google_ad_client = "ca-pub-4910459993406684";
-							/* Açıklama Reklamı */
-							google_ad_slot = "5579473915";
-							google_ad_width = 550;
-							google_ad_height = 15;
-							//-->
-							</script>
-							<script type="text/javascript"
-								src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-							</script>
+					    <div class="header">A��klamalar</div>
+						<br/>
     						<?php the_content(); ?>
   					</div>
                                     

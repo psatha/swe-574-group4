@@ -16,12 +16,6 @@ function cp_ad_loop_price() {
 	if ( is_page() ) return; // don't do ad-meta on pages
 	global $post;
   if ( $post->post_type == 'page' || $post->post_type == 'post' ) return;
-?>		
-	<div class="price-wrap">
-        <span class="tag-head">&nbsp;</span><p class="post-price"><?php if ( get_post_meta( $post->ID, 'price', true ) ) cp_get_price_legacy( $post->ID ); else cp_get_price( $post->ID, 'cp_price' ); ?></p>
-    </div>
-
-<?php
 }
 add_action( 'appthemes_before_post_title', 'cp_ad_loop_price' );
 

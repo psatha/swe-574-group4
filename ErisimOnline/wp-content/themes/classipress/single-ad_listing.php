@@ -108,9 +108,25 @@ jQuery(document).ready(function ($) {
 
                                 <?php if ( get_option( 'cp_ad_images' ) == 'yes' ) : ?>
 
-									<div style="width: 280px;height: 270px;">
-										<?php echo do_shortcode('[gallery]'); ?>
-									</div>
+                                    <div class="bigleft">
+
+                                        <div id="main-pic">
+
+                                            <?php cp_get_image_url(); ?>
+
+                                            <div class="clr"></div>
+
+                                        </div>
+
+                                        <div id="thumbs-pic">
+
+                                            <?php cp_get_image_url_single( $post->ID, 'thumbnail', $post->post_title, -1 ); ?>
+
+                                            <div class="clr"></div>
+
+                                        </div>
+
+                                    </div><!-- /bigleft -->
 
                                 <?php endif; ?>
 
@@ -166,6 +182,7 @@ jQuery(document).ready(function ($) {
             <div class="clr"></div>
 
         </div><!-- /content_res -->
+
 
     </div><!-- /content_botbg -->
 
