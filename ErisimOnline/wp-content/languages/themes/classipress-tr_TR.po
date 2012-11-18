@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-12-23 15:53-0800\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Okan Bagci <bagciok@gmail.com>\n"
+"Last-Translator: \n"
 "Language-Team: AppThemes\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,11 +99,11 @@ msgstr "Hakkında:"
 
 #: author.php:63
 msgid "Latest items listed"
-msgstr "Son İlanlar"
+msgstr "Son Erisim Engelleri"
 
 #: author.php:83
 msgid "No ads by this poster yet."
-msgstr "Kullanıcı henüz bir ilan listelemedi."
+msgstr "Kullanıcı henüz bir Erisim Engeli listelemedi."
 
 #: author.php:93
 msgid "Recent blog posts"
@@ -159,11 +159,11 @@ msgstr "Hata Ayıklama modu açık"
 
 #: index.php:26
 msgid "Ad Categories"
-msgstr "İlan Kategorileri"
+msgstr "Erisim Kategorileri"
 
 #: index.php:48
 msgid "Just Listed"
-msgstr "Yeni İlanlar"
+msgstr "Yeni Erisim Engelleri"
 
 #: index.php:49
 msgid "Most Popular"
@@ -175,7 +175,7 @@ msgstr "Rasgele"
 
 #: index.php:60
 msgid "Classified Ads"
-msgstr "İlanlar"
+msgstr "Erisim Engelleri"
 
 #: index.php:74
 msgid "View More Ads"
@@ -220,11 +220,11 @@ msgstr "Gönderen"
 
 #: sidebar-ad.php:62
 msgid "You must be logged in to inquire about this ad."
-msgstr "İlan Sahibine Özel Mail Göndermek İçin Üye Olmanız Gerekmektedir. Üye İseniz Lütfen Giriş Yapınız."
+msgstr "Erisim Engeli Sahibine Özel Mail Göndermek İçin Üye Olmanız Gerekmektedir. Üye İseniz Lütfen Giriş Yapınız."
 
 #: sidebar-ad.php:80
 msgid "Information about the ad poster"
-msgstr "İlan sahibi ile ilgili bilgiler"
+msgstr "Erisim Engeli sahibi ile ilgili bilgiler"
 
 #: sidebar-ad.php:88
 msgid "Listed by:"
@@ -236,11 +236,11 @@ msgstr "tarafından listelenen diğer ürünler"
 
 #: sidebar-ad.php:139
 msgid "No other ads by this poster found."
-msgstr "Bu kullanıcı tarafından verilen başka ilan bulunamadı."
+msgstr "Bu kullanıcı tarafından verilen başka Erisim Engeli bulunamadı."
 
 #: sidebar-ad.php:147
 msgid "Latest items listed by"
-msgstr "tarafından listelenen son ilanlar"
+msgstr "tarafından listelenen son Erisim Engelleri"
 
 #: sidebar-blog.php:10
 msgid "Popular"
@@ -276,7 +276,7 @@ msgstr "Profili düzenle"
 
 #: sidebar-user.php:20
 msgid "WordPress Admin"
-msgstr "Wordpress Yönetici"
+msgstr "Yönetici Paneline Git"
 
 #: sidebar-user.php:21
 msgid "Log Out"
@@ -316,19 +316,19 @@ msgstr "Hesap Durumu"
 
 #: sidebar-user.php:102
 msgid "Live Listings:"
-msgstr "Yayındaki İlanlar:"
+msgstr "Yayındaki Erisim Engelleri:"
 
 #: sidebar-user.php:103
 msgid "Pending Listings:"
-msgstr "Bekleyen İlanlar:"
+msgstr "Bekleyen Erisim Engelleri:"
 
 #: sidebar-user.php:104
 msgid "Offline Listings:"
-msgstr "Yayında olmayan ilanlar:"
+msgstr "Yayında olmayan Erisim Engelleri:"
 
 #: sidebar-user.php:105
 msgid "Total Listings:"
-msgstr "Toplan İlan:"
+msgstr "Toplam Erisim Engeli Sayisi:"
 
 #: sidebar.php:15
 msgid "Join Now!"
@@ -348,7 +348,7 @@ msgstr "Kişisel panelinden ilanlarını yönet ya da profilini düzenle."
 
 #: sidebar.php:29
 msgid "Manage Ads"
-msgstr "İlanları Yönet"
+msgstr "Erisim Yönet"
 
 #: sidebar.php:67
 msgid "Sub Categories"
@@ -356,7 +356,7 @@ msgstr "Alt Kategoriler"
 
 #: single-ad_listing.php:30
 msgid "Post Was Reported"
-msgstr "İlan rapor edildi"
+msgstr "Erisim Engeli rapor edildi"
 
 #: single-ad_listing.php:32
 msgid "Report This Post"
@@ -400,7 +400,7 @@ msgstr "Etiketleri listele"
 
 #: tpl-add-new-confirm.php:86
 msgid "View your new ad"
-msgstr "Yeni ilanınızı görüntüleyin"
+msgstr "Yeni Erisim Engelinizi görüntüleyin"
 
 #: tpl-add-new-confirm.php:120
 msgid "Thank You!"
@@ -412,7 +412,7 @@ msgstr "Ödeme yapıldı ve ilanınız şu anda gösterimde."
 
 #: tpl-add-new-confirm.php:126
 msgid "Visit your dashboard to make any changes to your ad listing or profile."
-msgstr "İlanlarınızda ve profilinizde herhangi bir değişiklik yapmak için Kullanıcı paneline gidin."
+msgstr "Erisim Engelinizde ve profilinizde herhangi bir değişiklik yapmak için Kullanıcı paneline gidin."
 
 #: tpl-add-new-confirm.php:135
 msgid "An Error Has Occurred"
@@ -420,7 +420,7 @@ msgstr "Bir hata oluştu"
 
 #: tpl-add-new-confirm.php:139
 msgid "This ad has already been published or you do not have permission to activate this ad. Please contact the site admin if you are experiencing any issues."
-msgstr "Bu ilan zaten yayınlanmış veya bu ilanı etkinleştirmek için yetkiniz yok.Herhangi bir sorun yaşıyorsanız lütfen site yöneticisi ile iletişime geçin."
+msgstr "Bu Erisim Engeli zaten yayınlanmış veya bu ilanı etkinleştirmek için yetkiniz yok.Herhangi bir sorun yaşıyorsanız lütfen site yöneticisi ile iletişime geçin."
 
 #: tpl-dashboard.php:75
 #, php-format
@@ -429,7 +429,7 @@ msgstr "%s' nin Paneli"
 
 #: tpl-dashboard.php:77
 msgid "Below you will find a listing of all your classified ads. Click on one of the options to perform a specific task. If you have any questions, please contact the site administrator."
-msgstr "Aşağıda tüm ilanlarınızın listesini bulacaksınız.Herhangi bir değişiklik uygulamak için birine tıklayın.Herhangi bir sorunuz varsa lütfen site yöneticisi ile iletişime geçin."
+msgstr "Aşağıda tüm Erisim Engelleri listesini bulacaksınız.Herhangi bir değişiklik uygulamak için birine tıklayın.Herhangi bir sorunuz varsa lütfen site yöneticisi ile iletişime geçin."
 
 #: tpl-dashboard.php:83
 msgid "Title"
@@ -477,23 +477,23 @@ msgstr "Yayında değil"
 
 #: tpl-dashboard.php:186
 msgid "restart ad"
-msgstr "İlanı yenile"
+msgstr "Erisim Engelini yenile"
 
 #: tpl-dashboard.php:240
 msgid "Contact us to relist ad"
-msgstr "İlanı Yenilemek için iletişime geçin"
+msgstr "Erisim Engelini Yenilemek için iletişime geçin"
 
 #: tpl-dashboard.php:242
 msgid "Relist Ad"
-msgstr "İlanı yeniden yayınla"
+msgstr "Erisim Engelini yeniden yayınla"
 
 #: tpl-dashboard.php:255
 msgid "Mark Sold"
-msgstr "Satıldı olarak işaretle"
+msgstr "Cozuldu olarak işaretle"
 
 #: tpl-dashboard.php:257
 msgid "Unmark Sold"
-msgstr "Satıldı işaretini kaldır"
+msgstr "Cozuldu işaretini kaldır"
 
 #: tpl-dashboard.php:282
 msgid "You currently have no classified ads."
@@ -501,11 +501,11 @@ msgstr "Şu anda herhangi bir ilanınız bulunmamaktadır."
 
 #: tpl-edit-item.php:186
 msgid "Edit Your Ad"
-msgstr "İlanınızı düzenleyin"
+msgstr "Erisim Engelini düzenleyin"
 
 #: tpl-edit-item.php:191
 msgid "Edit the fields below and click save to update your ad. Your changes will be updated instantly on the site."
-msgstr "İlanınızı güncellemek için aşağıdaki alanları düzenleyin ve Kaydet' e tıklayın.Değişiklikler hemen etkin olacaktır."
+msgstr "Erisim Engelini güncellemek için aşağıdaki alanları düzenleyin ve Kaydet' e tıklayın.Değişiklikler hemen etkin olacaktır."
 
 #: tpl-edit-item.php:251
 msgid "Images"
@@ -521,11 +521,11 @@ msgstr "İptal et"
 
 #: tpl-edit-item.php:263
 msgid "Update Ad &raquo;"
-msgstr "İlanı Güncelle &raquo;"
+msgstr "Erisim Engelini Güncelle &raquo;"
 
 #: tpl-edit-item.php:276
 msgid "You have entered an invalid ad id or do not have permission to edit that ad."
-msgstr "Yanlış bir ilan numarası girdiniz veya bu ilanı düzenlemek için yetkiniz yok."
+msgstr "Yanlış bir Erisim Engeli numarası girdiniz veya bu ilanı düzenlemek için yetkiniz yok."
 
 #: tpl-full-width.php:57
 msgid "No content found."
@@ -829,7 +829,7 @@ msgstr "HATA: Yanlış resim yazısı uyuşmuyor."
 
 #: includes/sidebar-contact.php:36
 msgid "To inquire about this ad listing, complete the form below to send a message to the ad poster."
-msgstr "İlan sahibine mesaj gönderebilmek için  aşağıdaki formu doldurun."
+msgstr "Erisim Engeli sahibine mesaj gönderebilmek için  aşağıdaki formu doldurun."
 
 #: includes/sidebar-contact.php:40
 msgid "Name:"
@@ -865,7 +865,7 @@ msgstr "Şuanda pepüler bir ilan henüz yok."
 
 #: includes/theme-actions.php:67
 msgid "Ad Reference ID:"
-msgstr "İlan Takip Numarası:"
+msgstr "Erisim Engeli Takip Numarası:"
 
 #: includes/theme-actions.php:144
 msgid "No Tags"
@@ -873,7 +873,7 @@ msgstr "Etiket yok"
 
 #: includes/theme-actions.php:150
 msgid "Edit Post"
-msgstr "İlanı Düzenle"
+msgstr "Erisim Engelini Düzenle"
 
 #: includes/theme-actions.php:165
 msgid "Sorry, no posts could be found."
@@ -935,7 +935,7 @@ msgstr "Website"
 
 #: includes/theme-cron.php:60
 msgid "No expired ads were found."
-msgstr "Süresi dolan ilan bulunamadı."
+msgstr "Süresi dolan Erisim Engeli bulunamadı."
 
 #: includes/theme-cron.php:62
 msgid "The following ads expired and have been taken down from your website: "
@@ -964,7 +964,7 @@ msgstr "ClassiPress"
 
 #: includes/theme-emails.php:30
 msgid "New Ad Submission"
-msgstr "Yeni İlan Ekle"
+msgstr "Yeni Erisim Engeli Ekle"
 
 #: includes/theme-emails.php:31
 msgid "ClassiPress Admin"
@@ -982,7 +982,7 @@ msgstr "Sıradaki ilanlar az önce %s  sitenizden  gönderildi."
 #: includes/theme-emails.php:39
 #: includes/theme-emails.php:364
 msgid "Ad Details"
-msgstr "İlan Detayları"
+msgstr "Erisim Engeli Detayları"
 
 #: includes/theme-emails.php:40
 #: includes/theme-emails.php:87
@@ -1006,12 +1006,12 @@ msgstr "Yazan:"
 
 #: includes/theme-emails.php:46
 msgid "Preview Ad: "
-msgstr "İlan görüntüsü:"
+msgstr "Erisim Engeli görüntüsü:"
 
 #: includes/theme-emails.php:47
 #, php-format
 msgid "Edit Ad: %s"
-msgstr "İlanı Düzenle :%s"
+msgstr "Erisim Engelini Düzenle :%s"
 
 #: includes/theme-emails.php:48
 #: includes/theme-emails.php:153
@@ -1022,7 +1022,7 @@ msgstr "Saygılar,"
 #: includes/theme-emails.php:81
 #, php-format
 msgid "Your Ad Submission on %s"
-msgstr "%s deki ilan talebiniz"
+msgstr "%s deki Erisim Engeli talebiniz"
 
 #: includes/theme-emails.php:82
 #: includes/theme-emails.php:165
@@ -1057,7 +1057,7 @@ msgstr "Senin %s Siten"
 
 #: includes/theme-emails.php:145
 msgid "Your Ad Has Been Approved"
-msgstr "İlanınız Onaylandı"
+msgstr "Erisim Engeli Onaylandı"
 
 #: includes/theme-emails.php:149
 #, php-format
@@ -1070,7 +1070,7 @@ msgstr "İlanınızı aşağıdaki linke tıklayarak görüntüleyebilirsiniz."
 
 #: includes/theme-emails.php:164
 msgid "Your Ad Has Expired"
-msgstr "İlan süreniz sona erdi"
+msgstr "Erisim Engelinizin süresi sona erdi"
 
 #: includes/theme-emails.php:168
 #, php-format
@@ -1186,7 +1186,7 @@ msgstr "Giriş Yap"
 
 #: includes/theme-functions.php:445
 msgid "No ad details found."
-msgstr "İlan ayrıntısı bulunamadı."
+msgstr "Erisim Engeli ayrıntısı bulunamadı."
 
 #: includes/theme-functions.php:594
 msgid "Image "
@@ -1257,7 +1257,7 @@ msgstr "Resim silerken hata oluştu."
 
 #: includes/theme-functions.php:1104
 msgid "Your ad has been successfully updated."
-msgstr "İlanınız başarılı bir şekilde güncellendi."
+msgstr "Erisim Engeli başarılı bir şekilde güncellendi."
 
 #: includes/theme-functions.php:1104
 msgid "Return to my dashboard"
@@ -1318,7 +1318,7 @@ msgstr "Bu ilanın süresi sona erdi"
 
 #: includes/theme-functions.php:1330
 msgid "Ads tagged with"
-msgstr "İlan Etiketleri:"
+msgstr "Erisim Etiketleri:"
 
 #: includes/theme-functions.php:1424
 msgid "Search results for"
@@ -1330,11 +1330,11 @@ msgstr "Etiketlenmiş Gönderiler &#39;"
 
 #: includes/theme-functions.php:1454
 msgid "Random Ads "
-msgstr "Rasgele İlanlar"
+msgstr "Rasgele Erisim Engelleri"
 
 #: includes/theme-functions.php:1456
 msgid "Latest Ads "
-msgstr "Son İlanlar"
+msgstr "Son Eklenen Erisim Engelleri"
 
 #: includes/theme-functions.php:1460
 msgid "Page not found"
@@ -1354,7 +1354,7 @@ msgstr "en az iki karakter"
 
 #: includes/theme-functions.php:2219
 msgid "New Ad Listings"
-msgstr "Yeni İlanlar"
+msgstr "Yeni Erisim Engelleri"
 
 #: includes/theme-functions.php:2224
 msgid "Total Sales"
@@ -1400,7 +1400,7 @@ msgstr "' reklam başına daha az"
 
 #: includes/theme-functions.php:2594
 msgid "Free Posting"
-msgstr "Ücretsiz İlan"
+msgstr "Ücretsiz Erisim Engeli"
 
 #: includes/theme-functions.php:2595
 msgid " per ad"
@@ -1413,7 +1413,7 @@ msgstr "göndermek için gereken"
 
 #: includes/theme-header.php:149
 msgid "Post an Ad"
-msgstr "Ücretsiz İlan Ver"
+msgstr "Erisim Engeli Ekle"
 
 #: includes/theme-header.php:154
 msgid "Categories"
@@ -1543,7 +1543,7 @@ msgstr "Sonuçları filtrele  &rsaquo;&rsaquo;"
 
 #: includes/theme-searchbar.php:30
 msgid "Search Ads"
-msgstr "İlanlarda Ara"
+msgstr "Erisim Engellerinde Ara"
 
 #: includes/theme-searchbar.php:32
 msgid "All Categories"
@@ -1654,7 +1654,7 @@ msgstr "Başlık:"
 
 #: includes/theme-widgets.php:196
 msgid "Ads:"
-msgstr "İlanlar:"
+msgstr "Erisim Engelleri:"
 
 #: includes/theme-widgets.php:198
 msgid "Enter one ad entry per line in the following format:<br /> <code>URL|Image URL|Image Alt Text|rel</code><br /><strong>Note:</strong> You must hit your &quot;enter/return&quot; key after each ad entry otherwise the ads will not display properly."
@@ -1790,11 +1790,11 @@ msgstr "Kenar çubuğunuzda reklam arama kutusu"
 
 #: includes/theme-widgets.php:555
 msgid "Ad Search Box"
-msgstr "İlan Arama sidebar"
+msgstr "Erisim Engeli Arama sidebar"
 
 #: includes/theme-widgets.php:561
 msgid "Search Classified Ads"
-msgstr "İlan ara"
+msgstr "Erisim Engeli ara"
 
 #: includes/theme-widgets.php:591
 msgid "Your sidebar top ads today"
@@ -1814,11 +1814,11 @@ msgstr "Sidebar En Popüler ilanlar"
 
 #: includes/theme-widgets.php:629
 msgid "Top Ads Overall"
-msgstr "En Popüler İlanlar"
+msgstr "En Popüler Erisim Engelleri"
 
 #: includes/theme-widgets.php:635
 msgid "Popular Ads Overall"
-msgstr "En Popüler İlanlar"
+msgstr "En Popüler Erisim Engelleri"
 
 #: includes/theme-widgets.php:668
 msgid "Site Sponsors"
@@ -1834,7 +1834,7 @@ msgstr "CP Reklamlar Etiket Bulutu"
 
 #: includes/theme-widgets.php:700
 msgid "Ad Tags"
-msgstr "İlan Etiketleri"
+msgstr "Erisim Etiketleri"
 
 #: includes/theme-widgets.php:729
 msgid "Taxonomy:"
@@ -2684,15 +2684,15 @@ msgstr ""
 #: includes/admin/admin-post-types.php:222
 #: includes/admin/admin-post-types.php:372
 msgid "Ads"
-msgstr "İlanlar"
+msgstr "Erisim Engelleri"
 
 #: includes/admin/admin-post-types.php:27
 msgid "Ad"
-msgstr "İlan"
+msgstr "Erisim"
 
 #: includes/admin/admin-post-types.php:29
 msgid "Create New Ad"
-msgstr "Yeni İlan Ekle"
+msgstr "Yeni Erisim Engeli Ekle"
 
 #: includes/admin/admin-post-types.php:31
 msgid "Edit Ad"
@@ -2700,19 +2700,19 @@ msgstr "İlanı Düzenle"
 
 #: includes/admin/admin-post-types.php:32
 msgid "New Ad"
-msgstr "Yeni İlan"
+msgstr "Yeni Erisim Engeli"
 
 #: includes/admin/admin-post-types.php:33
 msgid "View Ads"
-msgstr "İlanları Görüntüle"
+msgstr "Erisim Engellerini Görüntüle"
 
 #: includes/admin/admin-post-types.php:34
 msgid "View Ad"
-msgstr "İlanı Görüntüle"
+msgstr "Erisim Engelini Görüntüle"
 
 #: includes/admin/admin-post-types.php:36
 msgid "No ads found"
-msgstr "İlan Bulunamadı!"
+msgstr "Erisim Engeli Bulunamadı!"
 
 #: includes/admin/admin-post-types.php:37
 msgid "No ads found in trash"
@@ -4730,7 +4730,7 @@ msgstr "İlan listesi Anasayfanın üst kısmında ki slayt bölümünde görün
 
 #: includes/forms/step-functions.php:252
 msgid "Ad Package"
-msgstr "İlan Paketi"
+msgstr "Erisim Paketi"
 
 #: includes/forms/step-functions.php:273
 msgid "Error: no ad pack has been defined."
@@ -4756,7 +4756,7 @@ msgstr "Ödeme Yöntemi"
 
 #: includes/forms/step-functions.php:469
 msgid "Ad Listing Fee"
-msgstr "İlan Ekleme Ücreti"
+msgstr "Erisim Ekleme Ücreti"
 
 #: includes/forms/step-functions.php:471
 #: includes/forms/step2-membership.php:93
@@ -4830,7 +4830,7 @@ msgstr "Üyelik paketi bulunamadı."
 
 #: includes/forms/step1.php:31
 msgid "Submit Your Listing"
-msgstr "İlan Ekle"
+msgstr "Erisim Ekle"
 
 #: includes/forms/step1.php:59
 msgid "Cost Per Listing"
@@ -4935,7 +4935,7 @@ msgstr "Tamamla"
 
 #: includes/forms/step2.php:132
 msgid "Review Your Listing"
-msgstr "İlanı İncele"
+msgstr "Erisim İncele"
 
 #: includes/forms/step2.php:211
 msgid "Go Back"
@@ -4959,7 +4959,7 @@ msgstr "Oturumunuzun veya siparişinizin süresi doldu veya sistemimizde sipari�
 
 #: includes/forms/step3.php:38
 msgid "Ad Listing Received"
-msgstr "İlan isteği alındı"
+msgstr "Erisim Engeli isteği alındı"
 
 #: includes/forms/step3.php:79
 msgid "Thank you! Your ad listing has been submitted for review."
@@ -5174,7 +5174,7 @@ msgstr "(Eğer 5 saniye içinde otomatik olarak yönlendirilmezseniz aşağıdak
 
 #: includes/gateways/banktransfer/banktransfer.php:32
 msgid "Your Unique Ad Details"
-msgstr "Sizin İlan Detaylarınız"
+msgstr "Sizin Erisim Engeli Detaylarınız"
 
 #: includes/gateways/banktransfer/banktransfer.php:34
 msgid "Please include the following details when sending the bank transfer. Once your transfer has been verified, we will then approve your ad listing."
