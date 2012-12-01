@@ -13,7 +13,7 @@
             <?php if ( !is_user_logged_in() ) : ?>
 
                 <?php echo get_option('cp_ads_welcome_msg'); ?>          
-                <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=register" class="mbtn btn_orange"><?php _e('Join Now!', 'appthemes') ?></a>
+                <a href="<?php echo get_option('siteurl'); ?>/login.php?action=register" class="mbtn btn_orange"><?php _e('Join Now!', 'appthemes') ?></a>
 
             <?php else: ?>
 

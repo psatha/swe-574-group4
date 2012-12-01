@@ -19,7 +19,7 @@ else
     $theaction = '';
 
 // if the user is on the login page, then let the games begin
-if ( $pagenow == 'wp-login.php' && $theaction != 'logout' && !isset($_GET['key']) ) :
+if ( $pagenow == 'login.php' && $theaction != 'logout' && !isset($_GET['key']) ) :
 	add_action('init', 'app_login_init', 98);
 	add_filter('wp_title', 'app_title');
 	//run original login actions on custom login page
@@ -28,7 +28,7 @@ if ( $pagenow == 'wp-login.php' && $theaction != 'logout' && !isset($_GET['key']
 endif;
 
 // if the user is on the reset password page, then style it
-if ($pagenow == 'wp-login.php' && ($theaction == 'rp' || $theaction == 'resetpass') && isset($_GET['key'])) :
+if ($pagenow == 'login.php' && ($theaction == 'rp' || $theaction == 'resetpass') && isset($_GET['key'])) :
 	add_action( 'login_head', 'cp_login_styles' );
 	add_action( 'login_head', 'cp_rp_page_style' );
 	add_filter( 'login_headerurl', 'cp_rp_page_headerurl' );
@@ -78,7 +78,7 @@ function app_title($title) {
 		$sitename = get_bloginfo( 'name' );
     $theaction = isset($_GET['action']) ? $_GET['action'] : ''; 
 
-		if ( $pagenow == 'wp-login.php' ) :
+		if ( $pagenow == 'login.php' ) :
 
 				switch( $theaction ) :
 						case 'lostpassword':
@@ -324,7 +324,7 @@ function app_show_password() {
         $errors = retrieve_password();
 
         if ( !is_wp_error($errors) ) {
-            wp_redirect('wp-login.php?checkemail=confirm');
+            wp_redirect('login.php?checkemail=confirm');
             exit();
         }
 

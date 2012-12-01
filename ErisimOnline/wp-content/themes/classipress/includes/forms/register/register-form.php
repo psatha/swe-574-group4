@@ -14,7 +14,7 @@ function app_register_form( $action = '' ) {
 
     if ( get_option('users_can_register') ) :
 
-        if (!$action) $action = site_url('wp-login.php?action=register');
+        if (!$action) $action = site_url('login.php?action=register');
 ?>
 
             <form action="<?php echo $action; ?>" method="post" class="loginform" name="registerform" id="registerform">

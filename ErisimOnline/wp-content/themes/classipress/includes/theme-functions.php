@@ -185,7 +185,7 @@ if (!function_exists('cp_login_head')) {
 			?>
 			<?php _e('Welcome,','appthemes'); ?> <strong><?php echo $display_user_name; ?></strong> [ <a href="<?php echo CP_DASHBOARD_URL ?>"><?php _e('My Dashboard','appthemes'); ?></a> | <a href="<?php echo $logout_url; ?>"><?php _e('Log out','appthemes'); ?></a> ]&nbsp;
 		<?php else : ?>
-			<?php _e('Welcome,','appthemes'); ?> <strong><?php _e('visitor!','appthemes'); ?></strong> [ <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=register"><?php _e('Register','appthemes'); ?></a> | <a href="<?php echo get_option('siteurl'); ?>/wp-login.php"><?php _e('Login','appthemes'); ?></a> ]&nbsp;
+			<?php _e('Welcome,','appthemes'); ?> <strong><?php _e('visitor!','appthemes'); ?></strong> [ <a href="<?php echo get_option('siteurl'); ?>/login.php?action=register"><?php _e('Register','appthemes'); ?></a> | <a href="<?php echo get_option('siteurl'); ?>/login.php"><?php _e('Login','appthemes'); ?></a> ]&nbsp;
 		<?php endif;
 
 	}
@@ -1085,7 +1085,7 @@ function auth_redirect_login() {
     $user = wp_get_current_user();
     if ( $user->ID == 0 ) {
         nocache_headers();
-        wp_redirect(get_option('siteurl') . '/wp-login.php?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
+        wp_redirect(get_option('siteurl') . '/login.php?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
         exit();
     }
 }

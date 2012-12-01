@@ -18,7 +18,7 @@ function do_signup_header() {
 add_action( 'wp_head', 'do_signup_header' );
 
 if ( !is_multisite() ) {
-	wp_redirect( site_url('wp-login.php?action=register') );
+	wp_redirect( site_url('login.php?action=register') );
 	die();
 }
 
@@ -218,7 +218,7 @@ function confirm_another_blog_signup($domain, $path, $blog_title, $user_name, $u
 	?>
 	<h2><?php printf( __( 'The site %s is yours.' ), "<a href='http://{$domain}{$path}'>{$blog_title}</a>" ) ?></h2>
 	<p>
-		<?php printf( __( '<a href="http://%1$s">http://%2$s</a> is your new site.  <a href="%3$s">Log in</a> as &#8220;%4$s&#8221; using your existing password.' ), $domain.$path, $domain.$path, "http://" . $domain.$path . "wp-login.php", $user_name ) ?>
+		<?php printf( __( '<a href="http://%1$s">http://%2$s</a> is your new site.  <a href="%3$s">Log in</a> as &#8220;%4$s&#8221; using your existing password.' ), $domain.$path, $domain.$path, "http://" . $domain.$path . "login.php", $user_name ) ?>
 	</p>
 	<?php
 	do_action( 'signup_finished' );
@@ -399,7 +399,7 @@ if ( $active_signup == 'none' ) {
 		$proto = 'https://';
 	else
 		$proto = 'http://';
-	$login_url = site_url( 'wp-login.php?redirect_to=' . urlencode($proto . $_SERVER['HTTP_HOST'] . '/wp-signup.php' ));
+	$login_url = site_url( 'login.php?redirect_to=' . urlencode($proto . $_SERVER['HTTP_HOST'] . '/wp-signup.php' ));
 	echo sprintf( __( 'You must first <a href="%s">log in</a>, and then you can create a new site.' ), $login_url );
 } else {
 	$stage = isset( $_POST['stage'] ) ?  $_POST['stage'] : 'default';

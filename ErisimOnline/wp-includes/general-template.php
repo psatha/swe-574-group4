@@ -212,7 +212,7 @@ function wp_logout_url($redirect = '') {
 		$args['redirect_to'] = urlencode( $redirect );
 	}
 
-	$logout_url = add_query_arg($args, site_url('wp-login.php', 'login'));
+	$logout_url = add_query_arg($args, site_url('login.php', 'login'));
 	$logout_url = wp_nonce_url( $logout_url, 'log-out' );
 
 	return apply_filters('logout_url', $logout_url, $redirect);
@@ -232,7 +232,7 @@ function wp_logout_url($redirect = '') {
  * @return string A log in url
  */
 function wp_login_url($redirect = '', $force_reauth = false) {
-	$login_url = site_url('wp-login.php', 'login');
+	$login_url = site_url('login.php', 'login');
 
 	if ( !empty($redirect) )
 		$login_url = add_query_arg('redirect_to', urlencode($redirect), $login_url);
@@ -270,7 +270,7 @@ function wp_login_form( $args = array() ) {
 	$args = wp_parse_args( $args, apply_filters( 'login_form_defaults', $defaults ) );
 
 	$form = '
-		<form name="' . $args['form_id'] . '" id="' . $args['form_id'] . '" action="' . esc_url( site_url( 'wp-login.php', 'login_post' ) ) . '" method="post">
+		<form name="' . $args['form_id'] . '" id="' . $args['form_id'] . '" action="' . esc_url( site_url( 'login.php', 'login_post' ) ) . '" method="post">
 			' . apply_filters( 'login_form_top', '', $args ) . '
 			<p class="login-username">
 				<label for="' . esc_attr( $args['id_username'] ) . '">' . esc_html( $args['label_username'] ) . '</label>
@@ -312,7 +312,7 @@ function wp_lostpassword_url( $redirect = '' ) {
 		$args['redirect_to'] = $redirect;
 	}
 
-	$lostpassword_url = add_query_arg( $args, network_site_url('wp-login.php', 'login') );
+	$lostpassword_url = add_query_arg( $args, network_site_url('login.php', 'login') );
 	return apply_filters( 'lostpassword_url', $lostpassword_url, $redirect );
 }
 
@@ -333,7 +333,7 @@ function wp_register( $before = '<li>', $after = '</li>', $echo = true ) {
 
 	if ( ! is_user_logged_in() ) {
 		if ( get_option('users_can_register') )
-			$link = $before . '<a href="' . site_url('wp-login.php?action=register', 'login') . '">' . __('Register') . '</a>' . $after;
+			$link = $before . '<a href="' . site_url('login.php?action=register', 'login') . '">' . __('Register') . '</a>' . $after;
 		else
 			$link = '';
 	} else {

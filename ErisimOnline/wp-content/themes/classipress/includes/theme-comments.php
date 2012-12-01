@@ -135,7 +135,7 @@ function cp_main_comment_form() {
 
         <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 
-            <p><?php printf( __("You must be <a href='%s'>logged in</a> to post a comment.", 'appthemes'), get_option('siteurl').'/wp-login.php?redirect_to='.urlencode( get_permalink() ) ); ?></p>
+            <p><?php printf( __("You must be <a href='%s'>logged in</a> to post a comment.", 'appthemes'), get_option('siteurl').'/login.php?redirect_to='.urlencode( get_permalink() ) ); ?></p>
 
         <?php else : ?>
 

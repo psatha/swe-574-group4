@@ -142,7 +142,7 @@ function display_setup_form( $error = null ) {
 // Let's check to make sure WP isn't already installed.
 if ( is_blog_installed() ) {
 	display_header();
-	die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p><p class="step"><a href="../wp-login.php" class="button">' . __('Log In') . '</a></p></body></html>' );
+	die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p><p class="step"><a href="../login.php" class="button">' . __('Log In') . '</a></p></body></html>' );
 }
 
 $php_version    = phpversion();
@@ -236,7 +236,7 @@ switch($step) {
 	</tr>
 </table>
 
-<p class="step"><a href="../wp-login.php" class="button"><?php _e( 'Log In' ); ?></a></p>
+<p class="step"><a href="../login.php" class="button"><?php _e( 'Log In' ); ?></a></p>
 
 <?php
 		}

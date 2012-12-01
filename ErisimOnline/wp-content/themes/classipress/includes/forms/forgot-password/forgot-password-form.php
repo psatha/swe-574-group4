@@ -12,7 +12,7 @@
 function app_forgot_password_form() {
 ?>
 	
-    <form action="<?php echo site_url('wp-login.php?action=lostpassword', 'login_post') ?>" method="post" class="loginform" name="lostpasswordform" id="lostpasswordform">
+    <form action="<?php echo site_url('login.php?action=lostpassword', 'login_post') ?>" method="post" class="loginform" name="lostpasswordform" id="lostpasswordform">
 
         <p>
             <label for="login_username"><?php _e('Username or Email:', 'appthemes'); ?></label>

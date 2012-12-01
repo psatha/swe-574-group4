@@ -40,7 +40,7 @@ function appthemes_load_template( $templates, $data = array() ) {
 function appthemes_auth_redirect_login() {
 	if ( !is_user_logged_in() ) {
 		nocache_headers();
-		wp_redirect( get_bloginfo( 'wpurl' ) . '/wp-login.php?redirect_to=' . urlencode( $_SERVER['REQUEST_URI'] ) );
+		wp_redirect( get_bloginfo( 'wpurl' ) . '/login.php?redirect_to=' . urlencode( $_SERVER['REQUEST_URI'] ) );
 		exit();
 	}
 }
@@ -116,7 +116,7 @@ function appthemes_admin_bar_login_form( $wp_admin_bar ) {
 		$wp_admin_bar->add_menu( array(
 			'id'     => 'register',
 			'title'  => __( 'Register', APP_TD ),
-			'href' => site_url( 'wp-login.php?action=register', 'login' )
+			'href' => site_url( 'login.php?action=register', 'login' )
 		) );
 	}
 }

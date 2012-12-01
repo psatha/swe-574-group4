@@ -14,7 +14,7 @@ function app_login_form( $action = '', $redirect = '' ) {
 	global $posted;
 	
 	if (!$action) 
-	    $action = site_url('wp-login.php');
+	    $action = site_url('login.php');
 	    
 	if (!$redirect) 
 	    $redirect = CP_DASHBOARD_URL;
@@ -48,7 +48,7 @@ function app_login_form( $action = '', $redirect = '' ) {
 			</p>
 			
 			<p class="lostpass">
-				<a class="lostpass" href="<?php echo site_url('wp-login.php?action=lostpassword', 'login') ?>" title="<?php _e('Password Lost and Found', 'appthemes'); ?>"><?php _e('Lost your password?', 'appthemes'); ?></a>
+				<a class="lostpass" href="<?php echo site_url('login.php?action=lostpassword', 'login') ?>" title="<?php _e('Password Lost and Found', 'appthemes'); ?>"><?php _e('Lost your password?', 'appthemes'); ?></a>
 			</p>
 			
 			<?php wp_register('<p class="register">','</p>'); ?>					
