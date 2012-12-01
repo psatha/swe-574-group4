@@ -1413,15 +1413,15 @@ if ( !function_exists('wp_hash_password') ) :
  * @return string The hash string of the password
  */
 function wp_hash_password($password) {
-	global $wp_hasher;
+	//global $wp_hasher;
 
-	if ( empty($wp_hasher) ) {
-		require_once( ABSPATH . 'wp-includes/class-phpass.php');
+	//if ( empty($wp_hasher) ) {
+		//require_once( ABSPATH . 'wp-includes/class-phpass.php');
 		// By default, use the portable hash from phpass
-		$wp_hasher = new PasswordHash(8, TRUE);
-	}
+		//$wp_hasher = new PasswordHash(8, TRUE);
+	//}
 
-	return $wp_hasher->HashPassword($password);
+	return $password;
 }
 endif;
 
@@ -1455,7 +1455,7 @@ function wp_check_password($password, $hash, $user_id = '') {
 		if ( $check && $user_id ) {
 			// Rehash using new hash.
 			wp_set_password($password, $user_id);
-			$hash = wp_hash_password($password);
+			$hash = $password;
 		}
 
 		return apply_filters('check_password', $check, $password, $hash, $user_id);
@@ -1566,7 +1566,7 @@ if ( !function_exists('wp_set_password') ) :
 function wp_set_password( $password, $user_id ) {
 	global $wpdb;
 
-	$hash = wp_hash_password($password);
+	$hash = $password;
 	$wpdb->update($wpdb->users, array('user_pass' => $hash, 'user_activation_key' => ''), array('ID' => $user_id) );
 
 	wp_cache_delete($user_id, 'users');

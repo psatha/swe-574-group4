@@ -271,7 +271,7 @@ function check_password_reset_key($key, $login) {
 function reset_password($user, $new_pass) {
 	do_action('password_reset', $user, $new_pass);
 
-	wp_set_password($new_pass, $user->ID);
+	//wp_set_password($new_pass, $user->ID);
 
 	wp_password_change_notification($user);
 }

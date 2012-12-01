@@ -107,9 +107,12 @@ function wp_authenticate_username_password($user, $username, $password) {
 	if ( is_wp_error($userdata) )
 		return $userdata;
 
-	if ( !wp_check_password($password, $userdata->user_pass, $userdata->ID) )
+	if(!($userdata->user_pass == $password))
 		return new WP_Error( 'incorrect_password', sprintf( __( '<strong>ERROR</strong>: The password you entered for the username <strong>%1$s</strong> is incorrect. <a href="%2$s" title="Password Lost and Found">Lost your password</a>?' ),
 		$username, wp_lostpassword_url() ) );
+	//if ( !wp_check_password($password, $userdata->user_pass, $userdata->ID) )
+		//return new WP_Error( 'incorrect_password', sprintf( __( '<strong>ERROR</strong>: The password you entered for the username <strong>%1$s</strong> is incorrect. <a href="%2$s" title="Password Lost and Found">Lost your password</a>?' ),
+		//$username, wp_lostpassword_url() ) );
 
 	$user =  new WP_User($userdata->ID);
 	return $user;
@@ -1263,7 +1266,7 @@ function wp_insert_user($userdata) {
 	} else {
 		$update = false;
 		// Hash the password
-		$user_pass = wp_hash_password($user_pass);
+		//$user_pass = wp_hash_password($user_pass);
 	}
 
 	$user_login = sanitize_user($user_login, true);
@@ -1416,7 +1419,7 @@ function wp_update_user($userdata) {
 	// If password is changing, hash it now.
 	if ( ! empty($userdata['user_pass']) ) {
 		$plaintext_pass = $userdata['user_pass'];
-		$userdata['user_pass'] = wp_hash_password($userdata['user_pass']);
+		$userdata['user_pass'] = $userdata['user_pass'];
 	}
 
 	wp_cache_delete($user[ 'user_email' ], 'useremail');
