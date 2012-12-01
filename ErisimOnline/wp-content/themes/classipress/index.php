@@ -6,6 +6,13 @@
 
 		<div class="content_res">
 
+            <?php 
+				if ( file_exists(STYLESHEETPATH . '/featured.php') )
+	                include_once(STYLESHEETPATH . '/featured.php');
+    	        else
+        	        include_once(TEMPLATEPATH . '/featured.php');
+			?>
+
 
         <!-- left block -->
         <div class="content_left">

@@ -1,0 +1,15 @@
+07/05/2012
+
+CUTEGALLERY V1.0 PLUGIN FOR CLASSIPRESS
+
+
+INSTRUCTIONS:
+
+1. Upload the "cutegallery" plugin to your plugins folder
+2. Activate the "cutegallery" plugin
+3. Replace your "themes/classipress/single-ad_listing.php" file with the one provided in the "cutegallery" plugin folder
+
+Enjoy!
+
+The ClassiPRO Team
+http://classipro.com

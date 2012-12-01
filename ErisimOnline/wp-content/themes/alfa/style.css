@@ -195,9 +195,3 @@ a.rb_logout:hover {
 	float: left;
 }
 /* SHARE MODULE ENDS */
-body, html { margin:0; padding:0; background-color:#FFFFFF; }
-#wrapper {
-background: none repeat scroll 0 0 #efefef;
-margin: 0 auto;
-width: 1000px;
-}
