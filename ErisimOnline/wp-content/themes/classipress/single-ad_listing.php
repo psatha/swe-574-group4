@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
 
 				        <div class="shadowblock_out">
 
-					        <div class="shadowblock" id="rb_custom">
+					        <div class="shadowblock">
 
                                 <?php appthemes_before_post_title(); ?>
 
@@ -60,14 +60,8 @@ jQuery(document).ready(function ($) {
 							    <?php appthemes_after_post_title(); ?>
 
 							    <div class="pad5 dotted"></div>
-                                
-                                
-                                <?php if (function_exists('cutegallery')) cutegallery(); ?>
-                                
-                                <div class="clr"></div>
-                                
 
-                                <div class="bigright"<?php if(get_option($GLOBALS['app_abbr'].'_ad_images') == 'no') echo 'style="float:none;"'; ?> id="rb_cutegallery">
+                                <div class="bigright"<?php if(get_option($GLOBALS['app_abbr'].'_ad_images') == 'no') echo 'style="float:none;"'; ?>>
 
                                     <ul>
 
@@ -110,8 +104,7 @@ jQuery(document).ready(function ($) {
                                     </ul>
 
                                 </div><!-- /bigright -->
-                                
-                                <?php if ( !function_exists ('cutegallery') ) { ?>
+
 
                                 <?php if ( get_option( 'cp_ad_images' ) == 'yes' ) : ?>
 
@@ -136,8 +129,6 @@ jQuery(document).ready(function ($) {
                                     </div><!-- /bigleft -->
 
                                 <?php endif; ?>
-                                
-                                <?php } ?>
 
 				                <div class="clr"></div>
 

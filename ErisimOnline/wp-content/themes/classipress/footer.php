@@ -9,7 +9,7 @@
 </div><!-- /container -->
 
 <?php appthemes_after(); ?>
-
+</div><!-- /wrapper -->
 </body>
 
 </html>

@@ -17,6 +17,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="wrapper">
 
     <?php appthemes_before(); ?>
 
