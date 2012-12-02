@@ -45,7 +45,20 @@ function app_register_form( $action = '' ) {
       					// include the spam checker if enabled
       					appthemes_recaptcha();
         				?>
-
+				<p>
+                    <label for="disability">Engel Durumunuz:</label>
+                    <select>
+                    	<?php
+							require_once('./dbconnect.php'); 
+							$sql = "SELECT * FROM er_disability";
+							$result = dbconnection($sql);
+							while($row = mysql_fetch_array($result))
+							{
+								echo "<option value=".$row['ID']."/>".$row['name']."</option>";
+  							}
+						?>
+                    </select>
+                </p>
                 <div id="checksave">
 
                     <p class="submit">

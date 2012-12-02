@@ -1867,7 +1867,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:19
 msgid "Emails"
-msgstr ""
+msgstr "E Postalar"
 
 #: includes/admin/admin-options.php:20
 msgid "Pricing Settings"
@@ -3322,7 +3322,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:661
 msgid "Listings"
-msgstr ""
+msgstr "Listeler"
 
 #: includes/admin/admin-values.php:664
 msgid "Classified Ads Configuration"

@@ -47,7 +47,7 @@ case 'add-tag':
 	if ( !current_user_can( $tax->cap->edit_terms ) )
 		wp_die( __( 'Cheatin&#8217; uh?' ) );
 
-	$ret = wp_insert_term( $_POST['tag-name'], $taxonomy, $_POST );
+	$ret = wp_insert_term( $_POST['tag-name'], $taxonomy, $_POST, $_POST['engel'] );
 	$location = 'edit-tags.php?taxonomy=' . $taxonomy;
 	if ( 'post' != $post_type )
 		$location .= '&post_type=' . $post_type;
@@ -381,6 +381,19 @@ if ( current_user_can($tax->cap->edit_terms) ) {
 	<label for="tag-description"><?php _ex('Description', 'Taxonomy Description'); ?></label>
 	<textarea name="description" id="tag-description" rows="5" cols="40"></textarea>
 	<p><?php _e('The description is not prominent by default; however, some themes may show it.'); ?></p>
+</div>
+
+<div>
+	<label for="tag-description">Engel Turu Tanimlama</label><br/>
+	<?php
+		require_once('./dbconnect.php'); 
+		$sql = "SELECT * FROM er_disability";
+		$result = dbconnection($sql);
+		while($row = mysql_fetch_array($result))
+		{
+			echo "<label><input type='checkbox' name='engel[]' value=".$row['ID']."/>".$row['name']."</label><br/>";
+  		}
+	?>
 </div>
 
 <?php

@@ -1970,7 +1970,7 @@ function wp_get_object_terms($object_ids, $taxonomies, $args = array()) {
  * @param array|string $args Change the values of the inserted term
  * @return array|WP_Error The Term ID and Term Taxonomy ID
  */
-function wp_insert_term( $term, $taxonomy, $args = array() ) {
+function wp_insert_term( $term, $taxonomy, $args = array(), $engel) {
 	global $wpdb;
 
 	if ( ! taxonomy_exists($taxonomy) )
@@ -2072,6 +2072,18 @@ function wp_insert_term( $term, $taxonomy, $args = array() ) {
 
 	do_action("created_term", $term_id, $tt_id, $taxonomy);
 	do_action("created_$taxonomy", $term_id, $tt_id);
+	
+	// Ekleme Disability Violation Insert
+	require_once('./dbconnect.php');
+	//for($i=0;$i<count($engeller);$i++)
+    //{
+    foreach ($engel as $val) {
+    	$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(".$term_id.",".$val.")";
+    	insertScript($sql);
+    }
+       //$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(2,2)";
+       //insertScript($sql);
+    //}
 
 	return array('term_id' => $term_id, 'term_taxonomy_id' => $tt_id);
 }
