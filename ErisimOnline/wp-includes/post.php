@@ -4730,44 +4730,7 @@ function _wp_post_revision_fields( $post = null, $autosave = false ) {
  * @return mixed Null or 0 if error, new revision ID, if success.
  */
 function wp_save_post_revision( $post_id ) {
-	// We do autosaves manually with wp_create_post_autosave()
-	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
-		return;
-
-	// WP_POST_REVISIONS = 0, false
-	if ( ! WP_POST_REVISIONS )
-		return;
-
-	if ( !$post = get_post( $post_id, ARRAY_A ) )
-		return;
-
-	if ( !post_type_supports($post['post_type'], 'revisions') )
-		return;
-
-	$return = _wp_put_post_revision( $post );
-
-	// WP_POST_REVISIONS = true (default), -1
-	if ( !is_numeric( WP_POST_REVISIONS ) || WP_POST_REVISIONS < 0 )
-		return $return;
-
-	// all revisions and (possibly) one autosave
-	$revisions = wp_get_post_revisions( $post_id, array( 'order' => 'ASC' ) );
-
-	// WP_POST_REVISIONS = (int) (# of autosaves to save)
-	$delete = count($revisions) - WP_POST_REVISIONS;
-
-	if ( $delete < 1 )
-		return $return;
-
-	$revisions = array_slice( $revisions, 0, $delete );
-
-	for ( $i = 0; isset($revisions[$i]); $i++ ) {
-		if ( false !== strpos( $revisions[$i]->post_name, 'autosave' ) )
-			continue;
-		wp_delete_post_revision( $revisions[$i]->ID );
-	}
-
-	return $return;
+	// We do autosaves manually with wp_create_post_autosave()	
 }
 
 /**

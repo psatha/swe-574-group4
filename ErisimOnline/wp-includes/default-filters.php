@@ -248,7 +248,7 @@ add_action( 'init',                       'smilies_init',                       
 add_action( 'plugins_loaded',             'wp_maybe_load_widgets',                    0    );
 add_action( 'plugins_loaded',             'wp_maybe_load_embeds',                     0    );
 add_action( 'shutdown',                   'wp_ob_end_flush_all',                      1    );
-add_action( 'pre_post_update',            'wp_save_post_revision'                          );
+//add_action( 'pre_post_update',            'wp_save_post_revision'                          );
 add_action( 'publish_post',               '_publish_post_hook',                       5, 1 );
 add_action( 'save_post',                  '_save_post_hook',                          5, 2 );
 add_action( 'transition_post_status',     '_transition_post_status',                  5, 3 );
