@@ -84,7 +84,7 @@ do_action($taxonomy . '_pre_edit_form', $tag, $taxonomy);  ?>
 					$result = dbconnection($sql);
 					while($row = mysql_fetch_array($result))
 					{
-						if (in_array($row['ID'], $disability)) {
+						if ($disability != null && in_array($row['ID'], $disability)) {
     						echo "<option selected='selected' value='".$row['ID']."'/>".$row['name']."</option>";
 						}else{
 							echo "<option value='".$row['ID']."'/>".$row['name']."</option>";	

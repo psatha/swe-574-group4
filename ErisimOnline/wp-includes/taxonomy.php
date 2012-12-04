@@ -1776,6 +1776,12 @@ function wp_delete_term( $term, $taxonomy, $args = array() ) {
 
 	do_action('delete_term', $term, $tt_id, $taxonomy);
 	do_action("delete_$taxonomy", $term, $tt_id);
+	
+	// EKLEME KATEGORI DISABILITY DB DELETE
+	require_once('./dbconnect.php');
+	$deleteSql = "DELETE FROM er_disability_av WHERE post_id = ".$term;
+	insertScript($deleteSql);
+	//
 
 	return true;
 }
