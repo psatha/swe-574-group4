@@ -515,7 +515,8 @@ case 'add-tag' :
 
 	$x = new WP_Ajax_Response();
 
-	$tag = wp_insert_term($_POST['tag-name'], $taxonomy, $_POST );
+	$tag = wp_insert_term($_POST['tag-name'], $taxonomy, $_POST, $_POST['engel'] );
+	
 
 	if ( !$tag || is_wp_error($tag) || (!$tag = get_term( $tag['term_id'], $taxonomy )) ) {
 		$message = __('An error has occurred. Please reload the page and try again.');

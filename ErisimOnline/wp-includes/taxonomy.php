@@ -2075,15 +2075,10 @@ function wp_insert_term( $term, $taxonomy, $args = array(), $engel) {
 	
 	// Ekleme Disability Violation Insert
 	require_once('./dbconnect.php');
-	//for($i=0;$i<count($engeller);$i++)
-    //{
-    foreach ($engel as $val) {
-    	$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(".$term_id.",".$val.")";
+    for ($i = 0; $i < count($engel); $i++) {
+    	$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(".$term_id.",".$engel[$i].")";
     	insertScript($sql);
     }
-       //$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(2,2)";
-       //insertScript($sql);
-    //}
 
 	return array('term_id' => $term_id, 'term_taxonomy_id' => $tt_id);
 }
@@ -2140,6 +2135,7 @@ function wp_set_object_terms($object_id, $terms, $taxonomy, $append = false) {
 			if ( is_int($term) )
 				continue;
 			$term_info = wp_insert_term($term, $taxonomy);
+			
 		}
 		if ( is_wp_error($term_info) )
 			return $term_info;

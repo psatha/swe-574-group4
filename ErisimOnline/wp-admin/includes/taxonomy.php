@@ -124,8 +124,9 @@ function wp_insert_category($catarr, $wp_error = false) {
 
 	if ( $update )
 		$cat_ID = wp_update_term($cat_ID, $taxonomy, $args);
-	else
+	else{
 		$cat_ID = wp_insert_term($cat_name, $taxonomy, $args);
+	}
 
 	if ( is_wp_error($cat_ID) ) {
 		if ( $wp_error )
