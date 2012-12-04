@@ -39,13 +39,13 @@ do_action($taxonomy . '_pre_edit_form', $tag, $taxonomy);  ?>
 		<tr class="form-field form-required">
 			<th scope="row" valign="top"><label for="name"><?php _ex('Name', 'Taxonomy Name'); ?></label></th>
 			<td><input name="name" id="name" type="text" value="<?php if ( isset( $tag->name ) ) echo esc_attr($tag->name); ?>" size="40" aria-required="true" />
-			<p class="description"><?php _e('The name is how it appears on your site.'); ?></p></td>
+			<p class="description">Erisim Engeli Kategorisi gorunen ismini buraya giriniz!</p></td>
 		</tr>
 <?php if ( !global_terms_enabled() ) { ?>
 		<tr class="form-field">
 			<th scope="row" valign="top"><label for="slug"><?php _ex('Slug', 'Taxonomy Slug'); ?></label></th>
 			<td><input name="slug" id="slug" type="text" value="<?php if ( isset( $tag->slug ) ) echo esc_attr(apply_filters('editable_slug', $tag->slug)); ?>" size="40" />
-			<p class="description"><?php _e('The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.'); ?></p></td>
+			<p class="description">Erisim Engeli Kategorisi kisa ismini giriniz!</p></td>
 		</tr>
 <?php } ?>
 <?php if ( is_taxonomy_hierarchical($taxonomy) ) : ?>
@@ -62,7 +62,39 @@ do_action($taxonomy . '_pre_edit_form', $tag, $taxonomy);  ?>
 		<tr class="form-field">
 			<th scope="row" valign="top"><label for="description"><?php _ex('Description', 'Taxonomy Description'); ?></label></th>
 			<td><textarea name="description" id="description" rows="5" cols="50" style="width: 97%;"><?php echo $tag->description; // textarea_escaped ?></textarea><br />
-			<span class="description"><?php _e('The description is not prominent by default, however some themes may show it.'); ?></span></td>
+			<span class="description">Bu bolume Erisim Engeli Kategorisinin aciklamasini giriniz!</span></td>
+		</tr>
+		<tr class="form-field form-required">
+			<th scope="row" valign="top"><label for="description">Engel Turu:</label></th>
+			<td>
+				<select size="10px" multiple="multiple" name="engelTuru[]" >
+				<?php 
+					// EKLEME DISABILITY TYPE GETIRMEK ICIN
+					require_once('./dbconnect.php');
+					//Get Disability IDs
+					$sqlDis = "SELECT disability_id FROM er_disability_av where post_id = ".$tag->term_id;
+					$disResult = dbconnection($sqlDis);
+					$i=0;
+					while ($row = mysql_fetch_array($disResult)) {
+						$disability[$i] = $row['disability_id'];
+						$i++;
+					}
+					
+					$sql = "SELECT * FROM er_disability";
+					$result = dbconnection($sql);
+					while($row = mysql_fetch_array($result))
+					{
+						if (in_array($row['ID'], $disability)) {
+    						echo "<option selected='selected' value='".$row['ID']."'/>".$row['name']."</option>";
+						}else{
+							echo "<option value='".$row['ID']."'/>".$row['name']."</option>";	
+						}
+  					}
+				?>
+				</select>
+				<span class="description">Bu bolume Erisim Engeli Kategorisinin Engel Turu secilmektedir!</span></td>
+				
+			</td>
 		</tr>
 		<?php
 		// Back compat hooks

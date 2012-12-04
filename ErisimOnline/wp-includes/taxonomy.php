@@ -2283,7 +2283,7 @@ function wp_unique_term_slug($slug, $term) {
  * @param array|string $args Overwrite term field values
  * @return array|WP_Error Returns Term ID and Taxonomy Term ID
  */
-function wp_update_term( $term_id, $taxonomy, $args = array() ) {
+function wp_update_term( $term_id, $taxonomy, $args = array(), $engelTuru ) {
 	global $wpdb;
 
 	if ( ! taxonomy_exists($taxonomy) )
@@ -2370,7 +2370,16 @@ function wp_update_term( $term_id, $taxonomy, $args = array() ) {
 
 	do_action("edited_term", $term_id, $tt_id, $taxonomy);
 	do_action("edited_$taxonomy", $term_id, $tt_id);
-
+	
+	// EKLEME KATEGORI DISABILITY GUNCELLEME
+	require_once('./dbconnect.php');
+	$deleteSql = "DELETE FROM er_disability_av WHERE post_id = ".$term_id;
+	insertScript($deleteSql);
+    for ($i = 0; $i < count($engelTuru); $i++) {
+    	$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(".$term_id.",".$engelTuru[$i].")";
+    	insertScript($sql);
+    }
+	//
 	return array('term_id' => $term_id, 'term_taxonomy_id' => $tt_id);
 }
 

@@ -2748,7 +2748,7 @@ msgstr ""
 
 #: includes/admin/admin-post-types.php:67
 msgid "Edit Ad Category"
-msgstr ""
+msgstr "Erisim Engeli Kategori Guncelleme"
 
 #: includes/admin/admin-post-types.php:68
 msgid "Update Ad Category"

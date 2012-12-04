@@ -1262,7 +1262,7 @@ case 'inline-save-tax':
 	$tag = get_term( $id, $taxonomy );
 	$_POST['description'] = $tag->description;
 
-	$updated = wp_update_term($id, $taxonomy, $_POST);
+	$updated = wp_update_term($id, $taxonomy, $_POST, $_POST['engelTuru']);
 	if ( $updated && !is_wp_error($updated) ) {
 		$tag = get_term( $updated['term_id'], $taxonomy );
 		if ( !$tag || is_wp_error( $tag ) ) {

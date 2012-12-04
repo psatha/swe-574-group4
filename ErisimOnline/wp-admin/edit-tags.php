@@ -144,7 +144,7 @@ case 'editedtag':
 	if ( ! $tag )
 		wp_die( __( 'You attempted to edit an item that doesn&#8217;t exist. Perhaps it was deleted?' ) );
 
-	$ret = wp_update_term( $tag_ID, $taxonomy, $_POST );
+	$ret = wp_update_term( $tag_ID, $taxonomy, $_POST, $_POST['engelTuru'] );
 
 	$location = 'edit-tags.php?taxonomy=' . $taxonomy;
 	if ( 'post' != $post_type )
@@ -350,7 +350,7 @@ if ( current_user_can($tax->cap->edit_terms) ) {
 ?>
 
 <div class="form-wrap">
-<h3><?php echo $tax->labels->add_new_item; ?></h3>
+<h3>YENI ERISIM ENGELI KATEGORISI EKLE</h3>
 <form id="addtag" method="post" action="edit-tags.php" class="validate">
 <input type="hidden" name="action" value="add-tag" />
 <input type="hidden" name="screen" value="<?php echo esc_attr($current_screen->id); ?>" />
@@ -359,20 +359,20 @@ if ( current_user_can($tax->cap->edit_terms) ) {
 <?php wp_nonce_field('add-tag', '_wpnonce_add-tag'); ?>
 
 <div class="form-field form-required">
-	<label for="tag-name"><?php _ex('Name', 'Taxonomy Name'); ?></label>
+	<label for="tag-name">Kategori Ismi</label>
 	<input name="tag-name" id="tag-name" type="text" value="" size="40" aria-required="true" />
-	<p><?php _e('The name is how it appears on your site.'); ?></p>
+	<p>Erisim Engeli Kategorisi gorunen ismini buraya giriniz!</p>
 </div>
 <?php if ( ! global_terms_enabled() ) : ?>
 <div class="form-field">
-	<label for="tag-slug"><?php _ex('Slug', 'Taxonomy Slug'); ?></label>
+	<label for="tag-slug">Kategori Kisa Ismi (DB)</label>
 	<input name="slug" id="tag-slug" type="text" value="" size="40" />
-	<p><?php _e('The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.'); ?></p>
+	<p>Erisim Engeli Kategorisi kisa ismini giriniz!</p>
 </div>
 <?php endif; // global_terms_enabled() ?>
 <?php if ( is_taxonomy_hierarchical($taxonomy) ) : ?>
 <div class="form-field">
-	<label for="parent"><?php _ex('Parent', 'Taxonomy Parent'); ?></label>
+	<label for="parent">Ana Kategori Secimi</label>
 	<?php wp_dropdown_categories(array('hide_empty' => 0, 'hide_if_empty' => false, 'taxonomy' => $taxonomy, 'name' => 'parent', 'orderby' => 'name', 'hierarchical' => true, 'show_option_none' => __('None'))); ?>
 	<?php if ( 'category' == $taxonomy ) : // @todo: Generic text for hierarchical taxonomies ?>
 		<p><?php _e('Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional.'); ?></p>
@@ -382,10 +382,10 @@ if ( current_user_can($tax->cap->edit_terms) ) {
 <div class="form-field">
 	<label for="tag-description"><?php _ex('Description', 'Taxonomy Description'); ?></label>
 	<textarea name="description" id="tag-description" rows="5" cols="40"></textarea>
-	<p><?php _e('The description is not prominent by default; however, some themes may show it.'); ?></p>
+	<p>Bu bolume Erisim Engeli Kategorisinin aciklamasini giriniz!</p>
 </div>
 
-<div>
+<div class="form-field">
 	<label for="tag-description">Engel Turu Tanimlama</label><br/>
 	<select multiple="multiple" name="engel[]">
 		<?php 
@@ -398,6 +398,7 @@ if ( current_user_can($tax->cap->edit_terms) ) {
   			}
 		?>
 	</select>
+	<p>Bu bolume Erisim Engeli Kategorisinin Engel Turu secilmektedir!</p>
 </div>
 
 <?php
