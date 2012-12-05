@@ -374,8 +374,8 @@ function cp_manage_users_columns( $columns ) {
 	$columns = array_merge( $newcol, array_slice( $columns, 1 ) );
 
     $columns['cp_ads_count'] = __('Ads', 'appthemes');
-	$columns['last_login'] = __('Last Login', 'appthemes');
-	$columns['registered'] = __('Registered', 'appthemes');
+	$columns['last_login'] = __('Son Giris', 'appthemes');
+	$columns['registered'] = __('Kayit Tarihi', 'appthemes');
     return $columns;
 }
 add_action('manage_users_columns', 'cp_manage_users_columns');

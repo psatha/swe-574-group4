@@ -298,6 +298,11 @@ function wp_delete_user( $id, $reassign = 'novalue' ) {
 		$level_key = $wpdb->get_blog_prefix() . 'capabilities'; // wpmu site admins don't have user_levels
 		$wpdb->query("DELETE FROM $wpdb->usermeta WHERE user_id = $id AND meta_key = '{$level_key}'");
 	}
+	
+	// EKLEME (USER ENGELI EKLE)
+	require_once('./dbconnect.php');
+	$disSql = "DELETE FROM er_disability_user WHERE user_id = ".$id;
+	insertScript($disSql);
 
 	// allow for commit transaction
 	do_action('deleted_user', $id);

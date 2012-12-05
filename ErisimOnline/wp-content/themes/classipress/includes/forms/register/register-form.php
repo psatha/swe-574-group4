@@ -47,14 +47,14 @@ function app_register_form( $action = '' ) {
         				?>
 				<p>
                     <label for="disability">Engel Durumunuz:</label>
-                    <select>
+                    <select name="engelDurumu" >
                     	<?php
 							require_once('./dbconnect.php'); 
 							$sql = "SELECT * FROM er_disability";
 							$result = dbconnection($sql);
 							while($row = mysql_fetch_array($result))
 							{
-								echo "<option value=".$row['ID']."/>".$row['name']."</option>";
+								echo "<option value='".$row['ID']."'/>".$row['name']."</option>";
   							}
 						?>
                     </select>

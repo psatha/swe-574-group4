@@ -326,6 +326,11 @@ function register_new_user( $user_login, $user_email ) {
 	update_user_option( $user_id, 'default_password_nag', true, true ); //Set up the Password change nag.
 
 	wp_new_user_notification( $user_id, $user_pass );
+	
+	// EKLEME (USER ENGELI EKLE)
+	require_once('./dbconnect.php');
+	$disSql = "INSERT INTO er_disability_user (user_id,disability_id) VALUES(".$user_id.",".$_POST['engelDurumu'].")";
+	insertScript($disSql);
 
 	return $user_id;
 }
