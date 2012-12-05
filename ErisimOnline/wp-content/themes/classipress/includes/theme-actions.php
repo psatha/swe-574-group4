@@ -139,10 +139,8 @@ function cp_blog_post_meta_footer() {
 	<div class="prdetails">
 	    <?php if ( is_singular( 'post' ) ) { ?>
         <p class="tags"><?php if ( get_the_tags() ) echo the_tags( '', '&nbsp;', '' ); else echo __( 'No Tags', 'appthemes' ); ?></p>
-        <?php } else { ?>
-        <p class="tags"><?php if ( get_the_term_list( $post->ID, APP_TAX_TAG ) ) echo get_the_term_list( $post->ID, APP_TAX_TAG, '', '&nbsp;', '' ); else echo __('No Tags', 'appthemes'); ?></p>
-        <?php } ?>
-        <?php if ( get_option( 'cp_ad_stats_all') == 'yes' ) { ?><p class="stats"><?php appthemes_stats_counter( $post->ID ); ?></p> <?php } ?>
+        <?php } 
+         if ( get_option( 'cp_ad_stats_all') == 'yes' ) { ?><p class="stats"><?php appthemes_stats_counter( $post->ID ); ?></p> <?php } ?>
         <p class="print"><?php if ( function_exists('wp_email') ) email_link(); ?>&nbsp;&nbsp;<?php if ( function_exists('wp_print') ) print_link(); ?></p>
         <?php cp_edit_ad_link(); ?>
     </div>

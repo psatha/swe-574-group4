@@ -433,7 +433,7 @@ msgstr "Aşağıda tüm Erisim Engelleri listesini bulacaksınız.Herhangi bir d
 
 #: tpl-dashboard.php:83
 msgid "Title"
-msgstr "Başlık"
+msgstr "Kategori Başlıgi"
 
 #: tpl-dashboard.php:84
 msgid "Views"
@@ -1190,7 +1190,7 @@ msgstr "Erisim Engeli ayrıntısı bulunamadı."
 
 #: includes/theme-functions.php:594
 msgid "Image "
-msgstr "Resim"
+msgstr "Erisim Resmi"
 
 #: includes/theme-functions.php:732
 #, php-format
@@ -2728,11 +2728,11 @@ msgstr ""
 
 #: includes/admin/admin-post-types.php:62
 msgid "Ad Category"
-msgstr ""
+msgstr "Erisim Engeli Kategorisi"
 
 #: includes/admin/admin-post-types.php:63
 msgid "Search Ad Categories"
-msgstr ""
+msgstr "Erisim Engeli Kategorisi Ara"
 
 #: includes/admin/admin-post-types.php:64
 msgid "All Ad Categories"
@@ -2756,7 +2756,7 @@ msgstr ""
 
 #: includes/admin/admin-post-types.php:69
 msgid "Add New Ad Category"
-msgstr ""
+msgstr "Yeni Erisim Engeli Kategorisi Ekle"
 
 #: includes/admin/admin-post-types.php:70
 msgid "New Ad Category Name"
@@ -2800,12 +2800,12 @@ msgstr ""
 
 #: includes/admin/admin-post-types.php:120
 msgid "Author"
-msgstr ""
+msgstr "Ekleyen Uye"
 
 #: includes/admin/admin-post-types.php:121
 #: includes/forms/step-functions.php:161
 msgid "Category"
-msgstr ""
+msgstr "Erisim Kategorisi"
 
 #: includes/admin/admin-post-types.php:123
 msgid "Price"
@@ -2817,7 +2817,7 @@ msgstr ""
 
 #: includes/admin/admin-post-types.php:125
 msgid "Views Total"
-msgstr ""
+msgstr "Toplam Goruntuleme"
 
 #: includes/admin/admin-post-types.php:128
 msgid "Date"

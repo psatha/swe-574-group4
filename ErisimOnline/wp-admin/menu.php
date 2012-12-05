@@ -22,7 +22,7 @@
  * @var array
  */
 
-$menu[2] = array( __('Dashboard'), 'read', 'index.php', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'div' );
+//$menu[2] = array( __('Dashboard'), 'read', 'index.php', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'div' );
 
 $submenu[ 'index.php' ][0] = array( __('Home'), 'read', 'index.php' );
 
@@ -39,19 +39,19 @@ if ( ! is_multisite() ) {
 
 $menu[4] = array( '', 'read', 'separator1', '', 'wp-menu-separator' );
 
-$menu[5] = array( __('Posts'), 'edit_posts', 'edit.php', '', 'open-if-no-js menu-top menu-icon-post', 'menu-posts', 'div' );
-	$submenu['edit.php'][5]  = array( __('All Posts'), 'edit_posts', 'edit.php' );
+//$menu[5] = array( __('Posts'), 'edit_posts', 'edit.php', '', 'open-if-no-js menu-top menu-icon-post', 'menu-posts', 'div' );
+	//$submenu['edit.php'][5]  = array( __('All Posts'), 'edit_posts', 'edit.php' );
 	/* translators: add new post */
-	$submenu['edit.php'][10]  = array( _x('Add New', 'post'), 'edit_posts', 'post-new.php' );
+	//$submenu['edit.php'][10]  = array( _x('Add New', 'post'), 'edit_posts', 'post-new.php' );
 
-	$i = 15;
-	foreach ( get_taxonomies( array(), 'objects' ) as $tax ) {
-		if ( ! $tax->show_ui || ! in_array('post', (array) $tax->object_type, true) )
-			continue;
+	//$i = 15;
+	//foreach ( get_taxonomies( array(), 'objects' ) as $tax ) {
+		//if ( ! $tax->show_ui || ! in_array('post', (array) $tax->object_type, true) )
+			//continue;
 
-		$submenu['edit.php'][$i++] = array( esc_attr( $tax->labels->menu_name ), $tax->cap->manage_terms, 'edit-tags.php?taxonomy=' . $tax->name );
-	}
-	unset($tax);
+		//$submenu['edit.php'][$i++] = array( esc_attr( $tax->labels->menu_name ), $tax->cap->manage_terms, 'edit-tags.php?taxonomy=' . $tax->name );
+	//}
+	//unset($tax);
 
 $menu[10] = array( __('Media'), 'upload_files', 'upload.php', '', 'menu-top menu-icon-media', 'menu-media', 'div' );
 	$submenu['upload.php'][5] = array( __('Library'), 'upload_files', 'upload.php');
@@ -59,11 +59,12 @@ $menu[10] = array( __('Media'), 'upload_files', 'upload.php', '', 'menu-top menu
 	if ( !$is_iphone )
 		$submenu['upload.php'][10] = array( _x('Add New', 'file'), 'upload_files', 'media-new.php');
 
-$menu[15] = array( __('Links'), 'manage_links', 'link-manager.php', '', 'menu-top menu-icon-links', 'menu-links', 'div' );
-	$submenu['link-manager.php'][5] = array( _x('All Links', 'admin menu'), 'manage_links', 'link-manager.php' );
+		// EKLEME (CIKARMA ISLEMI)
+//$menu[15] = array( __('Links'), 'manage_links', 'link-manager.php', '', 'menu-top menu-icon-links', 'menu-links', 'div' );
+	//$submenu['link-manager.php'][5] = array( _x('All Links', 'admin menu'), 'manage_links', 'link-manager.php' );
 	/* translators: add new links */
-	$submenu['link-manager.php'][10] = array( _x('Add New', 'link'), 'manage_links', 'link-add.php' );
-	$submenu['link-manager.php'][15] = array( __('Link Categories'), 'manage_categories', 'edit-tags.php?taxonomy=link_category' );
+	//$submenu['link-manager.php'][10] = array( _x('Add New', 'link'), 'manage_links', 'link-add.php' );
+	//$submenu['link-manager.php'][15] = array( __('Link Categories'), 'manage_categories', 'edit-tags.php?taxonomy=link_category' );
 
 $menu[20] = array( __('Pages'), 'edit_pages', 'edit.php?post_type=page', '', 'menu-top menu-icon-page', 'menu-pages', 'div' );
 	$submenu['edit.php?post_type=page'][5] = array( __('All Pages'), 'edit_pages', 'edit.php?post_type=page' );

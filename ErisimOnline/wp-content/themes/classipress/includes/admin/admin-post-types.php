@@ -77,27 +77,29 @@ function cp_ad_listing_post_type() {
     );
 
     // register the new ad tag taxonomy
-    register_taxonomy( APP_TAX_TAG,
-            array(APP_POST_TYPE),
-            array('hierarchical' => false,
-                  'labels' => array(
-                        'name' => __( 'Ad Tags', 'appthemes'),
-                        'singular_name' => __( 'Ad Tag', 'appthemes'),
-                        'search_items' =>  __( 'Search Ad Tags', 'appthemes'),
-                        'all_items' => __( 'All Ad Tags', 'appthemes'),
-                        'parent_item' => __( 'Parent Ad Tag', 'appthemes'),
-                        'parent_item_colon' => __( 'Parent Ad Tag:', 'appthemes'),
-                        'edit_item' => __( 'Edit Ad Tag', 'appthemes'),
-                        'update_item' => __( 'Update Ad Tag', 'appthemes'),
-                        'add_new_item' => __( 'Add New Ad Tag', 'appthemes'),
-                        'new_item_name' => __( 'New Ad Tag Name', 'appthemes')
-                    ),
-                    'show_ui' => true,
-                    'query_var' => true,
-					'update_count_callback' => '_update_post_term_count',
-                    'rewrite' => array( 'slug' => $tag_tax_base_url, 'with_front' => false ),
-            )
-    );
+    // EKLEME (CIKARMA ISLEMI)
+    //register_taxonomy( APP_TAX_TAG,
+            //array(APP_POST_TYPE),
+            //array('hierarchical' => false,
+                  //'labels' => array(
+                        //'name' => __( 'Ad Tags', 'appthemes'),
+                        //'singular_name' => __( 'Ad Tag', 'appthemes'),
+                        //'search_items' =>  __( 'Search Ad Tags', 'appthemes'),
+                        //'all_items' => __( 'All Ad Tags', 'appthemes'),
+                        //'parent_item' => __( 'Parent Ad Tag', 'appthemes'),
+                        //'parent_item_colon' => __( 'Parent Ad Tag:', 'appthemes'),
+                        //'edit_item' => __( 'Edit Ad Tag', 'appthemes'),
+                        //'update_item' => __( 'Update Ad Tag', 'appthemes'),
+                        //'add_new_item' => __( 'Add New Ad Tag', 'appthemes'),
+                        //'new_item_name' => __( 'New Ad Tag Name', 'appthemes')
+                    //),
+                    //'show_ui' => true,
+                    //'query_var' => true,
+					//'update_count_callback' => '_update_post_term_count',
+                    //'rewrite' => array( 'slug' => $tag_tax_base_url, 'with_front' => false ),
+            //)
+    //);
+    // EKLEME BITISI
 
     // this needs to happen once after install script first runs
     if (get_option('cp_rewrite_flush_flag') == 'true') {
@@ -119,11 +121,11 @@ function cp_edit_ad_columns($columns){
             'title' => __('Title', 'appthemes'),
             'author' => __('Author', 'appthemes'),
             APP_TAX_CAT => __('Category', 'appthemes'),
-            APP_TAX_TAG => __('Tags', 'appthemes'),
-            'cp_price' => __('Price', 'appthemes'),
-            'cp_daily_count' => __('Views Today', 'appthemes'),
+            //APP_TAX_TAG => __('Tags', 'appthemes'),
+            //'cp_price' => __('Price', 'appthemes'),
+            //'cp_daily_count' => __('Views Today', 'appthemes'),
             'cp_total_count' => __('Views Total', 'appthemes'),
-            'cp_sys_expire_date' => __('Expires', 'appthemes'),
+            //'cp_sys_expire_date' => __('Expires', 'appthemes'),
             'comments' => '<div class="vers"><img src="' . esc_url( admin_url( 'images/comment-grey-bubble.png' ) ) . '" /></div>',
             'date' => __('Date', 'appthemes'),
     );
@@ -133,8 +135,8 @@ add_filter('manage_edit-'.APP_POST_TYPE.'_columns', 'cp_edit_ad_columns');
 
 // register the columns as sortable
 function cp_ad_column_sortable($columns) {
-	$columns['cp_price'] = 'cp_price'; 
-	$columns['cp_daily_count'] = 'cp_daily_count'; 
+	//$columns['cp_price'] = 'cp_price'; 
+	//$columns['cp_daily_count'] = 'cp_daily_count'; 
 	$columns['cp_total_count'] = 'cp_total_count'; 
 	$columns['cp_sys_expire_date'] = 'cp_sys_expire_date'; 
 	return $columns;
@@ -184,10 +186,10 @@ function cp_custom_columns($column){
 				echo $custom['cp_sys_expire_date'][0];
 		break;
 
-		case 'cp_price':
-			if ( isset($custom['cp_price'][0]) && !empty($custom['cp_price'][0]) )
-				echo $custom['cp_price'][0];
-		break;
+		//case 'cp_price':
+			//if ( isset($custom['cp_price'][0]) && !empty($custom['cp_price'][0]) )
+				//echo $custom['cp_price'][0];
+		//break;
 		
 		case 'cp_daily_count':
 			if ( isset($custom['cp_daily_count'][0]) && !empty($custom['cp_daily_count'][0]) )
