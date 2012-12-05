@@ -3967,16 +3967,16 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1630
 msgid "Email Notifications"
-msgstr ""
+msgstr "E Posta Bilgilendirme"
 
 #: includes/admin/admin-values.php:1631
 #, php-format
 msgid "Emails will be sent to: %s (<a href='%s'>change</a>)"
-msgstr ""
+msgstr "E Postalar su adrese gonderilecek: %s (<a href='%s'>change</a>)"
 
 #: includes/admin/admin-values.php:1635
 msgid "New Ad Email"
-msgstr ""
+msgstr "Yeni Erisim Maili"
 
 #: includes/admin/admin-values.php:1637
 msgid "Send me an email once a new ad has been submitted."
@@ -3984,7 +3984,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1649
 msgid "Prune Ads Email"
-msgstr ""
+msgstr "Kisa Erisim Maili"
 
 #: includes/admin/admin-values.php:1651
 msgid "Send me an email every time the system prunes expired ads."
@@ -3992,7 +3992,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1663
 msgid "Ad Approved Email"
-msgstr ""
+msgstr "Erisim Onaylama Maili"
 
 #: includes/admin/admin-values.php:1665
 msgid "Send the ad owner an email once their ad has been approved either by you manually or after payment has been made (post status changes from pending to published)."
@@ -4000,7 +4000,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1677
 msgid "Ad Expired Email"
-msgstr ""
+msgstr "Erisim Sure Dolma Maili"
 
 #: includes/admin/admin-values.php:1679
 msgid "Send the ad owner an email once their ad has expired (post status changes from published to draft)."
@@ -4008,7 +4008,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1691
 msgid "Admin New User Email"
-msgstr ""
+msgstr "Admin Yeni Kullanici Maili"
 
 #: includes/admin/admin-values.php:1693
 msgid "Sends the default WordPress new user notification email to the site admin. It is recommended to keep this turned on so you are alerted whenever a new user registers on your site."
@@ -4024,15 +4024,15 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1752
 msgid "New User Email"
-msgstr ""
+msgstr "Yeni Kullanici Maili"
 
 #: includes/admin/admin-values.php:1754
 msgid "New User Registration Email"
-msgstr ""
+msgstr "Yeni Kullanici Kayit Maili"
 
 #: includes/admin/admin-values.php:1758
 msgid "Enable Custom Email"
-msgstr ""
+msgstr "Genel E Posta Izni"
 
 #: includes/admin/admin-values.php:1760
 msgid "Sends a custom new user notification email to your customers by using the fields you complete below. If this is set to &quot;No&quot;, the default WordPress new user notification email will be sent. This is useful for debugging if your custom emails are not being sent."
@@ -4040,7 +4040,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1772
 msgid "From Name"
-msgstr ""
+msgstr "Kimden Ismi"
 
 #: includes/admin/admin-values.php:1774
 msgid "This is what your customers will see as the &quot;from&quot; when they receive the new user registration email. Use plain text only"
@@ -4048,7 +4048,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1783
 msgid "From Email"
-msgstr ""
+msgstr "Kimden E Posta"
 
 #: includes/admin/admin-values.php:1785
 msgid "This is what your customers will see as the &quot;from&quot; email address (also the reply to) when they receive the new user registration email. Use only a valid and existing email address with no html or variables."
@@ -4056,7 +4056,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1794
 msgid "Email Subject"
-msgstr ""
+msgstr "E Posta Konusu"
 
 #: includes/admin/admin-values.php:1796
 msgid "This is the subject line your customers will see when they receive the new user registration email. Use text and variables only."
@@ -4064,7 +4064,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1805
 msgid "Allow HTML in Body"
-msgstr ""
+msgstr "HTML e izin ver"
 
 #: includes/admin/admin-values.php:1807
 msgid "This option allows you to use html markup in the email body below. It is recommended to keep it set to &quot;No&quot; to avoid problems with delivery. If you turn it on, make sure to test it and make sure the formatting looks ok and gets delivered properly."
@@ -4072,7 +4072,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1818
 msgid "Email Body"
-msgstr ""
+msgstr "E Posta Icerik"
 
 #: includes/admin/admin-values.php:1819
 msgid "You may use the following variables within the email body and/or subject line.<br/><br/><strong>%username%</strong> - prints out the username<br/><strong>%useremail%</strong> - prints out the users email address<br/><strong>%password%</strong> - prints out the users text password<br/><strong>%siteurl%</strong> - prints out your website url<br/><strong>%blogname%</strong> - prints out your site name<br/><strong>%loginurl%</strong> - prints out your sites login url<br/><br/>Each variable MUST have the percentage signs wrapped around it with no spaces.<br/>Always test your new email after making any changes (register) to make sure it is working and formatted correctly. If you do not receive an email, chances are something is wrong with your email body."
