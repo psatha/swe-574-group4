@@ -659,7 +659,7 @@ msgstr ""
 
 #: framework/admin/dashboard.php:53
 msgid "Dashboard"
-msgstr "Kontrol Paneli"
+msgstr "Erisim Online Paneli"
 
 #: framework/admin/importer.php:87
 msgid "Import CSV"
@@ -698,11 +698,11 @@ msgstr ""
 
 #: framework/scb/AdminPage.php:178
 msgid "Save Changes"
-msgstr ""
+msgstr "Degisiklikleri Kaydet"
 
 #: framework/scb/AdminPage.php:350
 msgid "Settings"
-msgstr ""
+msgstr "Genel Ayarlar"
 
 #: includes/appthemes-functions.php:92
 msgid "Type the two words:"
@@ -960,7 +960,7 @@ msgstr "Saygılar"
 #: includes/theme-cron.php:71
 #: includes/theme-emails.php:375
 msgid "ClassiPress"
-msgstr "ClassiPress"
+msgstr "Admin Paneli"
 
 #: includes/theme-emails.php:30
 msgid "New Ad Submission"
@@ -968,7 +968,7 @@ msgstr "Yeni Erisim Engeli Ekle"
 
 #: includes/theme-emails.php:31
 msgid "ClassiPress Admin"
-msgstr "ClassiPress Yönetim"
+msgstr "Erisim Engeli Yönetim"
 
 #: includes/theme-emails.php:37
 msgid "Dear Admin,"
@@ -1847,7 +1847,7 @@ msgstr ""
 
 #: includes/admin/admin-notices.php:37
 msgid "ClassiPress Help"
-msgstr ""
+msgstr "Erisim Online Yardim"
 
 #: includes/admin/admin-notices.php:38
 msgid "Detailed help information coming soon."
@@ -1863,7 +1863,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:18
 msgid "General Settings"
-msgstr ""
+msgstr "Genel Ayarlar"
 
 #: includes/admin/admin-options.php:19
 msgid "Emails"
@@ -1915,7 +1915,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:77
 msgid "Your settings have been saved."
-msgstr ""
+msgstr "Ayarlar kayit edildi."
 
 #: includes/admin/admin-options.php:297
 msgid "Cannot remove from layout"
@@ -1935,19 +1935,19 @@ msgstr ""
 
 #: includes/admin/admin-options.php:849
 msgid "ClassiPress Dashboard"
-msgstr ""
+msgstr "Erisim Online Kontrol Paneli"
 
 #: includes/admin/admin-options.php:860
 msgid "ClassiPress Info"
-msgstr ""
+msgstr "Erisim Online Bilgi"
 
 #: includes/admin/admin-options.php:870
 msgid "Total Live Ads"
-msgstr ""
+msgstr "Toplam Aktif Erisim Engeli"
 
 #: includes/admin/admin-options.php:871
 msgid "Total Pending Ads"
-msgstr ""
+msgstr "Toplam Cozulen Erisim Engeli"
 
 #: includes/admin/admin-options.php:872
 msgid "Total Users"
@@ -1971,7 +1971,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:880
 msgid "New Registrations"
-msgstr ""
+msgstr "Yeni Kayit Olanlar"
 
 #: includes/admin/admin-options.php:882
 msgid "Today"
@@ -1987,7 +1987,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:929
 msgid "Stats - Last 30 Days"
-msgstr ""
+msgstr "Istatistikler - Son 30 Gun"
 
 #: includes/admin/admin-options.php:990
 #: includes/admin/admin-options.php:3121
@@ -2446,7 +2446,7 @@ msgstr ""
 #: includes/admin/admin-options.php:2963
 #: includes/admin/admin-values.php:1296
 msgid "Advanced"
-msgstr ""
+msgstr "Ozel Ayarlar"
 
 #: includes/admin/admin-options.php:2973
 msgid "Theme Info"
@@ -2892,15 +2892,15 @@ msgstr ""
 #: includes/admin/admin-values.php:32
 #: includes/admin/admin-values.php:1839
 msgid "General"
-msgstr ""
+msgstr "Genel Ayarlar"
 
 #: includes/admin/admin-values.php:34
 msgid "Site Configuration"
-msgstr ""
+msgstr "Erisim Online Site Ayarlari"
 
 #: includes/admin/admin-values.php:38
 msgid "Home Page Layout"
-msgstr ""
+msgstr "Anasayfa Düzeni"
 
 #: includes/admin/admin-values.php:40
 msgid "Select the layout you prefer for your home page. The directory style is a more traditional classified ads layout. The standard style is more like a blog layout."
@@ -2916,7 +2916,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:52
 msgid "Color Scheme"
-msgstr ""
+msgstr "Tema Rengi"
 
 #: includes/admin/admin-values.php:54
 msgid "Select the color scheme you would like your classified ads site to use."
@@ -2964,7 +2964,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:74
 msgid "Enable Blog"
-msgstr ""
+msgstr "Blog Olsun"
 
 #: includes/admin/admin-values.php:76
 msgid "Turns on the blog feature for your classified ads site so you can publish articles."
@@ -3026,7 +3026,7 @@ msgstr "Hayır"
 
 #: includes/admin/admin-values.php:101
 msgid "Enable Coupons"
-msgstr ""
+msgstr "Kupon Olsun"
 
 #: includes/admin/admin-values.php:103
 msgid "Turns on the coupon module so your ad forms include a coupon code field. You still need to create and setup coupons before coupons will work. You also must have &quot;Charge for Listing Ads&quot; option enabled."
@@ -3034,7 +3034,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:116
 msgid "User Set Password"
-msgstr ""
+msgstr "Kullanici Parola Belirlesin"
 
 #: includes/admin/admin-values.php:118
 msgid "Turning this off will send the user a password instead of letting them set it on the new user registration page."
@@ -3042,7 +3042,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:133
 msgid "Enable Logo"
-msgstr ""
+msgstr "Erisim Logo Olsun"
 
 #: includes/admin/admin-values.php:135
 msgid "If you do not have a logo to use, select no and this will display the title and description of your web site instead."
@@ -3050,7 +3050,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:147
 msgid "Web Site Logo"
-msgstr ""
+msgstr "Erisim Online Logosu"
 
 #: includes/admin/admin-values.php:148
 msgid "Upload a logo or paste an image URL directly."
@@ -3114,7 +3114,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:215
 msgid "Exclude Pages"
-msgstr ""
+msgstr "Sayfalar Haric"
 
 #: includes/admin/admin-values.php:217
 msgid "Enter a comma-separated list of any additional pages you want to exclude from the navigation. By default, your user dashboard, profile, edit-item, and submit ad page IDs are already included. Do not remove them unless you know what you are doing. To find a Page ID for a page to exclude, go to Pages->Edit and hover over the title of the page. The status bar of your browser will display a URL with a numeric ID at the end. This is the page ID."
@@ -3122,11 +3122,11 @@ msgstr ""
 
 #: includes/admin/admin-values.php:227
 msgid "Google Maps Settings"
-msgstr ""
+msgstr "Google Harita Ayarlari"
 
 #: includes/admin/admin-values.php:232
 msgid "Google Maps Language"
-msgstr ""
+msgstr "Google Harita Dili"
 
 #: includes/admin/admin-values.php:233
 #, php-format
@@ -3139,7 +3139,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:244
 msgid "Google Maps Region"
-msgstr ""
+msgstr "Google Harita Bolgesi"
 
 #: includes/admin/admin-values.php:245
 #, php-format
@@ -3152,7 +3152,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:359
 msgid "Search Settings"
-msgstr ""
+msgstr "Arama Ayarlari"
 
 #: includes/admin/admin-values.php:365
 msgid "Set this option to yes if you do not want your pages to show up in your website search results."
@@ -3160,7 +3160,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:377
 msgid "Exclude Blog Posts"
-msgstr ""
+msgstr "Blog Yazilari Haric"
 
 #: includes/admin/admin-values.php:379
 msgid "Set this option to yes if you do not want your blog posts to show up in your website search results."
@@ -3169,7 +3169,7 @@ msgstr ""
 #: includes/admin/admin-values.php:391
 #: includes/admin/admin-values.php:579
 msgid "Category Depth"
-msgstr ""
+msgstr "Kategori Derinligi"
 
 #: includes/admin/admin-values.php:393
 msgid "This sets the number of sub-categories shown under each parent in the search category drop-down. Use 'Show All' unless you have a lot of sub-categories and do not want them all listed."
@@ -3182,7 +3182,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:412
 msgid "Category Hierarchy"
-msgstr ""
+msgstr "Kategori Hiyerarsisi"
 
 #: includes/admin/admin-values.php:414
 msgid "This will indent sub-categories within the category drop-down vs showing them all flat."
@@ -3190,7 +3190,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:425
 msgid "Search Field Width"
-msgstr ""
+msgstr "Arama Alani Uzunlugu"
 
 #: includes/admin/admin-values.php:427
 msgid "Sometimes the search bar text field is too long and gets pushed down becuase of the categories drop-down. This option allows you to manually adjust it. Note: value must be numeric followed by either px or % (i.e. 600px or 50%). The default is 450px."
@@ -3198,7 +3198,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:438
 msgid "Distance Unit"
-msgstr ""
+msgstr "Uzaklik Birimi"
 
 #: includes/admin/admin-values.php:440
 msgid "Defines the radius unit for search."
@@ -3326,11 +3326,11 @@ msgstr "Listeler"
 
 #: includes/admin/admin-values.php:664
 msgid "Classified Ads Configuration"
-msgstr ""
+msgstr "Erisim Engelleri Konfigurasyonu"
 
 #: includes/admin/admin-values.php:668
 msgid "Allow Ad Editing"
-msgstr ""
+msgstr "Erisim Duzenleme Izni"
 
 #: includes/admin/admin-values.php:670
 msgid "Allows the ad owner to edit and republish their existing ads from their dashboard."
@@ -3338,7 +3338,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:682
 msgid "Allow Parent Category Posting"
-msgstr ""
+msgstr "Ana Erisim Kategorisine Ekleme Izni"
 
 #: includes/admin/admin-values.php:684
 msgid "Allows ad poster to post to top-level categories. If set to &quot;When Empty&quot;, it allows posting to top-level categories only if they have no child categories."
@@ -3350,7 +3350,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:697
 msgid "Ad Inquiry Form Requires Login"
-msgstr ""
+msgstr "Erisim Eklemek icin Login Olma"
 
 #: includes/admin/admin-values.php:699
 msgid "Require visitors to be logged in before they can fill out the ad inquiry form. In most cases you should keep this set to no to encourage visitors to ask questions without having to create an account."
@@ -3358,7 +3358,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:711
 msgid "Allow HTML"
-msgstr ""
+msgstr "HTML e izin ver"
 
 #: includes/admin/admin-values.php:712
 #, php-format
@@ -3371,7 +3371,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:725
 msgid "Allow Ad Relisting"
-msgstr ""
+msgstr "Yeniden Erisim Listeleme Izni"
 
 #: includes/admin/admin-values.php:727
 msgid "This will allow ad owners to pay and relist their expired ads under the original terms (price and duration). They will receive an ad expiration email with a link to their dashboard to relist. This option is not applicable for free or legacy ads (before CP v3.0)."
@@ -3379,7 +3379,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:739
 msgid "Show Ad Views Counter"
-msgstr ""
+msgstr "Erisim Sayisi Gosterme"
 
 #: includes/admin/admin-values.php:741
 msgid "This will show a 'total views' and 'today's views' at the bottom of each ad listing and blog post."
@@ -3387,7 +3387,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:753
 msgid "Show Gravatar Thumbnail"
-msgstr ""
+msgstr "Uye Resmi Gosterme"
 
 #: includes/admin/admin-values.php:754
 msgid "Note: Enabling this may slow down your site."
@@ -3399,7 +3399,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:782
 msgid "New Ad Status"
-msgstr ""
+msgstr "Yeni Erisim Engeli Statusu"
 
 #: includes/admin/admin-values.php:783
 msgid "Note: If you have the 'Charge for Listing Ads' option set to 'Yes', then each ad will automatically be set to Pending Review until payment is made (regardless of this options value.)."
@@ -3419,7 +3419,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:796
 msgid "Prune Ads"
-msgstr ""
+msgstr "Erisim Engeli Kisaltma"
 
 #: includes/admin/admin-values.php:798
 msgid "Automatically removes all listings from your site as they expire and changes the post status to draft. The frequency is based on the Cron Job Schedule set below and after each ad listing is past the expiration date. If no is selected, the ad will remain live on your site but will be marked as expired."
@@ -3427,7 +3427,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:810
 msgid "Cron Job Schedule"
-msgstr ""
+msgstr "Cron Is Takvimi"
 
 #: includes/admin/admin-values.php:811
 msgid "Note: This feature only works if you have the Prune Ads option above set to yes."
@@ -3451,7 +3451,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:825
 msgid "Ad Listing Period"
-msgstr ""
+msgstr "Erisim Engeli Periyodu"
 
 #: includes/admin/admin-values.php:827
 msgid "Number of days each ad will be listed on your site. This option is overridden by ad packs if you are charging for ads and using the Fixed Price Per Ad option. "
@@ -3459,7 +3459,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:836
 msgid "Form Validation Language"
-msgstr ""
+msgstr "Erisim Formu Dili"
 
 #: includes/admin/admin-values.php:838
 msgid "This option allows you to set the language your ad submission form error messages are displayed in. Enter your two-letter country code (i.e. for German enter de). Not all languages have been translated but you can always add your own. To see the available languages, look in your /classipress/includes/js/validate/localization folder."
@@ -3467,11 +3467,11 @@ msgstr ""
 
 #: includes/admin/admin-values.php:847
 msgid "Ad Images Options"
-msgstr ""
+msgstr "Erisim Resmi Ayarlari"
 
 #: includes/admin/admin-values.php:851
 msgid "Allow Ad Images"
-msgstr ""
+msgstr "Erisim Resmi Izni"
 
 #: includes/admin/admin-values.php:853
 msgid "Allows the ad owner to upload and use images on their ad. Note: This will disable display of most ad images across the entire site but some images may still display."
@@ -3479,7 +3479,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:865
 msgid "Show Preview Image"
-msgstr ""
+msgstr "Resim On Izleme Goster"
 
 #: includes/admin/admin-values.php:867
 msgid "Displays a larger image when you mouse over the smaller thumbnail image. This is on your home page, category, search results, etc. "
@@ -3487,7 +3487,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:879
 msgid "Max Images Per Ad"
-msgstr ""
+msgstr "Erisim Basina Max Resim"
 
 #: includes/admin/admin-values.php:881
 msgid "The number of images the ad owner can upload with each of their ads."
@@ -3495,7 +3495,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:899
 msgid "Max Size Per Image"
-msgstr ""
+msgstr "Resim Basina Max Alan"
 
 #: includes/admin/admin-values.php:901
 msgid "The maximum image size (per image) the ad owner can upload with each of their ads."
@@ -3527,15 +3527,15 @@ msgstr ""
 
 #: includes/admin/admin-values.php:922
 msgid "Security"
-msgstr ""
+msgstr "Guvenlik Ayarlari"
 
 #: includes/admin/admin-values.php:924
 msgid "Security Settings"
-msgstr ""
+msgstr "Guvenlik Ayarlari"
 
 #: includes/admin/admin-values.php:928
 msgid "Back Office Access"
-msgstr ""
+msgstr "Admin Panel Erisimi"
 
 #: includes/admin/admin-values.php:929
 #, php-format
@@ -3572,11 +3572,11 @@ msgstr ""
 
 #: includes/admin/admin-values.php:946
 msgid "reCaptcha Settings"
-msgstr ""
+msgstr "reCaptcha Ayarlari"
 
 #: includes/admin/admin-values.php:950
 msgid "Enable reCaptcha"
-msgstr ""
+msgstr "reCaptcha Izin Ver"
 
 #: includes/admin/admin-values.php:951
 #, php-format
@@ -3589,7 +3589,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:964
 msgid "reCaptcha Public Key"
-msgstr ""
+msgstr "reCaptcha Anahtari"
 
 #: includes/admin/admin-values.php:965
 #, php-format
@@ -3602,7 +3602,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:975
 msgid "reCaptcha Private Key"
-msgstr ""
+msgstr "reCaptcha Ozel Anahtari"
 
 #: includes/admin/admin-values.php:977
 msgid "Enter your private key here to enable an anti-spam service on your new user registration page (requires a free Google reCaptcha account). Leave it blank if you do not wish to use this anti-spam feature."
@@ -3610,7 +3610,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:986
 msgid "Choose Theme"
-msgstr ""
+msgstr "Tema Secimi"
 
 #: includes/admin/admin-values.php:988
 msgid "Select the color scheme you wish to use for reCaptcha."
@@ -3634,15 +3634,15 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1005
 msgid "Advertising"
-msgstr ""
+msgstr "Reklamlar"
 
 #: includes/admin/admin-values.php:1007
 msgid "Header Ad (468x60)"
-msgstr ""
+msgstr "Ana Reklam (468x60)"
 
 #: includes/admin/admin-values.php:1011
 msgid "Enable Ad"
-msgstr ""
+msgstr "Reklama Izin Ver"
 
 #: includes/admin/admin-values.php:1013
 msgid "Set this option to no if you do not wish to have a 468x60 ad banner displayed."
@@ -3650,7 +3650,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1025
 msgid "Ad Code"
-msgstr ""
+msgstr "Reklam Kodu"
 
 #: includes/admin/admin-values.php:1026
 #, php-format
@@ -3663,7 +3663,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1037
 msgid "Ad Image URL"
-msgstr ""
+msgstr "Erisim Resmi Url"
 
 #: includes/admin/admin-values.php:1038
 msgid "Upload your ad creative or paste the ad creative URL directly."
@@ -3675,7 +3675,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1048
 msgid "Ad Destination"
-msgstr ""
+msgstr "Reklam Hedefi"
 
 #: includes/admin/admin-values.php:1049
 msgid "Paste the destination URL of your custom ad creative here (i.e. http://www.yoursite.com/landing-page.html)."
@@ -3687,7 +3687,7 @@ msgstr ""
 
 #: includes/admin/admin-values.php:1059
 msgid "Single Ad (336x280)"
-msgstr ""
+msgstr "Tek Reklam Alani (336x280)"
 
 #: includes/admin/admin-values.php:1065
 msgid "Set this option to no if you do not wish to have a 336x280 ads displayed on single ad, category, or search result pages."

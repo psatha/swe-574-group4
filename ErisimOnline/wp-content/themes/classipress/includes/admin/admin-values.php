@@ -97,20 +97,6 @@ $options_settings = array (
 //                         'type' => 'text',
 //                         'std' => ''),
 
-				
-				array(  'name' => __('Enable Coupons','appthemes'),
-                        'desc' => '',
-                        'tip' => __('Turns on the coupon module so your ad forms include a coupon code field. You still need to create and setup coupons before coupons will work. You also must have &quot;Charge for Listing Ads&quot; option enabled.','appthemes'),
-                        'id' => $app_abbr.'_enable_coupons',
-                        'css' => 'min-width:100px;',
-                        'std' => '',
-                        'vis' => '',
-                        'req' => '',
-                        'js' => '',
-                        'min' => '',
-                        'type' => 'select',
-                        'options' => array(  'yes' => __('Yes', 'appthemes'),
-                                             'no'  => __('No', 'appthemes'))),
                                                                      
 				array(  
 						'name' => __('User Set Password','appthemes'),
@@ -155,27 +141,6 @@ $options_settings = array (
                         'type' => 'upload',
                         'std' => ''),
 
-                array(  'name' => __('Feedburner URL','appthemes'),
-                        'desc' => sprintf( '%s' . __("Sign up for a free <a target='_new' href='%s'>Feedburner account</a>.",'appthemes'), '<div class="feedburnerico"></div>', 'http://feedburner.google.com' ),
-                        'tip' => __('Paste your Feedburner address here. It will automatically redirect your default RSS feed to Feedburner. You must have a Google Feedburner account setup first.','appthemes'),
-                        'id' => $app_abbr.'_feedburner_url',
-                        'css' => 'min-width:500px;',
-                        'vis' => '',
-                        'req' => '',
-                        'min' => '',
-                        'type' => 'text',
-                        'std' => ''),
-
-                 array(  'name' => __('Twitter Username','appthemes'),
-                        'desc' => sprintf( '%s' . __("Sign up for a free <a target='_new' href='%s'>Twitter account</a>.",'appthemes'), '<div class="twitterico"></div>', 'http://twitter.com' ),
-                        'tip' => __('Paste your Twitter username here. It will automatically redirect people who click on your Twitter link to your Twitter page. You must have a Twitter account setup first.','appthemes'),
-                        'id' => $app_abbr.'_twitter_username',
-                        'css' => 'min-width:500px;',
-                        'vis' => '',
-                        'req' => '',
-                        'min' => '',
-                        'type' => 'text',
-                        'std' => ''),
 /*
                 array(  'name' => __('Facebook URL','appthemes'),
                         'desc' => sprintf( '%s' . __("Sign up for a free <a target='_new' href='%s'>Facebook account</a>.",'appthemes'), '<div class="facebookico"></div>', 'http://www.facebook.com' ),
@@ -188,17 +153,6 @@ $options_settings = array (
                         'type' => 'text',
                         'std' => ''),
 */
-
-                array(  'name' => __('Tracking Code','appthemes'),
-                        'desc' => sprintf( '%s' . __("Sign up for a free <a target='_new' href='%s'>Google Analytics account</a>.",'appthemes'), '<div class="googleico"></div>', 'http://www.google.com/analytics/' ),
-                        'tip' => __('Paste your analytics tracking code here. Google Analytics is free and the most popular but you can use other providers as well.','appthemes'),
-                        'id' => $app_abbr.'_google_analytics',
-                        'css' => 'width:500px;height:150px;',
-                        'vis' => '',
-                        'req' => '',
-                        'min' => '',
-                        'type' => 'textarea',
-                        'std' => ''),
 						
 				 array(  'name' => __('Blog Page ID','appthemes'),
                         'desc' => sprintf( __("Visit the <a href='%s'>pages</a> listing and mouse over the 'Blog' page to get the post= value.",'appthemes'), 'edit.php?post_type=page' ),
@@ -287,7 +241,7 @@ $options_settings = array (
 												'options' => array( 'yes' => __('Yes', 'appthemes'),
 																						'no'  => __('No', 'appthemes'))),
 
-								array(  'name' => __('Search Custom Fields', 'appthemes'),
+								array(  'name' => __('Erisim Engeli Alani Arama', 'appthemes'),
 												'desc' => __('This option may slow down search engine on your website due to complex database queries.', 'appthemes'),
 												'tip' => __('Set this option to yes if you want to search a phrase in all custom fields.', 'appthemes'),
 												'id' => $app_abbr.'_search_custom_fields',
@@ -328,7 +282,7 @@ $options_settings = array (
 																						'km'  => __('Kilometers', 'appthemes'))),
 
 
-				array(	'name' => __('Search Drop-down Options', 'appthemes'),
+				array(	'name' => __('Acilan Arama Ayari', 'appthemes'),
 								'type' => 'title',
 								'id' => ''),
 
@@ -365,7 +319,7 @@ $options_settings = array (
 												'options' => array( '1' => __('Yes', 'appthemes'),
 																						'0'  => __('No', 'appthemes'))),
 
-								array(  'name' => __('Show Ad Count','appthemes'),
+								array(  'name' => __('Erisim Engeli Sayisini Goster','appthemes'),
 												'desc' => '',
 												'tip' => __('This will show an ad total next to each category name in the category drop-down.','appthemes'),
 												'id' => $app_abbr.'_cat_count',
@@ -377,7 +331,7 @@ $options_settings = array (
 												'options' => array( '1' => __('Yes', 'appthemes'),
 																						'0'  => __('No', 'appthemes'))),
 
-								array(  'name' => __('Hide Empty Categories','appthemes'),
+								array(  'name' => __('Bos Kategorileri Gosterme','appthemes'),
 												'desc' => '',
 												'tip' => __('This will hide any empty categories within the category drop-down.','appthemes'),
 												'id' => $app_abbr.'_cat_hide_empty',
@@ -390,11 +344,11 @@ $options_settings = array (
 																						'0'  => __('No', 'appthemes'))),
 											 
 
-				array(	'name' => __('Categories Menu Item Options', 'appthemes'),
+				array(	'name' => __('Kategori Menu Secenegi Ayarlari', 'appthemes'),
 								'type' => 'title',
 								'id' => ''),
 
-								array(  'name' => __('Show Category Count', 'appthemes'),
+								array(  'name' => __('Kategori Sayisini Goster', 'appthemes'),
 												'desc' => __('Check this box to display category count.', 'appthemes'),
 												'tip' => __('This will show an ad total next to category name.', 'appthemes'),
 												'id' => $app_abbr.'_cat_menu_count',
@@ -406,7 +360,7 @@ $options_settings = array (
 												'min' => '',
 												'type' => 'checkbox'),
 
-								array(  'name' => __('Hide Empty Sub-Categories', 'appthemes'),
+								array(  'name' => __('Bos Alt Kategorileri Gosterme', 'appthemes'),
 												'desc' => __('Check this box to hide empty sub-categories.', 'appthemes'),
 												'tip' => __('This will hide empty sub-categories under parent category.', 'appthemes'),
 												'id' => $app_abbr.'_cat_menu_hide_empty',
@@ -442,7 +396,7 @@ $options_settings = array (
 																						'9'  => '9',
 																						'10' => '10')),
 
-								array(  'name' => __('Number of Sub-Categories', 'appthemes'),
+								array(  'name' => __('Alt Kategori Sayisi', 'appthemes'),
 												'desc' => '',
 												'tip' => __('This sets the number of sub-categories shown under each category item.', 'appthemes'),
 												'id' => $app_abbr.'_cat_menu_sub_num',
@@ -466,11 +420,11 @@ $options_settings = array (
 																						'9'  => '9',
 																						'10' => '10')),
 
-				array(	'name' => __('Categories Page Options', 'appthemes'),
+				array(	'name' => __('Kategori Sayfa Ayarlari', 'appthemes'),
 								'type' => 'title',
 								'id' => ''),
 
-								array(  'name' => __('Show Category Count', 'appthemes'),
+								array(  'name' => __('Kategori Sayisini Goster', 'appthemes'),
 												'desc' => __('Check this box to display category count.', 'appthemes'),
 												'tip' => __('This will show an ad total next to category name.', 'appthemes'),
 												'id' => $app_abbr.'_cat_dir_count',
@@ -482,7 +436,7 @@ $options_settings = array (
 												'min' => '',
 												'type' => 'checkbox'),
 
-								array(  'name' => __('Hide Empty Sub-Categories', 'appthemes'),
+								array(  'name' => __('Bos Alt Kategorileri Gosterme', 'appthemes'),
 												'desc' => __('Check this box to hide empty sub-categories.', 'appthemes'),
 												'tip' => __('This will hide empty sub-categories under parent category.', 'appthemes'),
 												'id' => $app_abbr.'_cat_dir_hide_empty',
@@ -518,7 +472,7 @@ $options_settings = array (
 																						'9'  => '9',
 																						'10' => '10')),
 
-								array(  'name' => __('Number of Sub-Categories', 'appthemes'),
+								array(  'name' => __('Alt Kategori Sayisi', 'appthemes'),
 												'desc' => '',
 												'tip' => __('This sets the number of sub-categories shown under each category item.', 'appthemes'),
 												'id' => $app_abbr.'_cat_dir_sub_num',
@@ -543,11 +497,11 @@ $options_settings = array (
 																						'10' => '10')),
 
 
-        array(	'name' => __('Classified Ads Messages', 'appthemes'),
+        array(	'name' => __('Erisim Online Mesajlari', 'appthemes'),
                 'type' => 'title',
                 'id' => ''),
 
-                array(  'name' => __('Home Page Message','appthemes'),
+                array(  'name' => __('Ana Sayfa Mesaji','appthemes'),
                         'desc' => '',
                         'tip' => __('This welcome message will appear in the sidebar of your home page. (HTML is allowed)','appthemes'),
                         'id' => $app_abbr.'_ads_welcome_msg',
@@ -559,7 +513,7 @@ $options_settings = array (
                         'type' => 'textarea',
                         'std' => ''),
 
-                array(  'name' => __('New Ad Message','appthemes'),
+                array(  'name' => __('Yeni Erisim Engeli Mesaji','appthemes'),
                         'desc' => '',
                         'tip' => __('This message will appear at the top of the classified ads listing page. (HTML is allowed)','appthemes'),
                         'id' => $app_abbr.'_ads_form_msg',
@@ -571,19 +525,7 @@ $options_settings = array (
                         'type' => 'textarea',
                         'std' => ''),
 
-                array(  'name' => __('Membership Purchase Message','appthemes'),
-                        'desc' => '',
-                        'tip' => __('This message will appear at the top of the classified ads listing page. (HTML is allowed)','appthemes'),
-                        'id' => $app_abbr.'_membership_form_msg',
-                        'css' => 'width:500px;height:200px;',
-                        'std' => '',
-                        'vis' => '',
-                        'req' => '',
-                        'min' => '',
-                        'type' => 'textarea',
-                        'std' => ''),
-
-               array(  'name' => __('Terms of Use','appthemes'),
+               array(  'name' => __('Kullanim Kurallari','appthemes'),
                         'desc' => '',
                         'tip' => __('This message will appear on the last step of your classified ad listing page. This is usually your legal disclaimer or rules for posting new ads on your site. (HTML is allowed)','appthemes'),
                         'id' => $app_abbr.'_ads_tou_msg',

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the 3.3.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-12-05 11:43+0200\n"
+"PO-Revision-Date: 2012-12-05 17:53+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1074,7 +1074,7 @@ msgstr "Burada olmak için izniniz yok"
 
 #: wp-admin/media-upload.php:61
 msgid "Upload New Media"
-msgstr "Yeni Ortam Yükle"
+msgstr "Yeni Erisim Engeli Resmi Yükle"
 
 #: wp-admin/media-upload.php:67
 msgid "You can upload media files here without creating a post first. This allows you to upload files to use with posts and pages later and/or to get a web link for a particular file that you can share. There are three options for uploading files:"
@@ -1159,7 +1159,7 @@ msgstr "Güncellemeler %s"
 
 #: wp-admin/menu.php:57
 msgid "Library"
-msgstr "Kütüphane"
+msgstr "Resimler"
 
 #: wp-admin/menu.php:63
 msgctxt "admin menu"
@@ -5631,7 +5631,7 @@ msgstr "Yeni Ekle"
 #: wp-admin/media.php:116
 #: wp-admin/media.php:125
 msgid "Update Media"
-msgstr "Ortamları Güncelle"
+msgstr "Erisim Resimini Güncelle"
 
 #: wp-admin/custom-header.php:106
 msgid "You can set a custom image header for your site. Simply upload the image and crop it, and the new header will go live immediately."
@@ -10649,7 +10649,7 @@ msgstr "Sonraki sayfa..."
 #: wp-includes/js/tinymce/langs/wp-langs.php:469
 #: wp-admin/includes/media.php:381
 msgid "Add Media"
-msgstr "Ortam Ekle"
+msgstr "Erisim Resmi Ekle"
 
 #: wp-includes/js/tinymce/langs/wp-langs.php:470
 msgid "Add an Image"
@@ -13941,7 +13941,7 @@ msgstr "Yeni Ekle"
 #: wp-admin/menu.php:56
 #: wp-admin/menu.php:204
 msgid "Media"
-msgstr "Ortam"
+msgstr "Erisim Resimleri"
 
 #: wp-includes/post.php:37
 msgctxt "add new on admin bar"

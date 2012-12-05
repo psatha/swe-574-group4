@@ -17,14 +17,14 @@ function appthemes_admin_options() {
 	add_submenu_page( basename(__FILE__), __('Dashboard','appthemes'), __('Dashboard','appthemes'), 'manage_options', basename(__FILE__), 'cp_dashboard' );
 	add_submenu_page( basename(__FILE__), __('General Settings','appthemes'), __('Settings','appthemes'), 'manage_options', 'settings', 'cp_settings' );
 	add_submenu_page( basename(__FILE__), __('Emails','appthemes'), __('Emails','appthemes'), 'manage_options', 'emails', 'cp_emails' );
-	add_submenu_page( basename(__FILE__), __('Pricing Settings','appthemes'), __('Pricing','appthemes'), 'manage_options', 'pricing', 'cp_pricing' );
-	add_submenu_page( basename(__FILE__), __('Packages','appthemes'), __('Packages','appthemes'), 'manage_options', 'packages', 'cp_ad_packs' );
-	add_submenu_page( basename(__FILE__), __('Coupons','appthemes'), __('Coupons','appthemes'), 'manage_options', 'coupons', 'cp_coupons' );
-	add_submenu_page( basename(__FILE__), __('Payment Gateway Options','appthemes'), __('Gateways','appthemes'), 'manage_options', 'gateways', 'cp_gateways' );
+	//add_submenu_page( basename(__FILE__), __('Pricing Settings','appthemes'), __('Pricing','appthemes'), 'manage_options', 'pricing', 'cp_pricing' );
+	//add_submenu_page( basename(__FILE__), __('Packages','appthemes'), __('Packages','appthemes'), 'manage_options', 'packages', 'cp_ad_packs' );
+	//add_submenu_page( basename(__FILE__), __('Coupons','appthemes'), __('Coupons','appthemes'), 'manage_options', 'coupons', 'cp_coupons' );
+	//add_submenu_page( basename(__FILE__), __('Payment Gateway Options','appthemes'), __('Gateways','appthemes'), 'manage_options', 'gateways', 'cp_gateways' );
 	add_submenu_page( basename(__FILE__), __('Form Layouts','appthemes'), __('Form Layouts','appthemes'), 'manage_options', 'layouts', 'cp_form_layouts' );
 	add_submenu_page( basename(__FILE__), __('Custom Fields','appthemes'), __('Custom Fields','appthemes'), 'manage_options', 'fields', 'cp_custom_fields' );
-	add_submenu_page( basename(__FILE__), __('Transactions','appthemes'), __('Transactions','appthemes'), 'manage_options', 'transactions', 'cp_transactions' );
-	add_submenu_page( basename(__FILE__), __('System Info','appthemes'), __('System Info','appthemes'), 'manage_options', 'sysinfo', 'cp_system_info' );
+	//add_submenu_page( basename(__FILE__), __('Transactions','appthemes'), __('Transactions','appthemes'), 'manage_options', 'transactions', 'cp_transactions' );
+	//add_submenu_page( basename(__FILE__), __('System Info','appthemes'), __('System Info','appthemes'), 'manage_options', 'sysinfo', 'cp_system_info' );
 
 	do_action( 'appthemes_add_submenu_page' );
 }
@@ -901,21 +901,6 @@ function cp_dashboard() {
 			</div> <!-- /postbox -->
 
 
-
-			<div class="postbox">
-
-				<div class="newspaperico"></div><a target="_new" href="<?php echo $app_rss_feed ?>"><div class="rssico"></div></a>
-				<h3 class="hndle" id="poststuff"><span><?php _e('Latest News', 'appthemes') ?></span></h3>
-
-				<div class="inside" id="boxy">
-
-					<?php appthemes_dashboard_appthemes(); ?>
-
-				</div> <!-- /inside -->
-
-			</div> <!-- /postbox -->
-
-
 		</div> <!-- /dash-wrap -->
 
 	</div> <!-- /dash-left -->
@@ -934,36 +919,6 @@ function cp_dashboard() {
 				<div class="inside" id="boxy">
 
 					<?php cp_dashboard_charts(); ?>
-
-				</div> <!-- /inside -->
-
-			</div> <!-- /postbox -->
-
-
-
-			<div class="postbox">
-
-				<div class="twitterico"></div><a target="_new" href="<?php echo $app_twitter_rss_feed ?>"><div class="rssico"></div></a>
-				<h3 class="hndle" id="poststuff"><span><?php _e('Latest Tweets', 'appthemes') ?></span></h3>
-
-				<div class="inside" id="boxy">
-
-					<?php appthemes_dashboard_twitter(); ?>
-
-				</div> <!-- /inside -->
-
-			</div> <!-- /postbox -->
-
-
-
-			<div class="postbox">
-
-				<div class="forumico"></div><a target="_new" href="<?php echo $app_forum_rss_feed ?>"><div class="rssico"></div></a>
-				<h3 class="hndle" id="poststuff"><span><?php _e('Support Forum', 'appthemes') ?></span></h3>
-
-				<div class="inside" id="boxy">
-
-					<?php appthemes_dashboard_forum(); ?>
 
 				</div> <!-- /inside -->
 
@@ -1016,11 +971,11 @@ function cp_settings() {
 
         <form method="post" id="mainform" action="">
 
-            <p class="submit btop"><input name="save" type="submit" value="<?php _e('Save changes','appthemes') ?>" /></p>
+            <p class="submit btop"><input name="save" type="submit" value="Degisiklikleri Kaydet" /></p>
 
             <?php cp_admin_fields($options_settings); ?>
 
-            <p class="submit bbot"><input name="save" type="submit" value="<?php _e('Save changes','appthemes') ?>" /></p>
+            <p class="submit bbot"><input name="save" type="submit" value="Degisiklikleri Kaydet" /></p>
 
             <input name="submitted" type="hidden" value="yes" />
             <input name="setTabIndex" type="hidden" value="0" id="setTabIndex" />
