@@ -50,65 +50,8 @@ $logout_url = cp_logout_url();
 					<li><strong><?php _e('Last Login:','appthemes'); ?></strong> <?php echo appthemes_get_last_login($current_user->ID); ?></li>
 				</ul>
 
-				<?php $membership = get_pack($current_user->active_membership_pack); ?>
-				<?php if(get_option('cp_enable_membership_packs') == 'yes') : ?>
-				<ul class="membership-pack">
-					<?php if($membership) : ?>
-					<li><strong><?php _e('Membership Pack','appthemes')?>:</strong> <?php echo stripslashes($membership->pack_name); ?></li>
-					<li><strong><?php _e('Membership Expires','appthemes')?>:</strong> <?php echo date_i18n( get_option('date_format').' '.get_option('time_format'),strtotime($current_user->membership_expires), get_option('gmt_offset') ); ?></li>
-					<li><a href="<?php echo CP_MEMBERSHIP_PURCHASE_URL; ?>"><?php _e('Renew or Extend Your Membership Pack','appthemes'); ?></a></li>
-					<?php else : ?>
-					<li><a href="<?php echo CP_MEMBERSHIP_PURCHASE_URL; ?>"><?php _e('Purchase a Membership Pack','appthemes'); ?></a></li>
-					<?php endif; //end if $membership exists ?>
-				</ul>
-				<?php endif; //end if cp_enable_membership_packs ?>
-
 				<ul class="user-details">
 					<li><div class="emailico"></div><a href="mailto:<?php echo $current_user->user_email; ?>"><?php echo $current_user->user_email; ?></a></li>
-					<li><div class="twitterico"></div><?php if($current_user->twitter_id) { ?><a href="http://twitter.com/<?php echo esc_attr( $current_user->twitter_id ); ?>" target="_blank"><?php _e('Twitter','appthemes')?></a><?php } else { _e('N/A','appthemes'); } ?></li>
-					<li><div class="facebookico"></div><?php if($current_user->facebook_id) { ?><a href="http://facebook.com/<?php echo esc_attr( $current_user->facebook_id ); ?>" target="_blank"><?php _e('Facebook','appthemes')?></a><?php } else { _e('N/A','appthemes'); } ?></li>
-					<li><div class="globeico"></div><?php if($current_user->user_url) { ?><a href="<?php echo esc_attr( $current_user->user_url ); ?>" target="_blank"><?php echo esc_html( $current_user->user_url ); ?></a><?php } else { _e('N/A','appthemes'); } ?></li>
-				</ul>
-
-		</div><!-- /shadowblock -->
-
-	</div><!-- /shadowblock_out -->
-
-
-
-	<div class="shadowblock_out">
-
-		<div class="shadowblock">
-
-			<h2 class="dotted"><?php _e('Account Statistics','appthemes')?></h2>
-
-				<ul class="user-stats">
-
-<?php
-// calculate the total count of live ads for current user
-$rows = $wpdb->get_results( $wpdb->prepare( "
-	SELECT post_status, COUNT(ID) as count
-	FROM $wpdb->posts
-	WHERE post_author = %d
-	AND post_type = '".APP_POST_TYPE."'
-	GROUP BY post_status", $current_user->ID
-) );
-
-$stats = array();
-foreach ( $rows as $row )
-	$stats[ $row->post_status ] = $row->count;
-
-$post_count_live = (int) @$stats['publish'];
-$post_count_pending = (int) @$stats['pending'];
-$post_count_offline = (int) @$stats['draft'];
-$post_count_total = $post_count_live + $post_count_pending + $post_count_offline;
-?>
-
-				<li><?php _e('Live Listings:','appthemes')?> <strong><?php echo $post_count_live; ?></strong></li>
-				<li><?php _e('Pending Listings:','appthemes')?> <strong><?php echo $post_count_pending; ?></strong></li>
-				<li><?php _e('Offline Listings:','appthemes')?> <strong><?php echo $post_count_offline; ?></strong></li>
-				<li><?php _e('Total Listings:','appthemes')?> <strong><?php echo $post_count_total; ?></strong></li>
-
 				</ul>
 
 		</div><!-- /shadowblock -->

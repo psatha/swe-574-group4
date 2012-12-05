@@ -1095,10 +1095,10 @@ class wpdb {
 			$this->queries[] = array( $query, $this->timer_stop(), $this->get_caller() );
 
 		// If there is an error then take note of it..
-		if ( $this->last_error = mysql_error( $this->dbh ) ) {
-			$this->print_error();
-			return false;
-		}
+		//if ( $this->last_error = mysql_error( $this->dbh ) ) {
+			//$this->print_error();
+			//return false;
+		//}
 
 		if ( preg_match( '/^\s*(create|alter|truncate|drop) /i', $query ) ) {
 			$return_val = $this->result;

@@ -156,11 +156,11 @@ jQuery(document).ready(function($) {
 			</tr>
 			<tr>
 				<th><label for="first_name"><?php _e('First Name:', 'appthemes'); ?></label></th>
-				<td><input type="text" name="first_name" class="regular-text required" id="first_name" value="<?php echo esc_attr( $current_user->first_name ); ?>" maxlength="100" /></td>
+				<td><input type="text" name="first_name" class="regular-text" id="first_name" value="<?php echo esc_attr( $current_user->first_name ); ?>" maxlength="100" /></td>
 			</tr>
 			<tr>
 				<th><label for="last_name"><?php _e('Last Name:', 'appthemes'); ?></label></th>
-				<td><input type="text" name="last_name" class="regular-text required" id="last_name" value="<?php echo esc_attr( $current_user->last_name ); ?>" maxlength="100" /></td>
+				<td><input type="text" name="last_name" class="regular-text" id="last_name" value="<?php echo esc_attr( $current_user->last_name ); ?>" maxlength="100" /></td>
 			</tr>
 			<tr>
 				<th><label for="nickname"><?php _e('Nickname:', 'appthemes'); ?></label></th>
@@ -196,10 +196,33 @@ jQuery(document).ready(function($) {
 
 
 		<tr>
-			<th><label for="url"><?php _e('Website:','appthemes') ?></label></th>
-			<td><input type="text" name="url" class="regular-text" id="url" value="<?php echo esc_url($current_user->user_url); ?>" maxlength="100" /></td>
+			<th><label for="disability">Engel Durumunuz:</label></th>
+            <td><select name="engelUserUpdate" >
+                <?php
+					// EKLEME DISABILITY TYPE GETIRMEK ICIN
+					require_once('./dbconnect.php');
+					//Get Disability IDs
+					$sqlDis = "SELECT disability_id FROM er_disability_user where user_id = ".$current_user->ID;
+					$disResult = dbconnection($sqlDis);
+					$i=0;
+					while ($row = mysql_fetch_array($disResult)) {
+						$disability[$i] = $row['disability_id'];
+						$i++;
+					}
+					
+					$sql = "SELECT * FROM er_disability";
+					$result = dbconnection($sql);
+					while($row = mysql_fetch_array($result))
+					{
+						if ($disability != null && in_array($row['ID'], $disability)) {
+    						echo "<option selected='selected' value='".$row['ID']."'/>".$row['name']."</option>";
+						}else{
+							echo "<option value='".$row['ID']."'/>".$row['name']."</option>";	
+						}
+  					}
+				?>
+            </select></td>
 		</tr>
-
 
 		<tr>
 			<th><label for="description"><?php _e('About Me:','appthemes'); ?></label></th>
@@ -240,8 +263,8 @@ jQuery(document).ready(function($) {
 		<br />
 
 		<?php
-		do_action('profile_personal_options', $current_user);
-		do_action('show_user_profile', $current_user);
+		//do_action('profile_personal_options', $current_user);
+		//do_action('show_user_profile', $current_user);
 		?>
 
 		<table class="form-table" id="userphoto">
