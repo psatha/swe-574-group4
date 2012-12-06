@@ -2221,23 +2221,23 @@ function cp_form_layouts() {
 
         <div class="wrap">
         <div class="icon32" id="icon-themes"><br /></div>
-        <h2><?php _e('Form Layouts','appthemes'); ?>&nbsp;<a class="button add-new-h2" href="?page=layouts&amp;action=addform"><?php _e('Add New','appthemes') ?></a></h2>
+        <h2><?php _e('Erisim Form Duzenlemesi','appthemes'); ?>&nbsp;<a class="button add-new-h2" href="?page=layouts&amp;action=addform">Yeni Form Ekle</a></h2>
 
         <?php cp_admin_info_box(); ?>
 
-        <p class="admin-msg"><?php _e('Form layouts allow you to create your own custom ad submission forms. Each form is essentially a container for your fields and can be applied to one or all of your categories. If you do not create any form layouts, the default one will be used. To change the default form, create a new form layout and apply it to all categories.','appthemes') ?></p>
+        <p class="admin-msg"><?php _e('Formlar yeni bir Erisim Engeli eklenecegi sirada o Erisim Engelini olusturan alanlardan olusur. Her Erisim Kategorisine ozel Form ekleyebilirsiniz. Asagida tum Erisim Formlari listelenmektedir. Yeni bir Form ekleyebilir yada var olan Formu duzenleyebilirsiniz. Ayrica Formlara istediginiz alanlari ekleyebilirsiniz.','appthemes') ?></p>
 
         <table id="tblspacer" class="widefat fixed">
 
             <thead>
                 <tr>
                     <th scope="col" style="width:35px;">&nbsp;</th>
-                    <th scope="col"><?php _e('Name','appthemes') ?></th>
-                    <th scope="col"><?php _e('Description','appthemes') ?></th>
-                    <th scope="col"><?php _e('Categories','appthemes') ?></th>
-                    <th scope="col" style="width:150px;"><?php _e('Modified','appthemes') ?></th>
-                    <th scope="col" style="width:75px;"><?php _e('Status','appthemes') ?></th>
-                    <th scope="col" style="text-align:center;width:100px;"><?php _e('Actions','appthemes') ?></th>
+                    <th scope="col"><?php _e('Form Ismi','appthemes') ?></th>
+                    <th scope="col"><?php _e('Form Aciklamasi','appthemes') ?></th>
+                    <th scope="col"><?php _e('Erisim Kategorileri','appthemes') ?></th>
+                    <th scope="col" style="width:150px;"><?php _e('Degistiren','appthemes') ?></th>
+                    <th scope="col" style="width:75px;"><?php _e('Durumu','appthemes') ?></th>
+                    <th scope="col" style="text-align:center;width:100px;"><?php _e('Aksiyonlar','appthemes') ?></th>
                 </tr>
             </thead>
 
@@ -2435,7 +2435,7 @@ function cp_custom_fields() {
 
         <div class="wrap">
             <div class="icon32" id="icon-themes"><br /></div>
-            <h2><?php _e('Edit Custom Field','appthemes') ?></h2>
+            <h2>Genel Alanlari Duzenle</h2>
 
             <?php cp_admin_info_box(); ?>
 
@@ -2498,8 +2498,8 @@ function cp_custom_fields() {
             <?php cp_admin_db_fields($options_new_field, 'cp_ad_fields', 'field_id') ?>
 
                 <p class="submit">
-                    <input class="btn button-primary" name="save" type="submit" value="<?php _e('Save changes','appthemes') ?>" />&nbsp;&nbsp;&nbsp;
-                    <input name="cancel" type="button" onClick="location.href='?page=fields'" value="<?php _e('Cancel','appthemes') ?>" />
+                    <input class="btn button-primary" name="save" type="submit" value="Degisiklikleri Kaydet" />&nbsp;&nbsp;&nbsp;
+                    <input name="cancel" type="button" onClick="location.href='?page=fields'" value="Degisiklikleri iptal et" />
                     <input name="submitted" type="hidden" value="yes" />
                     <input name="field_owner" type="hidden" value="<?php echo $current_user->user_login ?>" />
                 </p>
@@ -2551,22 +2551,22 @@ function cp_custom_fields() {
 
         <div class="wrap">
         <div class="icon32" id="icon-tools"><br /></div>
-        <h2><?php _e('Custom Fields','appthemes') ?>&nbsp;<a class="button add-new-h2" href="?page=fields&amp;action=addfield"><?php _e('Add New','appthemes') ?></a></h2>
+        <h2>Genel Alanlar&nbsp;<a class="button add-new-h2" href="?page=fields&amp;action=addfield">Yeni Alan Ekle</a></h2>
 
         <?php cp_admin_info_box(); ?>
 
-        <p class="admin-msg"><?php _e('Custom fields allow you to customize your ad submission forms and collect more information. Each custom field needs to be added to a form layout in order to be visible on your website. You can create unlimited custom fields and each one can be used across multiple form layouts. It is highly recommended to NOT delete a custom field once it is being used on your ads because it could cause ad editing problems for your customers.','appthemes') ?></p>
+        <p class="admin-msg"><?php _e('Genel Alanlar Erisim Engeli Formlarinda kullanicilarin doldurduklari Erisim Engellerine bagli alanlari olusturmaktadir. Asagidaki tabloda tum Erisim Engeli Alanlari listelenmektedir. Yeni bir alan ekleyebilir ve var olan alanlari degistirebilirsiniz.','appthemes') ?></p>
 
         <table id="tblspacer" class="widefat fixed">
 
             <thead>
                 <tr>
                     <th scope="col" style="width:35px;">&nbsp;</th>
-                    <th scope="col"><?php _e('Name','appthemes') ?></th>
-                    <th scope="col" style="width:100px;"><?php _e('Type','appthemes') ?></th>
-                    <th scope="col"><?php _e('Description','appthemes') ?></th>
-                    <th scope="col" style="width:150px;"><?php _e('Modified','appthemes') ?></th>
-                    <th scope="col" style="text-align:center;width:100px;"><?php _e('Actions','appthemes') ?></th>
+                    <th scope="col"><?php _e('Alan Ismi','appthemes') ?></th>
+                    <th scope="col" style="width:100px;"><?php _e('Alan Tipi','appthemes') ?></th>
+                    <th scope="col"><?php _e('Alan Aciklamasi','appthemes') ?></th>
+                    <th scope="col" style="width:150px;"><?php _e('Degistiren','appthemes') ?></th>
+                    <th scope="col" style="text-align:center;width:100px;"><?php _e('Aksiyonlar','appthemes') ?></th>
                 </tr>
             </thead>
 
