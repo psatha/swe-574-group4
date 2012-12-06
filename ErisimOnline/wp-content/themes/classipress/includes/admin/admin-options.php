@@ -2453,6 +2453,10 @@ function cp_custom_fields() {
                     " field_min_length = %s," .
                     // " field_search = '" . $wpdb->escape(appthemes_clean($_POST['field_search'])) . "'," .
                     " field_owner = %s," .
+            
+            		" field_max_value = %s," .
+            		" field_min_value = %s," .		
+            
                     " field_modified = %s" .
                     " WHERE field_id = %s",
                     appthemes_clean($_POST['field_name']),
@@ -2463,6 +2467,10 @@ function cp_custom_fields() {
                     appthemes_clean($_POST['field_values']),
                     appthemes_clean($_POST['field_min_length']),
                     appthemes_clean($_POST['field_owner']),
+                    
+                    appthemes_clean($_POST['field_max_value']),
+                    appthemes_clean($_POST['field_min_value']),
+                    
                     current_time('mysql'),
                     $_GET['id']
                     );
