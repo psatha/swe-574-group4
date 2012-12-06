@@ -136,7 +136,6 @@ if (!function_exists('cp_profile_fields')) {
 add_action('show_user_profile', 'cp_profile_fields', 0);
 add_action('edit_user_profile', 'cp_profile_fields');
 
-
 // save the user profile fields
 if (!function_exists('cp_profile_fields_save')) {
     function cp_profile_fields_save($user_id) {

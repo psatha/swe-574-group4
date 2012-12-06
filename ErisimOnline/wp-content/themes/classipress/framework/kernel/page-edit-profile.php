@@ -22,6 +22,7 @@ class APP_User_Profile extends APP_Page_Template {
 		require ABSPATH . '/wp-admin/includes/user.php';
 
 		$r = edit_user( $_POST['user_id'] );
+		
 
 		if ( is_wp_error( $r ) ) {
 			$this->error = $r->get_error_message();

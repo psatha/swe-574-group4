@@ -1000,6 +1000,7 @@ function map_meta_cap( $cap, $user_id ) {
 	case 'edit_post':
 	case 'edit_page':
 		$author_data = get_userdata( $user_id );
+		
 		$post = get_post( $args[0] );
 
 		if ( 'revision' == $post->post_type ) {

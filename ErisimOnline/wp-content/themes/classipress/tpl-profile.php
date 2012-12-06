@@ -26,6 +26,7 @@ if ( !empty($_POST['submit']) ) {
     check_admin_referer( 'update-profile_' . $user_ID );
 
     $errors = edit_user( $user_ID );
+    
 
     if ( is_wp_error( $errors ) ) {
         foreach ( $errors->get_error_messages() as $message )
@@ -43,7 +44,7 @@ if ( !empty($_POST['submit']) ) {
         update_user_meta( $user_ID, 'twitter_id', sanitize_text_field( $_POST['twitter_id'] ) );
         update_user_meta( $user_ID, 'facebook_id', sanitize_text_field( $_POST['facebook_id'] ) );
         update_user_meta( $user_ID, 'paypal_email', sanitize_text_field( $_POST['paypal_email'] ) );
-
+        
         wp_redirect( './?updated=true' );
 
     } else {
@@ -51,7 +52,6 @@ if ( !empty($_POST['submit']) ) {
         $errmsg = '<div class="box-red"><strong>**  ' . $errmsg . ' **</strong></div>';
         $errcolor = 'style="background-color:#FFEBE8;border:1px solid #CC0000;"';
     }
-
 }	
 
 ?>

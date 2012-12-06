@@ -182,10 +182,20 @@ function edit_user( $user_id = 0 ) {
 
 	if ( $update ) {
 		$user_id = wp_update_user( get_object_vars( $user ) );
+		
+	// EKLEME USER DISABILITY DB UPDATE
+	//require_once('./dbconnect.php');
+	$connect = mysql_pconnect("localhost","root","");
+	mysql_select_db("erisimdb", $connect);
+	$updateDisSql = "UPDATE er_disability_user SET disability_id = ".$_POST['engelUserUpdate']." WHERE user_id = ".$user_id;
+	mysql_query($updateDisSql);
+	mysql_close($connect);
+	//
 	} else {
 		$user_id = wp_insert_user( get_object_vars( $user ) );
 		wp_new_user_notification( $user_id, isset($_POST['send_password']) ? $pass1 : '' );
 	}
+	
 	return $user_id;
 }
 

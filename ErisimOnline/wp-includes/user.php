@@ -1402,6 +1402,7 @@ function wp_insert_user($userdata) {
  */
 function wp_update_user($userdata) {
 	$ID = (int) $userdata['ID'];
+	
 
 	// First, get all of the original fields
 	$user_obj = get_userdata( $ID );
