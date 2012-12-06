@@ -526,7 +526,7 @@ function cp_admin_db_fields($options, $cp_table, $cp_id) {
     } // endforeach
 
     ?>
-
+    
     </table>
 
 <?php
@@ -2372,7 +2372,7 @@ function cp_custom_fields() {
 
             $_POST['field_search'] = ''; // we aren't using this field so set it to blank for now to prevent notice
 
-            $insert = "INSERT INTO $wpdb->cp_ad_fields ( field_name, field_label, field_desc, field_tooltip, field_type, field_values, field_search, field_owner, field_created, field_modified ) VALUES ( '" .
+            $insert = "INSERT INTO $wpdb->cp_ad_fields ( field_name, field_label, field_desc, field_tooltip, field_type, field_values, field_search, field_owner, field_max_value, field_min_value, field_created, field_modified ) VALUES ( '" .
                         $wpdb->escape(appthemes_clean(cp_make_custom_name($_POST['field_label']))) . "','" .
                         $wpdb->escape(appthemes_clean($_POST['field_label'])) . "','" .
                         $wpdb->escape(appthemes_clean($_POST['field_desc'])) . "','" .
@@ -2381,6 +2381,10 @@ function cp_custom_fields() {
                         $wpdb->escape(appthemes_clean($_POST['field_values'])) . "','" .
                         $wpdb->escape(appthemes_clean($_POST['field_search'])) . "','" .
                         $wpdb->escape(appthemes_clean($_POST['field_owner'])) . "','" .
+                        
+                        $wpdb->escape(appthemes_clean($_POST['field_max_value'])) . "','" .
+                        $wpdb->escape(appthemes_clean($_POST['field_min_value'])) . "','" .
+                        
                         current_time('mysql') . "','" .
                         current_time('mysql') .
                     "' )";
