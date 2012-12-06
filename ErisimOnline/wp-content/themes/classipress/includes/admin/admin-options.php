@@ -1900,7 +1900,7 @@ function cp_form_layouts() {
 
         <div class="wrap">
         <div class="icon32" id="icon-themes"><br/></div>
-        <h2><?php _e('Edit Form Properties','appthemes') ?></h2>
+        <h2><?php _e('Erisim Formu Ozelliklerini Duzenle','appthemes') ?></h2>
 
         <?php
         if ( isset($_POST['submitted']) && $_POST['submitted'] == 'yes' ) {
@@ -1968,7 +1968,7 @@ function cp_form_layouts() {
 
         <div class="wrap">
         <div class="icon32" id="icon-themes"><br/></div>
-        <h2><?php _e('Edit Form Layout','appthemes') ?></h2>
+        <h2><?php _e('Erisim Formu Duzenleme','appthemes') ?></h2>
 
         <?php cp_admin_info_box(); ?>
 
@@ -2050,17 +2050,17 @@ function cp_form_layouts() {
                 <td style="width:800px;padding:0 20px 0 0;">
 
 
-                <h3><?php _e('Form Name','appthemes') ?> - <?php echo ucfirst(urldecode($_GET['title'])) ?>&nbsp;&nbsp;&nbsp;&nbsp;<span id="loading"></span></h3>
+                <h3><?php _e('Erisim Form Ismi','appthemes') ?> - <?php echo ucfirst(urldecode($_GET['title'])) ?>&nbsp;&nbsp;&nbsp;&nbsp;<span id="loading"></span></h3>
 
                 <form method="post" id="mainform" action="">
 
                     <table class="widefat">
                         <thead>
                             <tr>
-                                <th scope="col" colspan="2"><?php _e('Form Preview','appthemes') ?></th>
+                                <th scope="col" colspan="2"><?php _e('Erisim Formu Onizleme','appthemes') ?></th>
 								<th scope="col" style="width:75px;text-align:center;" title="<?php _e('Show field in the category refine search sidebar','appthemes') ?>"><?php _e('Advanced Search','appthemes') ?></th>
-                                <th scope="col" style="width:75px;text-align:center;"><?php _e('Required','appthemes') ?></th>
-                                <th scope="col" style="width:75px;text-align:center;"><?php _e('Remove','appthemes') ?></th>
+                                <th scope="col" style="width:75px;text-align:center;"><?php _e('Gerekli Alan','appthemes') ?></th>
+                                <th scope="col" style="width:75px;text-align:center;"><?php _e('Kaldir','appthemes') ?></th>
                             </tr>
                         </thead>
 
@@ -2119,7 +2119,7 @@ function cp_form_layouts() {
                 </td>
                 <td>
 
-                <h3><?php _e('Available Fields','appthemes') ?></h3>
+                <h3><?php _e('Mevcut Erisim Alanlari','appthemes') ?></h3>
 
                 <form method="post" id="mainform" action="">
 
@@ -2130,8 +2130,8 @@ function cp_form_layouts() {
                         <thead>
                             <tr>
                                 <th style="" class="manage-column column-cb check-column" id="cb" scope="col"><input type="checkbox"/></th>
-                                <th scope="col"><?php _e('Field Name','appthemes') ?></th>
-                                <th scope="col"><?php _e('Type','appthemes') ?></th>
+                                <th scope="col"><?php _e('Alan Adi','appthemes') ?></th>
+                                <th scope="col"><?php _e('Alan Tipi','appthemes') ?></th>
                             </tr>
                         </thead>
 
@@ -2183,7 +2183,7 @@ function cp_form_layouts() {
 
                 </div>
 
-                    <p class="submit"><input class="btn button-primary" name="save" type="submit" value="<?php _e('Add Fields to Form Layout','appthemes') ?>" /></p>
+                    <p class="submit"><input class="btn button-primary" name="save" type="submit" value="<?php _e('Forma Alan Ekle','appthemes') ?>" /></p>
                         <input name="form_id" type="hidden" value="<?php echo $_GET['id']; ?>" />
                         <input name="submitted" type="hidden" value="yes" />
 
