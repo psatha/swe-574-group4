@@ -1248,23 +1248,7 @@ function cp_edit_ad_formbuilder($results, $getad) {
 
             // now loop through the form builder and make the proper field and display the value
             //************************************** EKLEME **************************************************************
-            if($result->field_name == 'cp_country'){
-            	
-            	?>
-            	<script type='text/javascript' src='<?php echo get_option('siteurl'); ?>/wp-content/themes/classipress/includes/js/mycountries.js'></script>
-            	<li id="list_<?php echo esc_attr($result->field_name); ?>">
-					<div class="labelwrapper">
-						<label><?php if ($result->field_tooltip) : ?><a href="#" tip="<?php echo esc_attr( translate( $result->field_tooltip, 'appthemes' ) ); ?>" tabindex="999"><div class="helpico"></div></a><?php endif; ?><?php echo esc_html( translate( $result->field_label, 'appthemes' ) ); ?>: <?php if ($result->field_req) echo '<span class="colour">*</span>'; ?></label><br />
-                        <label class="invalid" for="<?php echo esc_attr($result->field_name); if(stristr($result->field_name, 'checkbox')) echo '_list'; ?>"><?php _e('This field is required.', 'appthemes'); ?></label>
-					</div>
-					<select onchange="print_state('state',this.selectedIndex);" name="<?php echo esc_attr($result->field_name); ?>" id="<?php echo esc_attr($result->field_name); ?>" class="dropdownlist<?php if ($result->field_req) echo ' required'; ?>">
-                    </select>
-                    <div class="clr"></div>
-                </li>
-
-            	<?php
-            	
-            }else {
+            
             switch($result->field_type) {
 
             case 'text box':
@@ -1399,7 +1383,7 @@ function cp_edit_ad_formbuilder($results, $getad) {
 			break;
 
             }// END SWITCH	
-            }// END ELSE
+            //}// END ELSE
 
         endif;
 

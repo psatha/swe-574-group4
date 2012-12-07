@@ -34,15 +34,7 @@ if (!function_exists('cp_formbuilder')) {
                 
             <?php
 			//************************************** EKLEME **************************************************************
-            if($result->field_name == 'cp_country'){
-            	
-            	?>
-					<select onchange="print_state('state',this.selectedIndex);" id="<?php echo esc_attr($result->field_name); ?>" name="<?php echo esc_attr($result->field_name); ?>" class="dropdownlist <?php if ($result->field_req) echo 'required'; ?>"></select>
-					<div class="clr"></div>
 
-            	<?php
-            	
-            }else {
             switch ( $result->field_type ) {
 
             case 'text box':
@@ -149,7 +141,6 @@ if (!function_exists('cp_formbuilder')) {
             break;
 
             }// end switch
-            }// end else
             
             ?>
 
