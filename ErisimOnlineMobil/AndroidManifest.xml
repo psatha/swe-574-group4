@@ -54,6 +54,11 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+         <activity
+            android:name=".MyAvList"
+            android:label="@string/title_activity_my_av_list" >
+           
+        </activity>
         <activity
             android:name=".updateProfile"
             android:label="@string/title_activity_update_profile" >

@@ -88,7 +88,15 @@ public class home extends Activity {
 					}
 
 				});
-		
+		//listhata button clicked
+				listHata.setOnClickListener(new View.OnClickListener() {
+					public void onClick(View view) {
+						Intent myIntent = new Intent(getApplicationContext(), MyAvList.class);
+						startActivityForResult(myIntent, 0);
+						finish();
+					}
+
+				});
 		//logout button clicked
 		logout.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
