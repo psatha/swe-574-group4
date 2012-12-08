@@ -92,7 +92,7 @@ public class home extends Activity {
 				listHata.setOnClickListener(new View.OnClickListener() {
 					public void onClick(View view) {
 						Intent myIntent = new Intent(getApplicationContext(), MyAvList.class);
-						myIntent.putExtra("username", username);
+						myIntent.putExtra("id", id);
 						startActivityForResult(myIntent, 0);
 						finish();
 					}

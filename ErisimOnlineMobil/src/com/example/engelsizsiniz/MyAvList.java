@@ -33,7 +33,7 @@ public class MyAvList extends ListActivity {
  
     // Creating JSON Parser object
     JSONParser jParser = new JSONParser();
-	static String usernameDB;
+	static String userIdDB;
     ArrayList<HashMap<String, String>> myAvList;
  
     // url to get all products list
@@ -52,7 +52,7 @@ public class MyAvList extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        usernameDB = getIntent().getExtras().getString("username");
+        userIdDB = getIntent().getExtras().getString("id");
         setContentView(R.layout.activity_my_av_list);
  
         // Hashmap for ListView
@@ -128,7 +128,7 @@ public class MyAvList extends ListActivity {
         protected String doInBackground(String... args) {
             // Building Parameters
             List<NameValuePair> params = new ArrayList<NameValuePair>();
-            params.add(new BasicNameValuePair("user_login", usernameDB));
+            params.add(new BasicNameValuePair("user_login", userIdDB));
             // getting JSON string from URL
             JSONObject json = jParser.makeHttpRequest(url_all_my_av, "GET", params);
  
