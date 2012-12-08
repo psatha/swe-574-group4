@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -32,7 +33,7 @@ public class MyAvList extends ListActivity {
  
     // Creating JSON Parser object
     JSONParser jParser = new JSONParser();
- 
+	static String usernameDB;
     ArrayList<HashMap<String, String>> myAvList;
  
     // url to get all products list
@@ -43,6 +44,7 @@ public class MyAvList extends ListActivity {
     private static final String TAG_PRODUCTS = "products";
     private static final String TAG_PID = "pid";
     private static final String TAG_NAME = "name";
+    private static final String TAG_USERNAME = "user_login";
  
     // products JSONArray
     JSONArray products = null;
@@ -50,6 +52,7 @@ public class MyAvList extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        usernameDB = getIntent().getExtras().getString("username");
         setContentView(R.layout.activity_my_av_list);
  
         // Hashmap for ListView
@@ -125,6 +128,7 @@ public class MyAvList extends ListActivity {
         protected String doInBackground(String... args) {
             // Building Parameters
             List<NameValuePair> params = new ArrayList<NameValuePair>();
+            params.add(new BasicNameValuePair("user_login", usernameDB));
             // getting JSON string from URL
             JSONObject json = jParser.makeHttpRequest(url_all_my_av, "GET", params);
  
