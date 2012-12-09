@@ -151,8 +151,15 @@ public class newViolation extends MapActivity {
 			spinPos = savedInstanceState.getInt("spinner");
 			idDB = savedInstanceState.getString("id");
 		}
-		else
+		else{
 			idDB = getIntent().getExtras().getString("id");
+			spinPos = 0;
+			filePathDB = "";
+			filePathIntent = "";
+			titleIntent = "";
+			noteIntent = "";
+		}
+		
 		setContentView(R.layout.activity_new_violation);
 		defineGUI();
 		setListeners();
@@ -203,7 +210,6 @@ public class newViolation extends MapActivity {
 			public void onClick(View view) {
 				//your network connection goes here
 				submission();
-
 			}
 		});
 
@@ -718,15 +724,12 @@ public class newViolation extends MapActivity {
 				//f.delete();
 				f = createResizedCopy(75, 75, false);
 				channelSftp.put(new FileInputStream(f), f.getName());
-				
-				f = createResizedCopy(154, 150, false);
-				channelSftp.put(new FileInputStream(f), f.getName());
-				
+
 				channelSftp.disconnect();
 				session.disconnect();
 				//f.delete();
 			}catch(Exception ex){
-				backMenu();
+				//backMenu();
 				ex.printStackTrace();
 			}
 		}
