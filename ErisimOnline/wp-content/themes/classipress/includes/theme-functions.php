@@ -465,6 +465,8 @@ endif;
 if (!function_exists('cp_get_ad_details')) {
     function cp_get_ad_details($postid, $catid, $locationOption = 'list') {
         global $wpdb;
+        $totalRate = 0;
+        $totalRateCount = 0;
         //$all_custom_fields = get_post_custom($post->ID);
         // see if there's a custom form first based on catid.
         $fid = cp_get_form_id($catid);
@@ -478,7 +480,7 @@ if (!function_exists('cp_get_ad_details')) {
         } else {
 
             // now we should have the formid so show the form layout based on the category selected
-            $sql = $wpdb->prepare("SELECT f.field_label, f.field_name, f.field_type, m.field_pos "
+            $sql = $wpdb->prepare("SELECT f.field_label, f.field_name, f.field_type, f.field_max_value, f.field_min_value, m.field_pos "
                      . "FROM $wpdb->cp_ad_fields f "
                      . "INNER JOIN $wpdb->cp_ad_meta m "
                      . "ON f.field_id = m.field_id "
@@ -493,6 +495,23 @@ if (!function_exists('cp_get_ad_details')) {
         if($results) {
             if($locationOption == 'list') {
                     foreach ($results as $result) :
+                    	// EKLEME RATING
+                    	if(($result->field_max_value != null && $result->field_max_value != '') && ($result->field_min_value != null && $result->field_min_value != '')){
+                    		$maxValue = $result->field_max_value;
+                    		$minValue = $result->field_min_value;
+                    		$post_meta_val = get_post_meta($postid, $result->field_name, false);
+                    		$erisimVal = appthemes_make_clickable(implode(", ", $post_meta_val));
+                    		
+                    		if($maxValue < $erisimVal){
+                    			$totalRate += (($erisimVal / (($maxValue+$minValue)/2))-1)*10;
+                    			$totalRateCount++;
+                    		}else if ($minValue > $erisimVal){
+                    			$totalRate += (((($maxValue+$minValue)/2) / $erisimVal)-1)*10;
+                    			$totalRateCount++;
+                    		}
+                    		//echo round($totalRate,0).'-'.$totalRateCount;
+                    	}
+                    	//
                         // now grab all ad fields and print out the field label and value
                         $post_meta_val = get_post_meta($postid, $result->field_name, true);
                         if (!empty($post_meta_val))
@@ -525,6 +544,11 @@ if (!function_exists('cp_get_ad_details')) {
 
           echo __('No ad details found.', 'appthemes');
 
+        }
+        if($totalRate>0){
+        	return round(($totalRate/$totalRateCount),0);	
+        }else {
+        	return 0;
         }
     }
 }

@@ -85,17 +85,15 @@ jQuery(document).ready(function ($) {
                                         } else {
 
                                             if ( get_post_meta($post->ID, 'cp_ad_sold', true) == 'yes' ) : ?>
-                                            <li id="cp_sold"><span><?php _e('This item has been sold', 'appthemes'); ?></span></li>
+                                            <li id="cp_sold"><span><?php _e('Bu Erisim Engeli Cozuldu.', 'appthemes'); ?></span></li>
                                             <?php endif; ?>
                                             <?php
                                             // 3.0+ display the custom fields instead (but not text areas)
-                                            cp_get_ad_details( $post->ID, $cat_id );
+                                            $erisimRate = cp_get_ad_details( $post->ID, $cat_id );
                                         ?>
 
-                                            <li id="cp_listed"><span><?php _e('Listed:', 'appthemes') ?></span> <?php the_time( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) ) ?></li>
-
-                                            <?php if ( get_post_meta($post->ID, 'cp_sys_expire_date', true) ) ?>
-                                                <li id="cp_expires"><span><?php _e( 'Expires:', 'appthemes' ) ?></span> <?php echo cp_timeleft( strtotime( get_post_meta( $post->ID, 'cp_sys_expire_date', true) ) ); ?></li>
+                                            <li id="cp_listed"><span><?php _e('Eklenme Tarihi:', 'appthemes') ?></span> <?php the_time( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) ) ?></li>
+                                            <li id="cp_listed"><span><?php _e('Erisim Zorlugu:', 'appthemes') ?></span> <?php echo '10 uzerinden '.$erisimRate ?></li>
 
                                         <?php
                                         } // end legacy check
