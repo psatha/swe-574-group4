@@ -33,7 +33,7 @@
 							printf( __("Search for '%s' returned %s results",'appthemes'), $searchTxt, $wp_query->found_posts ); 
 						?>
                         </h1>
-
+						<p><?php if (function_exists('twg_tfsp_sort')) twg_tfsp_sort();?></p>
 					</div><!-- /shadowblock -->
 
 				</div><!-- /shadowblock_out -->

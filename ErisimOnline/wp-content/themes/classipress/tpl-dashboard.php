@@ -39,30 +39,32 @@ if(!empty($_GET['action'])) :
             $my_ad['ID'] = $aid;
             $my_ad['post_status'] = 'draft';
             wp_update_post($my_ad);
-            $action_msg = __('Ad has been paused', 'appthemes');
+            $action_msg = __('Erisim Engeli Durduruldu.', 'appthemes');
 
         } elseif ($d == 'restart') {
             $my_ad = array();
             $my_ad['ID'] = $aid;
             $my_ad['post_status'] = 'publish';
             wp_update_post($my_ad);
-            $action_msg = __('Ad has been published', 'appthemes');
+            $action_msg = __('Erisim Engeli aktif hale getirildi.', 'appthemes');
 
     		} elseif ($d == 'delete') { 
             cp_delete_ad_listing($aid);
-            $action_msg = __('Ad has been deleted', 'appthemes');
+            $action_msg = __('Erisim Engeli Silindi.', 'appthemes');
 
     		} elseif ($d == 'freerenew') { 
             cp_renew_ad_listing($aid);
-            $action_msg = __('Ad has been relisted', 'appthemes');
+            $action_msg = __('Erisim Engeli tekrar aktif hale getirildi.', 'appthemes');
 
     		} elseif ($d == 'setSold') { 
-            update_post_meta($aid, 'cp_ad_sold', 'yes'); 
-            $action_msg = __('Ad has been marked as sold', 'appthemes');
+            //update_post_meta($aid, 'cp_ad_sold', 'yes');
+            update_post_meta($aid, 'cp_av_solved', 'yes'); 
+            $action_msg = __('Erisim Engeli cozuldu.', 'appthemes');
 
     		} elseif ($d == 'unsetSold') { 
-            update_post_meta($aid, 'cp_ad_sold', 'no'); 
-            $action_msg = __('Ad has been unmarked as sold', 'appthemes');
+            //update_post_meta($aid, 'cp_ad_sold', 'no');
+            update_post_meta($aid, 'cp_av_solved', 'no'); 
+            $action_msg = __('Erisim Engeli cozumu kaldirildi.', 'appthemes');
 
         } else { //echo "nothing here";
         }
@@ -94,6 +96,8 @@ endif;
                 <?php if(isset($action_msg)) { ?><p class="success"><?php echo $action_msg; ?></p><?php } ?>
 
                 <p><?php _e('Below you will find a listing of all your classified ads. Click on one of the options to perform a specific task. If you have any questions, please contact the site administrator.','appthemes');?></p>
+                
+                <br /><?php if (function_exists('mcp_author_post_sort')) mcp_author_post_sort();?><br />
 
                 <table border="0" cellpadding="4" cellspacing="1" class="tblwide">
                     <thead>
@@ -122,10 +126,10 @@ endif;
 
                         <?php                     
                             // check to see if ad is legacy or not and then format date based on WP options
-                            if(get_post_meta($post->ID, 'expires', true))
-                                $expire_date = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_post_meta($post->ID, 'expires', true)));
-                            else
-                                $expire_date = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_post_meta($post->ID, 'cp_sys_expire_date', true)));
+                            //if(get_post_meta($post->ID, 'expires', true))
+                                //$expire_date = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_post_meta($post->ID, 'expires', true)));
+                            //else
+                                //$expire_date = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_post_meta($post->ID, 'cp_sys_expire_date', true)));
 
                             
                             // get the ad total cost and legacy check
@@ -151,7 +155,7 @@ endif;
                             if ($post->post_status == 'publish') {
 
                                 $poststatus = __('Live','appthemes');
-                                $poststatus .= ' ' . __('Until','appthemes') . '<br/><p class="small">(' . $expire_date . ')</p>';
+                                //$poststatus .= ' ' . __('Until','appthemes') . '<br/><p class="small">(' . $expire_date . ')</p>';
 
                                 $fontcolor = '#33CC33';
                                 $postimage = 'pause.png';
@@ -184,27 +188,27 @@ endif;
                             } elseif ($post->post_status == 'draft') {
 							
 							//handling issue where date format needs to be unified
-                            if(get_post_meta($post->ID, 'expires', true))
-                                $expire_date = get_post_meta($post->ID, 'expires', true);
-                            else
-                                $expire_date = get_post_meta($post->ID, 'cp_sys_expire_date', true);
+                            //if(get_post_meta($post->ID, 'expires', true))
+                                //$expire_date = get_post_meta($post->ID, 'expires', true);
+                            //else
+                                //$expire_date = get_post_meta($post->ID, 'cp_sys_expire_date', true);
 
                                 // current date is past the expires date so mark ad ended
-                                if (strtotime(date('Y-m-d H:i:s')) > (strtotime($expire_date))) {
-                                    $poststatus = __('ended','appthemes') . '<br/><p class="small">(' . $expire_date . ')</p>';
-                                    $fontcolor = '#666666';
-                                    $postimage = '';
-                                    $postalt = '';
-                                    $postaction = 'ended';
+                                //if (strtotime(date('Y-m-d H:i:s')) > (strtotime($expire_date))) {
+                                    //$poststatus = __('ended','appthemes') . '<br/><p class="small">(' . $expire_date . ')</p>';
+                                    //$fontcolor = '#666666';
+                                    //$postimage = '';
+                                    //$postalt = '';
+                                    //$postaction = 'ended';
 
                                 // ad has been paused by ad owner
-                                } else {
-                                    $poststatus = __('offline','appthemes');
-                                    $fontcolor = '#bbbbbb';
-                                    $postimage = 'start-blue.png';
-                                    $postalt = __('restart ad','appthemes');
-                                    $postaction = 'restart';
-                                }
+                                //} else {
+                                    //$poststatus = __('offline','appthemes');
+                                    //$fontcolor = '#bbbbbb';
+                                    //$postimage = 'start-blue.png';
+                                    //$postalt = __('restart ad','appthemes');
+                                    //$postaction = 'restart';
+                                //}
 
                             } else {
                                     $poststatus = '&mdash;';
@@ -271,9 +275,9 @@ endif;
 																} else { ?>
 
                               <?php if ( get_option('cp_ad_edit') == 'yes' ) : ?><a href="<?php echo CP_EDIT_URL; ?>?aid=<?php the_id(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/pencil.png" title="" alt="" border="0" /></a>&nbsp;&nbsp;<?php endif; ?>
-                              <a onclick="return confirmBeforeDelete();" href="<?php echo CP_DASHBOARD_URL; ?>?aid=<?php the_id(); ?>&amp;action=delete" title="<?php _e('Delete Ad', 'appthemes'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/cross.png" title="<?php _e('Delete Ad', 'appthemes'); ?>" alt="<?php _e('Delete Ad', 'appthemes'); ?>" border="0" /></a>&nbsp;&nbsp;
+                              <a onclick="return confirmBeforeDelete();" href="<?php echo CP_DASHBOARD_URL; ?>?aid=<?php the_id(); ?>&amp;action=delete" title="<?php _e('Delete Ad', 'appthemes'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/cross.png" title="<?php _e('Erisim Engelini Sil', 'appthemes'); ?>" alt="<?php _e('Erisim Engelini Sil', 'appthemes'); ?>" border="0" /></a>&nbsp;&nbsp;
                               <a href="<?php echo CP_DASHBOARD_URL; ?>?aid=<?php the_id(); ?>&amp;action=<?php echo $postaction; ?>"><img src="<?php bloginfo('template_directory'); ?>/images/<?php echo $postimage; ?>" title="" alt="" border="0" /></a><br />
-                              <?php if ( get_post_meta(get_the_id(), 'cp_ad_sold', true) != 'yes' ) : ?>
+                              <?php if ( get_post_meta(get_the_id(), 'cp_av_solved', true) != 'yes' ) : ?>
                                 <a href="<?php echo CP_DASHBOARD_URL; ?>?aid=<?php the_id(); ?>&amp;action=setSold"><?php _e('Mark Sold', 'appthemes'); ?></a>
                               <?php else : ?>
                                 <a href="<?php echo CP_DASHBOARD_URL; ?>?aid=<?php the_id(); ?>&amp;action=unsetSold"><?php _e('Unmark Sold', 'appthemes'); ?></a>
@@ -296,7 +300,7 @@ endif;
 
               <script type="text/javascript">
                 /* <![CDATA[ */
-                  function confirmBeforeDelete() { return confirm("<?php _e('Are you sure you want to delete this ad?', 'appthemes'); ?>"); }
+                  function confirmBeforeDelete() { return confirm("<?php _e('Bu Erisim Engelini silmek istediginize eminmisiniz?', 'appthemes'); ?>"); }
                 /* ]]> */
               </script>
 

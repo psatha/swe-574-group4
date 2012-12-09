@@ -300,9 +300,9 @@ function twg_tfsp_sort() {
 		}
 ?> 
 	
-    <form  action="" method="post" id="sort_form">Sort By: 
+    <form  action="" method="post" id="sort_form">Sirala: 
        <select name="sort_order" id="sort_order">
-        <option value="">Sort Order</option>
+        <option value="">Siralama</option>
          	<?php if($show_price) {?>
 			<option value="price-lowest" <?php if($thisorder == "price-lowest") echo $selected; ?>><?php echo  $price_string_asc ?></option>
 			<option value="price-highest" <?php if($thisorder == "price-highest") echo $selected; ?>><?php echo $price_string_desc ?></option>
@@ -317,13 +317,13 @@ function twg_tfsp_sort() {
         	<option value="mod-oldest" <?php if($thisorder == "mod-oldest") echo $selected; ?>><?php echo $mod_string_za ?></option>
 		<?php } ?>
        </select>
-       <input id="reset_me" type="submit" name="reset" value="<?php echo _e('reset'); ?>" style="visibility:<?php echo $show_me ?>">
+       <input id="reset_me" type="submit" name="reset" value="Sifirla" style="visibility:<?php echo $show_me ?>">
         <?php if(get_option('enable_ex_sold')) {?>
        	<input name="ex_sold" style="margin-left:15px" type="checkbox" id="exclude-sold" <?php if($no_sold) echo $checked; ?> ><span><?php echo get_option('exclude_sold'); ?></span>
       	<?php } if(get_option('enable_ex_noimage')) {?>
        	<input name="ex_noimg" style="margin-left:15px" type="checkbox" id="exclude-noimg" <?php if($no_img) echo $checked; ?> ><span><?php echo get_option('exclude_noimage'); ?></span>
        	<?php } ?>
-        <img id='reload_me' title="<?php echo _e('reload'); ?>" style="padding-left:20px; cursor:pointer" src="<?php bloginfo('url'); ?>/wp-content/plugins/classipress-ajax-post-sort/images/refresh_icon.png" alt="" />
+        <img id='reload_me' title="Tekrardan Yukle" style="padding-left:20px; cursor:pointer" src="<?php bloginfo('url'); ?>/wp-content/plugins/classipress-ajax-post-sort/images/refresh_icon.png" alt="" />
     </form>
 <?php
 	do_action('wp_ajax_post_sort');
@@ -362,7 +362,7 @@ function exclude_sold( $where ) {
 	global $wpdb,$no_sold;
 
     if ($no_sold) {
-        return $where . " AND $wpdb->prefix" . "posts.ID NOT IN ( SELECT DISTINCT post_id FROM $wpdb->prefix" . "postmeta WHERE meta_key = 'cp_ad_sold' AND meta_value = 'yes' ) ";
+        return $where . " AND $wpdb->prefix" . "posts.ID NOT IN ( SELECT DISTINCT post_id FROM $wpdb->prefix" . "postmeta WHERE meta_key = 'cp_av_solved' AND meta_value = 'yes' ) ";
     }
     else {
         return $where;

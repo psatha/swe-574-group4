@@ -466,7 +466,7 @@ class DropDownField extends Field {
 
 	function getOptions($joiner,$name){
 		if($this->param('fromDb',!$this->options)){
-			$options = array(''=>__('ANY','wp-custom-fields-search'));
+			$options = array(''=>__('Hepsi','wp-custom-fields-search'));
 			$auto = $joiner->getAllOptions($name);
 			asort($auto);
 			$options +=$auto;
@@ -553,7 +553,7 @@ function getInput($name,$joiner,$fieldName=null){
 					if ($value->category_parent != 0) unset($cats[$key]);
 				
 			
-				$options .= "<option value='0' selected='selected'>ANY</option>";
+				$options .= "<option value='0' selected='selected'>Hepsi</option>";
 				foreach($cats as $cat)
 				{
 						$checked = ($cat->name==$v)?" selected='selected'":"";

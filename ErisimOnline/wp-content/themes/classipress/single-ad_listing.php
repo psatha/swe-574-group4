@@ -84,8 +84,8 @@ jQuery(document).ready(function ($) {
                                         <?php
                                         } else {
 
-                                            if ( get_post_meta($post->ID, 'cp_ad_sold', true) == 'yes' ) : ?>
-                                            <li id="cp_sold"><span><?php _e('Bu Erisim Engeli Cozuldu.', 'appthemes'); ?></span></li>
+                                            if ( get_post_meta($post->ID, 'cp_av_solved', true) == 'yes' ) : ?>
+                                            <li id="cp_sold"><span><?php _e('Bu Erisim Engeli Cozuldu.', 'appthemes'); ?></span><img src="<?php echo content_url( 'themes/classipress/images/bullet-1.jpg' ); ?>" alt="Cozuldu" /></li>
                                             <?php endif; ?>
                                             <?php
                                             // 3.0+ display the custom fields instead (but not text areas)
