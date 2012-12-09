@@ -72,16 +72,18 @@ class SM_Search_Widget extends WP_Widget {
 
 		$location_search .= apply_filters( 'sm-location-search-widget-table-top', '' );
 
-		if ( $show_address )
-			$location_search .= '<tr><td class="location_search_widget_address_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-street', __( 'Street', 'SimpleMap' ) ) . ':<br /><input type="text" id="location_search_widget_address_field" name="location_search_address" /></td></tr>';
 		if ( $show_city )
-			$location_search .= '<tr><td class="location_search_widget_city_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-city', __( 'City', 'SimpleMap' ) ) . ':<br /><input type="text"  id="location_search_widget_city_field" name="location_search_city" /></td></tr>';
+			$location_search .= '<tr><td class="location_search_widget_city_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-city', __( 'Sehir', 'SimpleMap' ) ) . ':<br />
+			<input type="text"  id="location_search_widget_city_field" name="location_search_city" />
+			</td></tr>';
+		if ( $show_address )
+			$location_search .= '<tr><td class="location_search_widget_address_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-street', __( 'Adres', 'SimpleMap' ) ) . ':<br /><input type="text" id="location_search_widget_address_field" name="location_search_address" /></td></tr>';
 		if ( $show_state )
 			$location_search .= '<tr><td class="location_search_widget_state_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-state', __( 'State', 'SimpleMap' ) ) . ':<br /><input type="text" id="location_search_widget_state_field" name="location_search_state" /></td></tr>';
 		if ( $show_zip )
 			$location_search .= '<tr><td class="location_search_widget_zip_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-zip', __( 'Zip', 'SimpleMap' ) ) . ':<br /><input type="text" id="location_search_widget_zip_field" name="location_search_zip" /></td></tr>';
 		if ( $show_distance ) {
-			$location_search .= '<tr><td class="location_search_widget_distance_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-distance', __( 'Select a distance', 'SimpleMap' ) ) . ':<br /><select id="location_search_widget_distance_field" name="location_search_distance" >';
+			$location_search .= '<tr><td class="location_search_widget_distance_cell location_search_widget_cell">' . apply_filters( 'sm-search-label-distance', __( 'Uzaklik Birimi', 'SimpleMap' ) ) . ':<br /><select id="location_search_widget_distance_field" name="location_search_distance" >';
 
 			foreach ( $simple_map->get_search_radii() as $value ) {
 				$r = (int) $value;
@@ -150,7 +152,7 @@ class SM_Search_Widget extends WP_Widget {
 		
 		$location_search .= apply_filters( 'sm-location-search-widget-before-submit', '' );
 		
-		$location_search .= '<tr><td class="location_search_widget_submit_cell location_search_widget_cell"> <input type="submit" value="' . apply_filters( 'sm-search-label-search', __( 'Search', 'SimpleMap' ) ) . '" id="location_search_widget_submit_field" class="submit" /></td></tr>';
+		$location_search .= '<tr><td class="location_search_widget_submit_cell location_search_widget_cell"> <input type="submit" value="' . apply_filters( 'sm-search-label-search', __( 'Ara', 'SimpleMap' ) ) . '" id="location_search_widget_submit_field" class="submit" /></td></tr>';
 		$location_search .= '</table>';
 		$location_search .= '</form>';
 		$location_search .= '</div>'; // close map_search div

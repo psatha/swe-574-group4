@@ -2003,11 +2003,11 @@ msgstr ""
 
 #: includes/admin/admin-options.php:24
 msgid "Form Layouts"
-msgstr ""
+msgstr "Erisim Formlari"
 
 #: includes/admin/admin-options.php:25
 msgid "Custom Fields"
-msgstr ""
+msgstr "Erisim Alanlari"
 
 #: includes/admin/admin-options.php:26
 msgid "Transactions"
@@ -2112,7 +2112,7 @@ msgstr ""
 #: includes/admin/admin-options.php:1841 includes/admin/admin-options.php:1845
 #: includes/admin/admin-options.php:1990 includes/admin/admin-options.php:2525
 msgid "Save changes"
-msgstr ""
+msgstr "Degisiklikleri Kaydet"
 
 #: includes/admin/admin-options.php:1047
 msgid "Email Settings"
@@ -2322,7 +2322,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:1884
 msgid "New Form Layout"
-msgstr ""
+msgstr "Yeni Erisim Formu"
 
 #: includes/admin/admin-options.php:1893 includes/admin/admin-options.php:1955
 msgid ""
@@ -2336,7 +2336,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:1927
 msgid "Create New Form"
-msgstr ""
+msgstr "Erisim Formunu Olustur"
 
 #: includes/admin/admin-options.php:1949
 msgid "Edit Form Properties"
@@ -2437,7 +2437,7 @@ msgstr "Bunu silmek istediginizden eminmisiniz?"
 
 #: includes/admin/admin-options.php:2401
 msgid "New Custom Field"
-msgstr ""
+msgstr "Yeni Erisim Alani"
 
 #: includes/admin/admin-options.php:2433
 msgid "Creating your field....."
@@ -2445,7 +2445,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:2448
 msgid "Create New Field"
-msgstr ""
+msgstr "Erisim Alani Olustur"
 
 #: includes/admin/admin-options.php:2470
 msgid "Edit Custom Field"
@@ -4899,11 +4899,11 @@ msgstr ""
 
 #: includes/admin/admin-values.php:2159 includes/admin/admin-values.php:2451
 msgid "Active"
-msgstr ""
+msgstr "Aktif"
 
 #: includes/admin/admin-values.php:2160 includes/admin/admin-values.php:2452
 msgid "Inactive"
-msgstr ""
+msgstr "Pasif"
 
 #: includes/admin/admin-values.php:2171
 msgid "Field Information"

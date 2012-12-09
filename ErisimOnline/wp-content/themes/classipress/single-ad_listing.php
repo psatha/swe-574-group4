@@ -52,8 +52,17 @@ jQuery(document).ready(function ($) {
 					        <div class="shadowblock">
 
                                 <?php appthemes_before_post_title(); ?>
-
-							    <h1 class="single-ad"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+								<table>
+								<tr>
+								<td width="450px"><h1 class="single-ad"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1></td>
+								<td>
+								<div align="right" class="rb_favorites">
+                                    	<?php if (function_exists('wpfp_link')) { wpfp_link(); } ?>
+                                </div>
+								</td>
+								</tr>
+								</table>
+							    
 
 							    <div class="clr"></div>
 

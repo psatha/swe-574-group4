@@ -212,15 +212,61 @@ if ( !class_exists( 'Simple_Map' ) ) {
 			// Normal Field inputs
 			$ffi['street']		= array( 'label' => apply_filters( 'sm-search-label-street', __( 'Sok/Mahalle: ', 'SimpleMap' ), $post ), 'input' => '<input type="text" class="text" id="location_search_address_field" name="location_search_address" value="' . esc_attr( $address_value ) . '" />' );
 			$ffi['city']		= array( 'label' => apply_filters( 'sm-search-label-city', __( 'Sehir: ', 'SimpleMap' ), $post ), 'input' => '<select  id="location_search_city_field" name="location_search_city" value="' . esc_attr( $city_value ) . '">
-			<option>istanbul</option>
-			<option>ankara</option>
-			<option>izmir</option>
+			<option value="Istanbul">Istanbul</option><option value="Adana">Adana</option>
+			<option value="Adiyaman">Adiyaman</option><option value="Afyonkarahisar">Afyonkarahisar</option>
+			<option value="Agri">Agri</option><option value="Aksaray">Aksaray</option>
+			<option value="Amasya">Amasya</option><option value="Ankara">Ankara</option>
+			<option value="Antalya">Antalya</option><option value="Ardahan">Ardahan</option>
+			<option value="Artvin">Artvin</option><option value="Aydin">Aydin</option>
+			<option value="Balikesir">Balikesir</option><option value="Bartin">Bartin</option>
+			<option value="Batman">Batman</option><option value="Bayburt">Bayburt</option>
+			<option value="Bilecik">Bilecik</option><option value="Bingol">Bingol</option>
+			<option value="Bitlis">Bitlis</option><option value="Bolu">Bolu</option>
+			<option value="Burdur">Burdur</option><option value="Bursa">Bursa</option>
+			<option value="Canakkale">Canakkale</option><option value="Cankiri">Cankiri</option>
+			<option value="Corum">Corum</option><option value="Denizli">Denizli</option>
+			<option value="Diyarbakir">Diyarbakir</option><option value="Duzce">Duzce</option>
+			<option value="Edirne">Edirne</option><option value="Elazig">Elazig</option>
+			<option value="Erzincan">Erzincan</option><option value="Erzurum">Erzurum</option>
+			<option value="Eskisehir">Eskisehir</option><option value="Gaziantep">Gaziantep</option>
+			<option value="Giresun">Giresun</option><option value="Gumushane">Gumushane</option>
+			<option value="Hakkari">Hakkari</option><option value="Hatay">Hatay</option>
+			<option value="Igdir">Igdir</option><option value="Isparta">Isparta</option>
+			<option value="izmir">izmir</option><option value="Kahramanmaras">Kahramanmaras</option>
+			<option value="Karabuk">Karabuk</option><option value="Karaman">Karaman</option>
+			<option value="Kars">Kars</option><option value="Kastamonu">Kastamonu</option>
+			<option value="Kayseri">Kayseri</option><option value="Kirikkale">Kirikkale</option>
+			<option value="Kirklareli">Kirklareli</option><option value="Kirsehir">Kirsehir</option>
+			<option value="Kilis">Kilis</option><option value="Kocaeli">Kocaeli</option>
+			<option value="Konya">Konya</option><option value="Kutahya">Kutahya</option>
+			<option value="Malatya">Malatya</option><option value="Manisa">Manisa</option>
+			<option value="Mus">Mus</option><option value="Mugla">Mugla</option>
+			<option value="Mersin">Mersin</option><option value="Mardin">Mardin</option>
+			<option value="Nevsehir">Nevsehir</option><option value="Nigde">Nigde</option>
+			<option value="Ordu">Ordu</option><option value="Osmaniye">Osmaniye</option>
+			<option value="Rize">Rize</option><option value="Sakarya">Sakarya</option>
+			<option value="Samsun">Samsun</option><option value="Siirt">Siirt</option>
+			<option value="Sinop">Sinop</option><option value="Sivas">Sivas</option>
+			<option value="Sanliurfa">Sanliurfa</option><option value="Sirnak">Sirnak</option>
+			<option value="Tekirdag">Tekirdag</option><option value="Tokat">Tokat</option>
+			<option value="Trabzon">Trabzon</option><option value="Tunceli">Tunceli</option>
+			<option value="Usak">Usak</option><option value="Van">Van</option>
+			<option value="Yalova">Yalova</option><option value="Yozgat">Yozgat</option>
+			<option value="Zonguldak">Zonguldak</option>
 			</select>' );
-			//$ffi['state']		= array( 'label' => apply_filters( 'sm-search-label-state', __( 'State: ', 'SimpleMap' ), $post ), 'input' => '<input type="text" id="location_search_state_field" name="location_search_state" value="' . esc_attr( $state_value ) . '" />' );
-			//$ffi['zip']			= array( 'label' => apply_filters( 'sm-search-label-zip', __( 'Posta Kodu: ', 'SimpleMap' ), $post ), 'input' => '<input type="text" id="location_search_zip_field" name="location_search_zip" value="' . esc_attr( $zip_value ) . '" />' );
+			
+			//$ffi['state']		= array( 'label' => apply_filters( 'sm-search-label-state', __( 'Engel Turu: ', 'SimpleMap' ), $post ), 'input' => '<br/><select id="location_search_state_field" name="location_search_state" value="' . esc_attr( $state_value ) . '"></select>' );
+			$ffi['zip']			= array( 'label' => apply_filters( 'sm-search-label-zip', __( 'Engel Turu: ', 'SimpleMap' ), $post ), 'input' => '<select id="location_search_zip_field" name="location_search_zip" value="' . esc_attr( $zip_value ) . '">
+			<option value="1">Tekerlekli Sandalye Kullanan</option>
+			<option value="2">Baston Kullanan</option>
+			<option value="3">Yurutec Kullanan</option>
+			<option value="4">Gorme Engelli</option>
+			<option value="5">Yaya</option>
+			<option value="6">Protez Kullanan</option>
+			</select>' );
 			//$ffi['country']		= array( 'label' => apply_filters( 'sm-search-label-country', __( 'Country: ', 'SimpleMap' ), $post ), 'input' => '<input type="text" id="location_search_country_field" name="location_search_country" value="' . esc_attr( $country_value ) . '" />' );
 			$ffi['empty']		= array( 'label' => '', 'input' => '' );
-			$ffi['submit']		= array( 'label' => '', 'input' => '<input type="submit" value="' . apply_filters( 'sm-search-label-search', __('Haritada Ara', 'SimpleMap'), $post ) . '" id="location_search_submit_field" class="submit" />' );
+			$ffi['submit']		= array( 'label' => '', 'input' => '<input type="submit" value="' . apply_filters( 'sm-search-label-search', __('Haritada Ara', 'SimpleMap'), $post ) . '" id="location_search_submit_field" class="submit" /><input type="checkbox" name="kendime" value="kendime"/>Kendime Gore Ara' );
 			$ffi['distance']	= $this->add_distance_field( $radius_value, "km" );
 
 			$hidden_fields = array();
