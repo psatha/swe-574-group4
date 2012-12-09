@@ -34,11 +34,11 @@ public class ItemOverlay extends ItemizedOverlay {
 	static long touchDuration = 0;
 
 
-
 	public ItemOverlay(Drawable arg0, Context context) {
 		super(boundCenterBottom(arg0));
 		mcontext = context;
 	}
+
 
 	@Override
 	protected OverlayItem createItem(int i) {
@@ -59,48 +59,47 @@ public class ItemOverlay extends ItemizedOverlay {
 	@Override
 	public boolean onTouchEvent(MotionEvent event, MapView mapView) {
 
-		if ( event.getAction() == MotionEvent.ACTION_DOWN )
-		{
-			//Start timer
-			touchTime = System.currentTimeMillis();
-			System.out.println("basssss " + touchTime );
+			if ( event.getAction() == MotionEvent.ACTION_DOWN )
+			{
+				//Start timer
+				touchTime = System.currentTimeMillis();
+				System.out.println("basssss " + touchTime );
 
 
-		}else if ( event.getAction() == MotionEvent.ACTION_UP )
-		{
-			//stop timer
-			System.out.println(System.currentTimeMillis());
-			touchDuration = System.currentTimeMillis() - touchTime;
-			System.out.println(touchDuration);
+			}else if ( event.getAction() == MotionEvent.ACTION_UP )
+			{
+				//stop timer
+				System.out.println(System.currentTimeMillis());
+				touchDuration = System.currentTimeMillis() - touchTime;
+				System.out.println(touchDuration);
 
-			if ( touchDuration > 300 ){
-				if (mOverlays.size() != 0)
-				{
-					mOverlays.removeAll(mOverlays);
+				if ( touchDuration > 300 ){
+					if (mOverlays.size() != 0)
+					{
+						mOverlays.removeAll(mOverlays);
+					}
+
+					GeoPoint p = mapView.getProjection().fromPixels(
+							(int) event.getX(),
+							(int) event.getY());
+
+					Geocoder geocoder = new Geocoder(mapView.getContext(), Locale.getDefault());
+					try {
+						newViolation.latitude = p.getLatitudeE6() / 1E6;
+						newViolation.longitude = p.getLongitudeE6() / 1E6;
+						Address add = geocoder.getFromLocation(newViolation.latitude, newViolation.longitude, 1).get(0);
+						//adres.setText(add.getAddressLine(0) + " " + add.getAddressLine(1) + " " + add.getAddressLine(2));
+						//String result = districtName + " -- " + streetName + " -- " + cityName + "  --";
+						addOverlay(new OverlayItem(p, "Bulunduðunuz Adres" , add.getAddressLine(0) + " " + add.getAddressLine(1) + " " + add.getAddressLine(2)));
+						TextView txtView = (TextView) ((newViolation)mcontext).findViewById(R.id.bulunduguAdres);
+						txtView.setText(add.getAddressLine(0) + " " + add.getAddressLine(1) + " " + add.getAddressLine(2));
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					mapView.invalidate();
 				}
-
-				GeoPoint p = mapView.getProjection().fromPixels(
-						(int) event.getX(),
-						(int) event.getY());
-
-				Geocoder geocoder = new Geocoder(mapView.getContext(), Locale.getDefault());
-				try {
-					newViolation.latitude = p.getLatitudeE6() / 1E6;
-					newViolation.longitude = p.getLongitudeE6() / 1E6;
-					Address add = geocoder.getFromLocation(newViolation.latitude, newViolation.longitude, 1).get(0);
-					//adres.setText(add.getAddressLine(0) + " " + add.getAddressLine(1) + " " + add.getAddressLine(2));
-					//String result = districtName + " -- " + streetName + " -- " + cityName + "  --";
-					addOverlay(new OverlayItem(p, "Bulunduðunuz Adres" , add.getAddressLine(0) + " " + add.getAddressLine(1) + " " + add.getAddressLine(2)));
-					TextView txtView = (TextView) ((newViolation)mcontext).findViewById(R.id.bulunduguAdres);
-					txtView.setText(add.getAddressLine(0) + " " + add.getAddressLine(1) + " " + add.getAddressLine(2));
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-				mapView.invalidate();
 			}
-		}
 
-		
 		return false;	// TODO Auto-generated method stub*/
 	}
 

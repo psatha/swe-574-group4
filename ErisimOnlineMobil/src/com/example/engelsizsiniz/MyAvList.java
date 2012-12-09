@@ -75,9 +75,9 @@ public class MyAvList extends ListActivity {
     @Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
-		//Intent myIntent = new Intent(getApplicationContext(), Show_AV.class);
-		//myIntent.putExtra("position", position);
-		//startActivityForResult(myIntent, 0);
+		Intent myIntent = new Intent(getApplicationContext(), Show_AV.class);
+		myIntent.putExtra("position", position);
+		startActivityForResult(myIntent, 0);
 	}
 	
 	public String[] getArray (){
@@ -151,6 +151,7 @@ public class MyAvList extends ListActivity {
         						for (int i = 0; i < products.length(); i++) {
         							JSONObject c = products.getJSONObject(i);
         							AV av = new AV();
+        							System.out.println(i);
         							int parent =  c.getInt("post_parent");
         							String postTip = c.getString("post_type");
         							String guid  = c.getString("guid");
@@ -163,7 +164,7 @@ public class MyAvList extends ListActivity {
             							av.setPost_author(Integer.parseInt(userIdDB));
             							av.setPost_type(postTip);
             							av.setPost_parent(parent);
-            							av.setGuid(guid);
+            							av.setGuid("");
         								MyAvList.avList.add(av);
         							}
         							else {

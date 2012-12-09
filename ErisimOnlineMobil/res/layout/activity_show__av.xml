@@ -14,7 +14,7 @@
         android:clickable="true" />
     
      <TextView
-            android:id="@+id/bulunduguAdres"
+            android:id="@+id/AVadres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall" 
@@ -28,7 +28,7 @@
         android:gravity="left" >
 
         <EditText
-            android:id="@+id/titleText"
+            android:id="@+id/AVtitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -41,81 +41,52 @@
         </EditText>
 
         <EditText
-            android:id="@+id/noteText"
+            android:id="@+id/AVnoteText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/titleText"
+            android:layout_below="@+id/AVtitleText"
             android:ems="10"
             android:hint="Notlar"
             android:inputType="textPersonName"
             android:singleLine="false" />
 
         <Button
-            android:id="@+id/mainmenu"
+            android:id="@+id/backtolist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:text="List Menu" />
+            android:text="Back to List Menu" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/mainmenu"
-            android:layout_alignParentLeft="true"
-            android:text="Update" />
-
-        <TextView
-            android:id="@+id/filePath"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/uploadButton"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/noteText"
+            android:layout_below="@+id/AVnoteText"
             android:text="AV Type"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Spinner
-            android:id="@+id/disabilitySpin"
+            android:id="@+id/avSpin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/noteText"
+            android:layout_below="@+id/AVnoteText"
             android:layout_toRightOf="@+id/textView1" />
 
-       
-
-        <TextView
-            android:id="@+id/TextView01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/photoButton"
-            android:layout_alignBottom="@+id/photoButton"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/disabilitySpin"
-            android:text="Image"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-   
-
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/button1"
+            android:layout_above="@+id/backtolist"
+            android:layout_alignParentLeft="true"
+            android:onClick="imageClick"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/disabilitySpin"
-            android:layout_toRightOf="@+id/uploadButton"
+            android:layout_below="@+id/avSpin"
             android:src="@android:drawable/ic_menu_gallery" />
 
     </RelativeLayout>
