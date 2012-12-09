@@ -94,7 +94,6 @@ public class home extends Activity {
 						Intent myIntent = new Intent(getApplicationContext(), MyAvList.class);
 						myIntent.putExtra("id", id);
 						startActivityForResult(myIntent, 0);
-						finish();
 					}
 
 				});

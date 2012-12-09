@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.engelsizsiniz"
     android:versionCode="1"
@@ -25,21 +26,21 @@
         <uses-library android:name="com.google.android.maps" />
 
         <activity
-            android:name=".registration"
+            android:name="com.example.engelsizsiniz.registration"
             android:label="@string/title_activity_registration" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".home"
+            android:name="com.example.engelsizsiniz.home"
             android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".login"
+            android:name="com.example.engelsizsiniz.login"
             android:label="@string/title_activity_login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,23 +49,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".newViolation"
+            android:name="com.example.engelsizsiniz.newViolation"
             android:label="@string/title_activity_new_violation" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-         <activity
-            android:name=".MyAvList"
+        <activity
+            android:name="com.example.engelsizsiniz.MyAvList"
             android:label="@string/title_activity_my_av_list" >
-           
         </activity>
         <activity
-            android:name=".updateProfile"
+            android:name="com.example.engelsizsiniz.updateProfile"
             android:label="@string/title_activity_update_profile" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.engelsizsiniz.Show_AV"
+            android:label="@string/title_activity_show__av" >
         </activity>
     </application>
 
