@@ -109,6 +109,8 @@ public class newViolation extends MapActivity {
 	public static String noteDB, titleDB, spinnerDB, filePathDB, idDB;
 	public static ArrayList<String> fileDeleted = new ArrayList<String>();
 	public static int avCount;
+	
+	public static HashMap avListHash = new HashMap ();
 
 	public otomatikAdres otm;
 	protected static File photo;
@@ -900,6 +902,9 @@ public class newViolation extends MapActivity {
 						// Storing each json item in variable
 						//String id = c.getString(TAG_TERMSID);
 						String name = c.getString(TAG_NAME);
+						String ID = c.getString("term_id");
+						
+						avListHash.put(new Integer(i), ID);
 						//System.out.println(name);
 
 						// creating new HashMap
@@ -1017,7 +1022,8 @@ public class newViolation extends MapActivity {
 			try {
 				// getting JSON string from URL
 				params.add(new BasicNameValuePair("object_id", Integer.toString(avCount)));
-				params.add(new BasicNameValuePair("term_taxonomy_id", Integer.toString(spinPos+1)));
+				String value = (String)avListHash.get(spinPos);
+				params.add(new BasicNameValuePair("term_taxonomy_id", value));
 				params.add(new BasicNameValuePair("term_order", "0"));
 				JSONObject json = jsonParser.makeHttpRequest(url_Term, "POST", params);
 				// Check your log cat for JSON reponse
