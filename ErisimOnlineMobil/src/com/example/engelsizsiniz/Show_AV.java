@@ -145,7 +145,7 @@ public class Show_AV extends MapActivity {
 			
 			updateMap(latitude, langitude);
 			
-			getLocation();
+			//getLocation();
 			
 			//adres.setText(adresInfo);
 			
