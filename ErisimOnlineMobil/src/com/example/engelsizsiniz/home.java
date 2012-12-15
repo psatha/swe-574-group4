@@ -97,6 +97,15 @@ public class home extends Activity {
 					}
 
 				});
+				//serachhata button clicked
+				listHata.setOnClickListener(new View.OnClickListener() {
+					public void onClick(View view) {
+						Intent myIntent = new Intent(getApplicationContext(), SearchAv.class);
+						myIntent.putExtra("id", id);
+						startActivityForResult(myIntent, 0);
+					}
+
+				});
 		//logout button clicked
 		logout.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {

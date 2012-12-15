@@ -11,5 +11,6 @@
     <string name="title_activity_update_profile">updateProfile</string>
     <string name="title_activity_my_av_list">Erisim Engeli Listem</string>
     <string name="title_activity_show__av">Show_AV</string>
+    <string name="title_activity_search_av"></string>
 
 </resources>
