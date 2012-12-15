@@ -328,9 +328,13 @@ function register_new_user( $user_login, $user_email ) {
 	wp_new_user_notification( $user_id, $user_pass );
 	
 	// EKLEME (USER ENGELI EKLE)
-	require_once('./dbconnect.php');
+	//require_once('./dbconnect.php');
+	$con = mysql_connect("localhost","root","");
+	mysql_select_db("erisimdb", $con);
+	
 	$disSql = "INSERT INTO er_disability_user (user_id,disability_id) VALUES(".$user_id.",".$_POST['engelDurumu'].")";
-	insertScript($disSql);
+	mysql_query($disSql);
+	mysql_close($con);
 
 	return $user_id;
 }

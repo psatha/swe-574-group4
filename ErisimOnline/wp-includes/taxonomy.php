@@ -1778,9 +1778,12 @@ function wp_delete_term( $term, $taxonomy, $args = array() ) {
 	do_action("delete_$taxonomy", $term, $tt_id);
 	
 	// EKLEME KATEGORI DISABILITY DB DELETE
-	require_once('./dbconnect.php');
+	//require_once('./dbconnect.php');
+	$con = mysql_connect("localhost","root","");
+	mysql_select_db("erisimdb", $con);
 	$deleteSql = "DELETE FROM er_disability_av WHERE post_id = ".$term;
-	insertScript($deleteSql);
+	mysql_query($deleteSql);
+	mysql_close($con);
 	//
 
 	return true;
@@ -2080,12 +2083,15 @@ function wp_insert_term( $term, $taxonomy, $args = array(), $engel) {
 	do_action("created_$taxonomy", $term_id, $tt_id);
 	
 	// Ekleme Disability Violation Insert
-	require_once('./dbconnect.php');
+	//require_once('./dbconnect.php');
+	$con = mysql_connect("localhost","root","");
+	mysql_select_db("erisimdb", $con);
     for ($i = 0; $i < count($engel); $i++) {
     	$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(".$term_id.",".$engel[$i].")";
-    	insertScript($sql);
+    	mysql_query($sql);
     }
-
+	mysql_close($con);
+	
 	return array('term_id' => $term_id, 'term_taxonomy_id' => $tt_id);
 }
 
@@ -2378,13 +2384,16 @@ function wp_update_term( $term_id, $taxonomy, $args = array(), $engelTuru ) {
 	do_action("edited_$taxonomy", $term_id, $tt_id);
 	
 	// EKLEME KATEGORI DISABILITY GUNCELLEME
-	require_once('./dbconnect.php');
+	//require_once('./dbconnect.php');
+	$con = mysql_connect("localhost","root","");
+	mysql_select_db("erisimdb", $con);
 	$deleteSql = "DELETE FROM er_disability_av WHERE post_id = ".$term_id;
-	insertScript($deleteSql);
+	mysql_query($deleteSql);
     for ($i = 0; $i < count($engelTuru); $i++) {
     	$sql = "INSERT INTO er_disability_av (post_id,disability_id) VALUES(".$term_id.",".$engelTuru[$i].")";
-    	insertScript($sql);
+    	mysql_query($sql);
     }
+    mysql_close($con);
 	//
 	return array('term_id' => $term_id, 'term_taxonomy_id' => $tt_id);
 }

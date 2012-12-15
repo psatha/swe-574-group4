@@ -389,9 +389,12 @@ if ( current_user_can($tax->cap->edit_terms) ) {
 	<label for="tag-description">Engel Turu Tanimlama</label><br/>
 	<select multiple="multiple" name="engel[]">
 		<?php 
-			require_once('./dbconnect.php'); 
+			//require_once('./dbconnect.php');
+			$con = mysql_connect("localhost","root","");
+			mysql_select_db("erisimdb", $con);
 			$sql = "SELECT * FROM er_disability";
-			$result = dbconnection($sql);
+			$result = mysql_query($sql);
+			mysql_close($con);
 			while($row = mysql_fetch_array($result))
 			{
 				echo "<option value='".$row['ID']."'/>".$row['name']."</option>";

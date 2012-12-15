@@ -117,9 +117,12 @@ function app_process_register_form( $success_redirect = '' ) {
 				// wp_update_user( array ('ID' => $user_id, 'role' => 'contributor') ) ;
 				
 				// EKLEME (USER ENGELI EKLE)
-				require_once('./dbconnect.php');
+				//require_once('./dbconnect.php');
+				$con = mysql_connect("localhost","root","");
+				mysql_select_db("erisimdb", $con);
 				$disSql = "INSERT INTO er_disability_user (user_id,disability_id) VALUES(".$user_id.",".$_POST['engelDurumu'].")";
-				insertScript($disSql);
+				mysql_query($disSql);
+				mysql_close($con);
 
 				// set the first login date/time
 				appthemes_first_login( $user_id );

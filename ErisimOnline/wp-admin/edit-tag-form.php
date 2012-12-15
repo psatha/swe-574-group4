@@ -70,10 +70,12 @@ do_action($taxonomy . '_pre_edit_form', $tag, $taxonomy);  ?>
 				<select size="10px" multiple="multiple" name="engelTuru[]" >
 				<?php 
 					// EKLEME DISABILITY TYPE GETIRMEK ICIN
-					require_once('./dbconnect.php');
+					//require_once('./dbconnect.php');
+					$con = mysql_connect("localhost","root","");
+					mysql_select_db("erisimdb", $con);
 					//Get Disability IDs
 					$sqlDis = "SELECT disability_id FROM er_disability_av where post_id = ".$tag->term_id;
-					$disResult = dbconnection($sqlDis);
+					$disResult = mysql_query($sqlDis);
 					$i=0;
 					while ($row = mysql_fetch_array($disResult)) {
 						$disability[$i] = $row['disability_id'];
@@ -81,7 +83,8 @@ do_action($taxonomy . '_pre_edit_form', $tag, $taxonomy);  ?>
 					}
 					
 					$sql = "SELECT * FROM er_disability";
-					$result = dbconnection($sql);
+					$result = mysql_query($sql);
+					mysql_close($con);
 					while($row = mysql_fetch_array($result))
 					{
 						if ($disability != null && in_array($row['ID'], $disability)) {

@@ -200,10 +200,12 @@ jQuery(document).ready(function($) {
             <td><select name="engelUserUpdate" >
                 <?php
 					// EKLEME DISABILITY TYPE GETIRMEK ICIN
-					require_once('./dbconnect.php');
+					//require_once('./dbconnect.php');
+					$con = mysql_connect("localhost","root","");
+					mysql_select_db("erisimdb", $con);
 					//Get Disability IDs
 					$sqlDis = "SELECT disability_id FROM er_disability_user where user_id = ".$current_user->ID;
-					$disResult = dbconnection($sqlDis);
+					$disResult = mysql_query($sqlDis);
 					$i=0;
 					while ($row = mysql_fetch_array($disResult)) {
 						$disability[$i] = $row['disability_id'];
@@ -211,7 +213,7 @@ jQuery(document).ready(function($) {
 					}
 					
 					$sql = "SELECT * FROM er_disability";
-					$result = dbconnection($sql);
+					$result = mysql_query($sql);
 					while($row = mysql_fetch_array($result))
 					{
 						if ($disability != null && in_array($row['ID'], $disability)) {
@@ -220,6 +222,7 @@ jQuery(document).ready(function($) {
 							echo "<option value='".$row['ID']."'/>".$row['name']."</option>";	
 						}
   					}
+  					mysql_close($con);
 				?>
             </select></td>
 		</tr>
