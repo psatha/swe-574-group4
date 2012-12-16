@@ -332,7 +332,7 @@ public class Search_AV extends MapActivity {
 						else {
 							if(postTip.equals("attachment"))
 							{
-								for(int k = 0; k < MyAvList.avList.size(); k++) {
+								for(int k = 0; k < Search_AV.allAV.size(); k++) {
 									if ((allAV.get(k).ID == parent )){
 										allAV.get(k).setGuid(guid);
 									}

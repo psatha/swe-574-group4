@@ -103,7 +103,7 @@ public class Show_AV extends MapActivity {
 	static double langitude, latitude;
 	static String category;
 	static String guid;
-	
+
 	public static File f;
 
 	@Override
@@ -112,19 +112,23 @@ public class Show_AV extends MapActivity {
 		super.onCreate(savedInstanceState);
 		products = null;
 		position = getIntent().getExtras().getInt("position");
-		if(MyAvList.avList.size()!=0){
-			note = MyAvList.avList.get(position).getPost_content();
-			title = MyAvList.avList.get(position).getPost_title();
-			ID = MyAvList.avList.get(position).getID();
-			guid = MyAvList.avList.get(position).getGuid();
+		if(getIntent().getExtras().getString("search") == null) {
+			if(MyAvList.avList.size()!=0){
+				note = MyAvList.avList.get(position).getPost_content();
+				title = MyAvList.avList.get(position).getPost_title();
+				ID = MyAvList.avList.get(position).getID();
+				guid = MyAvList.avList.get(position).getGuid();
+			}
 		}
-		else if(Search_AV.allAV.size()!=0){
-			note = Search_AV.allAV.get(position).getPost_content();
-			title = Search_AV.allAV.get(position).getPost_title();
-			ID = Search_AV.allAV.get(position).getID();
-			guid = Search_AV.allAV.get(position).getGuid();
+		else {
+			if(Search_AV.allAV.size()!=0){
+				note = Search_AV.allAV.get(position).getPost_content();
+				title = Search_AV.allAV.get(position).getPost_title();
+				ID = Search_AV.allAV.get(position).getID();
+				guid = Search_AV.allAV.get(position).getGuid();
+			}
 		}
-		
+
 		new fileDownload().execute();
 		setContentView(R.layout.activity_show__av);
 		defineGUI();
@@ -150,13 +154,13 @@ public class Show_AV extends MapActivity {
 			mapOverlays = mapView.getOverlays();
 			Drawable drawable = this.getResources().getDrawable(R.drawable.androidmarker);
 			itemoverlay = new ItemOverlayForGet(drawable,this);
-			
+
 			updateMap(latitude, langitude);
-			
+
 			//getLocation();
-			
+
 			//adres.setText(adresInfo);
-			
+
 		} catch (NotFoundException e) {
 
 		}
@@ -214,13 +218,13 @@ public class Show_AV extends MapActivity {
 		titleText.setFocusable(false);
 		titleText.setEnabled(false);
 		mapView = (MapView) findViewById(R.id.mapview);
-		
-		
+
+
 		//city.setEnabled(false);
 		//district.setEnabled(false);
 		//street.setEnabled(false);
 	}
-	
+
 	protected void setListeners() {
 		backMenu.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
@@ -229,7 +233,7 @@ public class Show_AV extends MapActivity {
 
 		});
 	}
-	
+
 	public void imageClick (View view) {
 		Intent intent = new Intent();
 		intent.setAction(Intent.ACTION_VIEW);
@@ -250,7 +254,7 @@ public class Show_AV extends MapActivity {
 				str.append(add.getAddressLine(i));
 				str.append(" ");
 			}
-			
+
 			adresInfo = str.toString();
 			//adres.setText(adresInfo);
 
@@ -326,13 +330,13 @@ public class Show_AV extends MapActivity {
 				output.flush();
 				output.close();
 				input.close();
-				
+
 				Bitmap thumbnail;
 				BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();  
 				bitmapOptions.inSampleSize = 1;  
 				thumbnail = BitmapFactory.decodeFile(f.getAbsolutePath(), bitmapOptions);
 				imageView.setImageBitmap(thumbnail);
-				
+
 			} catch (Exception e) {
 			}
 
@@ -349,11 +353,11 @@ public class Show_AV extends MapActivity {
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
-            pDialog = new ProgressDialog(Show_AV.this);
-            pDialog.setMessage("Violation Ýndiriliyor...");
-            pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
-            pDialog.show();
+			pDialog = new ProgressDialog(Show_AV.this);
+			pDialog.setMessage("Violation Ýndiriliyor...");
+			pDialog.setIndeterminate(false);
+			pDialog.setCancelable(true);
+			pDialog.show();
 		}
 
 		/**
@@ -384,7 +388,7 @@ public class Show_AV extends MapActivity {
 						latitude = c.getDouble("lat");
 						langitude  = c.getDouble("lng");
 					}
-					
+
 					new spinnerSet().execute();
 
 				} else {
@@ -409,15 +413,15 @@ public class Show_AV extends MapActivity {
 			toast = Toast.makeText(getApplicationContext(), "Resme Týklayýp Galeride Açabilirsiniz", Toast.LENGTH_SHORT);
 			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
-			
+
 		}
 
 	}
-	
+
 	class spinnerSet extends AsyncTask<String, String, String> {
-		
+
 		ArrayAdapter<String> avAdapter;
-		
+
 		/**
 		 * Before starting background thread Show Progress Dialog
 		 * */
@@ -444,10 +448,10 @@ public class Show_AV extends MapActivity {
 			// updating UI from Background Thread
 			disabilityType.setAdapter(avAdapter);
 			disabilityType.setSelection(0, true);
-			
+
 		}
 
 	}
-	
+
 
 }

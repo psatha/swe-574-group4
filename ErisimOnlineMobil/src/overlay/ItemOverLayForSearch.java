@@ -56,9 +56,8 @@ public class ItemOverLayForSearch extends ItemizedOverlay {
 		    	   //detay sayfasýna yönlendirecez
 		    		Intent myIntent = new Intent(pcontext, Show_AV.class);
 		    		myIntent.putExtra("position", Integer.parseInt(hOverlays.get(indexg).getSnippet()));
+		    		myIntent.putExtra("search", "search");
 		    		pcontext.startActivity(myIntent);
-		    		
-		    		
 		       }
 		   })
 		   .setNegativeButton("Kapat", new DialogInterface.OnClickListener() {
