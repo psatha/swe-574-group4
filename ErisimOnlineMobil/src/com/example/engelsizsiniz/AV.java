@@ -1,15 +1,44 @@
 package com.example.engelsizsiniz;
 
+import java.util.ArrayList;
+
 import android.content.Intent;
 import android.view.Gravity;
 import android.widget.Toast;
 
 public class AV {
 	
-	public AV(){}
 	
+	public AV(){}
+
+	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public double getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public double getLangitude() {
+		return langitude;
+	}
+
+	public void setLangitude(double langitude) {
+		this.langitude = langitude;
+	}
+
 	int ID, post_author, post_parent;
-	String post_date, post_content, post_title, guid, post_type;
+	String post_date, post_content, post_title, guid, post_type, category;
+	double latitude, langitude;
 	
 	public AV (int ID, int post_author, int post_parent, String post_date, String post_content, String post_title, String guid, String post_type)
 	{
@@ -21,6 +50,9 @@ public class AV {
 		this.post_parent = post_parent;
 		this.guid = guid;
 		this.post_type = post_type;
+		latitude = 0;
+		langitude = 0;
+		category = "";
 	}
 
 	public int getID() {
@@ -85,6 +117,19 @@ public class AV {
 
 	public void setPost_title(String post_title) {
 		this.post_title = post_title;
+	}
+	
+	public static AV getSetAV (int id, String cat, double lat, double lang) {
+		for (int i = 0; i < Search_AV.allAV.size(); i ++) {
+			if (Search_AV.allAV.get(i).ID == id)
+			{
+				System.out.println(id);
+				Search_AV.allAV.get(i).latitude = lat;
+				Search_AV.allAV.get(i).langitude = lang;
+				Search_AV.allAV.get(i).category = cat;
+			}
+		}
+		return null;
 	}
 	
 	

@@ -70,12 +70,17 @@
             android:name="com.example.engelsizsiniz.Show_AV"
             android:label="@string/title_activity_show__av" >
         </activity>
-         <!-- Edit Product Activity -->
-                <activity
+         
+        <!-- Edit Product Activity -->
+        <activity
             android:name="com.example.engelsizsiniz.SearchAv"
             android:label="@string/title_activity_search_av" >
         </activity>
-       
+       
+        <activity
+            android:name="com.example.engelsizsiniz.Search_AV"
+            android:label="@string/title_activity_search__av" >
+        </activity>
     </application>
 
 </manifest>

@@ -12,5 +12,6 @@
     <string name="title_activity_my_av_list">Erisim Engeli Listem</string>
     <string name="title_activity_show__av">Show_AV</string>
     <string name="title_activity_search_av"></string>
+    <string name="title_activity_search__av">Search_AV</string>
 
 </resources>

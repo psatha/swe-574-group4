@@ -513,14 +513,7 @@ public class newViolation extends MapActivity {
 			
 			String result = str.toString();
 			return result;
-		} catch (IOException e) {
-			Toast.makeText(newViolation.this, "Adres Bilgisi Alýnamadý",
-					Toast.LENGTH_LONG).show();
-			// closing this screen
-			backMenu();
-			return null;
-		}
-		
+		} 
 		catch (Exception e) {
 			Toast.makeText(newViolation.this, "Adres Bilgisi Alýnamadý",
 					Toast.LENGTH_LONG).show();

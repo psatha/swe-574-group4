@@ -77,35 +77,35 @@ public class home extends Activity {
 			}
 
 		});
-		
+
 		//update button clicked
-				updateProfil.setOnClickListener(new View.OnClickListener() {
-					public void onClick(View view) {
-						Intent myIntent = new Intent(getApplicationContext(), updateProfile.class);
-						myIntent.putExtra("username", username);
-						startActivityForResult(myIntent, 0);
-						finish();
-					}
+		updateProfil.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Intent myIntent = new Intent(getApplicationContext(), updateProfile.class);
+				myIntent.putExtra("username", username);
+				startActivityForResult(myIntent, 0);
+				finish();
+			}
 
-				});
+		});
 		//listhata button clicked
-				listHata.setOnClickListener(new View.OnClickListener() {
-					public void onClick(View view) {
-						Intent myIntent = new Intent(getApplicationContext(), MyAvList.class);
-						myIntent.putExtra("id", id);
-						startActivityForResult(myIntent, 0);
-					}
+		listHata.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Intent myIntent = new Intent(getApplicationContext(), MyAvList.class);
+				myIntent.putExtra("id", id);
+				startActivityForResult(myIntent, 0);
+			}
 
-				});
-				//serachhata button clicked
-				listHata.setOnClickListener(new View.OnClickListener() {
-					public void onClick(View view) {
-						Intent myIntent = new Intent(getApplicationContext(), SearchAv.class);
-						myIntent.putExtra("id", id);
-						startActivityForResult(myIntent, 0);
-					}
+		});
+		//serachhata button clicked
+		searchHata.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Intent myIntent = new Intent(getApplicationContext(), Search_AV.class);
+				myIntent.putExtra("id", id);
+				startActivityForResult(myIntent, 0);
+			}
 
-				});
+		});
 		//logout button clicked
 		logout.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {

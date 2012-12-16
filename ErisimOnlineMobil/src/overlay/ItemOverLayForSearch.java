@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 
@@ -12,13 +13,14 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.OverlayItem;
 
-public class ItemOverlayForGet extends ItemizedOverlay{
-	
+public class ItemOverLayForSearch extends ItemizedOverlay {
+
+
 	private ArrayList<OverlayItem> hOverlays = new ArrayList<OverlayItem>();
 	private Context pcontext;
 	protected MapController viewController;
 
-	public ItemOverlayForGet(Drawable arg0, Context context) {
+	public ItemOverLayForSearch(Drawable arg0, Context context) {
 		super(boundCenterBottom(arg0));
 		pcontext = context;
 	}
@@ -41,12 +43,22 @@ public class ItemOverlayForGet extends ItemizedOverlay{
 	
 	@Override
 	protected boolean onTap(int index) {
-		/*
 		OverlayItem item = hOverlays.get(index);
-		AlertDialog.Builder dialog = new AlertDialog.Builder(pcontext);
-		dialog.setTitle(item.getTitle());
-		dialog.setMessage(item.getSnippet());
-		dialog.show();*/
+		AlertDialog.Builder builder = new AlertDialog.Builder(pcontext);
+		builder.setMessage(item.getTitle() + " " +item.getSnippet())
+		   .setCancelable(false)
+		   .setPositiveButton("Detay", new DialogInterface.OnClickListener() {
+		       public void onClick(DialogInterface dialog, int id) {
+		    	   //detay sayfasýna yönlendirecez
+		       }
+		   })
+		   .setNegativeButton("Kapat", new DialogInterface.OnClickListener() {
+		       public void onClick(DialogInterface dialog, int id) {
+		            dialog.cancel();
+		       }
+		   });
+		AlertDialog alert = builder.create();
+		alert.show();
 		return true;
 	}
 
