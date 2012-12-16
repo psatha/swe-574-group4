@@ -216,7 +216,7 @@ public class Search_AV extends MapActivity {
 					(int) (allAV.get(i).langitude * 1E6));
 			
 			if(getDistanceInMeters(point, point2) <= 5000){
-				OverlayItem overlayitem = new OverlayItem(point2, allAV.get(i).getPost_title() , allAV.get(i).getPost_content());
+				OverlayItem overlayitem = new OverlayItem(point2, allAV.get(i).getPost_title() , i+"");
 				itemoverlay2.addOverlay(overlayitem);
 				mapOverlays.add(itemoverlay2);
 			}

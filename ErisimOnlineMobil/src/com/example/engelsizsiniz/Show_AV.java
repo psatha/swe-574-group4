@@ -112,10 +112,18 @@ public class Show_AV extends MapActivity {
 		super.onCreate(savedInstanceState);
 		products = null;
 		position = getIntent().getExtras().getInt("position");
-		note = MyAvList.avList.get(position).getPost_content();
-		title = MyAvList.avList.get(position).getPost_title();
-		ID = MyAvList.avList.get(position).getID();
-		guid = MyAvList.avList.get(position).getGuid();
+		if(MyAvList.avList.size()!=0){
+			note = MyAvList.avList.get(position).getPost_content();
+			title = MyAvList.avList.get(position).getPost_title();
+			ID = MyAvList.avList.get(position).getID();
+			guid = MyAvList.avList.get(position).getGuid();
+		}
+		else if(Search_AV.allAV.size()!=0){
+			note = Search_AV.allAV.get(position).getPost_content();
+			title = Search_AV.allAV.get(position).getPost_title();
+			ID = Search_AV.allAV.get(position).getID();
+			guid = Search_AV.allAV.get(position).getGuid();
+		}
 		
 		new fileDownload().execute();
 		setContentView(R.layout.activity_show__av);
