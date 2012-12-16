@@ -366,7 +366,12 @@ public class Search_AV extends MapActivity {
 		}
 
 	}
-
+ @Override
+public void onBackPressed() {
+	// TODO Auto-generated method stub
+	 allAV.clear();
+	super.onBackPressed();
+}
 	class getPosition extends AsyncTask<String, String, String> {
 
 		/**

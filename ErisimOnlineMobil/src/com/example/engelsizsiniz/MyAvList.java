@@ -103,11 +103,17 @@ public class MyAvList extends ListActivity {
 		toast = Toast.makeText(getApplicationContext(), "Lütfen baðlantýnýzý kontrol ediniz.", Toast.LENGTH_SHORT);
 		toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 		toast.show();
+		avList.removeAll(avList);
 		Intent myIntent = new Intent(getApplicationContext(), home.class);
 		startActivityForResult(myIntent, 0);
 		finish();
 	}
- 
+ @Override
+public void onBackPressed() {
+	// TODO Auto-generated method stub
+	 avList.clear();
+	super.onBackPressed();
+}
     /**
      * Background Async Task to Load all product by making HTTP Request
      * */
