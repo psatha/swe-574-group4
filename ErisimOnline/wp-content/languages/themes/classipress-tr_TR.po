@@ -2145,7 +2145,7 @@ msgstr ""
 #: includes/admin/admin-options.php:1293 includes/admin/admin-options.php:1682
 #: includes/admin/admin-options.php:1979 includes/admin/admin-options.php:2508
 msgid "Saving your changes....."
-msgstr ""
+msgstr "Degisiklikler Kaydediliyor..."
 
 #: includes/admin/admin-options.php:1328
 msgid "Deleting ad package....."
@@ -2348,7 +2348,7 @@ msgstr ""
 
 #: includes/admin/admin-options.php:2068
 msgid "Your changes have been saved."
-msgstr ""
+msgstr "Degisiklikleriniz kaydedildi."
 
 #: includes/admin/admin-options.php:2099 includes/admin/admin-values.php:2117
 msgid "Form Name"
