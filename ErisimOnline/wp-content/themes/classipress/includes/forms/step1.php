@@ -57,14 +57,6 @@ global $current_user, $wpdb;
                     <ol>
 
                         <li>
-                        	<div class="labelwrapper">
-                            	<label><?php _e('Cost Per Listing','appthemes');?>:</label>
-							</div>
-                            <?php cp_cost_per_listing(); ?> <?php // printf(__('for %s days', 'appthemes'), get_option('cp_prun_period')); ?>
-                            <div class="clr"></div>
-                        </li>
-
-                        <li>
                             <div class="labelwrapper"><label><?php _e('Select a Category:','appthemes');?></label></div>
                             <div id="ad-categories" style="display:block; margin-left:170px;">						
                                 <div id="catlvl0">

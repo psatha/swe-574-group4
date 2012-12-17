@@ -1271,7 +1271,7 @@ msgstr ""
 
 #: includes/theme-functions.php:773
 msgid "Your ad images are now being processed..."
-msgstr "İlan Resminiz işleniyor."
+msgstr "Erisim Engeli Resminiz işleniyor."
 
 #: includes/theme-functions.php:782
 #, php-format
@@ -5524,7 +5524,7 @@ msgstr ""
 
 #: includes/forms/step3.php:38
 msgid "Ad Listing Received"
-msgstr "Erisim Engeli isteği alındı"
+msgstr "Erisim Engeli sisteme eklendi"
 
 #: includes/forms/step3.php:79
 msgid "Thank you! Your ad listing has been submitted for review."
@@ -5540,7 +5540,7 @@ msgstr "Teşekkür ederiz!Erisim Engeli alındı ve şu anda aktif."
 
 #: includes/forms/step3.php:86
 msgid "View your new ad listing."
-msgstr "Yeni ilanınızı görüntüleyin"
+msgstr "Yeni Erisim Engelini görüntüleyin"
 
 #: includes/forms/step3.php:113
 msgid ""
