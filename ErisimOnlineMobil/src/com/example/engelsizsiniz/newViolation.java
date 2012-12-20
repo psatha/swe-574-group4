@@ -96,10 +96,10 @@ public class newViolation extends MapActivity {
 	protected List<Overlay> mapOverlays;
 
 	//protected Spinner disabilityType, city, district, street;
-	protected Spinner disabilityType;
+	protected Spinner disabilityType, avValSpin;
 	public static int spinPos = 0;
 	protected Button backMenu, uploadButton, photoButton, submitButton;
-	protected EditText noteText, titleText;
+	protected EditText noteText, titleText, avValText;
 	protected ImageView  imageView;
 	protected TextView path, adres;
 	protected Uri imageUri;
@@ -109,7 +109,7 @@ public class newViolation extends MapActivity {
 	public static String noteDB, titleDB, spinnerDB, filePathDB, idDB;
 	public static ArrayList<String> fileDeleted = new ArrayList<String>();
 	public static int avCount;
-	
+
 	public static HashMap avListHash = new HashMap ();
 
 	public otomatikAdres otm;
@@ -136,7 +136,7 @@ public class newViolation extends MapActivity {
 	private static String url_Term = "http://swe.cmpe.boun.edu.tr/fall2012g4/newTerm.php";
 	private static String url_Pos = "http://swe.cmpe.boun.edu.tr/fall2012g4/newPos.php";
 	private static String url_TermMeta = "http://swe.cmpe.boun.edu.tr/fall2012g4/newTermMeta.php";
-	
+
 	public static String streetName ="", districtName ="", cityName = "", countryName = "", postCode = "", mahalle = "";
 
 	@Override
@@ -161,7 +161,7 @@ public class newViolation extends MapActivity {
 			titleIntent = "";
 			noteIntent = "";
 		}
-		
+
 		setContentView(R.layout.activity_new_violation);
 		defineGUI();
 		setListeners();
@@ -189,14 +189,7 @@ public class newViolation extends MapActivity {
 	}
 
 	protected void setListeners() {
-		backMenu.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View view) {
-				Intent myIntent = new Intent(getApplicationContext(), home.class);
-				startActivityForResult(myIntent, 0);
-				finish();
-			}
 
-		});
 
 		uploadButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
@@ -252,6 +245,7 @@ public class newViolation extends MapActivity {
 			public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) { 
 				// Your code here
 				spinPos = i;
+				createAVInput(spinPos);
 			} 
 
 			public void onNothingSelected(AdapterView<?> adapterView) {
@@ -259,6 +253,24 @@ public class newViolation extends MapActivity {
 				return;
 			} 
 		}); 
+
+	}
+
+	public void createAVInput(int pos) {
+
+		
+		// bu noktada seçili av tipine göre textbox veya spinner gözükecek ve içerisinde valuelar olacak
+		if (pos != 0) {
+			if(pos % 2 == 0)
+			{
+				avValSpin.setVisibility(View.VISIBLE);
+				avValText.setVisibility(View.GONE);
+			}
+			else {
+				avValSpin.setVisibility(View.GONE);
+				avValText.setVisibility(View.VISIBLE);
+			}
+		}
 
 	}
 
@@ -482,17 +494,17 @@ public class newViolation extends MapActivity {
 			Address add = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1).get(0);
 			int value = add.getMaxAddressLineIndex();
 			StringBuffer str = new StringBuffer();
-			
+
 			for (int i = 0; i < value; i ++) {
 				str.append(add.getAddressLine(i));
 				str.append(" ");
 			}
-			
+
 			if (value > 1)
 				streetName = add.getAddressLine(0) + add.getAddressLine(1);
 			else
 				streetName = add.getAddressLine(0);
-			
+
 			adres.setText(str.toString());
 
 			if (add.getCountryName() != null)
@@ -503,14 +515,14 @@ public class newViolation extends MapActivity {
 				mahalle = add.getSubLocality();
 			if (add.getLocality() != null)
 				districtName = add.getLocality();
-			
-			
+
+
 			String val = add.getAddressLine(value - 1);
 			if (val.contains("/")) {
 				String[] strings = val.split("/");
 				cityName = strings[strings.length - 1];
 			}
-			
+
 			String result = str.toString();
 			return result;
 		} 
@@ -522,7 +534,7 @@ public class newViolation extends MapActivity {
 			return null;
 		}
 	}
-	
+
 	public void backMenu ()
 	{
 		Toast toast;
@@ -537,6 +549,8 @@ public class newViolation extends MapActivity {
 	protected void defineGUI(){
 		new LoadAVTypes().execute();
 		disabilityType = (Spinner) findViewById(R.id.disabilitySpin);
+		avValSpin = (Spinner) findViewById(R.id.AVValspinner);
+		avValText = (EditText) findViewById(R.id.AVValeditText);
 		backMenu = (Button) findViewById(R.id.mainmenu);
 		uploadButton = (Button) findViewById(R.id.uploadButton);
 		submitButton = (Button) findViewById(R.id.button1);
@@ -735,10 +749,10 @@ public class newViolation extends MapActivity {
 			ByteArrayOutputStream bytes = new ByteArrayOutputStream();
 			int height = scaledHeight;
 			int width = scaledWidth;    
-			
+
 			Bitmap photo = BitmapFactory.decodeFile( filePathDB );
 			scaledphoto = Bitmap.createScaledBitmap(photo, height, width, true);
-			
+
 			try {
 				if (!original){
 					scaledphoto.compress(Bitmap.CompressFormat.JPEG, 50, bytes);
@@ -839,18 +853,18 @@ public class newViolation extends MapActivity {
 			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
 			deleteFiles();
-			
+
 			Intent myIntent = new Intent(getApplicationContext(), home.class);
 			startActivityForResult(myIntent, 0);
 			finish();
 		}
-		
+
 		public void deleteFiles()
 		{
 			File file = null;
 			for(int i = 0; i < fileDeleted.size(); i ++){
-			  file = new File(fileDeleted.get(i));
-			  file.delete();
+				file = new File(fileDeleted.get(i));
+				file.delete();
 			}
 		}
 
@@ -896,7 +910,7 @@ public class newViolation extends MapActivity {
 						//String id = c.getString(TAG_TERMSID);
 						String name = c.getString(TAG_NAME);
 						String ID = c.getString("term_id");
-						
+
 						avListHash.put(new Integer(i), ID);
 						//System.out.println(name);
 
@@ -996,7 +1010,7 @@ public class newViolation extends MapActivity {
 			// updating UI from Background Thread
 		}
 	}
-	
+
 	class insertCategory extends AsyncTask<String, String, String> {
 
 		/**
@@ -1048,7 +1062,7 @@ public class newViolation extends MapActivity {
 			// updating UI from Background Thread
 		}
 	}
-	
+
 	class insertPosition extends AsyncTask<String, String, String> {
 
 		/**
@@ -1075,7 +1089,7 @@ public class newViolation extends MapActivity {
 				//Log.d("All Products: ", json.toString());
 				// Checking for SUCCESS TAG
 				int success = json.getInt(TAG_SUCCESS);
-				
+
 
 				if (success == 1) {
 					new insertMeta().execute("cp_sys_ad_duration","365");
@@ -1103,7 +1117,7 @@ public class newViolation extends MapActivity {
 			// dismiss the dialog after getting all products
 			// updating UI from Background Thread
 		}
-		
+
 		public String convertAddName (String s){
 
 			s = s.toLowerCase();
@@ -1117,10 +1131,10 @@ public class newViolation extends MapActivity {
 			return s;
 		}
 	}
-	
+
 	class insertMeta extends AsyncTask<String, String, String> {
-		
-		
+
+
 		/**
 		 * Before starting background thread Show Progress Dialog
 		 * */
