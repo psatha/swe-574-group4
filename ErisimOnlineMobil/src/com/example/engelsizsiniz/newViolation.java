@@ -106,7 +106,7 @@ public class newViolation extends MapActivity {
 
 	public static String fileName;
 	public static String filePathIntent ="", titleIntent="", noteIntent="";
-	public static String noteDB, titleDB, spinnerDB, filePathDB, idDB;
+	public static String noteDB, titleDB, spinnerDB, filePathDB, idDB, usernameDB, usermailDB;
 	public static ArrayList<String> fileDeleted = new ArrayList<String>();
 	public static int avCount;
 
@@ -132,10 +132,11 @@ public class newViolation extends MapActivity {
 
 	private static String url_newViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/newViolation.php";
 	private static String url_all_AVtypes = "http://swe.cmpe.boun.edu.tr/fall2012g4/avTypes.php";
-	private static String url_all_Violations = "http://swe.cmpe.boun.edu.tr/fall2012g4/allAV.php";
+	private static String url_all_Violations = "http://swe.cmpe.boun.edu.tr/fall2012g4/allAVID.php";
 	private static String url_Term = "http://swe.cmpe.boun.edu.tr/fall2012g4/newTerm.php";
 	private static String url_Pos = "http://swe.cmpe.boun.edu.tr/fall2012g4/newPos.php";
 	private static String url_TermMeta = "http://swe.cmpe.boun.edu.tr/fall2012g4/newTermMeta.php";
+	private static String url_subscribeNewViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/subscribeNewViolation.php";
 
 	public static String streetName ="", districtName ="", cityName = "", countryName = "", postCode = "", mahalle = "";
 
@@ -152,9 +153,13 @@ public class newViolation extends MapActivity {
 			noteIntent = savedInstanceState.getString("note");
 			spinPos = savedInstanceState.getInt("spinner");
 			idDB = savedInstanceState.getString("id");
+			usernameDB = savedInstanceState.getString("username");
+			usermailDB = savedInstanceState.getString("usermail");
 		}
 		else{
 			idDB = getIntent().getExtras().getString("id");
+			usernameDB = getIntent().getExtras().getString("username");
+			usermailDB = getIntent().getExtras().getString("usermail");
 			spinPos = 0;
 			filePathDB = "";
 			filePathIntent = "";
@@ -177,6 +182,8 @@ public class newViolation extends MapActivity {
 		outState.putString("note", noteText.getText().toString());
 		outState.putInt("spinner", spinPos);
 		outState.putString("id", idDB);
+		outState.putString("username", usernameDB);
+		outState.putString("usermail", usermailDB);
 		//savedInstanceState.putInt("title", );
 		super.onSaveInstanceState(outState);
 	}
@@ -1007,9 +1014,6 @@ public class newViolation extends MapActivity {
 		 * After completing background task Dismiss the progress dialog
 		 * **/
 		protected void onPostExecute(String file_url) {
-			// dismiss the dialog after getting all products
-			// updating UI from Background Thread
-			
 			new submitViolation().execute();
 		}
 	}
@@ -1103,6 +1107,7 @@ public class newViolation extends MapActivity {
 					new insertMeta().execute("cp_street", convertAddName(streetName));
 					new insertMeta().execute("cp_zipcode", postCode);
 					new insertMeta().execute("cp_sys_ad_duration", "500");
+					new SubscribeViolation().execute();
 				} else {
 					// do nothing
 					backMenu();
@@ -1119,6 +1124,7 @@ public class newViolation extends MapActivity {
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog after getting all products
 			// updating UI from Background Thread
+			
 		}
 
 		public String convertAddName (String s){
@@ -1185,6 +1191,69 @@ public class newViolation extends MapActivity {
 			// dismiss the dialog after getting all products
 			// updating UI from Background Thread
 		}
+	}
+	
+class SubscribeViolation extends AsyncTask<String, String, String> {
+
+		
+		/**
+		 * Before starting background thread Show Progress Dialog
+		 * */
+		@Override
+		protected void onPreExecute() {
+			
+		}
+
+		
+
+		/**
+		 * Creating subscribtion
+		 * */
+		protected String doInBackground(String... args) {
+			// Building Parameters
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+			params.add(new BasicNameValuePair("user_id", idDB));
+			params.add(new BasicNameValuePair("post_id", Integer.toString(avCount)));
+			params.add(new BasicNameValuePair("username", usernameDB));
+			params.add(new BasicNameValuePair("usermail", usermailDB));
+
+			// getting JSON Object
+			// Note that create product url accepts POST method
+			JSONObject json = jsonParser.makeHttpRequest(url_subscribeNewViolation,
+					"GET", params);
+
+			// check log cat fro response
+			Log.d("Create Response", json.toString());
+
+			// check for success tag
+			try {
+				int success = json.getInt(TAG_SUCCESS);
+
+				if (success == 1) {
+					// successfully created product
+			
+				} else {
+					// failed to create product
+					backMenu();
+				}
+			} catch (JSONException e) {
+				backMenu();
+				e.printStackTrace();
+			}
+
+			return null;
+		}
+
+
+		/**
+		 * After completing background task Dismiss the progress dialog
+		 * **/
+		protected void onPostExecute(String file_url) {
+			// dismiss the dialog once done
+		}
+
+		
+
 	}
 
 }

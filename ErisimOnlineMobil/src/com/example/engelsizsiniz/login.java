@@ -169,7 +169,7 @@ public class login extends Activity {
 
 	}
 
-	public static void writecookie(String username, String id){
+	public static void writecookie(String username, String id, String mail){
 		File writeFile;
 		writeFile = new File(myDir,"cookie");
 
@@ -179,6 +179,8 @@ public class login extends Activity {
 			out.write(username);
 			out.write("\n");
 			out.write(id);
+			out.write("\n");
+			out.write(mail);
 			out.close();
 			filewriter.close();
 		} catch (IOException e) {
@@ -231,10 +233,12 @@ public class login extends Activity {
 				// looping through All Products
 				JSONObject c = products.getJSONObject(0);
 				String id = c.getString("ID");
+				String mail = c.getString("user_email");
+				System.out.println(mail + " FINAL COUNTDOWN");
 				if (success == 1) {
 					// successfully created product
 					// write cookie
-					writecookie(usernameDB, id);
+					writecookie(usernameDB, id, mail);
 					Intent i = new Intent(getApplicationContext(), home.class);
 					startActivity(i);
 					status = true;

@@ -77,6 +77,7 @@ public class MyAvList extends ListActivity {
 		// TODO Auto-generated method stub
 		Intent myIntent = new Intent(getApplicationContext(), Show_AV.class);
 		myIntent.putExtra("position", position);
+		myIntent.putExtra("userid", userIdDB);
 		startActivityForResult(myIntent, 0);
 	}
 	

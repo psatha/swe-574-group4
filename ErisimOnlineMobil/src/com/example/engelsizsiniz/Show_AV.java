@@ -74,7 +74,7 @@ public class Show_AV extends MapActivity {
 	//gui values
 	protected Spinner disabilityType;
 	public static int spinPos = 0;
-	protected Button backMenu, updateButton,subscribeButton;
+	protected Button backMenu, updateButton,subscribeButton, unSubscribeButton;
 	protected EditText noteText, titleText;
 	protected ImageView  imageView;
 	protected static TextView adres;
@@ -99,6 +99,7 @@ public class Show_AV extends MapActivity {
 	private static String url_Pos = "http://swe.cmpe.boun.edu.tr/fall2012g4/getPos.php";
 	private static String url_subscribeNewViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/subscribeNewViolation.php";
 	private static String url_querySubscription = "http://swe.cmpe.boun.edu.tr/fall2012g4/querySubscription.php";
+	private static String url_unSubscribeViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/unsubscribeViolation.php";
 	private int subscriptionId ;
 	JSONParser jsonParser = new JSONParser();
 	public ProgressDialog pDialog;
@@ -107,19 +108,21 @@ public class Show_AV extends MapActivity {
 	static double langitude, latitude;
 	static String category;
 	static String guid;
+	
+	public static boolean subscribed = false;
 
 	public static File f;
 	public ArrayList<String> subsList = new ArrayList();
 	JSONArray subscriptions = null;
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_SUBSCRIPTIONS = "subscription";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// get array position
 		super.onCreate(savedInstanceState);
 		products = null;
 		position = getIntent().getExtras().getInt("position");
-		idDB = getIntent().getExtras().getString("idDb");
 		if(getIntent().getExtras().getString("search") == null) {
 		
 			if(MyAvList.avList.size()!=0){
@@ -127,6 +130,7 @@ public class Show_AV extends MapActivity {
 				title = MyAvList.avList.get(position).getPost_title();
 				ID = MyAvList.avList.get(position).getID();
 				guid = MyAvList.avList.get(position).getGuid();
+				idDB = getIntent().getExtras().getString("userid");
 			}
 		}
 		else {
@@ -135,10 +139,12 @@ public class Show_AV extends MapActivity {
 				title = Search_AV.allAV.get(position).getPost_title();
 				ID = Search_AV.allAV.get(position).getID();
 				guid = Search_AV.allAV.get(position).getGuid();
+				idDB = Search_AV.idDb;
 			}
 		}
 
 		new fileDownload().execute();
+		new checkIfSubscribed().execute();
 		setContentView(R.layout.activity_show__av);
 		defineGUI();
 		setListeners();
@@ -218,6 +224,7 @@ public class Show_AV extends MapActivity {
 		//get value
 		backMenu = (Button) findViewById(R.id.backtolist);
 		subscribeButton=(Button)findViewById(R.id.subscribeButton);
+		unSubscribeButton=(Button)findViewById(R.id.unsubscribeButton);
 		adres = (TextView) findViewById(R.id.AVadres);
 		//get adres
 		imageView = (ImageView) findViewById(R.id.imageView2);
@@ -249,6 +256,15 @@ public class Show_AV extends MapActivity {
 		subscribeButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				new SubscribeViolation().execute();
+			}
+
+		});
+		
+		unSubscribeButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				// un subs ile degistir
+				new UnSubscribeViolation().execute();
+				System.out.println("un basýldý");
 			}
 
 		});
@@ -481,7 +497,12 @@ class SubscribeViolation extends AsyncTask<String, String, String> {
 		 * */
 		@Override
 		protected void onPreExecute() {
-			
+			super.onPreExecute();
+			pDialog = new ProgressDialog(Show_AV.this);
+			pDialog.setMessage("Violation Takibi Yapýlýyor...");
+			pDialog.setIndeterminate(false);
+			pDialog.setCancelable(true);
+			pDialog.show();
 		}
 
 		
@@ -495,8 +516,9 @@ class SubscribeViolation extends AsyncTask<String, String, String> {
 			// Building Parameters
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair("user_id", idDB));
-			params.add(new BasicNameValuePair("post_id", ID+""));
-			
+			params.add(new BasicNameValuePair("post_id", Integer.toString(ID)));
+			params.add(new BasicNameValuePair("username", home.username));
+			params.add(new BasicNameValuePair("usermail", home.email));
 
 			// getting JSON Object
 			// Note that create product url accepts POST method
@@ -512,7 +534,7 @@ class SubscribeViolation extends AsyncTask<String, String, String> {
 
 				if (success == 1) {
 					// successfully created product
-			
+						subscribed = true; 
 				} else {
 					// failed to create product
 					backMenu();
@@ -531,22 +553,20 @@ class SubscribeViolation extends AsyncTask<String, String, String> {
 		 * **/
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once done
-			pDialog.dismiss();
-			Toast toast;
-			toast = Toast.makeText(getApplicationContext(), "Violation takibe alýndý", Toast.LENGTH_SHORT);
-			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
-			toast.show();
 			
-
-			Intent myIntent = new Intent(getApplicationContext(), home.class);
-			startActivityForResult(myIntent, 0);
-			finish();
+			if(subscribed){
+				subscribeButton.setVisibility(View.GONE);
+				unSubscribeButton.setVisibility(View.VISIBLE);
+			}
+			pDialog.dismiss();
 		}
 
 		
 
 	}
-class QuerySubscription extends AsyncTask<String, String, String> {
+
+
+class UnSubscribeViolation extends AsyncTask<String, String, String> {
 
 	
 	/**
@@ -554,6 +574,13 @@ class QuerySubscription extends AsyncTask<String, String, String> {
 	 * */
 	@Override
 	protected void onPreExecute() {
+		
+		super.onPreExecute();
+		pDialog = new ProgressDialog(Show_AV.this);
+		pDialog.setMessage("Violation Takibi Býrakýlýyor...");
+		pDialog.setIndeterminate(false);
+		pDialog.setCancelable(true);
+		pDialog.show();
 		
 	}
 
@@ -565,19 +592,15 @@ class QuerySubscription extends AsyncTask<String, String, String> {
 	protected String doInBackground(String... args) {
 
 		
-				
-		if (isCancelled()){
-			
-		}
 		// Building Parameters
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
 		params.add(new BasicNameValuePair("user_id", idDB));
-		params.add(new BasicNameValuePair("post_id", ID+""));
+		params.add(new BasicNameValuePair("post_id", Integer.toString(ID)));
 		
-		
+
 		// getting JSON Object
 		// Note that create product url accepts POST method
-		JSONObject json = jsonParser.makeHttpRequest(url_querySubscription,
+		JSONObject json = jsonParser.makeHttpRequest(url_unSubscribeViolation,
 				"GET", params);
 
 		// check log cat fro response
@@ -589,22 +612,82 @@ class QuerySubscription extends AsyncTask<String, String, String> {
 
 			if (success == 1) {
 				// successfully created product
-				subscriptions = json.getJSONArray(TAG_SUBSCRIPTIONS);
-
-				
-				
-					JSONObject c = subscriptions.getJSONObject(0);
-
-					// Storing each json item in variable
-					//String id = c.getString(TAG_TERMSID);
-					
-					subscriptionId = Integer.parseInt(c.getString("ID"));
-
-					finish();
-		
+					subscribed = false; 
 			} else {
 				// failed to create product
-				subscriptionId =0;
+				backMenu();
+			}
+		} catch (JSONException e) {
+			backMenu();
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+
+	/**
+	 * After completing background task Dismiss the progress dialog
+	 * **/
+	protected void onPostExecute(String file_url) {
+		// dismiss the dialog once done
+		if(!subscribed){
+			subscribeButton.setVisibility(View.VISIBLE);
+			unSubscribeButton.setVisibility(View.GONE);
+		}
+		pDialog.dismiss();
+	}
+
+	
+
+}
+
+
+
+
+
+class checkIfSubscribed extends AsyncTask<String, String, String> {
+
+	
+	/**
+	 * Before starting background thread Show Progress Dialog
+	 * */
+	@Override
+	protected void onPreExecute() {
+		
+	}
+
+
+	/**
+	 * Creating subscribtion
+	 * */
+	protected String doInBackground(String... args) {
+		
+		// Building Parameters
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+		params.add(new BasicNameValuePair("user_id", idDB));
+		params.add(new BasicNameValuePair("post_id", Integer.toString(ID)));
+		
+		
+		// getting JSON Object
+		// Note that create product url accepts POST method
+		JSONObject json = jsonParser.makeHttpRequest(url_querySubscription,
+				"GET", params);
+
+		// check log cat fro response
+		Log.d("JSON CEVABI GELIYOR", json.toString());
+		System.out.println("JSONDA  GELDI");
+		// check for success tag
+		try {
+			int success = json.getInt(TAG_SUCCESS);
+
+			if (success == 1) {
+				// user already subscribed
+				subscribed = true;
+		
+			} else {
+				subscribed = false;
+				// usernot subscribed
 			}
 		} catch (JSONException e) {
 			backMenu();
@@ -621,16 +704,14 @@ class QuerySubscription extends AsyncTask<String, String, String> {
 	 * **/
 	protected void onPostExecute(String file_url) {
 		// dismiss the dialog once done
-		pDialog.dismiss();
-		Toast toast;
-		toast = Toast.makeText(getApplicationContext(), "Violation takibe alýndý", Toast.LENGTH_SHORT);
-		toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
-		toast.show();
-		
-
-		Intent myIntent = new Intent(getApplicationContext(), home.class);
-		startActivityForResult(myIntent, 0);
-		finish();
+		if(subscribed){
+			subscribeButton.setVisibility(View.GONE);
+			unSubscribeButton.setVisibility(View.VISIBLE);
+		}
+		else {
+			subscribeButton.setVisibility(View.VISIBLE);
+			unSubscribeButton.setVisibility(View.GONE);
+		}
 	}
 
 	

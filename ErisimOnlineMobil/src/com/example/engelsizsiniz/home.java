@@ -26,7 +26,7 @@ public class home extends Activity {
 
 	Button yeniHata, listHata, searchHata, updateProfil, logout;
 
-	String username, id;
+	public static String username, id, email;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -72,6 +72,8 @@ public class home extends Activity {
 			public void onClick(View view) {
 				Intent myIntent = new Intent(getApplicationContext(), newViolation.class);
 				myIntent.putExtra("id", id);
+				myIntent.putExtra("usermail", email);
+				myIntent.putExtra("username", username);
 				startActivityForResult(myIntent, 0);
 			}
 
@@ -134,6 +136,7 @@ public class home extends Activity {
 			//Read File Line By Line
 			username = br.readLine();
 			id = br.readLine();
+			email = br.readLine();
 			fstream.close();
 			in.close();
 			br.close();
