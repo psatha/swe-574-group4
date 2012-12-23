@@ -1108,6 +1108,7 @@ public class newViolation extends MapActivity {
 					new insertMeta().execute("cp_street", convertAddName(streetName));
 					new insertMeta().execute("cp_zipcode", postCode);
 					new insertMeta().execute("cp_sys_ad_duration", "500");
+					new insertMeta().execute("cp_av_solved", "no");
 					new SubscribeViolation().execute();
 				} else {
 					// do nothing
