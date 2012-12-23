@@ -103,15 +103,16 @@ public class newViolation extends MapActivity {
 	protected ImageView  imageView;
 	protected TextView path, adres;
 	protected Uri imageUri;
+	
 
 	public static String fileName;
 	public static String filePathIntent ="", titleIntent="", noteIntent="";
 	public static String noteDB, titleDB, spinnerDB, filePathDB, idDB, usernameDB, usermailDB;
 	public static ArrayList<String> fileDeleted = new ArrayList<String>();
+	public static ArrayList<Category> categories = new ArrayList<Category>();
 	public static int avCount;
 
-	public static HashMap avListHash = new HashMap ();
-
+	
 	public otomatikAdres otm;
 	protected static File photo;
 
@@ -136,6 +137,7 @@ public class newViolation extends MapActivity {
 	private static String url_Term = "http://swe.cmpe.boun.edu.tr/fall2012g4/newTerm.php";
 	private static String url_Pos = "http://swe.cmpe.boun.edu.tr/fall2012g4/newPos.php";
 	private static String url_TermMeta = "http://swe.cmpe.boun.edu.tr/fall2012g4/newTermMeta.php";
+	private static String url_getAVFields = "http://swe.cmpe.boun.edu.tr/fall2012g4/getAVVal.php";
 	private static String url_subscribeNewViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/subscribeNewViolation.php";
 
 	public static String streetName ="", districtName ="", cityName = "", countryName = "", postCode = "", mahalle = "";
@@ -918,8 +920,7 @@ public class newViolation extends MapActivity {
 						//String id = c.getString(TAG_TERMSID);
 						String name = c.getString(TAG_NAME);
 						String ID = c.getString("term_id");
-
-						avListHash.put(new Integer(i), ID);
+						categories.add(new Category(Integer.parseInt(ID), name, "", i));
 						//System.out.println(name);
 
 						// creating new HashMap
@@ -930,7 +931,6 @@ public class newViolation extends MapActivity {
 						//map.put(TAG_NAME, name);
 
 						// adding HashList to ArrayList
-						avList.add(name);
 					}
 				} else {
 					// do nothing
@@ -950,12 +950,12 @@ public class newViolation extends MapActivity {
 			// updating UI from Background Thread
 			runOnUiThread(new Runnable() {
 				public void run() {
-					if(avList != null) {
-						String[] avListString=new String[avList.size()];
+					if(categories != null) {
+						String[] avListString=new String[categories.size()];
 						//Toast.makeText(newViolation.this, otm.iller.get(1).getIlAdi() ,Toast.LENGTH_LONG).show();
-						for (int i = 0 ; i < avList.size(); i ++)
+						for (int i = 0 ; i < categories.size(); i ++)
 						{
-							avListString[i] = avList.get(i);
+							avListString[i] = categories.get(i).name;
 						}
 						ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(newViolation.this,
 								android.R.layout.simple_spinner_item, avListString);
@@ -1036,7 +1036,7 @@ public class newViolation extends MapActivity {
 			try {
 				// getting JSON string from URL
 				params.add(new BasicNameValuePair("object_id", Integer.toString(avCount)));
-				String value = (String)avListHash.get(spinPos);
+				String value = Integer.toString(categories.get(spinPos).id);
 				params.add(new BasicNameValuePair("term_taxonomy_id", value));
 				params.add(new BasicNameValuePair("term_order", "0"));
 				JSONObject json = jsonParser.makeHttpRequest(url_Term, "POST", params);
@@ -1067,6 +1067,7 @@ public class newViolation extends MapActivity {
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog after getting all products
 			// updating UI from Background Thread
+			new GetAVFields().execute();
 		}
 	}
 
@@ -1255,6 +1256,44 @@ class SubscribeViolation extends AsyncTask<String, String, String> {
 		
 
 	}
+
+
+// bu classta fieldlarý çaðýrýcaz
+
+class GetAVFields extends AsyncTask<String, String, String> {
+
+	
+	/**
+	 * Before starting background thread Show Progress Dialog
+	 * */
+	@Override
+	protected void onPreExecute() {
+		
+	}
+
+	
+
+	/**
+	 * Creating subscribtion
+	 * */
+	protected String doInBackground(String... args) {
+		// Building Parameters
+		return null;
+	}
+
+
+	/**
+	 * After completing background task Dismiss the progress dialog
+	 * **/
+	protected void onPostExecute(String file_url) {
+		// dismiss the dialog once done
+	}
+
+	
+
+}
+
+
 
 }
 
