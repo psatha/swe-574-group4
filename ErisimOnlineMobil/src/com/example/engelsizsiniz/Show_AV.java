@@ -55,6 +55,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources.NotFoundException;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
@@ -73,7 +74,7 @@ public class Show_AV extends MapActivity {
 	//gui values
 	protected Spinner disabilityType;
 	public static int spinPos = 0;
-	protected Button backMenu, updateButton;
+	protected Button backMenu, updateButton,subscribeButton;
 	protected EditText noteText, titleText;
 	protected ImageView  imageView;
 	protected static TextView adres;
@@ -92,10 +93,13 @@ public class Show_AV extends MapActivity {
 	public static String note;
 	public static String title;
 	public static int ID;
+	public static String idDB;
 	public static String adresInfo;
 
 	private static String url_Pos = "http://swe.cmpe.boun.edu.tr/fall2012g4/getPos.php";
-
+	private static String url_subscribeNewViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/subscribeNewViolation.php";
+	private static String url_querySubscription = "http://swe.cmpe.boun.edu.tr/fall2012g4/querySubscription.php";
+	private int subscriptionId ;
 	JSONParser jsonParser = new JSONParser();
 	public ProgressDialog pDialog;
 	public JSONArray products = null;
@@ -105,14 +109,19 @@ public class Show_AV extends MapActivity {
 	static String guid;
 
 	public static File f;
-
+	public ArrayList<String> subsList = new ArrayList();
+	JSONArray subscriptions = null;
+	private static final String TAG_SUCCESS = "success";
+	private static final String TAG_SUBSCRIPTIONS = "subscription";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// get array position
 		super.onCreate(savedInstanceState);
 		products = null;
 		position = getIntent().getExtras().getInt("position");
+		idDB = getIntent().getExtras().getString("idDb");
 		if(getIntent().getExtras().getString("search") == null) {
+		
 			if(MyAvList.avList.size()!=0){
 				note = MyAvList.avList.get(position).getPost_content();
 				title = MyAvList.avList.get(position).getPost_title();
@@ -134,6 +143,9 @@ public class Show_AV extends MapActivity {
 		defineGUI();
 		setListeners();
 		new getPosition().execute();
+		//new QuerySubscription().execute();
+
+		
 	}
 
 	@Override
@@ -205,6 +217,7 @@ public class Show_AV extends MapActivity {
 		disabilityType = (Spinner) findViewById(R.id.avSpin);
 		//get value
 		backMenu = (Button) findViewById(R.id.backtolist);
+		subscribeButton=(Button)findViewById(R.id.subscribeButton);
 		adres = (TextView) findViewById(R.id.AVadres);
 		//get adres
 		imageView = (ImageView) findViewById(R.id.imageView2);
@@ -229,6 +242,13 @@ public class Show_AV extends MapActivity {
 		backMenu.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				finish();
+			}
+
+		});
+		
+		subscribeButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				new SubscribeViolation().execute();
 			}
 
 		});
@@ -390,7 +410,7 @@ public class Show_AV extends MapActivity {
 					}
 
 					new spinnerSet().execute();
-
+					
 				} else {
 					// do nothing
 					backMenu();
@@ -413,6 +433,7 @@ public class Show_AV extends MapActivity {
 			toast = Toast.makeText(getApplicationContext(), "Resme Týklayýp Galeride Açabilirsiniz", Toast.LENGTH_SHORT);
 			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
+
 
 		}
 
@@ -452,6 +473,168 @@ public class Show_AV extends MapActivity {
 		}
 
 	}
+class SubscribeViolation extends AsyncTask<String, String, String> {
 
+		
+		/**
+		 * Before starting background thread Show Progress Dialog
+		 * */
+		@Override
+		protected void onPreExecute() {
+			
+		}
+
+		
+
+		/**
+		 * Creating subscribtion
+		 * */
+		protected String doInBackground(String... args) {
+
+			
+			// Building Parameters
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+			params.add(new BasicNameValuePair("user_id", idDB));
+			params.add(new BasicNameValuePair("post_id", ID+""));
+			
+
+			// getting JSON Object
+			// Note that create product url accepts POST method
+			JSONObject json = jsonParser.makeHttpRequest(url_subscribeNewViolation,
+					"GET", params);
+
+			// check log cat fro response
+			Log.d("Create Response", json.toString());
+
+			// check for success tag
+			try {
+				int success = json.getInt(TAG_SUCCESS);
+
+				if (success == 1) {
+					// successfully created product
+			
+				} else {
+					// failed to create product
+					backMenu();
+				}
+			} catch (JSONException e) {
+				backMenu();
+				e.printStackTrace();
+			}
+
+			return null;
+		}
+
+
+		/**
+		 * After completing background task Dismiss the progress dialog
+		 * **/
+		protected void onPostExecute(String file_url) {
+			// dismiss the dialog once done
+			pDialog.dismiss();
+			Toast toast;
+			toast = Toast.makeText(getApplicationContext(), "Violation takibe alýndý", Toast.LENGTH_SHORT);
+			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
+			toast.show();
+			
+
+			Intent myIntent = new Intent(getApplicationContext(), home.class);
+			startActivityForResult(myIntent, 0);
+			finish();
+		}
+
+		
+
+	}
+class QuerySubscription extends AsyncTask<String, String, String> {
+
+	
+	/**
+	 * Before starting background thread Show Progress Dialog
+	 * */
+	@Override
+	protected void onPreExecute() {
+		
+	}
+
+	
+
+	/**
+	 * Creating subscribtion
+	 * */
+	protected String doInBackground(String... args) {
+
+		
+				
+		if (isCancelled()){
+			
+		}
+		// Building Parameters
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+		params.add(new BasicNameValuePair("user_id", idDB));
+		params.add(new BasicNameValuePair("post_id", ID+""));
+		
+		
+		// getting JSON Object
+		// Note that create product url accepts POST method
+		JSONObject json = jsonParser.makeHttpRequest(url_querySubscription,
+				"GET", params);
+
+		// check log cat fro response
+		Log.d("Create Response", json.toString());
+
+		// check for success tag
+		try {
+			int success = json.getInt(TAG_SUCCESS);
+
+			if (success == 1) {
+				// successfully created product
+				subscriptions = json.getJSONArray(TAG_SUBSCRIPTIONS);
+
+				
+				
+					JSONObject c = subscriptions.getJSONObject(0);
+
+					// Storing each json item in variable
+					//String id = c.getString(TAG_TERMSID);
+					
+					subscriptionId = Integer.parseInt(c.getString("ID"));
+
+					finish();
+		
+			} else {
+				// failed to create product
+				subscriptionId =0;
+			}
+		} catch (JSONException e) {
+			backMenu();
+			e.printStackTrace();
+		}
+		
+		
+		return null;
+	}
+
+
+	/**
+	 * After completing background task Dismiss the progress dialog
+	 * **/
+	protected void onPostExecute(String file_url) {
+		// dismiss the dialog once done
+		pDialog.dismiss();
+		Toast toast;
+		toast = Toast.makeText(getApplicationContext(), "Violation takibe alýndý", Toast.LENGTH_SHORT);
+		toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
+		toast.show();
+		
+
+		Intent myIntent = new Intent(getApplicationContext(), home.class);
+		startActivityForResult(myIntent, 0);
+		finish();
+	}
+
+	
+
+}
 
 }

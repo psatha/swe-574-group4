@@ -315,7 +315,8 @@ public class newViolation extends MapActivity {
 			// values correct save it to external hd of android
 			new LoadAllAV().execute();
 			//uploadFile();
-			new submitViolation().execute();
+			
+			
 		}
 	}
 
@@ -987,7 +988,7 @@ public class newViolation extends MapActivity {
 				if (success == 1) {
 					// products found
 					// Getting Array of Products
-					products = json.getJSONArray("posts");
+					products = json.getJSONArray("avler");
 					JSONObject c = products.getJSONObject(products.length()-1);
 					avCount = c.getInt("ID") + 1;
 					// adding HashList to ArrayList
@@ -1008,6 +1009,8 @@ public class newViolation extends MapActivity {
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog after getting all products
 			// updating UI from Background Thread
+			
+			new submitViolation().execute();
 		}
 	}
 

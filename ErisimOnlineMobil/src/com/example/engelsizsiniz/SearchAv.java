@@ -79,8 +79,6 @@ public class SearchAv extends MapActivity{
 		
 			idDB = getIntent().getExtras().getString("id");
 			
-			
-		
 		setContentView(R.layout.activity_search_violation);
 		defineGUI();
 		setListeners();

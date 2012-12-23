@@ -22,6 +22,7 @@ public class ItemOverLayForSearch extends ItemizedOverlay {
 	private Context pcontext;
 	protected MapController viewController;
 	public int indexg =0;
+	public String userId;
 
 	public ItemOverLayForSearch(Drawable arg0, Context context) {
 		super(boundCenterBottom(arg0));
@@ -57,7 +58,10 @@ public class ItemOverLayForSearch extends ItemizedOverlay {
 		    		Intent myIntent = new Intent(pcontext, Show_AV.class);
 		    		myIntent.putExtra("position", Integer.parseInt(hOverlays.get(indexg).getSnippet()));
 		    		myIntent.putExtra("search", "search");
+		    		myIntent.putExtra("idDb", userId);
+		    		
 		    		pcontext.startActivity(myIntent);
+		    		
 		       }
 		   })
 		   .setNegativeButton("Kapat", new DialogInterface.OnClickListener() {

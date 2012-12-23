@@ -62,6 +62,7 @@ public class Search_AV extends MapActivity {
 
 	public static String note;
 	public static String title;
+	public static String idDb;
 	public static int ID;
 	public static String adresInfo;
 	public static EditText adres;
@@ -85,6 +86,8 @@ public class Search_AV extends MapActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		new LoadAllProducts().execute();
 		super.onCreate(savedInstanceState);
+		idDb = getIntent().getExtras().getString("id");
+		
 		setContentView(R.layout.activity_search__av);
 		defineGUI();
 		setListeners();
@@ -122,6 +125,7 @@ public class Search_AV extends MapActivity {
 			Drawable drawable2 = this.getResources().getDrawable(R.drawable.marker);
 			itemoverlay = new ItemOverlayForGet(drawable, this);
 			itemoverlay2 = new ItemOverLayForSearch(drawable2, this);
+			itemoverlay2.userId =idDb;
 		} catch (NotFoundException e) {
 			Toast.makeText(Search_AV.this, "Lütfen Baðlantý Ayarlarýnýzý Kontrol Ediniz",
 					Toast.LENGTH_LONG).show();
@@ -404,7 +408,6 @@ public void onBackPressed() {
 						double lang  = c.getDouble("lng");
 						AV.getSetAV(idPost, cat, lat, lang);
 					}
-
 				} else {
 					// do nothing
 					backMenu();
