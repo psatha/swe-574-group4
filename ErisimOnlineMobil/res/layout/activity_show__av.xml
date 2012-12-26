@@ -40,14 +40,15 @@
     
             <requestFocus />
         </EditText>
-	<Button
+	<ImageButton
         android:id="@+id/subscribeButton"
-        style="?android:attr/buttonStyleSmall"
+        android:src="@drawable/takipet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+        android:background="@null"
      	android:visibility="invisible" 
-        android:text="+" />
+        />
         <EditText
             android:id="@+id/AVnoteText"
             android:layout_width="wrap_content"
@@ -97,15 +98,16 @@
             android:onClick="imageClick"
             android:src="@android:drawable/ic_menu_gallery" />
 
-        <Button
+        <ImageButton
             android:id="@+id/unsubscribeButton"
-            style="?android:attr/buttonStyleSmall"
+            android:src="@drawable/takibibirak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
+            android:background="@null"
             android:visibility="invisible" 
-            android:text="-" />
+            />
 
         <CheckBox
             android:id="@+id/solvedBox"

@@ -70,6 +70,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -82,7 +83,8 @@ public class Show_AV extends MapActivity {
 	//gui values
 	protected Spinner disabilityType;
 	public static int spinPos = 0;
-	protected Button updateAVButton, updateButton,subscribeButton, unSubscribeButton;
+	protected Button updateAVButton, updateButton;
+	protected ImageButton subscribeButton, unSubscribeButton;
 	private CheckBox solvedBox;
 	public static String solved = "no";
 	protected EditText noteText, titleText;
@@ -252,8 +254,8 @@ public class Show_AV extends MapActivity {
 		//get value
 		updateAVButton = (Button) findViewById(R.id.updateAV);
 		solvedBox = (CheckBox) findViewById(R.id.solvedBox);
-		subscribeButton=(Button)findViewById(R.id.subscribeButton);
-		unSubscribeButton=(Button)findViewById(R.id.unsubscribeButton);
+		subscribeButton=(ImageButton)findViewById(R.id.subscribeButton);
+		unSubscribeButton=(ImageButton)findViewById(R.id.unsubscribeButton);
 		adres = (TextView) findViewById(R.id.AVadres);
 		//get adres
 		imageView = (ImageView) findViewById(R.id.imageView2);
