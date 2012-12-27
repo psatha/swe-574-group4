@@ -13,6 +13,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.StringTokenizer;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -110,6 +111,7 @@ public class newViolation extends MapActivity {
 	public static String noteDB, titleDB, spinnerDB, filePathDB, idDB, usernameDB, usermailDB;
 	public static ArrayList<String> fileDeleted = new ArrayList<String>();
 	public static ArrayList<Category> categories = new ArrayList<Category>();
+	public static ArrayList<Integer> selectedCategoryFields = new ArrayList<Integer>() ;
 	public static int avCount;
 
 	
@@ -255,6 +257,13 @@ public class newViolation extends MapActivity {
 				// Your code here
 				spinPos = i;
 				createAVInput(spinPos);
+				StringTokenizer st = new StringTokenizer(categories.get(i).fields,",");
+				//selectedCategoryFields.clear();
+				int j=0;
+				//while (st.hasMoreElements()) {
+				//	selectedCategoryFields.set(j, Integer.parseInt(st.nextElement().toString()));	
+				//	j++;
+				//	}
 			} 
 
 			public void onNothingSelected(AdapterView<?> adapterView) {
@@ -920,7 +929,8 @@ public class newViolation extends MapActivity {
 						//String id = c.getString(TAG_TERMSID);
 						String name = c.getString(TAG_NAME);
 						String ID = c.getString("term_id");
-						categories.add(new Category(Integer.parseInt(ID), name, "", i));
+						String fields = c.getString("fields");
+						categories.add(new Category(Integer.parseInt(ID), name,fields , i));
 						//System.out.println(name);
 
 						// creating new HashMap
@@ -954,8 +964,8 @@ public class newViolation extends MapActivity {
 						String[] avListString=new String[categories.size()];
 						//Toast.makeText(newViolation.this, otm.iller.get(1).getIlAdi() ,Toast.LENGTH_LONG).show();
 						for (int i = 0 ; i < categories.size(); i ++)
-						{
-							avListString[i] = categories.get(i).name;
+						{		
+							avListString[i] = categories.get(i).name;			
 						}
 						ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(newViolation.this,
 								android.R.layout.simple_spinner_item, avListString);
