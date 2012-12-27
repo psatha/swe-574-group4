@@ -216,7 +216,7 @@ public class registration extends Activity {
 		protected String doInBackground(String... args) {
 
 			Date date = new Date( );
-		    SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+		    SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd kk:mm:ss");
 		    System.out.println(ft.format(date).toString());
 			
 			// Building Parameters

@@ -1,0 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/scrollview"
+     android:layout_width ="fill_parent"
+     android:layout_height="fill_parent"
+     android:scrollbars="vertical"
+     android:fillViewport="true"   
+     >
+    
+     <LinearLayout 
+           android:id="@+id/commentLayout"
+           android:layout_width ="fill_parent"
+     	   android:layout_height="wrap_content"
+     	   android:orientation="vertical"
+           >
+      	   
+
+    <EditText
+        android:id="@+id/commentText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:scrollbars="vertical" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/newComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yorum Ekle" />
+
+	   </LinearLayout>
+	   
+</ScrollView>

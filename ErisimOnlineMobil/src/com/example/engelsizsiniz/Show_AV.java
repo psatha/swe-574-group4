@@ -61,6 +61,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources.NotFoundException;
 import android.database.Cursor;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -91,6 +93,7 @@ public class Show_AV extends MapActivity {
 	protected ImageView  imageView;
 	protected static TextView adres;
 	protected Uri imageUri;
+	protected TextView commentText;
 
 	//map values
 	protected LocationManager locationManager;
@@ -269,20 +272,26 @@ public class Show_AV extends MapActivity {
 		titleText.setFocusable(false);
 		titleText.setEnabled(false);
 		mapView = (MapView) findViewById(R.id.mapview);
-
-
+		commentText = (TextView) findViewById(R.id.CommentText);
+		
+		String data = "Yorum Yaz ve Oku";
+		SpannableString str = new SpannableString(data);
+		str.setSpan(new UnderlineSpan(), 0, data.length(), 0);
+		commentText.setText(str);
+		
 		//city.setEnabled(false);
 		//district.setEnabled(false);
 		//street.setEnabled(false);
 	}
 
 	protected void setListeners() {
+		
 		updateAVButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				dialogBoxGenerate();
 			}
 
-		});
+		}); 
 
 		subscribeButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
@@ -312,6 +321,16 @@ public class Show_AV extends MapActivity {
 				System.out.println("un basýldý");
 			}
 
+		});
+		
+		commentText.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				//texte basýldý if not 0
+				Intent myIntent = new Intent(getApplicationContext(), ShowComment.class);
+				myIntent.putExtra("id", ID);
+				startActivityForResult(myIntent, 0);
+				finish();
+			}
 		});
 	}
 
@@ -390,6 +409,7 @@ public class Show_AV extends MapActivity {
 		intent.setDataAndType(Uri.parse("file://" + f.getAbsolutePath()), "image/*");
 		startActivity(intent);
 	}
+	
 
 	protected void getLocation() {
 
@@ -1039,7 +1059,7 @@ public class Show_AV extends MapActivity {
 
 		public boolean submitForAttachment(){
 			Date date = new Date( );
-			SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+			SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd kk:mm:ss");
 			String time = ft.format(date).toString();
 			String[] names = filePathDB.split("/");
 			String fileNameValue = names[names.length-1];

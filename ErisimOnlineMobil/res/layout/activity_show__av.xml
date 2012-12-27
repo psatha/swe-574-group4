@@ -9,19 +9,19 @@
         android:id="@+id/mapview"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.70"
+        android:layout_weight="0.50"
         android:apiKey="0ypJhU6f7Kv58vLdGHpEVbbcQfC492ifGjPuwmg"
         android:clickable="true" />
-    
+   
      <TextView
             android:id="@+id/AVadres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_centerHorizontal="true"
             />
 
-   		<RelativeLayout
+                <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.20"
@@ -36,18 +36,18 @@
             android:ems="10"
             android:hint="AV Başlığı"
             android:inputType="textPersonName" >
-		
-    
+               
+   
             <requestFocus />
         </EditText>
-	<ImageButton
+        <ImageButton
         android:id="@+id/subscribeButton"
         android:src="@drawable/takipet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:background="@null"
-     	android:visibility="invisible" 
+        android:visibility="invisible"
         />
         <EditText
             android:id="@+id/AVnoteText"
@@ -87,17 +87,6 @@
             android:layout_below="@+id/AVnoteText"
             android:layout_toRightOf="@+id/textView1" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/updateAV"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/avSpin"
-            android:layout_toLeftOf="@+id/solvedBox"
-            android:onClick="imageClick"
-            android:src="@android:drawable/ic_menu_gallery" />
-
         <ImageButton
             android:id="@+id/unsubscribeButton"
             android:src="@drawable/takibibirak"
@@ -106,16 +95,36 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:background="@null"
-            android:visibility="invisible" 
+            android:visibility="invisible"
             />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/CommentText"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/avSpin"
+            android:layout_toLeftOf="@+id/solvedBox"
+            android:onClick="imageClick"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/CommentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/updateAV"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15px"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0000ff" />
 
         <CheckBox
             android:id="@+id/solvedBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/updateAV"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/avSpin"
+            android:layout_centerVertical="true"
             android:text="Solved" />
 
     </RelativeLayout>

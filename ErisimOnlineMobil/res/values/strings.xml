@@ -13,5 +13,6 @@
     <string name="title_activity_show__av">Show_AV</string>
     <string name="title_activity_search_av"></string>
     <string name="title_activity_search__av">Search_AV</string>
+    <string name="title_activity_show_comment">ShowComment</string>
 
 </resources>

@@ -662,7 +662,7 @@ public class newViolation extends MapActivity {
 		protected String doInBackground(String... args) {
 
 			Date date = new Date( );
-			SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+			SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd kk:mm:ss");
 			String time = ft.format(date).toString();
 			System.out.println(time);
 			// Building Parameters
@@ -801,7 +801,7 @@ public class newViolation extends MapActivity {
 
 		public boolean submitForAttachment(){
 			Date date = new Date( );
-			SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+			SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd kk:mm:ss");
 			String time = ft.format(date).toString();
 			String[] names = filePathDB.split("/");
 			String fileNameValue = names[names.length-1];
