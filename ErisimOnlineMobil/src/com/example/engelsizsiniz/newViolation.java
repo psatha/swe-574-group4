@@ -257,13 +257,14 @@ public class newViolation extends MapActivity {
 				// Your code here
 				spinPos = i;
 				createAVInput(spinPos);
-				StringTokenizer st = new StringTokenizer(categories.get(i).fields,",");
-				//selectedCategoryFields.clear();
+				selectedCategoryFields.clear();
+				String string = categories.get(i).fields;
+				String[] parts = string.split(",");
 				int j=0;
-				//while (st.hasMoreElements()) {
-				//	selectedCategoryFields.set(j, Integer.parseInt(st.nextElement().toString()));	
-				//	j++;
-				//	}
+				while (j < parts.length) {
+					selectedCategoryFields.add( Integer.parseInt(parts[j++]));	
+					
+					}
 			} 
 
 			public void onNothingSelected(AdapterView<?> adapterView) {
