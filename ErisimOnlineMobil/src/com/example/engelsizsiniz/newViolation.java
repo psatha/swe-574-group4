@@ -112,6 +112,7 @@ public class newViolation extends MapActivity {
 	public static ArrayList<String> fileDeleted = new ArrayList<String>();
 	public static ArrayList<Category> categories = new ArrayList<Category>();
 	public static ArrayList<Integer> selectedCategoryFields = new ArrayList<Integer>() ;
+	public static ArrayList<Field> fields = new ArrayList<Field>();
 	public static int avCount;
 
 	
@@ -131,7 +132,7 @@ public class newViolation extends MapActivity {
 
 	// products JSONArray
 	JSONArray products = null;
-
+    JSONArray categoryFields =null;
 
 	private static String url_newViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/newViolation.php";
 	private static String url_all_AVtypes = "http://swe.cmpe.boun.edu.tr/fall2012g4/avTypes.php";
@@ -141,7 +142,8 @@ public class newViolation extends MapActivity {
 	private static String url_TermMeta = "http://swe.cmpe.boun.edu.tr/fall2012g4/newTermMeta.php";
 	private static String url_getAVFields = "http://swe.cmpe.boun.edu.tr/fall2012g4/getAVVal.php";
 	private static String url_subscribeNewViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/subscribeNewViolation.php";
-
+	private static String url_av_fields = "http://swe.cmpe.boun.edu.tr/fall2012g4/avFields.php";
+	
 	public static String streetName ="", districtName ="", cityName = "", countryName = "", postCode = "", mahalle = "";
 
 	@Override
@@ -257,14 +259,21 @@ public class newViolation extends MapActivity {
 				// Your code here
 				spinPos = i;
 				createAVInput(spinPos);
-				selectedCategoryFields.clear();
-				String string = categories.get(i).fields;
+				fields.clear();
+			/*	String string = categories.get(i).fields;
 				String[] parts = string.split(",");
 				int j=0;
 				while (j < parts.length) {
+					if(j>1)
 					selectedCategoryFields.add( Integer.parseInt(parts[j++]));	
 					
 					}
+				if(!selectedCategoryFields.isEmpty()){
+					new GetAVFields().execute();
+				}*/
+				if(categories.get(i).formId!=0)
+					new GetAVFields().execute();
+				
 			} 
 
 			public void onNothingSelected(AdapterView<?> adapterView) {
@@ -931,7 +940,8 @@ public class newViolation extends MapActivity {
 						String name = c.getString(TAG_NAME);
 						String ID = c.getString("term_id");
 						String fields = c.getString("fields");
-						categories.add(new Category(Integer.parseInt(ID), name,fields , i));
+						int formId =Integer.parseInt(c.getString("form_Id"));
+						categories.add(new Category(Integer.parseInt(ID), name,fields,formId , i));
 						//System.out.println(name);
 
 						// creating new HashMap
@@ -1289,8 +1299,68 @@ class GetAVFields extends AsyncTask<String, String, String> {
 	 * Creating subscribtion
 	 * */
 	protected String doInBackground(String... args) {
+
 		// Building Parameters
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+		try {
+			// getting JSON string from URL
+			
+			params.add(new BasicNameValuePair("form_id", categories.get(spinPos).formId+""));
+			
+			
+			JSONObject json = jsonParser.makeHttpRequest(url_av_fields, "GET", params);
+			// Check your log cat for JSON reponse
+			//Log.d("All Products: ", json.toString());
+			// Checking for SUCCESS TAG
+			int success = json.getInt(TAG_SUCCESS);
+
+			if (success == 1) {
+				
+				categoryFields = json.getJSONArray("fields");
+
+				// looping through All Products
+				for (int i = 0; i < categoryFields.length(); i++) {
+					JSONObject c = categoryFields.getJSONObject(i);
+
+					// Storing each json item in variable
+					//String id = c.getString(TAG_TERMSID);
+				//	int fieldId =Integer.parseInt( c.getString("field_Id"));
+					String fieldLabel = c.getString("field_label");
+					String fieldType = c.getString("field_type");
+					String fieldValues = c.getString("field_values");
+					String fieldTooltip = c.getString("field_tooltip");
+				//	boolean fieldReq = (c.getString("field_req").isEmpty()||c.getString("field_req").equalsIgnoreCase("0"))? false :true;
+				//	int fieldMinLength = Integer.parseInt(c.getString("field_min_length"));
+				//	int fieldMaxValue = Integer.parseInt(c.getString("field_max_value"));
+				//	int fieldMinValue =Integer.parseInt( c.getString("field_min_value"));
+					
+					fields.add(new Field(fieldLabel,fieldType,fieldValues,fieldTooltip));
+					//System.out.println(name);
+
+					// creating new HashMap
+					//HashMap<String, String> map = new HashMap<String, String>();
+
+					// adding each child node to HashMap key => value
+					//map.put(TAG_TERMSID, id);
+					//map.put(TAG_NAME, name);
+
+					// adding HashList to ArrayList
+				// products found
+				// Getting Array of Products
+				// adding HashList to ArrayList
+				}	
+
+			} else {
+				// do nothing
+				backMenu();
+			}
+		} catch (JSONException e) {
+			backMenu();
+		}
+
 		return null;
+	
+		
 	}
 
 

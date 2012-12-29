@@ -5,12 +5,13 @@ public class Category {
 	int id, pos;
 	String name;
 	String fields;
-	
-	public Category (int id, String name, String fields, int pos) {
+	int formId;
+	public Category (int id, String name, String fields,int formId, int pos) {
 		this.id = id;
 		this.name = name;
 		this.fields = fields;
 		this.pos = pos;
+		this.formId =formId;
 	}
 
 	public int getId() {
@@ -35,6 +36,9 @@ public class Category {
 
 	public void setFields(String fields) {
 		this.fields = fields;
+	}
+	public void setFormId(int formId) {
+		this.formId = formId;
 	}
 	
 	
