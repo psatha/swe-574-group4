@@ -84,7 +84,7 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/TextView02"
+            android:layout_below="@+id/TextView03"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/TextView01"
@@ -97,7 +97,7 @@
             android:layout_alignBaseline="@+id/photoButton"
             android:layout_alignBottom="@+id/photoButton"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/TextView02"
+            android:layout_below="@+id/TextView03"
             android:text="Image"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -107,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/TextView02"
+            android:layout_below="@+id/TextView03"
             android:layout_toRightOf="@+id/photoButton"
             android:text="Galeriden Seç" />
 
@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/button1"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/disabilitySpin"
+            android:layout_below="@+id/AVValspinner03"
             android:layout_toRightOf="@+id/uploadButton"
             android:src="@android:drawable/ic_menu_gallery" />
 
@@ -137,17 +137,19 @@
             android:layout_centerVertical="true"
             android:text="AV Degeri"
             android:layout_below="@+id/disabilitySpin"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility ="gone" />
         <Spinner
             android:id="@+id/AVValspinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_above="@+id/photoButton"
+            android:layout_below="@+id/disabilitySpin"
+            android:layout_above="@+id/AVValspinner03"
             android:layout_toRightOf="@+id/TextView02"
-            android:visibility="invisible" />
+            android:visibility="gone" />
 
+        
         <EditText
             android:id="@+id/AVValeditText"
             android:layout_width="wrap_content"
@@ -156,7 +158,37 @@
             android:layout_above="@+id/photoButton"
             android:layout_toRightOf="@+id/TextView02"
             android:ems="10"
-            android:visibility="invisible" />
+            android:visibility="gone" />
+        
+        
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="AV Degeri"
+            android:layout_below="@+id/TextView02"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility ="gone" />
+        <Spinner
+            android:id="@+id/AVValspinner03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/photoButton"
+            android:layout_toRightOf="@+id/TextView03"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/AVValeditText03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/photoButton"
+            android:layout_toRightOf="@+id/TextView03"
+            android:ems="10"
+            android:visibility="gone" />
 
     </RelativeLayout>
 

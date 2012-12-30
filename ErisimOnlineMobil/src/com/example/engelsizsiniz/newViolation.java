@@ -97,12 +97,12 @@ public class newViolation extends MapActivity {
 	protected List<Overlay> mapOverlays;
 
 	//protected Spinner disabilityType, city, district, street;
-	protected Spinner disabilityType, avValSpin;
+	protected Spinner disabilityType, avValSpin,avValSpin03;
 	public static int spinPos = 0;
 	protected Button backMenu, uploadButton, photoButton, submitButton;
-	protected EditText noteText, titleText, avValText;
+	protected EditText noteText, titleText, avValText,avValText03;
 	protected ImageView  imageView;
-	protected TextView path, adres;
+	protected TextView path, adres,textView02,textView03,textView04,textView05,textView06;
 	protected Uri imageUri;
 	
 
@@ -258,8 +258,12 @@ public class newViolation extends MapActivity {
 			public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) { 
 				// Your code here
 				spinPos = i;
-				createAVInput(spinPos);
 				fields.clear();
+				if(categories.get(i).formId!=0)
+					new GetAVFields().execute();
+				
+				
+				
 			/*	String string = categories.get(i).fields;
 				String[] parts = string.split(",");
 				int j=0;
@@ -271,8 +275,6 @@ public class newViolation extends MapActivity {
 				if(!selectedCategoryFields.isEmpty()){
 					new GetAVFields().execute();
 				}*/
-				if(categories.get(i).formId!=0)
-					new GetAVFields().execute();
 				
 			} 
 
@@ -284,11 +286,11 @@ public class newViolation extends MapActivity {
 
 	}
 
-	public void createAVInput(int pos) {
+	public void createAVInput(int pos,  ArrayList<Field> fields) {
 
 		
 		// bu noktada seçili av tipine göre textbox veya spinner gözükecek ve içerisinde valuelar olacak
-		if (pos != 0) {
+		/*if (pos != 0) {
 			if(pos % 2 == 0)
 			{
 				avValSpin.setVisibility(View.VISIBLE);
@@ -297,6 +299,49 @@ public class newViolation extends MapActivity {
 			else {
 				avValSpin.setVisibility(View.GONE);
 				avValText.setVisibility(View.VISIBLE);
+			}
+		}*/
+	
+		
+		for(int k=5;k<fields.size()&&k<12;k++){
+			//5
+			if( k==5 && fields.get(5).getFieldType().equalsIgnoreCase("drop-down")){
+				String string = fields.get(5).getFieldValues();
+				String[] parts = string.split(",");
+				
+				ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(newViolation.this,
+						android.R.layout.simple_spinner_item, parts);
+				textView02.setVisibility(View.VISIBLE);
+				textView02.setText(fields.get(5).fieldLabel);
+				avValSpin.setAdapter(avAdapter);
+				//
+				avValSpin.setVisibility(View.VISIBLE);
+				avValText.setVisibility(View.GONE);
+			}else if(k==5 && (fields.get(5).getFieldType().equalsIgnoreCase("text area")||fields.get(5).getFieldType().equalsIgnoreCase("text box"))){
+				textView02.setVisibility(View.VISIBLE);
+				textView02.setText(fields.get(5).fieldLabel);
+				avValSpin.setVisibility(View.GONE);
+				avValText .setVisibility(View.VISIBLE);
+			}
+			//6
+			
+			if( k==6 && fields.get(6).getFieldType().equalsIgnoreCase("drop-down")){
+				String string = fields.get(6).getFieldValues();
+				String[] parts = string.split(",");
+				
+				ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(newViolation.this,
+						android.R.layout.simple_spinner_item, parts);
+				textView03.setVisibility(View.VISIBLE);
+				textView03.setText(fields.get(6).fieldLabel);
+				avValSpin03.setAdapter(avAdapter);
+				//
+				avValSpin03.setVisibility(View.VISIBLE);
+				avValText03.setVisibility(View.GONE);
+			}else if(k==5 && (fields.get(6).getFieldType().equalsIgnoreCase("text area")||fields.get(6).getFieldType().equalsIgnoreCase("text box"))){
+				textView02.setVisibility(View.VISIBLE);
+				textView02.setText(fields.get(5).fieldLabel);
+				avValSpin03.setVisibility(View.GONE);
+				avValText03 .setVisibility(View.VISIBLE);
 			}
 		}
 
@@ -589,7 +634,13 @@ public class newViolation extends MapActivity {
 		imageView = (ImageView) findViewById(R.id.imageView1);
 		noteText = (EditText) findViewById(R.id.noteText);
 		titleText = (EditText) findViewById(R.id.titleText);
-
+		textView02 =(TextView)findViewById(R.id.TextView02);
+		textView03 =(TextView)findViewById(R.id.TextView03);
+		/*textView04 =(TextView)findViewById(R.id.TextView04);
+		textView05 =(TextView)findViewById(R.id.TextView05);
+		textView06 =(TextView)findViewById(R.id.TextView06);*/
+		avValSpin03 = (Spinner) findViewById(R.id.AVValspinner03);
+		avValText03 = (EditText) findViewById(R.id.AVValeditText03);
 		if(noteIntent != null || noteIntent != "")
 		{
 			noteText.setText(noteIntent);
@@ -1323,7 +1374,7 @@ class GetAVFields extends AsyncTask<String, String, String> {
 					JSONObject c = categoryFields.getJSONObject(i);
 
 					// Storing each json item in variable
-					//String id = c.getString(TAG_TERMSID);
+				
 				//	int fieldId =Integer.parseInt( c.getString("field_Id"));
 					String fieldLabel = c.getString("field_label");
 					String fieldType = c.getString("field_type");
@@ -1335,19 +1386,7 @@ class GetAVFields extends AsyncTask<String, String, String> {
 				//	int fieldMinValue =Integer.parseInt( c.getString("field_min_value"));
 					
 					fields.add(new Field(fieldLabel,fieldType,fieldValues,fieldTooltip));
-					//System.out.println(name);
-
-					// creating new HashMap
-					//HashMap<String, String> map = new HashMap<String, String>();
-
-					// adding each child node to HashMap key => value
-					//map.put(TAG_TERMSID, id);
-					//map.put(TAG_NAME, name);
-
-					// adding HashList to ArrayList
-				// products found
-				// Getting Array of Products
-				// adding HashList to ArrayList
+					
 				}	
 
 			} else {
@@ -1369,6 +1408,7 @@ class GetAVFields extends AsyncTask<String, String, String> {
 	 * **/
 	protected void onPostExecute(String file_url) {
 		// dismiss the dialog once done
+		createAVInput(spinPos,fields);
 	}
 
 	
