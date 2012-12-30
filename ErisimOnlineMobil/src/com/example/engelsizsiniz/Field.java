@@ -1,6 +1,7 @@
 package com.example.engelsizsiniz;
 
 public class Field {
+	String fieldName;
 	int fieldId;
     String fieldLabel;
     String fieldType;
@@ -11,7 +12,7 @@ public class Field {
 	int fieldMaxValue;
 	int fieldMinLength;
 	
-	public Field (  String fieldLabel,String fieldType, String fieldValues,String fieldTooltip)//int fieldMinValue, int fieldMaxValue, int fieldMinLength ) 
+	public Field (  String fieldName,String fieldLabel,String fieldType, String fieldValues,String fieldTooltip)//int fieldMinValue, int fieldMaxValue, int fieldMinLength ) 
 	{
 	//	this.fieldId = fieldId;
 		this.fieldLabel = fieldLabel;
@@ -22,7 +23,12 @@ public class Field {
 	//	this.fieldMaxValue =fieldMaxValue;
 	//	this.fieldMinLength =fieldMinLength;
 	}
-	
+	public String getFieldName() {
+		return fieldName;
+	}
+	public void setFieldName(String fieldName) {
+		this.fieldName = fieldName;
+	}
 	public int getFieldId() {
 		return fieldId;
 	}

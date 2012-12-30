@@ -324,6 +324,7 @@ public class newViolation extends MapActivity {
 				avValSpin.setAdapter(avAdapter);
 				//
 				avValSpin.setVisibility(View.VISIBLE);
+				avValSpin.setTag(fields.get(5).getFieldName());
 				avValText.setVisibility(View.GONE);
 			}else if(k==5 && (fields.get(5).getFieldType().equalsIgnoreCase("text area")||fields.get(5).getFieldType().equalsIgnoreCase("text box"))){
 				textView02.setVisibility(View.VISIBLE);
@@ -344,6 +345,7 @@ public class newViolation extends MapActivity {
 				avValSpin03.setAdapter(avAdapter);
 				//
 				avValSpin03.setVisibility(View.VISIBLE);
+				avValSpin03.setTag(fields.get(6).getFieldName());
 				avValText03.setVisibility(View.GONE);
 			}else if(k==6 && (fields.get(6).getFieldType().equalsIgnoreCase("text area")||fields.get(6).getFieldType().equalsIgnoreCase("text box"))){
 				textView03.setVisibility(View.VISIBLE);
@@ -363,6 +365,7 @@ public class newViolation extends MapActivity {
 				avValSpin04.setAdapter(avAdapter);
 				//
 				avValSpin04.setVisibility(View.VISIBLE);
+				avValSpin04.setTag(fields.get(7).getFieldName());
 				avValText04.setVisibility(View.GONE);
 			}else if(k==7 && (fields.get(7).getFieldType().equalsIgnoreCase("text area")||fields.get(7).getFieldType().equalsIgnoreCase("text box"))){
 				textView04.setVisibility(View.VISIBLE);
@@ -1211,6 +1214,32 @@ public class newViolation extends MapActivity {
 					new insertMeta().execute("cp_zipcode", postCode);
 					new insertMeta().execute("cp_sys_ad_duration", "500");
 					new insertMeta().execute("cp_av_solved", "no");
+					
+					if(textView02.getVisibility()!=View.GONE){
+						if(avValSpin.getVisibility()!=View.GONE){
+							new insertMeta().execute(avValSpin.getTag().toString(), avValSpin.getSelectedItem().toString());
+						}else if(avValText.getVisibility()!=View.GONE){
+							new insertMeta().execute(avValText.getTag().toString(), avValText.getText().toString());
+						}
+							
+					}
+					if(textView03.getVisibility()!=View.GONE){
+						if(avValSpin03.getVisibility()!=View.GONE){
+							new insertMeta().execute(avValSpin03.getTag().toString(), avValSpin03.getSelectedItem().toString());
+						}else if(avValText03.getVisibility()!=View.GONE){
+							new insertMeta().execute(avValText03.getTag().toString(), avValText03.getText().toString());
+						}
+							
+					}
+					if(textView04.getVisibility()!=View.GONE){
+						if(avValSpin04.getVisibility()!=View.GONE){
+							new insertMeta().execute(avValSpin04.getTag().toString(), avValSpin04.getSelectedItem().toString());
+						}else if(avValText04.getVisibility()!=View.GONE){
+							new insertMeta().execute(avValText04.getTag().toString(), avValText04.getText().toString());
+						}
+							
+					}
+					
 					new SubscribeViolation().execute();
 				} else {
 					// do nothing
@@ -1406,6 +1435,7 @@ class GetAVFields extends AsyncTask<String, String, String> {
 					// Storing each json item in variable
 				
 				//	int fieldId =Integer.parseInt( c.getString("field_Id"));
+					String fieldName = c.getString("field_name");
 					String fieldLabel = c.getString("field_label");
 					String fieldType = c.getString("field_type");
 					String fieldValues = c.getString("field_values");
@@ -1415,7 +1445,7 @@ class GetAVFields extends AsyncTask<String, String, String> {
 				//	int fieldMaxValue = Integer.parseInt(c.getString("field_max_value"));
 				//	int fieldMinValue =Integer.parseInt( c.getString("field_min_value"));
 					
-					fields.add(new Field(fieldLabel,fieldType,fieldValues,fieldTooltip));
+					fields.add(new Field(fieldName,fieldLabel,fieldType,fieldValues,fieldTooltip));
 					
 				}	
 
@@ -1445,6 +1475,11 @@ class GetAVFields extends AsyncTask<String, String, String> {
 
 }
 
+
+
+
+	
+	
 
 
 }
