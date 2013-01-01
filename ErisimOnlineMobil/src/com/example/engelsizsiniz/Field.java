@@ -19,6 +19,7 @@ public class Field {
 		this.fieldType = fieldType;
 		this.fieldValues = fieldValues;
 		this.fieldTooltip = fieldTooltip;
+		this.fieldName=fieldName;
 	//	this.fieldMinValue = fieldMinValue;
 	//	this.fieldMaxValue =fieldMaxValue;
 	//	this.fieldMinLength =fieldMinLength;
