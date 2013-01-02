@@ -94,7 +94,9 @@ public class Show_AV extends MapActivity {
 	protected static TextView adres;
 	protected Uri imageUri;
 	protected TextView commentText;
-
+	protected TextView textView02,textView03,textView04;
+	protected Spinner  avValSpin,avValSpin03,avValSpin04;
+	protected EditText  avValText,avValText03,avValText04;
 	//map values
 	protected LocationManager locationManager;
 	protected Location location;
@@ -130,10 +132,13 @@ public class Show_AV extends MapActivity {
 	private static String url_querySubscription = "http://swe.cmpe.boun.edu.tr/fall2012g4/querySubscription.php";
 	private static String url_unSubscribeViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/unsubscribeViolation.php";
 	private static String url_metaUpdate = "http://swe.cmpe.boun.edu.tr/fall2012g4/metaUpdate.php";
+	private static String url_av_fields = "http://swe.cmpe.boun.edu.tr/fall2012g4/avFieldsToShowAv.php";
+
 	private int subscriptionId ;
 	JSONParser jsonParser = new JSONParser();
 	public ProgressDialog pDialog;
 	public JSONArray products = null;
+    JSONArray categoryFields =null;
 
 	static double langitude, latitude;
 	static String category;
@@ -148,6 +153,7 @@ public class Show_AV extends MapActivity {
 	JSONArray subscriptions = null;
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_SUBSCRIPTIONS = "subscription";
+	public static ArrayList<Field> fields = new ArrayList<Field>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -182,6 +188,7 @@ public class Show_AV extends MapActivity {
 		defineGUI();
 		setListeners();
 		new getPosition().execute();
+		
 		//new QuerySubscription().execute();
 
 
@@ -259,6 +266,18 @@ public class Show_AV extends MapActivity {
 		solvedBox = (CheckBox) findViewById(R.id.solvedBox);
 		subscribeButton=(ImageButton)findViewById(R.id.subscribeButton);
 		unSubscribeButton=(ImageButton)findViewById(R.id.unsubscribeButton);
+		textView02 =(TextView)findViewById(R.id.TextView02);
+		textView03 =(TextView)findViewById(R.id.TextView03);
+		textView04 =(TextView)findViewById(R.id.TextView04);
+		/*textView05 =(TextView)findViewById(R.id.TextView05);
+		textView06 =(TextView)findViewById(R.id.TextView06);*/
+		avValSpin = (Spinner) findViewById(R.id.AVValspinner);
+		avValText = (EditText) findViewById(R.id.AVValeditText);
+
+		avValSpin03 = (Spinner) findViewById(R.id.AVValspinner03);
+		avValText03 = (EditText) findViewById(R.id.AVValeditText03);
+		avValSpin04 = (Spinner) findViewById(R.id.AVValspinner04);
+		avValText04 = (EditText) findViewById(R.id.AVValeditText04);
 		adres = (TextView) findViewById(R.id.AVadres);
 		//get adres
 		imageView = (ImageView) findViewById(R.id.imageView2);
@@ -583,7 +602,7 @@ public class Show_AV extends MapActivity {
 			toast = Toast.makeText(getApplicationContext(), "Resme Týklayýp Galeride Açabilirsiniz", Toast.LENGTH_SHORT);
 			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
-
+			new GetAVFields().execute();
 
 		}
 
@@ -1169,6 +1188,167 @@ public class Show_AV extends MapActivity {
 		}
 
 	}
+	class GetAVFields extends AsyncTask<String, String, String> {
+
+		
+		/**
+		 * Before starting background thread Show Progress Dialog
+		 * */
+		@Override
+		protected void onPreExecute() {
+			
+		}
+
+		
+
+		/**
+		 * Creating subscribtion
+		 * */
+		protected String doInBackground(String... args) {
+
+			// Building Parameters
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+			try {
+				// getting JSON string from URL
+				
+				params.add(new BasicNameValuePair("category_name", category));
+				
+				
+				JSONObject json = jsonParser.makeHttpRequest(url_av_fields, "GET", params);
+				// Check your log cat for JSON reponse
+				//Log.d("All Products: ", json.toString());
+				// Checking for SUCCESS TAG
+				int success = json.getInt(TAG_SUCCESS);
+
+				if (success == 1) {
+					
+					categoryFields = json.getJSONArray("fields");
+
+					// looping through All Products
+					for (int i = 0; i < categoryFields.length(); i++) {
+						JSONObject c = categoryFields.getJSONObject(i);
+
+						// Storing each json item in variable
+					
+					//	int fieldId =Integer.parseInt( c.getString("field_Id"));
+						String fieldName = c.getString("field_name");
+						String fieldLabel = c.getString("field_label");
+						String fieldType = c.getString("field_type");
+						String fieldValues = c.getString("field_values");
+						String fieldTooltip = c.getString("field_tooltip");
+					//	boolean fieldReq = (c.getString("field_req").isEmpty()||c.getString("field_req").equalsIgnoreCase("0"))? false :true;
+					//	int fieldMinLength = Integer.parseInt(c.getString("field_min_length"));
+					//	int fieldMaxValue = Integer.parseInt(c.getString("field_max_value"));
+					//	int fieldMinValue =Integer.parseInt( c.getString("field_min_value"));
+						
+						fields.add(new Field(fieldName,fieldLabel,fieldType,fieldValues,fieldTooltip));
+						
+					}	
+
+				} else {
+					// do nothing
+					backMenu();
+				}
+			} catch (JSONException e) {
+				backMenu();
+			}
+
+			return null;
+		
+			
+		}
 
 
+		/**
+		 * After completing background task Dismiss the progress dialog
+		 * **/
+		protected void onPostExecute(String file_url) {
+			// dismiss the dialog once done
+			createAVInput(fields);
+		}
+		public void createAVInput(  ArrayList<Field> fields) {
+
+			
+			// bu noktada seçili av tipine göre textbox veya spinner gözükecek ve içerisinde valuelar olacak
+			/*if (pos != 0) {
+				if(pos % 2 == 0)
+				{
+					avValSpin.setVisibility(View.VISIBLE);
+					avValText.setVisibility(View.GONE);
+				}
+				else {
+					avValSpin.setVisibility(View.GONE);
+					avValText.setVisibility(View.VISIBLE);
+				}
+			}*/
+		
+			
+			for(int k=5;k<fields.size()&&k<12;k++){
+				//5
+				if( k==5 && fields.get(5).getFieldType().equalsIgnoreCase("drop-down")){
+					String string = fields.get(5).getFieldValues();
+					String[] parts = string.split(",");
+					
+					ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(Show_AV.this,
+							android.R.layout.simple_spinner_item, parts);
+					textView02.setVisibility(View.VISIBLE);
+					textView02.setText(fields.get(5).fieldLabel);
+					avValSpin.setAdapter(avAdapter);
+					//
+					avValSpin.setVisibility(View.VISIBLE);
+					avValSpin.setTag(fields.get(5).getFieldName());
+					avValText.setVisibility(View.GONE);
+				}else if(k==5 && (fields.get(5).getFieldType().equalsIgnoreCase("text area")||fields.get(5).getFieldType().equalsIgnoreCase("text box"))){
+					textView02.setVisibility(View.VISIBLE);
+					textView02.setText(fields.get(5).fieldLabel);
+					avValSpin.setVisibility(View.GONE);
+					avValText .setVisibility(View.VISIBLE);
+				}
+				//6
+				
+				if( k==6 && fields.get(6).getFieldType().equalsIgnoreCase("drop-down")){
+					String string = fields.get(6).getFieldValues();
+					String[] parts = string.split(",");
+					
+					ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(Show_AV.this,
+							android.R.layout.simple_spinner_item, parts);
+					textView03.setVisibility(View.VISIBLE);
+					textView03.setText(fields.get(6).fieldLabel);
+					avValSpin03.setAdapter(avAdapter);
+					//
+					avValSpin03.setVisibility(View.VISIBLE);
+					avValSpin03.setTag(fields.get(6).getFieldName());
+					avValText03.setVisibility(View.GONE);
+				}else if(k==6 && (fields.get(6).getFieldType().equalsIgnoreCase("text area")||fields.get(6).getFieldType().equalsIgnoreCase("text box"))){
+					textView03.setVisibility(View.VISIBLE);
+					textView03.setText(fields.get(6).fieldLabel);
+					avValSpin03.setVisibility(View.GONE);
+					avValText03 .setVisibility(View.VISIBLE);
+				}
+				//7
+				if( k==7 && fields.get(7).getFieldType().equalsIgnoreCase("drop-down")){
+					String string = fields.get(7).getFieldValues();
+					String[] parts = string.split(",");
+					
+					ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(Show_AV.this,
+							android.R.layout.simple_spinner_item, parts);
+					textView04.setVisibility(View.VISIBLE);
+					textView04.setText(fields.get(7).fieldLabel);
+					avValSpin04.setAdapter(avAdapter);
+					//
+					avValSpin04.setVisibility(View.VISIBLE);
+					avValSpin04.setTag(fields.get(7).getFieldName());
+					avValText04.setVisibility(View.GONE);
+				}else if(k==7 && (fields.get(7).getFieldType().equalsIgnoreCase("text area")||fields.get(7).getFieldType().equalsIgnoreCase("text box"))){
+					textView04.setVisibility(View.VISIBLE);
+					textView04.setText(fields.get(7).fieldLabel);
+					avValSpin04.setVisibility(View.GONE);
+					avValText04 .setVisibility(View.VISIBLE);
+				}
+			}
+			
+
+		}
+
+}
 }

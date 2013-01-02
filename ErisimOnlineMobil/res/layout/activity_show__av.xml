@@ -126,6 +126,99 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:text="Solved" />
+        
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="AV Degeri"
+            android:layout_below="@+id/avSpin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility ="gone" />
+        <Spinner
+            android:id="@+id/AVValspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/avSpin"
+            android:layout_above="@+id/AVValspinner03"
+            android:layout_toRightOf="@+id/TextView02"
+            android:visibility="gone" />
+
+        
+        <EditText
+            android:id="@+id/AVValeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+         
+            android:layout_below="@+id/avSpin"
+            android:layout_toRightOf="@+id/TextView02"
+            android:ems="10"
+            android:visibility="gone" />
+        
+        
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="AV Degeri"
+            android:layout_below="@+id/TextView02"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility ="gone" />
+        <Spinner
+            android:id="@+id/AVValspinner03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/AVValspinner04"
+            android:layout_toRightOf="@+id/TextView03"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/AVValeditText03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/AVValspinner04"
+            android:layout_toRightOf="@+id/TextView03"
+            android:ems="10"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="AV Degeri"
+            android:layout_below="@+id/TextView03"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility ="gone" />
+        <Spinner
+            android:id="@+id/AVValspinner04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/updateAV"
+            android:layout_toRightOf="@+id/TextView04"
+            android:visibility="gone"
+            
+             />
+
+        <EditText
+            android:id="@+id/AVValeditText04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/updateAV"
+            android:layout_toRightOf="@+id/TextView04"
+            android:ems="10"
+            android:visibility="gone" />
 
     </RelativeLayout>
 
