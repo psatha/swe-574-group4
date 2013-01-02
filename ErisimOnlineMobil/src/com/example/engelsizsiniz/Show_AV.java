@@ -133,12 +133,16 @@ public class Show_AV extends MapActivity {
 	private static String url_unSubscribeViolation = "http://swe.cmpe.boun.edu.tr/fall2012g4/unsubscribeViolation.php";
 	private static String url_metaUpdate = "http://swe.cmpe.boun.edu.tr/fall2012g4/metaUpdate.php";
 	private static String url_av_fields = "http://swe.cmpe.boun.edu.tr/fall2012g4/avFieldsToShowAv.php";
+	private static String url_getAvMeta = "http://swe.cmpe.boun.edu.tr/fall2012g4/getAvMeta.php";
+
 
 	private int subscriptionId ;
 	JSONParser jsonParser = new JSONParser();
 	public ProgressDialog pDialog;
 	public JSONArray products = null;
     JSONArray categoryFields =null;
+    JSONArray metaList =null;
+
 
 	static double langitude, latitude;
 	static String category;
@@ -154,6 +158,8 @@ public class Show_AV extends MapActivity {
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_SUBSCRIPTIONS = "subscription";
 	public static ArrayList<Field> fields = new ArrayList<Field>();
+	public static ArrayList<Meta> metas = new ArrayList<Meta>();
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -1351,4 +1357,79 @@ public class Show_AV extends MapActivity {
 		}
 
 }
+	
+	class GetAVMeta extends AsyncTask<String, String, String> {
+
+		
+		/**
+		 * Before starting background thread Show Progress Dialog
+		 * */
+		@Override
+		protected void onPreExecute() {
+			
+		}
+
+		
+
+		/**
+		 * Creating subscribtion
+		 * */
+		protected String doInBackground(String... args) {
+
+			// Building Parameters
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+			try {
+				// getting JSON string from URL
+				
+				params.add(new BasicNameValuePair("post_id", Integer.toString(ID)));
+				
+				
+				JSONObject json = jsonParser.makeHttpRequest(url_getAvMeta, "GET", params);
+				// Check your log cat for JSON reponse
+				//Log.d("All Products: ", json.toString());
+				// Checking for SUCCESS TAG
+				int success = json.getInt(TAG_SUCCESS);
+
+				if (success == 1) {
+					
+					metaList = json.getJSONArray("metaList");
+
+					// looping through All Products
+					for (int i = 0; i < metaList.length(); i++) {
+						JSONObject c = metaList.getJSONObject(i);
+
+						// Storing each json item in variable
+					
+					//	int fieldId =Integer.parseInt( c.getString("field_Id"));
+						int metaId = Integer.parseInt( c.getString("meta_id"));
+						String metaKey = c.getString("meta_key");
+						String metaValue = c.getString("meta_value");
+						
+					
+						
+						metas.add(new Meta(metaId,ID,metaKey,metaValue));
+						
+					}	
+
+				} else {
+					// do nothing
+					backMenu();
+				}
+			} catch (JSONException e) {
+				backMenu();
+			}
+
+			return null;
+		
+			
+		}
+
+
+		/**
+		 * After completing background task Dismiss the progress dialog
+		 * **/
+		protected void onPostExecute(String file_url) {
+			// dismiss the dialog once done
+		}
+	}
 }
