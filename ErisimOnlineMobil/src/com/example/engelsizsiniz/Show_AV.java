@@ -608,6 +608,7 @@ public class Show_AV extends MapActivity {
 			toast = Toast.makeText(getApplicationContext(), "Resme Týklayýp Galeride Açabilirsiniz", Toast.LENGTH_SHORT);
 			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
+			new GetAVMeta().execute();
 			new GetAVFields().execute();
 
 		}
@@ -1269,7 +1270,9 @@ public class Show_AV extends MapActivity {
 		 * After completing background task Dismiss the progress dialog
 		 * **/
 		protected void onPostExecute(String file_url) {
+			
 			// dismiss the dialog once done
+			
 			createAVInput(fields);
 		}
 		public void createAVInput(  ArrayList<Field> fields) {
@@ -1289,38 +1292,58 @@ public class Show_AV extends MapActivity {
 			}*/
 		
 			
-			for(int k=5;k<fields.size()&&k<12;k++){
+			for(int k=5;k<fields.size()-1&&k<12;k++){
 				//5
+				String metaValue="";
+				metas.trimToSize();
+				for(int t=metas.size()-1;t>=0;t--){
+					
+						if(fields.get(k).fieldName.equalsIgnoreCase(metas.get(t).metaKey)){
+							metaValue=metas.get(t).getMetaValue();
+							break;
+						}
+					
+				}
+				String[] avListString = new String[1];
+				avListString[0] = metaValue;
+				ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(Show_AV.this,
+						android.R.layout.simple_spinner_item, avListString);
+				
 				if( k==5 && fields.get(5).getFieldType().equalsIgnoreCase("drop-down")){
-					String string = fields.get(5).getFieldValues();
+				/*	String string = fields.get(5).getFieldValues();
 					String[] parts = string.split(",");
 					
 					ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(Show_AV.this,
-							android.R.layout.simple_spinner_item, parts);
+							android.R.layout.simple_spinner_item, parts);*/
 					textView02.setVisibility(View.VISIBLE);
 					textView02.setText(fields.get(5).fieldLabel);
 					avValSpin.setAdapter(avAdapter);
+					avValSpin.setSelection(0, true);
 					//
 					avValSpin.setVisibility(View.VISIBLE);
 					avValSpin.setTag(fields.get(5).getFieldName());
 					avValText.setVisibility(View.GONE);
+					
+				
 				}else if(k==5 && (fields.get(5).getFieldType().equalsIgnoreCase("text area")||fields.get(5).getFieldType().equalsIgnoreCase("text box"))){
 					textView02.setVisibility(View.VISIBLE);
 					textView02.setText(fields.get(5).fieldLabel);
 					avValSpin.setVisibility(View.GONE);
 					avValText .setVisibility(View.VISIBLE);
+					avValText.setText(metaValue);
 				}
 				//6
 				
 				if( k==6 && fields.get(6).getFieldType().equalsIgnoreCase("drop-down")){
-					String string = fields.get(6).getFieldValues();
+					/*String string = fields.get(6).getFieldValues();
 					String[] parts = string.split(",");
 					
 					ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(Show_AV.this,
-							android.R.layout.simple_spinner_item, parts);
+							android.R.layout.simple_spinner_item, parts);*/
 					textView03.setVisibility(View.VISIBLE);
 					textView03.setText(fields.get(6).fieldLabel);
 					avValSpin03.setAdapter(avAdapter);
+					avValSpin03.setSelection(0, true);
 					//
 					avValSpin03.setVisibility(View.VISIBLE);
 					avValSpin03.setTag(fields.get(6).getFieldName());
@@ -1330,17 +1353,21 @@ public class Show_AV extends MapActivity {
 					textView03.setText(fields.get(6).fieldLabel);
 					avValSpin03.setVisibility(View.GONE);
 					avValText03 .setVisibility(View.VISIBLE);
+					avValText03.setText(metaValue);
+
 				}
 				//7
 				if( k==7 && fields.get(7).getFieldType().equalsIgnoreCase("drop-down")){
-					String string = fields.get(7).getFieldValues();
+				/*	String string = fields.get(7).getFieldValues();
 					String[] parts = string.split(",");
 					
 					ArrayAdapter<String> avAdapter = new ArrayAdapter<String>(Show_AV.this,
-							android.R.layout.simple_spinner_item, parts);
+							android.R.layout.simple_spinner_item, parts);*/
 					textView04.setVisibility(View.VISIBLE);
 					textView04.setText(fields.get(7).fieldLabel);
 					avValSpin04.setAdapter(avAdapter);
+					avValSpin04.setSelection(0, true);
+
 					//
 					avValSpin04.setVisibility(View.VISIBLE);
 					avValSpin04.setTag(fields.get(7).getFieldName());
@@ -1350,6 +1377,8 @@ public class Show_AV extends MapActivity {
 					textView04.setText(fields.get(7).fieldLabel);
 					avValSpin04.setVisibility(View.GONE);
 					avValText04 .setVisibility(View.VISIBLE);
+					avValText04.setText(metaValue);
+
 				}
 			}
 			
