@@ -40,10 +40,10 @@ public class MyAvList extends ListActivity {
  
     // url to get all products list
     private static String url_listAV = "http://swe.cmpe.boun.edu.tr/fall2012g4/get_all_my_AV.php";
- 
+    private static String url_listSubscribedAV = "http://swe.cmpe.boun.edu.tr/fall2012g4/get_my_subscribed_AV.php";
     // products JSONArray
     public JSONArray products = null;
-    
+    private String url ="";
  
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +51,10 @@ public class MyAvList extends ListActivity {
     	products = null;
         super.onCreate(savedInstanceState);
         userIdDB = getIntent().getExtras().getString("id");
+        if(getIntent().getExtras().getBoolean("subscribed")){
+        	url=url_listSubscribedAV;
+        }else
+        	url =url_listAV;
         setContentView(R.layout.activity_my_av_list);
         // Loading products in Background Thread
         new LoadAllProducts().execute();
@@ -143,7 +147,7 @@ public void onBackPressed() {
         				params.add(new BasicNameValuePair("post_author", userIdDB));
         				try {
         					// getting JSON string from URL
-        					JSONObject json = jsonParser.makeHttpRequest(url_listAV, "GET", params);
+        					JSONObject json = jsonParser.makeHttpRequest(url, "GET", params);
         					// Check your log cat for JSON reponse
         					//Log.d("All Products: ", json.toString());
         					// Checking for SUCCESS TAG
@@ -186,9 +190,11 @@ public void onBackPressed() {
         								}
         							}
         						}
+        						
                 } else {
                     // no products found
                     // Launch Add New product Activity
+                
                     backMenu();
                 }
             } catch (JSONException e) {

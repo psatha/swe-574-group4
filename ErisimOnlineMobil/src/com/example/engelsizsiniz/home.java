@@ -24,7 +24,7 @@ public class home extends Activity {
 	private File myDir = new File(Environment.getExternalStorageDirectory(), DNAME);
 	private File readFile = new File(myDir,"cookie");
 
-	Button yeniHata, listHata, searchHata, updateProfil, logout;
+	Button yeniHata, listHata, searchHata, updateProfil, logout,takipEttiklerim;
 
 	public static String username, id, email;
 
@@ -59,7 +59,7 @@ public class home extends Activity {
 		listHata = (Button) findViewById(R.id.listhata);
 		searchHata = (Button) findViewById(R.id.searchhata);
 		updateProfil = (Button) findViewById(R.id.updateprofil);
-
+		takipEttiklerim=(Button) findViewById(R.id.subscribedHata);
 		// set logout button with username
 		logout = (Button) findViewById(R.id.logout);
 		logout.setText("Not " + username  + " ? Logout");
@@ -94,6 +94,16 @@ public class home extends Activity {
 			public void onClick(View view) {
 				Intent myIntent = new Intent(getApplicationContext(), MyAvList.class);
 				myIntent.putExtra("id", id);
+				myIntent.putExtra("subscribed", false);
+				startActivityForResult(myIntent, 0);
+			}
+
+		});
+		takipEttiklerim.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Intent myIntent = new Intent(getApplicationContext(), MyAvList.class);
+				myIntent.putExtra("id", id);
+				myIntent.putExtra("subscribed", true);
 				startActivityForResult(myIntent, 0);
 			}
 
