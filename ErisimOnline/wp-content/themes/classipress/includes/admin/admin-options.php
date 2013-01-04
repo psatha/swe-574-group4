@@ -1846,19 +1846,23 @@ function cp_form_layouts() {
             if ( !isset($_POST['post_category']) )
                 wp_die( '<p style="color:red;">' .__("Error: Please select at least one category. <a href='#' onclick='history.go(-1);return false;'>Go back</a>",'appthemes') .'</p>' );
 
+        // EKELEME (Form tablosuna cat id ekler)
+        $cat_id=split('"',serialize($_POST['post_category']));
 	    // @todo Change to Insert
             $insert = $wpdb->prepare( "INSERT INTO $wpdb->cp_ad_forms" .
-                    " (form_name, form_label, form_desc, form_cats, form_status, form_owner, form_created) " .
-                    "VALUES ( %s, %s, %s, %s, %s, %s, %s)",
+                    " (form_name, form_label, form_desc, form_cats, form_status, form_owner, form_created, cat_id) " .
+                    "VALUES ( %s, %s, %s, %s, %s, %s, %s , %s)",
                     appthemes_clean(cp_make_custom_name($_POST['form_label'])),
                     appthemes_clean($_POST['form_label']),
                     appthemes_clean($_POST['form_desc']),
                     serialize($_POST['post_category']),
                     appthemes_clean($_POST['form_status']),
                     appthemes_clean($_POST['form_owner']),
-                    gmdate('Y-m-d H:i:s')
+                    gmdate('Y-m-d H:i:s'),
+                    $cat_id[1]
                 );
-
+			// EKELEME BITIS
+                
             $results = $wpdb->query( $insert );
 
 
@@ -1910,13 +1914,16 @@ function cp_form_layouts() {
 
 
 	    // @todo Change to Update
+	    	// EKLEME (Form duzenleme sirasinda cat id update eder)
+	    	$update_cat_id=split('"',serialize($_POST['post_category']));
             $update = $wpdb->prepare( "UPDATE $wpdb->cp_ad_forms SET" .
                             " form_label    = %s," .
                             " form_desc     = %s," .
                             " form_cats     = %s," .
                             " form_status   = %s," .
                             " form_owner    = %s," .
-                            " form_modified = %s" .
+                            " form_modified = %s," .
+            				" cat_id = %s" .
                             " WHERE id      = %s",
                             appthemes_clean($_POST['form_label']),
                             appthemes_clean($_POST['form_desc']),
@@ -1924,8 +1931,10 @@ function cp_form_layouts() {
                             appthemes_clean($_POST['form_status']),
                             $_POST['form_owner'],
                             gmdate( 'Y-m-d H:i:s', ( time() + ( get_option( 'gmt_offset' ) * 3600 ) ) ),
+                            $update_cat_id[1],
                             $_GET['id']);
-
+			// EKLEME BITIS
+                            
             $results = $wpdb->get_row( $update );
 
             ?>

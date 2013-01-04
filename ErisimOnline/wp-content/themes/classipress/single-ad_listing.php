@@ -151,7 +151,10 @@ jQuery(document).ready(function ($) {
                                     <h3 class="description-area"><?php _e( 'Description', 'appthemes' ); ?></h3>
 
                                     <?php the_content(); ?>
-
+									<?php 
+                                    	$_SESSION['av_id'] = $post->ID;
+                                    ?>
+                                    <iframe src="http://localhost/workspace/ErisimOnline/wp-content/themes/classipress/rate-view.php" width="200" height="50"></iframe>
                                 </div>
 
                                 <?php appthemes_after_post_content(); ?>
