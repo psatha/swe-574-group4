@@ -1429,14 +1429,14 @@ public class Show_AV extends MapActivity {
 
 						// Storing each json item in variable
 					
-					//	int fieldId =Integer.parseInt( c.getString("field_Id"));
+						int post_id =Integer.parseInt( c.getString("post_id"));
 						int metaId = Integer.parseInt( c.getString("meta_id"));
 						String metaKey = c.getString("meta_key");
 						String metaValue = c.getString("meta_value");
 						
 					
 						
-						metas.add(new Meta(metaId,ID,metaKey,metaValue));
+						metas.add(new Meta(metaId,post_id,metaKey,metaValue));
 						
 					}	
 
