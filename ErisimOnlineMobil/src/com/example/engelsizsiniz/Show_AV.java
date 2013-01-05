@@ -1292,11 +1292,11 @@ public class Show_AV extends MapActivity {
 			}*/
 		
 			
-			for(int k=5;k<fields.size()-1&&k<12;k++){
+			for(int k=5;k<fields.size()&&k<12;k++){
 				//5
 				String metaValue="";
 				metas.trimToSize();
-				for(int t=metas.size()-1;t>=0;t--){
+				for(int t=metas.size();t>=0;t--){
 					
 						if(fields.get(k).fieldName.equalsIgnoreCase(metas.get(t).metaKey)){
 							metaValue=metas.get(t).getMetaValue();
