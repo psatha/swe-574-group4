@@ -25,19 +25,19 @@ public final class R {
         public static final int takipet=0x7f020006;
     }
     public static final class id {
-        public static final int AVValeditText=0x7f08001f;
+        public static final int AVValeditText=0x7f08001e;
         public static final int AVValeditText03=0x7f080020;
         public static final int AVValeditText04=0x7f080021;
-        public static final int AVValspinner=0x7f08001d;
-        public static final int AVValspinner03=0x7f08001e;
-        public static final int AVValspinner04=0x7f08001b;
+        public static final int AVValspinner=0x7f08001c;
+        public static final int AVValspinner03=0x7f08001d;
+        public static final int AVValspinner04=0x7f08001a;
         public static final int AVadres=0x7f080029;
         public static final int AVnoteText=0x7f08002c;
         public static final int AVtitleText=0x7f08002a;
         public static final int CommentText=0x7f080031;
         public static final int TextView01=0x7f080017;
-        public static final int TextView02=0x7f08001c;
-        public static final int TextView03=0x7f080018;
+        public static final int TextView02=0x7f08001b;
+        public static final int TextView03=0x7f08001f;
         public static final int TextView04=0x7f080016;
         public static final int addText=0x7f080025;
         public static final int anonymous=0x7f08000c;
@@ -45,12 +45,12 @@ public final class R {
         public static final int avSpin=0x7f08002e;
         public static final int back=0x7f080024;
         public static final int bulunduguAdres=0x7f08000f;
-        public static final int button1=0x7f08001a;
+        public static final int button1=0x7f080019;
         public static final int commentLayout=0x7f080034;
         public static final int commentText=0x7f080035;
         public static final int disabilitySpin=0x7f080014;
         public static final int filePath=0x7f080012;
-        public static final int imageView1=0x7f080019;
+        public static final int imageView1=0x7f080018;
         public static final int imageView2=0x7f080030;
         public static final int listhata=0x7f080001;
         public static final int login=0x7f080009;
