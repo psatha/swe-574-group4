@@ -1217,7 +1217,7 @@ public class Show_AV extends MapActivity {
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			try {
 				// getting JSON string from URL
-				
+				String categoryName =convertAddName(category);
 				params.add(new BasicNameValuePair("category_name", category));
 				
 				
@@ -1460,5 +1460,17 @@ public class Show_AV extends MapActivity {
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once done
 		}
+	}
+	public String convertAddName (String s){
+
+		s = s.toLowerCase();
+		s = s.replace("ü", "u");
+		s = s.replace("ý", "i");
+		s = s.replace("ö", "o");
+		s = s.replace("þ", "s");
+		s = s.replace("ð", "g");
+		s = s.replace("ç", "c");
+		s = s.replace("ð", "g");
+		return s;
 	}
 }

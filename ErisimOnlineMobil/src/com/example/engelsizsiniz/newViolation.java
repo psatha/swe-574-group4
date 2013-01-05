@@ -1194,7 +1194,8 @@ public class newViolation extends MapActivity {
 			try {
 				// getting JSON string from URL
 				params.add(new BasicNameValuePair("post_id", Integer.toString(avCount)));
-				params.add(new BasicNameValuePair("category", disabilityType.getItemAtPosition(spinPos).toString()));
+				String categoryName =convertAddName(disabilityType.getItemAtPosition(spinPos).toString());
+				params.add(new BasicNameValuePair("category",categoryName ));
 				params.add(new BasicNameValuePair("lat", Double.toString(latitude)));
 				params.add(new BasicNameValuePair("lng", Double.toString(longitude)));
 				JSONObject json = jsonParser.makeHttpRequest(url_Pos, "POST", params);
