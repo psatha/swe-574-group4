@@ -146,6 +146,7 @@
             android:layout_below="@+id/disabilitySpin"
             android:layout_above="@+id/AVValspinner03"
             android:layout_toRightOf="@+id/TextView02"
+            android:layout_alignBaseline="@+id/TextView02"
             android:visibility="gone" />
 
         
@@ -157,6 +158,7 @@
             android:layout_alignParentLeft="true"
             android:layout_above="@+id/photoButton"
             android:layout_toRightOf="@+id/TextView02"
+            android:layout_alignBaseline="@+id/TextView02"
             android:ems="10"
             android:visibility="gone" />
         
@@ -177,6 +179,7 @@
             android:layout_alignParentRight="true"
             android:layout_above="@+id/AVValspinner04"
             android:layout_toRightOf="@+id/TextView03"
+            android:layout_alignBaseline="@+id/TextView03"
             android:visibility="gone" />
 
         <EditText
@@ -186,6 +189,7 @@
             android:layout_alignParentRight="true"
             android:layout_above="@+id/AVValspinner04"
             android:layout_toRightOf="@+id/TextView03"
+            android:layout_alignBaseline="@+id/TextView03"
             android:ems="10"
             android:visibility="gone" />
         
@@ -206,6 +210,7 @@
             android:layout_alignParentRight="true"
             android:layout_above="@+id/photoButton"
             android:layout_toRightOf="@+id/TextView04"
+            android:layout_alignBaseline="@+id/TextView04"
             android:visibility="gone"
             
              />
@@ -218,6 +223,7 @@
             android:layout_above="@+id/photoButton"
             android:layout_toRightOf="@+id/TextView04"
             android:ems="10"
+            android:layout_alignBaseline="@+id/TextView04"
             android:visibility="gone" />
 
     </RelativeLayout>
