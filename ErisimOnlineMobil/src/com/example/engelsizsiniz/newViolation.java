@@ -334,7 +334,7 @@ public class newViolation extends MapActivity {
 			}
 			//6
 			
-			if( k==6 && fields.get(6).getFieldType().equalsIgnoreCase("drop-down")){
+			if( k==6 && !fields.get(6).getFieldLabel().equalsIgnoreCase("null") && fields.get(6).getFieldType().equalsIgnoreCase("drop-down")){
 				String string = fields.get(6).getFieldValues();
 				String[] parts = string.split(",");
 				
@@ -347,14 +347,14 @@ public class newViolation extends MapActivity {
 				avValSpin03.setVisibility(View.VISIBLE);
 				avValSpin03.setTag(fields.get(6).getFieldName());
 				avValText03.setVisibility(View.GONE);
-			}else if(k==6 && (fields.get(6).getFieldType().equalsIgnoreCase("text area")||fields.get(6).getFieldType().equalsIgnoreCase("text box"))){
+			}else if(k==6 && !fields.get(6).getFieldLabel().equalsIgnoreCase("null")&& (fields.get(6).getFieldType().equalsIgnoreCase("text area")||fields.get(6).getFieldType().equalsIgnoreCase("text box"))){
 				textView03.setVisibility(View.VISIBLE);
 				textView03.setText(fields.get(6).fieldLabel);
 				avValSpin03.setVisibility(View.GONE);
 				avValText03 .setVisibility(View.VISIBLE);
 			}
 			//7
-			if( k==7 && fields.get(7).getFieldType().equalsIgnoreCase("drop-down")){
+			if( k==7 && !fields.get(7).getFieldLabel().equalsIgnoreCase("null") && fields.get(7).getFieldType().equalsIgnoreCase("drop-down")){
 				String string = fields.get(7).getFieldValues();
 				String[] parts = string.split(",");
 				
@@ -367,7 +367,7 @@ public class newViolation extends MapActivity {
 				avValSpin04.setVisibility(View.VISIBLE);
 				avValSpin04.setTag(fields.get(7).getFieldName());
 				avValText04.setVisibility(View.GONE);
-			}else if(k==7 && (fields.get(7).getFieldType().equalsIgnoreCase("text area")||fields.get(7).getFieldType().equalsIgnoreCase("text box"))){
+			}else if(k==7 && !fields.get(7).getFieldLabel().equalsIgnoreCase("null")&& (fields.get(7).getFieldType().equalsIgnoreCase("text area")||fields.get(7).getFieldType().equalsIgnoreCase("text box"))){
 				textView04.setVisibility(View.VISIBLE);
 				textView04.setText(fields.get(7).fieldLabel);
 				avValSpin04.setVisibility(View.GONE);
