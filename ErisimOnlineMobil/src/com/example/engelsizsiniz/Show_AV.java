@@ -165,6 +165,7 @@ public class Show_AV extends MapActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// get array position
 		super.onCreate(savedInstanceState);
+		setTitle("Engel Detay");
 		products = null;
 		position = getIntent().getExtras().getInt("position");
 		if(getIntent().getExtras().getString("search") == null) {
@@ -1296,7 +1297,7 @@ public class Show_AV extends MapActivity {
 				//5
 				String metaValue="";
 				metas.trimToSize();
-				for(int t=metas.size();t>=0;t--){
+				for(int t=metas.size()-1;t>=0;t--){
 					
 						if(fields.get(k).fieldName.equalsIgnoreCase(metas.get(t).metaKey)){
 							metaValue=metas.get(t).getMetaValue();

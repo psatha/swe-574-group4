@@ -151,6 +151,7 @@ public class newViolation extends MapActivity {
 		//AssetManager mngr = getApplicationContext().getAssets();
 		//otm = new otomatikAdres(mngr);
 		super.onCreate(savedInstanceState);
+		setTitle("Yeni Engel Gir");
 		if (savedInstanceState != null)
 		{
 			filePathIntent = savedInstanceState.getString("filePathIntent");
@@ -163,6 +164,7 @@ public class newViolation extends MapActivity {
 			usermailDB = savedInstanceState.getString("usermail");
 		}
 		else{
+			avList.clear();
 			idDB = getIntent().getExtras().getString("id");
 			usernameDB = getIntent().getExtras().getString("username");
 			usermailDB = getIntent().getExtras().getString("usermail");
@@ -739,7 +741,7 @@ public class newViolation extends MapActivity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(newViolation.this);
-			pDialog.setMessage("Violation Ekleniyor...");
+			pDialog.setMessage("Engel Ekleniyor...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
@@ -962,7 +964,7 @@ public class newViolation extends MapActivity {
 			// dismiss the dialog once done
 			pDialog.dismiss();
 			Toast toast;
-			toast = Toast.makeText(getApplicationContext(), "Violation Eklendi", Toast.LENGTH_SHORT);
+			toast = Toast.makeText(getApplicationContext(), "Engel Eklendi", Toast.LENGTH_SHORT);
 			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
 			deleteFiles();

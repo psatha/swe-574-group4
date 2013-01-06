@@ -57,7 +57,7 @@ public class login extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		setTitle("Login Ekraný");
 		//if cookie exists
 		if(checkCookie()) {
 			Intent myIntent = new Intent(getApplicationContext(), home.class);

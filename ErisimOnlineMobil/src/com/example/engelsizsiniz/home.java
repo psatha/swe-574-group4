@@ -32,6 +32,7 @@ public class home extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+		setTitle("Ana Sayfa");
 
 		//read cookie
 		if(!readCookie()){
@@ -62,7 +63,7 @@ public class home extends Activity {
 		takipEttiklerim=(Button) findViewById(R.id.subscribedHata);
 		// set logout button with username
 		logout = (Button) findViewById(R.id.logout);
-		logout.setText("Not " + username  + " ? Logout");
+		logout.setText("Çýkýþ");
 	}
 
 	public void defineButtonListeners(){

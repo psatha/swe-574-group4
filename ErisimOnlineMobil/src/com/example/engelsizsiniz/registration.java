@@ -56,7 +56,7 @@ public class registration extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		setTitle("Kayýt");
 		//check if user already registered
 		/*
 		if (checkRegistration()) {

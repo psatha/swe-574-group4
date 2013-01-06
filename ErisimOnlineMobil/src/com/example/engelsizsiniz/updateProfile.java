@@ -66,6 +66,7 @@ public class updateProfile extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTitle("Profil Güncelle");
 		usernameDB = getIntent().getExtras().getString("username");
 		setContentView(R.layout.activity_update_profile);
 		//set gui

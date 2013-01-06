@@ -48,6 +48,7 @@ public class MyAvList extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	avList = new ArrayList<AV>();
+    	setTitle("Engel Listeleme Ekraný");
     	products = null;
         super.onCreate(savedInstanceState);
         userIdDB = getIntent().getExtras().getString("id");
@@ -131,7 +132,7 @@ public void onBackPressed() {
         protected void onPreExecute() {
             super.onPreExecute();
             pDialog = new ProgressDialog(MyAvList.this);
-            pDialog.setMessage("Violationlar Listeleniyor...");
+            pDialog.setMessage("Engeller Listeleniyor...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
             pDialog.show();
@@ -215,7 +216,7 @@ public void onBackPressed() {
         	afterExec();
 			pDialog.dismiss();
 			Toast toast;
-			toast = Toast.makeText(getApplicationContext(), "Lütfen AV Seçiniz", Toast.LENGTH_SHORT);
+			toast = Toast.makeText(getApplicationContext(), "Lütfen Engel Seçiniz", Toast.LENGTH_SHORT);
 			toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
         }

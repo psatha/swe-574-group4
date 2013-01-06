@@ -52,6 +52,7 @@ public class ShowComment extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTitle("Yorum yaz ve oku");
 		comments = new ArrayList<Comment>();
 		postID = Integer.toString(getIntent().getExtras().getInt("id"));
 		new listComments().execute();

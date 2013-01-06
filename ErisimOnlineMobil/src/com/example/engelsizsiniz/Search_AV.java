@@ -85,6 +85,7 @@ public class Search_AV extends MapActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		new LoadAllProducts().execute();
+		setTitle("Engel Ara");
 		super.onCreate(savedInstanceState);
 		idDb = getIntent().getExtras().getString("id");
 		
@@ -289,7 +290,7 @@ public class Search_AV extends MapActivity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(Search_AV.this);
-			pDialog.setMessage("Violationlar Getiriliyor...");
+			pDialog.setMessage("Engeller Getiriliyor...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
