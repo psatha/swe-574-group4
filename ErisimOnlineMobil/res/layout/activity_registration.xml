@@ -44,7 +44,7 @@
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="58dp"
-        android:text="Register" />
+        android:text="Kayıt Ol" />
 
     <TextView
         android:id="@+id/usernamelabel"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/mail"
         android:layout_alignParentLeft="true"
-        android:text="Username:"
+        android:text="Kullanıcı Adı:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/register"
         android:layout_alignParentLeft="true"
-        android:text="Password:"
+        android:text="Şifre:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -79,6 +79,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/register"
-        android:text="Back to Menu" />
+        android:text="Menüye Dön" />
 
 </RelativeLayout>

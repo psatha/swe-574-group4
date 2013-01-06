@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="0.70"
-        android:apiKey="0ypJhU6f7Kv58vLdGHpEVbbcQfC492ifGjPuwmg"
+        android:apiKey="0rekEy2Uf1apelnDDyHNOVXQap3grGPBe7Jxqzg"
         android:clickable="true" />
     
      <TextView
@@ -34,7 +34,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:ems="10"
-            android:hint="AV Başlığı"
+            android:hint="Engel Başlığı"
             android:inputType="textPersonName" >
 
             <requestFocus />
@@ -57,7 +57,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/uploadButton"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
@@ -75,50 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/noteText"
-            android:layout_toRightOf="@+id/textView1" 
             android:layout_marginBottom="10dp"
-            />
-
-        <Button
-            android:id="@+id/photoButton"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/TextView04"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Resim Çek" />
-
-        <TextView
-            android:id="@+id/TextView01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/photoButton"
-            android:layout_alignBottom="@+id/photoButton"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/TextView04"
-            android:text="Image"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
-
-        <Button
-            android:id="@+id/uploadButton"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/TextView04"
-            android:layout_toRightOf="@+id/photoButton"
-            android:text="Galeriden Seç" />
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button1"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/AVValspinner04"
-            android:layout_toRightOf="@+id/uploadButton"
-            android:src="@android:drawable/ic_menu_gallery" />
+            android:layout_toRightOf="@+id/textView1" />
 
         <Button
             android:id="@+id/button1"
@@ -133,99 +90,121 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:text="AV Degeri"
             android:layout_below="@+id/disabilitySpin"
+            android:layout_centerVertical="true"
+            android:text="Engel Degeri"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:visibility ="gone" />
+            android:visibility="gone" />
+
         <Spinner
             android:id="@+id/AVValspinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/AVValspinner03"
+            android:layout_alignBaseline="@+id/TextView02"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/disabilitySpin"
-            android:layout_above="@+id/AVValspinner03"
             android:layout_toRightOf="@+id/TextView02"
-            android:layout_alignBaseline="@+id/TextView02"
             android:visibility="gone" />
 
-        
         <EditText
             android:id="@+id/AVValeditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"
-            android:layout_above="@+id/photoButton"
-            android:layout_toRightOf="@+id/TextView02"
             android:layout_alignBaseline="@+id/TextView02"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/TextView02"
             android:ems="10"
             android:visibility="gone" />
-        
-        
+
         <TextView
             android:id="@+id/TextView03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
             android:layout_below="@+id/TextView02"
+            android:layout_centerVertical="true"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:visibility ="gone" />
+            android:visibility="gone" />
+
         <Spinner
             android:id="@+id/AVValspinner03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_above="@+id/AVValspinner04"
-            android:layout_toRightOf="@+id/TextView03"
             android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/TextView03"
             android:visibility="gone" />
 
         <EditText
             android:id="@+id/AVValeditText03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_above="@+id/AVValspinner04"
-            android:layout_toRightOf="@+id/TextView03"
             android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/TextView03"
             android:ems="10"
             android:visibility="gone" />
-        
+
         <TextView
             android:id="@+id/TextView04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
             android:layout_below="@+id/TextView03"
-            
+            android:layout_centerVertical="true"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:visibility ="gone" />
+            android:visibility="gone" />
+
         <Spinner
             android:id="@+id/AVValspinner04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_above="@+id/photoButton"
-            android:layout_toRightOf="@+id/TextView04"
             android:layout_alignBaseline="@+id/TextView04"
-            android:visibility="gone"
-            
-             />
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/TextView04"
+            android:visibility="gone" />
 
         <EditText
             android:id="@+id/AVValeditText04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView04"
             android:layout_alignParentRight="true"
-            android:layout_above="@+id/photoButton"
             android:layout_toRightOf="@+id/TextView04"
             android:ems="10"
-            android:layout_alignBaseline="@+id/TextView04"
             android:visibility="gone" />
 
+        <Button
+            android:id="@+id/photoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:text="Resim Çek" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/button1"
+            android:layout_toRightOf="@+id/uploadButton"
+            android:layout_below="@+id/AVValspinner04"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/uploadButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_toRightOf="@+id/photoButton"
+            android:text="Galeriden Seç" />
     </RelativeLayout>
 
 </LinearLayout>

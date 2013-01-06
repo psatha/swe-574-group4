@@ -34,7 +34,7 @@
         android:layout_below="@+id/password"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="58dp"
-        android:text="Login" />
+        android:text="Giriş" />
 
     <TextView
         android:id="@+id/usernamelabel"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/password"
         android:layout_alignParentLeft="true"
-        android:text="Username:"
+        android:text="Kullanıcı adı:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/login"
         android:layout_alignParentLeft="true"
-        android:text="Password:"
+        android:text="Şifre:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -61,7 +61,7 @@
         android:layout_alignBaseline="@+id/login"
         android:layout_alignBottom="@+id/login"
         android:layout_alignRight="@+id/username"
-        android:text="Go Anonymous" />
+        android:text="İsimsiz Giriş" />
 
     <TextView
         android:id="@+id/notregistered"
@@ -70,7 +70,7 @@
         android:layout_below="@+id/anonymous"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="84dp"
-        android:text="Not Registered ?"
+        android:text="Kayıt Olun"
         android:textColor="#0000ff"
         android:textSize="@dimen/padding_large"
         android:textStyle="bold" />

@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="0.50"
-        android:apiKey="0ypJhU6f7Kv58vLdGHpEVbbcQfC492ifGjPuwmg"
+        android:apiKey="0rekEy2Uf1apelnDDyHNOVXQap3grGPBe7Jxqzg"
         android:clickable="true" />
    
      <TextView
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:text="Update" />
+            android:text="Kaydet" />
 
 
         <TextView
@@ -100,17 +100,6 @@
             android:visibility="invisible"
             />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/CommentText"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/avSpin"
-            android:layout_toLeftOf="@+id/solvedBox"
-            android:onClick="imageClick"
-            android:src="@android:drawable/ic_menu_gallery" />
-
         <TextView
             android:id="@+id/CommentText"
             android:layout_width="wrap_content"
@@ -127,7 +116,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:text="Solved" />
+            android:layout_below="@+id/AVValspinner04"
+            android:text="Çözüldü" />
         
         <TextView
             android:id="@+id/TextView02"
@@ -147,6 +137,9 @@
             android:layout_above="@+id/AVValspinner03"
             android:layout_toRightOf="@+id/TextView02"
             android:layout_alignBaseline="@+id/TextView02"
+            
+            
+            
             android:visibility="gone" />
 
         
@@ -213,6 +206,7 @@
             android:layout_alignBaseline="@+id/TextView04"
             android:visibility="gone"
             
+            
              />
 
         <EditText
@@ -225,6 +219,15 @@
             android:layout_alignBaseline="@+id/TextView04"
             android:ems="10"
             android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_above="@+id/updateAV"
+            android:layout_alignParentLeft="true"
+            android:onClick="imageClick"
+            android:src="@android:drawable/ic_menu_gallery" />
 
     </RelativeLayout>
 
