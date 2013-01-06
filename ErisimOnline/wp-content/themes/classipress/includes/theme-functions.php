@@ -2865,6 +2865,7 @@ function cp_update_geocode( $post_id, $cat, $lat, $lng ) {
 	return true;
 }
 
+// add the pinned Geo Location codes to the Geocode table in the DB
 function cp_add_geocode( $post_id, $cat, $lat, $lng ) {
 	global $wpdb;
 	$table = $wpdb->cp_ad_geocodes;
@@ -2886,6 +2887,7 @@ function cp_add_geocode( $post_id, $cat, $lat, $lng ) {
 	return true;
 }
 
+// gets the geo location of the AV from the Geocode table in DB
 function cp_get_geocode( $post_id, $cat = '' ) {
 	global $wpdb;
   $table = $wpdb->cp_ad_geocodes;

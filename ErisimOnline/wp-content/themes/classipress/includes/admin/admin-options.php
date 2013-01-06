@@ -2068,7 +2068,7 @@ function cp_form_layouts() {
                         <thead>
                             <tr>
                                 <th scope="col" colspan="2"><?php _e('Erisim Formu Onizleme','appthemes') ?></th>
-								<th scope="col" style="width:75px;text-align:center;" title="<?php _e('Show field in the category refine search sidebar','appthemes') ?>"><?php _e('Advanced Search','appthemes') ?></th>
+								<th scope="col" style="width:75px;text-align:center;" title="<?php _e('Show field in the category refine search sidebar','appthemes') ?>"><?php _e('Gelismis Arama','appthemes') ?></th>
                                 <th scope="col" style="width:75px;text-align:center;"><?php _e('Gerekli Alan','appthemes') ?></th>
                                 <th scope="col" style="width:75px;text-align:center;"><?php _e('Kaldir','appthemes') ?></th>
                             </tr>
@@ -2272,9 +2272,9 @@ function cp_form_layouts() {
                     <td><?php echo cp_match_cats( unserialize($result->form_cats) ) ?></td>
                     <td><?php echo mysql2date( get_option('date_format') .' '. get_option('time_format'), $result->form_modified ) ?> <?php _e('by','appthemes') ?> <?php echo $result->form_owner; ?></td>
                     <td><?php echo ucfirst( $result->form_status ) ?></td>
-                    <td style="text-align:center"><a href="?page=layouts&amp;action=formbuilder&amp;id=<?php echo $result->id ?>&amp;title=<?php echo urlencode($result->form_label) ?>"><img src="<?php echo bloginfo('template_directory') ?>/images/layout_add.png" alt="<?php echo _e('Edit form layout','appthemes') ?>" title="<?php echo _e('Edit form layout','appthemes') ?>" /></a>&nbsp;&nbsp;&nbsp;
-                        <a href="?page=layouts&amp;action=editform&amp;id=<?php echo $result->id ?>"><img src="<?php echo bloginfo('template_directory') ?>/images/edit.png" alt="<?php echo  _e('Edit form properties','appthemes') ?>" title="<?php echo _e('Edit form properties','appthemes') ?>" /></a>&nbsp;&nbsp;&nbsp;
-                        <a onclick="return confirmBeforeDelete();" href="?page=layouts&amp;action=delete&amp;id=<?php echo $result->id ?>"><img src="<?php echo bloginfo('template_directory') ?>/images/cross.png" alt="<?php echo _e('Delete form layout','appthemes') ?>" title="<?php echo _e('Delete form layout','appthemes') ?>" /></a></td>
+                    <td style="text-align:center"><a href="?page=layouts&amp;action=formbuilder&amp;id=<?php echo $result->id ?>&amp;title=<?php echo urlencode($result->form_label) ?>"><img src="<?php echo bloginfo('template_directory') ?>/images/layout_add.png" alt="<?php echo _e('Edit form layout','appthemes') ?>" title="Formu Duzenle" /></a>&nbsp;&nbsp;&nbsp;
+                        <a href="?page=layouts&amp;action=editform&amp;id=<?php echo $result->id ?>"><img src="<?php echo bloginfo('template_directory') ?>/images/edit.png" alt="<?php echo  _e('Edit form properties','appthemes') ?>" title="Form Ozelliklerini Duzenle" /></a>&nbsp;&nbsp;&nbsp;
+                        <a onclick="return confirmBeforeDelete();" href="?page=layouts&amp;action=delete&amp;id=<?php echo $result->id ?>"><img src="<?php echo bloginfo('template_directory') ?>/images/cross.png" alt="<?php echo _e('Delete form layout','appthemes') ?>" title="Formu Sil" /></a></td>
                 </tr>
 
               <?php

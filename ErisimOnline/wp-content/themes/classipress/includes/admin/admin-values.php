@@ -1804,7 +1804,7 @@ $options_new_form = array (
 
 		array(  'name' => __('Form Ismi', 'appthemes'),
                         'desc' => '',
-                        'tip' => __('Create a form name that best describes what category or categories this form will be used for. (i.e. Auto Form, Clothes Form, General Form, etc). It will not be visible on your site.','appthemes'),
+                        'tip' => __('Lutfen Form ismi giriniz!','appthemes'),
                         'id' => 'form_label',
                         'css' => 'min-width:400px;',
                         'type' => 'text',
@@ -1815,7 +1815,7 @@ $options_new_form = array (
 
                 array(  'name' => __('Form Aciklamasi','appthemes'),
                         'desc' => '',
-                        'tip' => __('Enter a description of your new form layout. It will not be visible on your site.','appthemes'),
+                        'tip' => __('Lutfen ilgili Form aciklamasini giriniz!','appthemes'),
                         'id' => 'form_desc',
                         'css' => 'width:400px;height:100px;',
                         'type' => 'textarea',
@@ -1826,7 +1826,7 @@ $options_new_form = array (
 
                 array(  'name' => __('Mevcut Erisim Kategorileri', 'appthemes'),
                         'desc' => '',
-                        'tip' => __('Select the categories you want this form to be displayed for. Categories not listed are being used on a different form layout. You can only have one category assigned to each form layout. Any unselected categories will use the default ad form.','appthemes'),
+                        'tip' => __('Sagdaki kutucuklarda ilgili Erisim Kategorisini seciniz!','appthemes'),
                         'id' => 'post_category[]',
                         'css' => '',
                         'type' => 'cat_checklist',
@@ -1836,7 +1836,7 @@ $options_new_form = array (
 
                 array(  'name' => __('Form Durumu', 'appthemes'),
                         'desc' => '',
-                        'tip' => __('If you do not want this new form live on your site yet, select inactive.','appthemes'),
+                        'tip' => __('Lutfen form durumunu seciniz!','appthemes'),
                         'id' => 'form_status',
                         'css' => 'min-width:100px;',
                         'std' => '',
