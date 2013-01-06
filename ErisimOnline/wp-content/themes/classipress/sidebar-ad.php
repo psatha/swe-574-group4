@@ -20,8 +20,6 @@ if ( !empty($custom_fields[$app_abbr.'_zipcode']) || !empty($custom_fields[$app_
           <?php if ( $gmap_active ) { ?>
               <li><a href="#priceblock1"><span class="big"><?php _e('Map', 'appthemes') ?></span></a></li>
           <?php } ?>
-          <li><a href="#priceblock2"><span class="big"><?php _e('Contact', 'appthemes') ?></span></a></li>
-          <li><a href="#priceblock3"><span class="big"><?php _e('Poster', 'appthemes') ?></span></a></li>
         </ul>
 
     <?php if ( $gmap_active ) { ?>

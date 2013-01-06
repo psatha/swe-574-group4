@@ -1166,8 +1166,19 @@ function cp_has_ad_expired($post_id) {
 
 // saves the ad on the tpl-edit-item.php page template
 function cp_update_listing() {
+	// --------EKLEME----------- Cozuldu-Cozulmedi Update-Insert
+	if ( !empty($_POST['cp_av_solved']) ){
+		$solved = get_post_meta(trim( $_POST['ad_id'] ), 'cp_av_solved', true);
+		if($solved != null){
+			update_post_meta( trim( $_POST['ad_id'] ), 'cp_av_solved', $_POST['cp_av_solved'] );
+		}else{
+			add_post_meta( trim( $_POST['ad_id'] ), 'cp_av_solved', $_POST['cp_av_solved'] );
+		}
+	}
+	// ------------------------- 
+	
     global $wpdb;
-
+    
     // check to see if html is allowed
     if ( get_option('cp_allow_html') != 'yes' )
         $post_content = appthemes_filter($_POST['post_content']);
@@ -1247,6 +1258,36 @@ function cp_update_listing() {
 
 // builds the edit ad form on the tpl-edit-item.php page template
 function cp_edit_ad_formbuilder($results, $getad) {
+	
+	//------------EKLEME-------------- (AV Cozulup cozulmemesine gore update etme)
+		$solved = get_post_meta( $getad->ID , 'cp_av_solved', true);
+		?>
+			<li id="list_cp_av_solved">
+					<div class="labelwrapper">
+						<label><a href="#" tip="Lutfen Erisim Engelinin cozulup cozulmedigini seciniz!" tabindex="999"><div class="helpico"></div></a>Erisim Engeli Durumu : <span class="colour">*</span></label><br />
+                        <label class="invalid" for="cp_av_solved">Bu alanin secilmesi zorunlu!</label>
+					</div>
+                    <select name="cp_av_solved" id="cp_av_solved" class="dropdownlist required">
+                    <?php
+					if ($solved != null && $solved == 'yes') { // Eger kayit varsa cozulmus demektir
+						?>
+						<option style="min-width:177px" selected="yes" value="yes">Cozuldu</option>
+						<option style="min-width:177px" value="no">Cozulmedi</option>
+						<?php
+					}else{ // Eger kayit yoksa cozulmemis demektir
+						?>
+						<option style="min-width:177px" value="yes">Cozuldu</option>
+						<option style="min-width:177px" selected="yes" value="no">Cozulmedi</option>
+						<?php
+					}
+					?>
+                    </select>
+                    <div class="clr"></div>
+                </li>
+		<?php
+		
+        //----------------------------------
+        
     global $wpdb;
 
     // create array before adding custom fields

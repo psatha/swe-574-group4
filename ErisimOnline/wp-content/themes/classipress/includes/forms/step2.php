@@ -49,6 +49,13 @@ if ( !$error_msg ) {
 	if(!empty($_POST['location']) && $_POST['location']!=''){
 		$_SESSION['kordinat'] = $_POST['location'];
 	}
+	if(!empty($_POST['anonym']))
+    {
+    	$anonym = $_POST['anonym'];
+    	$_SESSION['anonym'] = $anonym[0];
+    }else {
+    	$_SESSION['anonym'] = '';
+    }
 	//*******************************************************
             
     // keep only numeric, commas or decimal values

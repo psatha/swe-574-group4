@@ -2839,7 +2839,7 @@ msgstr "Yeni Erisim Engeli Ekle"
 
 #: includes/admin/admin-post-types.php:31
 msgid "Edit Ad"
-msgstr "İlanı Düzenle"
+msgstr "Erisim Engelini Düzenle"
 
 #: includes/admin/admin-post-types.php:32
 msgid "New Ad"

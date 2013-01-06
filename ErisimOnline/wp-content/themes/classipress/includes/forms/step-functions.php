@@ -19,6 +19,21 @@
 // loops through the custom fields and builds the custom ad form
 if (!function_exists('cp_formbuilder')) {
     function cp_formbuilder($results) {
+    	// -------EKLEME--------- (Anonym user ekleme)
+    	?>
+    	<li>
+                <div class="labelwrapper">
+                    <label><a href="#" tip="Adiniz gorunmesin istiyorsaniz Anonim kutucugunu isaretleyiniz!" tabindex="999"><div class="helpico"></div></a>Erisim Engeli Sahibi: </label>
+                </div>
+    	<ol class="checkboxes">
+            <li>
+                <input type="checkbox" name="anonym[]" id="anonym" value="anonym" class="checkboxlist" >&nbsp;&nbsp;&nbsp;Anonim olarak ekle
+            </li> <!-- #checkbox -->
+        </ol> <!-- #checkbox-wrap -->
+        <div class="clr"></div>
+        </li>
+    	<?php
+    	// ----------------------
         global $wpdb;
 	
         foreach ( $results as $result ) {
@@ -746,7 +761,14 @@ function cp_add_new_listing($advals) {
     $new_ad['post_title']     = appthemes_filter( $advals['post_title'] );
     $new_ad['post_content']   = trim( $advals['post_content'] );
     $new_ad['post_status']    = 'pending'; // no longer setting final status until after images are set
-    $new_ad['post_author']    = $advals['user_id'];
+	$new_ad['post_author']    = 0;
+    if(!empty($_SESSION['anonym']) && $_SESSION['anonym']!='')
+    {
+        $new_ad['post_author']    = 0;
+    }else{
+    	$new_ad['post_author']    = $advals['user_id'];
+    } 
+    
     $new_ad['post_type']      = APP_POST_TYPE; 
 
     // make sure the WP sanitize_post function doesn't strip out embed & other html

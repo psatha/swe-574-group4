@@ -26,7 +26,7 @@ function get_the_author($deprecated = '') {
 	if ( !empty( $deprecated ) )
 		_deprecated_argument( __FUNCTION__, '2.1' );
 
-	return apply_filters('the_author', is_object($authordata) ? $authordata->display_name : null);
+	return apply_filters('the_author', is_object($authordata) ? $authordata->display_name : 'Anonim');
 }
 
 /**
@@ -203,14 +203,25 @@ function the_author_posts_link($deprecated = '') {
 		_deprecated_argument( __FUNCTION__, '2.1' );
 
 	global $authordata;
-	if ( !is_object( $authordata ) )
-		return false;
-	$link = sprintf(
-		'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
-		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
-		esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
-		get_the_author()
-	);
+	// ------EKLEME------------- (Anonim kullanici gosterimi)
+	$link = '';
+	if ( !is_object( $authordata ) ){
+		$link = sprintf(
+			'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
+			get_author_posts_url( 0, 'Anonim' ),
+			esc_attr( sprintf( __( 'Posts by %s' ), 'Anonim' ) ),
+			'Anonim'
+		);
+	}else{
+		$link = sprintf(
+			'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
+			get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
+			esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
+			get_the_author()
+		);
+	}
+	// ------------------------------------
+		//return false;
 	echo apply_filters( 'the_author_posts_link', $link );
 }
 

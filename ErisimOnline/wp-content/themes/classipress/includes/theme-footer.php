@@ -55,7 +55,6 @@ function cp_do_footer() {
             <?php endif; ?>
 
             <div class="right">
-                <p><a target="_blank" href="http://www.appthemes.com/themes/classipress/" title="Classified Ads Software"><?php _e('Classified Ads Software','appthemes'); ?></a> | <?php _e('Powered by','appthemes'); ?> <a target="_blank" href="http://wordpress.org/" title="WordPress">WordPress</a></p>
             </div>
 
             <div class="clr"></div>

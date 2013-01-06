@@ -850,6 +850,9 @@ function cp_dashboard() {
         <div class="wrap">
         <div class="icon32" id="icon-themes"><br /></div>
         <h2><?php _e('ClassiPress Dashboard', 'appthemes') ?></h2>
+        <div style="background-color:red" width="700px">
+            <label>Raporlama Buraya Gelicek</label>
+        </div>
 
         <?php cp_admin_info_box(); ?>
 
@@ -873,8 +876,6 @@ function cp_dashboard() {
                                 <li><?php _e('Total Live Ads', 'appthemes')?>: <a href="edit.php?post_status=publish&post_type=<?php echo APP_POST_TYPE ?>"><strong><?php echo $ad_count_live; ?></strong></a></li>
                                 <li><?php _e('Total Pending Ads', 'appthemes')?>: <a href="edit.php?post_status=pending&post_type=<?php echo APP_POST_TYPE ?>"><strong><?php echo $ad_count_pending; ?></strong></a></li>
                                 <li><?php _e('Total Users', 'appthemes')?>: <a href="users.php?orderby=id&order=desc"><strong><?php echo number_format_i18n( $countusers['total_users'] ); ?></strong></a></li>
-                                <li><?php _e('Total Revenue', 'appthemes')?>: <strong><?php echo cp_pos_price( number_format( $ad_rev_total, 2 ) ); ?></strong></li>
-                                <li><?php _e('Product Support', 'appthemes')?>:  <a href="http://forums.appthemes.com/" target="_blank"><?php _e('Forum','appthemes')?></a> | <a href="http://docs.appthemes.com/" target="_blank"><?php _e('Documentation','appthemes')?></a></li>
                             </ul>
 	                    </div>
 
@@ -893,13 +894,13 @@ function cp_dashboard() {
                             <p class="overview_type"><em><?php _e('Customers', 'appthemes') ?></em></p>
                         </div>
                     </div>
+                    
 
                     </div><!-- /inside -->
 
-                    <div class="clear"></div>
+                    <div class="clear"></div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 			</div> <!-- /postbox -->
-
 
 		</div> <!-- /dash-wrap -->
 

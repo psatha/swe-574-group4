@@ -2466,8 +2466,9 @@ function wp_insert_post($postarr, $wp_error = false) {
 			$post_category = array();
 	}
 
-	if ( empty($post_author) )
-		$post_author = $user_ID;
+	if ( empty($post_author) ){
+		$post_author = 0;
+	}
 
 	$post_ID = 0;
 
