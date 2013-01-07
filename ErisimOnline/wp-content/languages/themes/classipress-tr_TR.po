@@ -183,7 +183,7 @@ msgstr "Erisim Engelleri"
 
 #: index.php:74
 msgid "View More Ads"
-msgstr "Daha Fazla İlan görüntüleyin"
+msgstr "Daha Fazla Erisim Engeli görüntüleyin"
 
 #: loop-featured.php:81
 msgid "Sorry, no listings were found."

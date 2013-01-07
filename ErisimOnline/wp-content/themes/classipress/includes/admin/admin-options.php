@@ -176,7 +176,7 @@ function cp_make_custom_name($cname) {
 	return $cname;
 }
 
-// delete the custom form and the meta custom field data
+// delete the AV form and relations from DB
 function cp_delete_form($form_id) {
     global $wpdb;
 
@@ -1830,7 +1830,7 @@ function cp_form_layouts() {
 
 	<?php
     switch ( $theswitch ) {
-
+	// Adds new AV Form to DB
     case 'addform':
     ?>
 
@@ -1899,7 +1899,7 @@ function cp_form_layouts() {
     <?php
     break;
 
-
+	// Updates new AV Form from DB
     case 'editform':
     ?>
 
@@ -2366,7 +2366,8 @@ function cp_custom_fields() {
     if ( isset( $_GET['action'] ) ) $theswitch = $_GET['action']; else $theswitch = '';
 
     switch ( $theswitch ) {
-
+	
+    // Adds a new AV form filed to DB
     case 'addfield':
     ?>
 
@@ -2439,7 +2440,7 @@ function cp_custom_fields() {
     <?php
     break;
 
-
+	// Updates an existing AV form filed from DB
     case 'editfield':
     ?>
 
@@ -2523,7 +2524,7 @@ function cp_custom_fields() {
     <?php
     break;
 
-
+	// Deletes an existing AV form filed from DB
     case 'delete':
 
         // check and make sure this fields perms allow deletion
